@@ -1,0 +1,111 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "kanmusu:boku",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "newitem:mamiya",
+            "heal_amount": 40
+          },
+          {
+            "item": "newitem:irako",
+            "heal_amount": 20
+          }
+        ]
+      },
+      "minecraft:type_family": {
+        "family": ["boku", "mob"]
+      },
+      "minecraft:movement": {
+        "value": 0.21
+      },
+      "minecraft:attack": {
+        "damage": 5
+      },
+      "minecraft:health": {
+        "value": 99,
+        "max": 99
+      },
+      "minecraft:navigation.generic": {
+        "is_amphibious": false,
+        "can_path_over_water": true,
+        "can_swim": true,
+        "can_walk": true,
+        "can_breach": false,
+        "can_sink": false
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 2
+      },
+
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 4,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "abyssal"
+                }
+              ]
+            }
+          }
+        ],
+        "must_see": true,
+        "within_radius": 64,
+        "reselect_targets":true
+      },
+      "minecraft:behavior.melee_attack": {
+        "priority": 4,
+        "speed_multiplier": 2,
+        "track_target": true
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 5
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 5
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/boku.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {}
+    }
+  }
+}

@@ -1,0 +1,265 @@
+pack.name=Kancolle RP
+pack.description=§lCreator:§r§b§nTwitter@Ivon852. §r§lLicense & credits:§rVoices, music in this Add-on are owned by C2Praparat.
+
+## Kanmusu Diolagues
+action.interact.talk=Talk
+
+chat.type.announcement.souya.say=§b[Souya]§rDo you need a survey done? Or something transported? ...I'll do it!
+chat.type.announcement.souya.say2=§b[Souya]§r"The Miraculous Ship"? Oh no, I'm not... That's just...
+chat.type.announcement.souya.say3=§b[Souya]§rThat's right. I did surveys-in-force and landings at Saipan, Truk, Rabaul, and that fierce battle at the Solomon Islands. My home port was Yokosuka, but... I ended up going all over the place. Now that I think about it... It's probably a miracle that I made it back in one piece.
+chat.type.announcement.souya.say4=§b[Souya]§rI'm the special operations ship, Souya. Admiral, it's an honour to meet you. I'm a non-combat ship, but... I'll do my best! Pleased to meet you!
+
+chat.type.announcement.shimakaze.say=§b[Shimakaze]§rGood Morning, Admiral!
+chat.type.announcement.shimakaze.say2=§b[Shimakaze]§rI'm Destroyer Shimakaze. When it comes to speed I'm the best there is, swift like the island breeze!
+chat.type.announcement.shimakaze.say3=§b[Shimakaze]§rWhat is it, Admiral?
+chat.type.announcement.shimakaze.say4=§b[Shimakaze]§rWant to race? I won't lose.
+
+chat.type.announcement.bismarck.say=§b[Bismarck]§rGood. It is I, Bismarck's turn.
+chat.type.announcement.bismarck.say2=§b[Bismarck]§rAdmiral, it seems that your fleet is lacking in discipline. I shall instruct you from the basics.
+chat.type.announcement.bismarck.say3=§b[Bismarck]§rYou're being quite familiar. What is it?
+chat.type.announcement.bismarck.say4=§b[Bismarck]§rGood day. I am Bismarck, the nameship of the Bismarck-class battleships. You should remember it well.
+
+chat.type.announcement.hiryu.say=§b[Hiryu]§rEr, don't (do that)! The planes will drop off.
+chat.type.announcement.hiryu.say2=§b[Hiryu]§rHm? Has an enemy carrier appeared?
+chat.type.announcement.hiryu.say3=§b[Hiryu]§rTamon-maru is going get mad at you.
+chat.type.announcement.hiryu.say4=§b[Hiryu]§rI'm aircraft carrier Hiryuu. Leave the carrier battles to me, I can fight back from any and all predicaments!
+
+chat.type.announcement.zara.say=§b[Zara]§rThat's right, it's me, Zara. At the ready!
+chat.type.announcement.zara.say2=§b[Zara]§rEven though I said tenacity is my strong point.... this is going too far ! Admiral, I'm going to get angry !
+chat.type.announcement.zara.say3=§b[Zara]§rYep, I'm right there. Good to go whenever!
+chat.type.announcement.zara.say4=§b[Zara]§rBuongiorno, Admiral! And welcome back. Zara of the Zara-class first heavy cruiser is ready for order. Please be of service for today as well!
+
+chat.type.announcement.i168.say=§b[I-168]§rDo you dislike me Commander?
+chat.type.announcement.i168.say2=§b[I-168]§rAre you used to my name yet Commander? It's I-mu-ya you know?
+chat.type.announcement.i168.say3=§b[I-168]§rI may be riding on a life buoy right now, but I'm actually great at diving!
+chat.type.announcement.i168.say4=§b[I-168]§rI'm I-168. What's that? It's hard to say? Then just call me Imuya. Please take care of me.
+
+chat.type.announcement.u511.say=§b[U-511]§rDid I... do something wrong? ...Is everything alright? I'm... not sure if I can do it... properly...
+chat.type.announcement.u511.say2=§b[U-511]§rAd... Admiral. Did... I do it properly...? Is that so... Thanks!
+chat.type.announcement.u511.say3=§b[U-511]§rI've been told "When in Rome do as the Romans do" but... Well... What should I do?
+chat.type.announcement.u511.say4=§b[U-511]§rI'm the Kriegsmarine submarine, U-511. Please call me Yuu. I've come from pretty far away. Please take good care of me.
+
+chat.type.announcement.gotland.say=§b[Gotland]§rThe Admiral is... Oh, he looks busy. Alright! I've got some free time then. I wonder what I should do… Should I go mess with Mogami? Wha, Admiral! What do you want? You surprised me.
+chat.type.announcement.gotland.say2=§b[Gotland]§rAdmiral, you called for me right? Alright. Got it.
+chat.type.announcement.gotland.say3=§b[Gotland]§rAh, that's not my hangar. Ah, stop it! That's dangerous, Admiral. Honestly, I don't dislike skinship but... I'd like it if you could please be more smooth alright?
+chat.type.announcement.gotland.say4=§b[Gotland]§rI'm the aviation cruiser from the Nordic Country of Sweden, Gotland. Admiral, I'll be in your care from now on. I'll work hard to do whatever I can for reconnaissance missions or surface battles.
+
+chat.type.announcement.tsushima.say=§b[Tsushima]§r*yawn*... Hu-huh, Ukuru? Ah, I made a mistake. Whew, just a mistake. Fufu,ufufufu.
+chat.type.announcement.tsushima.say2=§b[Tsushima]§rThe Southern Corridor is full of dangers. The Naval Base is... full of dangers too? Ufufu.
+chat.type.announcement.tsushima.say3=§b[Tsushima]§rBe careful of collisions.
+chat.type.announcement.tsushima.say4=§b[Tsushima]§rThe Etorofu-class costal defense ship, Tsushima, has arrived. I'll put this body made for defending the Southern Corridor to good use. Just wait and see.
+
+## Kanmusu
+
+item.newitem:admiral_cap.name=Admiral Hat
+item.newitem:mamiya.name=Food Supply Ship Mamiya
+item.newitem:irako.name=Food Supply Ship Irako
+
+item.spawn_egg.entity.kanmusu:souya.name=Spawn Souya
+entity.kanmusu:souya.name=Souya
+
+item.spawn_egg.entity.kanmusu:tsushima.name=Spawn Tsushima
+entity.kanmusu:tsushima.name=Tsushima
+
+item.spawn_egg.entity.kanmusu:gotland.name=Spawn Gotland
+entity.kanmusu:gotland.name=Gotland
+entity.kanmusu:gotsheep.name=Gotsheep
+
+item.spawn_egg.entity.kanmusu:mamiya.name=Spawn Mamiya
+entity.kanmusu:mamiya.name=Mamiya
+
+item.spawn_egg.entity.kanmusu:mamiya.name=Spawn Mamiya
+entity.kanmusu:mamiya.name=Mamiya
+item.spawn_egg.entity.kanmusu:irako.name=Spawn Irako
+entity.kanmusu:irako.name=Irako
+
+item.spawn_egg.entity.kanmusu:u511.name=Spawn U-511
+entity.kanmusu:u511.name=U-511
+
+item.spawn_egg.entity.kanmusu:i168.name=Spawn I-168
+entity.kanmusu:i168.name=I-168
+
+item.spawn_egg.entity.kanmusu:zara.name=Spawn Zara
+entity.kanmusu:zara.name=Zara
+
+item.spawn_egg.entity.kanmusu:hiryu.name=Spawn Hiryu
+entity.kanmusu:hiryu.name=Hiryu
+
+item.spawn_egg.entity.kanmusu:bismarck.name=Spawn Bismarck
+entity.kanmusu:bismarck.name=Bismarck
+
+item.spawn_egg.entity.kanmusu:shimakaze.name=Spawn Shimakaze
+entity.kanmusu:shimakaze.name=Shimakaze
+
+item.spawn_egg.entity.kanmusu:boku.name=Spawn Boku Kawauso
+entity.kanmusu:boku.name=Boku
+
+## Aircraft
+
+item.spawn_egg.entity.aircraft:p38e.name=Spawn P-38E
+entity.aircraft:p38e.name=P-38E
+action.interact.p38e.fire=Fire
+action.interact.p38e.get_on=Get on
+action.hint.exit.aircraft:p38e=Tap sneak to dismount
+
+item.spawn_egg.entity.aircraft:bf109g6.name=Spawn Bf-109G6
+entity.aircraft:bf109g6.name=Bf-109G6
+action.interact.bf109g6.fire=Fire
+action.interact.bf109g6.get_on=Get on
+action.hint.exit.aircraft:bf109g6=Tap sneak to dismount
+
+item.spawn_egg.entity.aircraft:spitfiremkix.name=Spawn Spitifre Mk.IX
+entity.aircraft:spitfiremkix.name=Spitifre Mk.IX
+action.interact.spitfiremkix.fire=Fire
+action.interact.spitfiremkix.get_on=Get on
+action.hint.exit.aircraft:spitfiremkix=Tap sneak to dismount
+
+item.spawn_egg.entity.aircraft:type99d.name=Spawn Type 99 Dive Bomber
+entity.aircraft:type99d.name=Type99 Dive Bomber
+action.interact.type99d.drop=Drop Bomb
+action.interact.type99d.fire=Fire
+action.interact.type99d.get_on=Get on
+action.hint.exit.aircraft:type99d=Tap sneak to dismount
+
+item.spawn_egg.entity.aircraft:ki_61.name=Spawn Ki-61
+entity.aircraft:ki_61.name=Ki-61
+action.interact.ki_61.fire=Fire
+action.interact.ki_61.get_on=Get on
+action.hint.exit.aircraft:ki_61=Tap sneak to dismount
+
+item.spawn_egg.entity.aircraft:f4u1d.name=Spawn F4U-1D
+entity.aircraft:f4u1d.name=F4U-1D
+action.interact.f4u1d.fire_hvar=Fire HVAR
+action.interact.f4u1d.drop=Drop bombs
+action.interact.f4u1d.fire=Fire
+action.interact.f4u1d.get_on=Get on
+action.hint.exit.aircraft:f4u1d=Tap sneak to dismount
+
+item.spawn_egg.entity.aircraft:me163b.name=Spawn Me-163B
+entity.aircraft:me163b.name=Me-163B
+action.interact.me163b.fire=Fire
+action.interact.me163b.get_on=Get on
+action.hint.exit.aircraft:me163b=Tap sneak to dismount
+
+item.spawn_egg.entity.aircraft:g4m2e.name=Spawn G4M2e
+entity.aircraft:g4m2e.name=G4M2e
+action.interact.g4m2e.get_on=Get on
+action.interact.g4m2e.drop=Drop
+action.interact.g4m2e.fire=Fire
+action.interact.g4m2e.launch=Launch
+item.newitem:wrench.name=Wrench
+item.newitem:mxy7.name=MXY-7 Ohka
+action.interact.mxy7.get_on=Get on
+item.newitem:bombload60kg.name=60kg bombload
+item.newitem:type91torpedo.name=Type 91 Torpedo
+action.interact.g4m2e.uninstall=Uninstall
+action.interact.g4m2e.install=Install
+action.hint.exit.aircraft:g4m2e=Tap sneak to dismount
+
+item.newitem:bomb.name=Standard Bomb
+item.newitem:127cmbelt.name=Standard bullet belt
+item.newitem:hvar.name=HVAR Rocket
+
+## Vehicle
+
+item.spawn_egg.entity.tank:s35.name=Spawn SOMUA S-35
+entity.tank:s35.name=SOMUA S-35
+action.interact.s35.get_on=Get on
+action.interact.s35.fire=Fire
+action.hint.exit.tank:s35=Tap sneak to dismount
+item.newitem:qf47apcbc.name=Fixed QF 47x380 mm. R APCBC
+
+item.spawn_egg.entity.tank:type2kami.name=Spawn Special Type 2 Launch Ka Mi
+entity.tank:type2kami.name=Special Type 2 Launch Ka Mi
+action.interact.type2kami.get_on=Get on
+action.interact.type2kami.fire=Fire
+action.hint.exit.tank:type2kami=Tap sneak to dismount
+item.newitem:type1ap.name=Type 1 AP
+
+item.spawn_egg.entity.tank:panzeriv.name=Spawn Panzer IV Ausf. H
+entity.tank:panzeriv.name=Panzer IV Ausf. H
+action.interact.panzeriv.get_on=Get on
+action.interact.panzeriv.fire=Fire
+action.hint.exit.tank:panzeriv=Tap sneak to dismount
+item.newitem:pzgrpatr40kwk40.name=Pzgr. Patr. 40 KwK 40
+
+item.spawn_egg.entity.submarine:u511.name=Spawn U-511
+entity.submarine:u511.name=U-511
+action.interact.u511.fire=Fire
+action.hint.exit.submarine:u511=Tap sneak to dismount
+action.interact.u511.get_on=Get on
+
+item.spawn_egg.entity.weapon:higginsboat.name=Spawn LCVP
+entity.weapon:higginsboat.name=LCVP
+action.interact.higginsboat.get_on=Get on
+action.hint.exit.weapon:higginsboat=Tap sneak to dismount
+action.interact.higginsboat.fire=Fire
+action.interact.higginsboat.down=Open Door
+action.interact.higginsboat.up=Close Door
+
+item.newitem:32cmrocket_item.name=32cm Rocket
+item.spawn_egg.entity.weapon:nbw41.name=Spawn 28cm/32cm Nebelwerfer 41
+entity.weapon:nbw41.name=28cm/32cm Nebelwerfer 41
+entity.weapon:32cmrocket.name=32cm Rocket
+action.interact.nbw41.set=Set
+action.interact.nbw41.fire=Fire
+
+item.spawn_egg.entity.tank:m4a1dd.name=Spawn M4A1 Sherman Duplex Drive
+entity.tank:m4a1dd.name=M4A1 Sherman Duplex Drive
+action.interact.m4a1dd.fire=Fire
+action.interact.m4a1dd.get_on=Get on
+action.interact.m4a1d.firem=Fire
+item.newitem:75cmap_item.name= 75cm AP
+action.hint.exit.tank:m4a1dd=Tap sneak to dismount
+
+item.spawn_egg.entity.tank:t3485.name=Spawn T34/85
+entity.tank:t3485.name=T34/85
+action.interact.t3485.fire=Fire
+action.interact.t3485.get_on=Get on
+action.interact.t3485.firem=Fire Machine Gun
+item.newitem:ziss53ap_item.name= ZIS-S-53 AP
+action.hint.exit.tank:t3485=Tap sneak to dismount
+
+item.spawn_egg.entity.tank:churchillmkvii.name=Spawn Churchill Mk.VII
+entity.tank:churchillmkvii.name=Churchill Mk.VII
+action.interact.churchillmkvii.fire=Fire
+action.interact.churchillmkvii.get_on=Get on
+action.interact.churchillmkvii.firem=Fire
+item.newitem:m46he_item.name= M46 HE
+action.hint.exit.tank:churchillmkvii=Tap sneak to dismount
+item.newitem:flamethrower.name=Flame Thrower
+
+item.spawn_egg.entity.weapon:sandbag.name=Sandbag
+action.interact.sandbag.stack=Stack
+
+
+## Abyssals
+
+item.spawn_egg.entity.abyssal:ptimpgroup.name=Spawn PT Imp Group
+entity.abyssal:ptimpgroup=PT Imp Group
+
+item.spawn_egg.entity.abyssal:waclass.name=Spawn Abyssal Transport Ship Wa-Class
+entity.abyssal:waclass=Transport Ship Wa-Class
+
+item.newitem:pp_weapon.name= PP's Weapon
+item.spawn_egg.entity.abyssal:pacific_princess.name=Spawn Pacific Princess
+entity.abyssal:pp_whale.name=PP's Whale
+entity.abyssal:pacific_princess.name=Pacific Princess
+item.spawn_egg.entity.abyssal:northern_princess.name=Spawn Northern Princess
+entity.abyssal:northern_princess_arament.name=Northern Princess's Arament
+entity.abyssal:northern_princess.name=Northern Princess
+item.spawn_egg.entity.abyssal:aircraft_carrier_princess.name=Spawn Aircraft Carrier Demon
+entity.abyssal:aircraft_carrier_princess.name=Aircraft Carrier Demon
+entity.abyssal:aircraft_carrier_princess_armament.name=Aircraft Carrier Demon Armament
+
+
+entity.abyssal:dd_iclass.name= Destroyer I-Class
+item.spawn_egg.entity.abyssal:dd_iclass.name= Spawn Destroyer I-Class
+entity.abyssal:dd_niclass.name= Destroyer Ni-Class
+item.spawn_egg.entity.abyssal:dd_niclass.name= Spawn Destroyer Ni-Class
+entity.abyssal:dd_naclass.name= Destroyer Na-Class
+item.spawn_egg.entity.abyssal:dd_naclass.name= Spawn Destroyer Na-Class
+entity.abyssal:dd_haclass.name= Destroyer Ha-Class
+item.spawn_egg.entity.abyssal:dd_haclass.name= Spawn Destroyer Ha-Class
+entity.abyssal:dd_roclass.name= Destroyer Ro-Class
+item.spawn_egg.entity.abyssal:dd_roclass.name= Spawn Destroyer Ro-Class

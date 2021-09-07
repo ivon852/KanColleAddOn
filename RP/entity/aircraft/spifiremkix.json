@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aircraft:spitfiremkix",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/spitfiremkix"
+      },
+      "geometry": {
+        "default": "geometry.spitfiremkix"
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "animations": {
+        "move": "animation.spitfiremkix.move",
+        "on_ground": "animation.spitfiremkix.on_ground",
+        "retract_gear": "animation.spitfiremkix.retract_gear",
+        "spitfiremkix_controller": "controller.animation.spitfiremkix.move",
+        "spitfiremkix_on_ground_controller": "controller.animation.spitfiremkix.on_ground",
+        "spitfiremkix_retract_gear_controller": "controller.animation.spitfiremkix.retract_gear",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "spitfiremkix_controller",
+          "look_at_target",
+          "spitfiremkix_on_ground_controller",
+          "spitfiremkix_retract_gear_controller"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_spitfiremkix",
+        "texture_index": 0
+      }
+    }
+  }
+}

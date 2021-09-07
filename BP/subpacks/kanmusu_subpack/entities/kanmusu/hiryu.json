@@ -1,0 +1,290 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "kanmusu:hiryu",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "hiryu_talk": "controller.animation.hiryu_talk"
+      },
+      "scripts": {
+        "animate": [
+          "hiryu_talk"
+        ]
+      }
+    },
+    "component_groups": {
+      "hiryu:stop_talking": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "hiryu:start_talking": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "hiryu:stop_talking",
+            "target": "self"
+          }
+        }
+      },
+      "battle_start": {
+        "minecraft:spawn_entity": {
+          "entities":{
+          "min_wait_time": 10,
+          "max_wait_time": 20,
+          "num_to_spawn": 3,
+          "spawn_entity": "aircraft:type99d",
+          "single_use": false
+          }
+        }
+      },
+      "hiryu_too_close": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "abyssal"
+              },
+              "max_dist": 10,
+              "walk_speed_multiplier": 2,
+              "sprint_speed_multiplier": 2
+            }
+          ]
+        }
+      }
+    },
+
+    "events": {
+      "hiryu:start_talking": {
+        "remove": {
+          "component_groups": [
+            "hiryu:stop_talking"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "hiryu:start_talking"
+          ]
+        }
+      },
+      "hiryu:stop_talking": {
+        "remove": {
+          "component_groups": [
+            "hiryu:start_talking"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "hiryu:stop_talking"
+          ]
+        }
+      },
+      "battle_start": {
+        "add": {
+          "component_groups": ["battle_start"]
+        }
+      },
+      "battle_end": {
+        "remove": {
+          "component_groups": ["battle_start"]
+        }
+      },
+      "hiryu_too_close": {
+        "add": {
+          "component_groups": ["hiryu_too_close"]
+        }
+      },
+      "hiryu_range_attack": {
+        "remove": {
+          "component_groups": ["hiryu_too_close"]
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:mark_variant": {
+        "value": 1
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:admiral_cap"
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "hiryu:start_talking"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.talk"
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "newitem:mamiya",
+            "heal_amount": 20
+          },
+          {
+            "item": "newitem:irako",
+            "heal_amount": 15
+          }
+        ]
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 2,
+        "speed_multiplier": 1.25,
+        "items": ["newitem:admiral_cap"]
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 4,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "abyssal"
+                }
+              ]
+            }
+          }
+        ],
+        "must_see": true,
+        "within_radius": 64,
+        "reselect_targets":true
+      },
+      "minecraft:on_target_acquired": {
+        "target": "self",
+        "event": "battle_start"
+      },
+      "minecraft:on_target_escape": {
+        "target": "self",
+        "event": "battle_end"
+      },
+
+      "minecraft:target_nearby_sensor": {
+        "inside_range": 14,
+        "outside_range": 15,
+        "on_inside_range": {
+          "event": "hiryu_too_close",
+          "target": "self"
+        },
+        "on_outside_range": {
+          "event": "hiryu_range_attack",
+          "target": "self"
+        }
+      },
+
+      "minecraft:behavior.follow_mob": {},
+      "minecraft:type_family": {
+        "family": ["kanmusu", "hiryu", "aircraft_carrier"]
+      },
+      "minecraft:health": {
+        "value": 67,
+        "max": 67
+      },
+      "minecraft:navigation.generic": {
+        "can_path_over_water": true,
+        "can_walk": true,
+        "can_sink": false
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 2
+      },
+
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.2
+      },
+
+      "minecraft:behavior.random_stroll": {
+        "priority": 5
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 5
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+
+      "minecraft:attack": {
+        "damage": 20
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "abyssal"
+                }
+              ]
+            },
+            "max_dist": 64
+          }
+        ]
+      },
+      "minecraft:behavior.mount_pathing": {
+        "speed_multiplier": 1.25,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/hiryu.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aircraft:f4u1d",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/f4u1d"
+      },
+      "geometry": {
+        "default": "geometry.f4u1d"
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "animations": {
+        "move": "animation.f4u1d.move",
+        "on_ground": "animation.f4u1d.on_ground",
+        "retract_gear": "animation.f4u1d.retract_gear",
+        "sit": "animation.f4u1d.sit",
+        "f4u1d_controller": "controller.animation.f4u1d.move",
+        "f4u1d_on_ground_controller": "controller.animation.f4u1d.on_ground",
+        "f4u1d_retract_gear_controller": "controller.animation.f4u1d.retract_gear",
+        "f4u1d_sit_controller": "controller.animation.f4u1d.sit",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "f4u1d_controller",
+          "look_at_target",
+          "f4u1d_on_ground_controller",
+          "f4u1d_retract_gear_controller",
+          "f4u1d_sit_controller"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_f4u1d",
+        "texture_index": 0
+      }
+    }
+  }
+}

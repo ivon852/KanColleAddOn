@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:75mmmacmle1931",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/75mmmacmle1931"
+      },
+      "geometry": {
+        "default": "geometry.75mmmacmle1931"
+      },
+      "render_controllers": [ "controller.render.newmob" ]
+    }
+  }
+}

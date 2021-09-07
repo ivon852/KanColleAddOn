@@ -1,0 +1,147 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.shimakaze.move": {
+      "loop": true,
+      "bones": {
+        "leftLeg": {
+          "rotation": ["math.cos(query.anim_time * 500.17) *  40.0", 0, 0]
+        },
+        "rightLeg": {
+          "rotation": ["math.cos(query.anim_time * 500.17) * -40.0", 0, 0]
+        },
+        "leftArm": {
+          "rotation": [0, 0, 70],
+          "position": [1, 0, 0]
+        },
+        "rightArm": {
+          "rotation": [0, 0, -70],
+          "position": [-1, 0, 0]
+        }
+      }
+    },
+    "animation.shimakaze.attack": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [-5, 60, 0]
+        },
+        "body": {
+          "rotation": [0, 0, 0]
+        },
+        "leftArm": {
+          "rotation": [-70, 0, 0]
+        },
+        "leftHand": {
+          "rotation": [-40, 0, 0]
+        },
+        "rightHand": {
+          "rotation": [-45, 0, 0]
+        },
+        "rightArm": {
+          "rotation": [-105, 0, 0]
+        },
+        "leftLeg": {
+          "rotation": [-70, 0, 0]
+        },
+        "rightLeg": {
+          "rotation": [-35, 0, 0]
+        },
+        "torpedo": {
+          "rotation": [0, 0, 105]
+        },
+        "waist": {
+          "rotation": [0, -90, 50]
+        }
+      }
+    },
+    "animation.shimakaze.prepare": {
+      "animation_length": 3,
+      "bones": {
+        "head": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 0],
+            "3.0": [-5, 60, 0]
+          },
+          "position": [0, 0, 0]
+        },
+        "body": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 0]
+          }
+        },
+        "leftArm": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 0],
+            "3.0": [-70, 0, 0]
+          },
+          "position": [0, 0, 0]
+        },
+        "leftHand": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 0],
+            "3.0": [-40, 0, 0]
+          }
+        },
+        "rightHand": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 0],
+            "3.0": [-45, 0, 0]
+          }
+        },
+        "rightArm": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 0],
+            "3.0": [-105, 0, 0]
+          },
+          "position": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 0]
+          }
+        },
+        "leftLeg": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [-20, 0, 0],
+            "2.0": [-70, 0, 0]
+          },
+          "position": [0, 0, 0]
+        },
+        "rightLeg": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [10, 0, 0],
+            "2.0": [-35, 0, 0]
+          },
+          "position": [0, 0, 0]
+        },
+        "torpedo": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "2.0": [0, 0, 0],
+            "3.0": [0, 0, 105]
+          },
+          "position": [0, 0, 0]
+        },
+        "waist": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "1.0": [0, -90, 0],
+            "2.0": [0, -90, 50]
+          },
+          "position": [0, 0, 0]
+        }
+      }
+    }
+  }
+}

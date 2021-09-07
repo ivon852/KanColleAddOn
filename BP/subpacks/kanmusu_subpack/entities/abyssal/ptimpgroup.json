@@ -1,0 +1,175 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "abyssal:ptimpgroup",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "type1":{
+        "minecraft:variant":{
+          "value":0
+        }
+      },
+      "type2":{
+        "minecraft:variant":{
+          "value":1
+        },
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 1,
+            "max_wait_time": 1,
+            "num_to_spawn": 2,
+            "spawn_entity": "abyssal:ptimpgroup",
+            "single_use": true
+          }
+        }
+      },
+      "type3":{
+        "minecraft:variant":{
+          "value":3
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/entities/ptimpgroup.json"
+      },
+      "minecraft:behavior.move_to_water": {
+        "priority": 4,
+        "search_range": 10,
+        "search_height": 5
+      },
+      "minecraft:breathable": {
+        "total_supply": 15,
+        "suffocate_time": 0,
+        "breathes_water": true
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:type_family": {
+        "family": ["abyssal", "monster", "pt"]
+      },
+
+      "minecraft:health": {
+        "value": 18,
+        "max": 18
+      },
+      "minecraft:navigation.walk": {
+        "is_amphibious": true,
+        "can_pass_doors": true,
+        "can_break_doors": true,
+        "avoid_portals": false
+      },
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:movement.basic": {},
+      "minecraft:movement": {
+        "value": 1
+      },
+      "minecraft:scale": {
+        "value": 0.4
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_climb": {},
+      "minecraft:behavior.melee_attack": {
+        "priority": 3,
+        "speed_multiplier": 1,
+        "track_target": false
+      },
+      "minecraft:attack": {
+        "damage": 2.5
+      },
+      "minecraft:behavior.leap_at_target": {
+        "priority": 4,
+        "target_dist": 0.4
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 6,
+        "speed_multiplier": 1
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 7,
+        "look_distance": 5,
+        "probability": 0.02
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 1
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 2,
+        "within_radius": 25,
+        "reselect_targets": true,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "kanmusu"
+                }
+              ]
+            }
+          }
+        ],
+        "must_see": true
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    },
+
+"events":{
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "type1"
+                  ]
+                }
+              },
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "type2"
+                  ]
+                }
+              },
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "type3"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    }
+
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:pacific_princess",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pacific_princess"
+      },
+      "geometry": {
+        "default": "geometry.pacific_princess"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.pacific_princess.move",
+        "sit": "animation.pacific_princess.sit",
+        "attack": "animation.pacific_princess.attack",
+        "c2_move": "controller.animation.pacific_princess.move",
+        "c2_sit": "controller.animation.pacific_princess.sit",
+        "c2_attack": "controller.animation.pacific_princess.attack"
+      },
+      "scripts": {
+        "animate": ["c2_move", "c2_sit", "look_at_target", "c2_attack"]
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "spawn_egg": {
+        "texture": "spawn_pacific_princess",
+        "texture_index": 0
+      }
+    }
+  }
+}

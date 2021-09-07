@@ -1,0 +1,16 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.me163b": {
+      "arrays": {
+        "textures": {
+          "array.skins": ["texture.default", "texture.on"]
+        }
+      },
+      "textures": ["array.skins[query.has_rider]"],
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "part_visibility": [{ "*": true }, { "Wheel": "query.is_on_ground" }]
+    }
+  }
+}

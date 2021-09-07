@@ -1,0 +1,179 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "abyssal:northern_princess",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "events": {},
+
+    "components": {
+      "minecraft:spawn_entity": {
+        "entities": {
+          "single_use": true,
+          "min_wait_time": 0.1,
+          "max_wait_time": 0.1,
+          "num_to_spawn": 1,
+          "spawn_entity": "abyssal:northern_princess_arament"
+        }
+      },
+      "minecraft:behavior.summon_entity": {
+        "priority": 2,
+        "summon_choices": [
+          {
+            "weight": 1,
+            "cooldown_time": 20.0,
+            "cast_duration": 5,
+            "particle_color": "#FFB3B3CC",
+            "sequence": [
+              {
+                "shape": "circle",
+                "target": "self",
+                "base_delay": 5.0,
+                "num_entities_spawned": 5,
+                "entity_type": "abyssal:abyssal_f6f",
+                "summon_cap": 8,
+                "summon_cap_radius": 16.0,
+                "size": 1.0,
+                "sound_event": "prepare.summon"
+              }
+            ]
+          }
+        ]
+      },
+      "minecraft:behavior.follow_mob": {},
+      "minecraft:boss": {
+        "should_darken_sky": true,
+        "hud_range": 50,
+        "name": "Northern Princess"
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 5000 : 2500"
+      },
+      "minecraft:wants_jockey": {},
+      "minecraft:behavior.find_mount": {
+        "priority": 1,
+        "within_radius": 16,
+        "start_delay": 0,
+        "max_failed_attempts": 20
+      },
+      "minecraft:type_family": {
+        "family": ["abyssal", "land_base", "monster", "northern_princess"]
+      },
+      "minecraft:health": {
+        "value": 390,
+        "max": 390
+      },
+      "minecraft:navigation.generic": {
+        "can_path_over_water": true,
+        "can_walk": true,
+        "can_sink": false
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 2
+      },
+
+      "minecraft:movement": {
+        "value": 0.4
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 5
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 5
+      },
+      "minecraft:attack": {
+        "damage": 10
+      },
+
+      "minecraft:behavior.ranged_attack": {
+        "priority": 3,
+        "attack_interval_min": 5,
+        "attack_interval_max": 10,
+        "attack_radius": 36,
+        "burst_shots": 1,
+        "burst_interval": 5
+      },
+      "minecraft:shooter": {
+        "def": "newmob:bullet"
+      },
+
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 4,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "kanmusu"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            }
+          }
+        ],
+        "must_see": true,
+        "within_radius": 56
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "kanmusu"
+                }
+              ]
+            },
+            "max_dist": 64
+          }
+        ]
+      },
+      "minecraft:behavior.mount_pathing": {
+        "speed_multiplier": 1.25,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/northern_princess.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

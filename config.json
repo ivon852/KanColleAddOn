@@ -1,0 +1,13 @@
+{
+	"type": "minecraftBedrock",
+	"name": "Kancolle Add-On",
+	"namespace": "kancolle",
+	"author": "Ivon852",
+	"targetVersion": "1.17.0",
+	"description": "",
+	"capabilities": [],
+	"packs": {
+		"behaviorPack": "./BP",
+		"resourcePack": "./RP"
+	}
+}

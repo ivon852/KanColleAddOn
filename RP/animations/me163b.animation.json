@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.me163b.retract_gear": {
+      "loop": true,
+      "bones": {
+        "Gear": {
+          "rotation": [20, 0, 0]
+        },
+        "Cockpit": {
+          "rotation": [0, 0, 70]
+        },
+        "flaps": {
+          "rotation": [90, 0, 0]
+        }
+      }
+    },
+    "animation.me163b.move": {
+      "loop": true,
+      "animation_length": 0.5,
+      "bones": {
+        "Spin": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.5": [0, 0, 360]
+          }
+        }
+      }
+    }
+  }
+}

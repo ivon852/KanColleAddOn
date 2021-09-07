@@ -1,0 +1,180 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "abyssal:pp_whale",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "enemy_too_close": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "kanmusu"
+              },
+              "max_dist": 15,
+              "walk_speed_multiplier": 1,
+              "sprint_speed_multiplier": 1
+            }
+          ]
+        }
+      }
+    },
+
+    "events": {
+      "enemy_too_close": {
+        "add": {
+          "component_groups": ["enemy_too_close"]
+        }
+      },
+      "enemy_range_attack": {
+        "remove": {
+          "component_groups": ["enemy_too_close"]
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:target_nearby_sensor": {
+        "inside_range": 14,
+        "outside_range": 15,
+        "on_inside_range": {
+          "event": "enemy_too_close",
+          "target": "self"
+        },
+        "on_outside_range": {
+          "event": "enemy_range_attack",
+          "target": "self"
+        }
+      },
+      "minecraft:behavior.follow_mob": {},
+      "minecraft:behavior.mount_pathing": {
+        "speed_multiplier": 1.25,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:boss": {
+        "should_darken_sky": true,
+        "hud_range": 50,
+        "name": "Pacific Princess Armor"
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 5000 : 2500"
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "pull_in_entities":true,
+        "family_types": ["pacific_princess"],
+        "seats": {
+          "position": [2, 2, 1]
+        }
+      },
+      "minecraft:type_family": {
+        "family": ["abyssal", "monster"]
+      },
+      "minecraft:health": {
+        "value": 960,
+        "max": 960
+      },
+      "minecraft:scale": {
+        "value": 0.5
+      },
+      "minecraft:navigation.generic": {
+        "can_path_over_water": true,
+        "can_walk": true,
+        "can_sink": false
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 20,
+        "height": 10
+      },
+
+      "minecraft:movement": {
+        "value": 0.4
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.5
+      },
+
+      "minecraft:behavior.random_stroll": {
+        "priority": 5
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 5
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+
+      "minecraft:attack": {
+        "damage": 12
+      },
+
+      "minecraft:behavior.ranged_attack": {
+        "priority": 3,
+        "attack_interval_min": 5,
+        "attack_interval_max": 10,
+        "attack_radius": 18,
+        "burst_shots": 6,
+        "burst_interval": 5,
+        "charge_shoot_trigger": 0.1
+      },
+      "minecraft:shooter": {
+        "def": "newmob:bullet"
+      },
+
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 4,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                { "test": "is_family", "subject": "other", "value": "kanmusu" },
+                { "test": "is_family", "subject": "other", "value": "player" }
+              ]
+            }
+          }
+        ],
+        "must_see": false,
+        "within_radius": 64
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "all_of": [
+                { "test": "is_family", "subject": "other", "value": "kanmusu" }
+              ]
+            },
+            "max_dist": 64
+          }
+        ]
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

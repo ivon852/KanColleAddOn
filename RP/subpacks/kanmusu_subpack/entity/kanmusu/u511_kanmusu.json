@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "kanmusu:u511",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/u511_kanmusu"
+      },
+      "geometry": {
+        "default": "geometry.u511_kanmusu"
+      },
+      "render_controllers": ["controller.render.u511_kanmusu"],
+      "animations": {
+        "move": "animation.u511_kanmusu.move",
+        "swim": "animation.u511_kanmusu.swim",
+        "controller_move": "controller.animation.u511_kanmusu.move",
+        "controller_swim": "controller.animation.u511_kanmusu.swim",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": ["controller_move", "controller_swim", "look_at_target"],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);",
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_u511_kanmusu",
+        "texture_index": 0
+      }
+    }
+  }
+}

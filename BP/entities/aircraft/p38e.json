@@ -1,0 +1,173 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aircraft:p38e",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      },
+      "animations": {
+        "mechanic": "controller.animation.p38e_mechanic"
+      }
+    },
+    "events": {
+      "p38e:shoot": {
+        "add": {
+          "component_groups": [
+            "p38e:shoot"
+          ]
+        }
+      },
+      "p38e:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "p38e:shoot"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned"
+          ]
+        }
+      },
+      "disappear": {
+        "add": {
+          "component_groups": [
+            "disappear"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "p38e:shoot": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:bullet_aircraft"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.8,
+          "time_down_event": {
+            "event": "p38e:stop_shoot",
+            "target": "self"
+          }
+        }
+      },
+      "disappear": {
+        "minecraft:despawn": {}
+      },
+      "player_spawned": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:127cmbelt"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "p38e:shoot"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.p38e.fire"
+            }
+          ]
+        },
+        "minecraft:pushable": {
+          "is_pushable": true,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "leather",
+              "heal_amount": 5
+            }
+          ]
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:movement": {
+          "value": 3
+        },
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.p38e.get_on",
+          "seats": {
+            "position": [
+              0,
+              0.35,
+              0.1
+            ]
+          }
+        },
+        "minecraft:scale": {
+          "value": 7
+        },
+        "minecraft:collision_box": {
+          "width": 0.5,
+          "height": 0.7
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "aircraft",
+          "fighter",
+          "kanmusu"
+        ]
+      },
+      "minecraft:health": {
+        "value": 70,
+        "max": 70
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

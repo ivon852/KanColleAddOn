@@ -1,0 +1,297 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "kanmusu:bismarck",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "bismarck_talk": "controller.animation.bismarck_talk"
+      },
+      "scripts": {
+        "animate": [
+          "bismarck_talk"
+        ]
+      }
+    },
+
+    "component_groups": {
+      "bismarck:stop_talking": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "bismarck:start_talking": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "bismarck:stop_talking",
+            "target": "self"
+          }
+        }
+      },
+      "bismarck_too_close": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "abyssal"
+              },
+              "max_dist": 10,
+              "walk_speed_multiplier": 1.5,
+              "sprint_speed_multiplier": 1.5
+            }
+          ]
+        }
+      }
+    },
+
+    "events": {
+      "bismarck:start_talking": {
+        "remove": {
+          "component_groups": [
+            "bismarck:stop_talking"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "bismarck:start_talking"
+          ]
+        }
+      },
+      "bismarck:stop_talking": {
+        "remove": {
+          "component_groups": [
+            "bismarck:start_talking"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "bismarck:stop_talking"
+          ]
+        }
+      },
+      "bismarck_too_close": {
+        "add": {
+          "component_groups": [
+            "bismarck_too_close"
+          ]
+        }
+      },
+      "bismarck_range_attack": {
+        "remove": {
+          "component_groups": [
+            "bismarck_too_close"
+          ]
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:mark_variant": {
+        "value": 1
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:admiral_cap"
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "bismarck:start_talking"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.talk"
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "newitem:mamiya",
+            "heal_amount": 20
+          },
+          {
+            "item": "newitem:irako",
+            "heal_amount": 15
+          }
+        ]
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 2,
+        "speed_multiplier": 1.25,
+        "items": [
+          "newitem:admiral_cap"
+        ]
+      },
+      "minecraft:target_nearby_sensor": {
+        "inside_range": 9,
+        "outside_range": 10,
+        "on_inside_range": {
+          "event": "bismarck_too_close",
+          "target": "self"
+        },
+        "on_outside_range": {
+          "event": "bismarck_range_attack",
+          "target": "self"
+        }
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 3,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "kanmusu"
+                }
+              ]
+            },
+            "max_dist": 6,
+            "walk_speed_multiplier": 1,
+            "sprint_speed_multiplier": 1.2
+          }
+        ]
+      },
+      "minecraft:behavior.follow_mob": {},
+      "minecraft:type_family": {
+        "family": [
+          "kanmusu",
+          "bismarck",
+          "mob"
+        ]
+      },
+      "minecraft:health": {
+        "value": 96,
+        "max": 96
+      },
+      "minecraft:navigation.generic": {
+        "can_path_over_water": true,
+        "can_walk": true,
+        "can_sink": false
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:scale": {
+        "value": 1.2
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1.2567,
+        "height": 1.5
+      },
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.2
+      },
+      "minecraft:behavior.random_stroll": {
+        "priority": 5
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 5
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:attack": {
+        "damage": 20
+      },
+      "minecraft:behavior.ranged_attack": {
+        "priority": 3,
+        "attack_interval_min": 5,
+        "attack_interval_max": 10,
+        "attack_radius": 18,
+        "burst_shots": 5,
+        "burst_interval": 5,
+        "charge_shoot_trigger": 0.1
+      },
+      "minecraft:shooter": {
+        "def": "newmob:bullet"
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "abyssal"
+                }
+              ]
+            },
+            "max_dist": 64
+          }
+        ]
+      },
+      "minecraft:behavior.mount_pathing": {
+        "speed_multiplier": 1.25,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 4,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "abyssal"
+                }
+              ]
+            }
+          }
+        ],
+        "must_see": true,
+        "within_radius": 64,
+        "reselect_targets": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/bismarck.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

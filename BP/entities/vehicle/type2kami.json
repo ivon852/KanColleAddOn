@@ -1,0 +1,326 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tank:type2kami",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.type2kami_mechanic"
+      },
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      }
+    },
+    "events": {
+      "type2kami:inwater": {
+        "add": {
+          "component_groups": [
+            "type2kami:inwater"
+          ]
+        }
+      },
+      "type2kami:onland": {
+        "add": {
+          "component_groups": [
+            "type2kami:onland"
+          ]
+        }
+      },
+      "type2kami:machinegun": {
+        "add": {
+          "component_groups": [
+            "type2kami:machinegun"
+          ]
+        }
+      },
+      "type2kami:stop_machinegun": {
+        "remove": {
+          "component_groups": [
+            "type2kami:machinegun"
+          ]
+        }
+      },
+      "type2kami:shoot": {
+        "add": {
+          "component_groups": [
+            "type2kami:shoot"
+          ]
+        }
+      },
+      "type2kami:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "type2kami:shoot"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "kanmusu_spawned"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned"
+          ]
+        }
+      },
+      "disappear": {
+        "add": {
+          "component_groups": [
+            "disappear"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "type2kami:inwater": {
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.type2kami.get_on",
+          "seats": {
+            "position": [
+              0,
+              2.1,
+              0
+            ]
+          }
+        }
+      },
+      "type2kami:onland": {
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.type2kami.get_on",
+          "seats": {
+            "position": [
+              0,
+              1.8,
+              0
+            ]
+          }
+        }
+      },
+      "type2kami:machinegun": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "bullet:type9777"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 1,
+          "time_down_event": {
+            "event": "type2kami:stop_machinegun",
+            "target": "self"
+          }
+        }
+      },
+      "type2kami:shoot": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:type1ap",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "type2kami:stop_shoot",
+            "target": "self"
+          }
+        }
+      },
+      "disappear": {
+        "minecraft:despawn": {}
+      },
+      "player_spawned": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:type1ap"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "type2kami:shoot"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.type2kami.fire"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:127cmbelt"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "type2kami:machinegun"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.type2kami.fire"
+            }
+          ]
+        },
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "iron_block",
+              "heal_amount": 20
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.15
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.15
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:scale": {
+          "value": 1.1
+        },
+        "minecraft:collision_box": {
+          "width": 2,
+          "height": 3
+        }
+      }
+    },
+    "components": {
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "test": "in_water",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "event": "type2kami:inwater"
+          },
+          {
+            "filters": {
+              "test": "is_underwater",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "event": "type2kami:inwater"
+          },
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "event": "type2kami:inwater"
+          },
+          {
+            "filters": {
+              "test": "in_water",
+              "subject": "self",
+              "operator": "==",
+              "value": false
+            },
+            "event": "type2kami:onland"
+          }
+        ]
+      },
+      "minecraft:behavior.float": {},
+      "minecraft:buoyant": {
+        "base_buoyancy": 0.5,
+        "apply_gravity": true,
+        "simulate_waves": true,
+        "big_wave_probability": 0.02,
+        "big_wave_speed": 10.0,
+        "liquid_blocks": [
+          "minecraft:water",
+          "minecraft:flowing_water"
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "tank",
+          "kanmusu"
+        ]
+      },
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 14.0,
+        "hard_distance": 1.0,
+        "max_distance": 20.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

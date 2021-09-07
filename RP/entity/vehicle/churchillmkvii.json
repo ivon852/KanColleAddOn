@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tank:churchillmkvii",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/churchillmkvii"
+      },
+      "geometry": {
+        "default": "geometry.churchillmkvii"
+      },
+      "render_controllers": ["controller.render.churchillmkvii"],
+      "animations": {
+        "move": "animation.churchillmkvii.move",
+        "move_controller": "controller.animation.churchillmkvii.move",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": ["move_controller", "look_at_target"]
+      },
+      "spawn_egg": {
+        "texture": "spawn_churchillmkvii",
+        "texture_index": 0
+      }
+    }
+  }
+}

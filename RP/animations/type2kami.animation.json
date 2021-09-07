@@ -1,0 +1,133 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.type2kami.move": {
+			"loop": true,
+			"animation_length": 0.48,
+			"bones": {
+				"roadwheel2": {
+					"rotation": {
+						"0.04": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"roadwheel3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"roadwheel4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"roadwheel5": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"roadwheel6": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"roadwheel7": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"roadwheel8": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"roadwheel9": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.48": [360, 0, 0]
+					}
+				},
+				"roadwheel10": {
+					"rotation": [360, 0, 0]
+				},
+				"roadwheel11": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.44": [360, 0, 0]
+					}
+				},
+				"roadwheel12": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.44": [360, 0, 0]
+					}
+				},
+				"roadwheel13": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.44": [360, 0, 0]
+					}
+				},
+				"roadwheel14": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.44": [360, 0, 0]
+					}
+				},
+				"roadwheel15": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.44": [360, 0, 0]
+					}
+				},
+				"roadwheel16": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.44": [360, 0, 0]
+					}
+				},
+				"roadwheel17": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.44": [360, 0, 0]
+					}
+				},
+				"cap": {
+					"rotation": [-90, 0, 0]
+				},
+				"cap3": {
+					"rotation": [-90, 0, 0]
+				},
+				"propeller": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [0, 0, -360]
+					}
+				},
+				"propeller2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4": [0, 0, 360]
+					}
+				}
+			}
+		},
+		"animation.type2kami.body": {
+			"loop": true,
+			"bones": {
+				"type2kami": {
+					"position": [0, -15, 0]
+				},
+				"WholeFloat": {
+					"position": [0, -15, 0]
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.i168_mechanic": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "/execute @e[r=5, type=player] ~ ~ ~ effect @s conduit_power 5 5 true"
+          ],
+          "transitions": [
+            {
+              "working": "query.is_in_water"
+            }
+          ]
+        },
+        "working": {
+          "transitions": [
+            {
+              "default": "query.is_in_water"
+            }
+          ],
+          "on_entry": [
+            "/execute @e[r=5, type=player] ~ ~ ~ effect @s conduit_power 5 5 true"
+          ]
+        }
+      }
+    }
+  }
+}

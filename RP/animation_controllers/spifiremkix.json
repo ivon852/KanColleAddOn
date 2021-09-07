@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.spitfiremkix.move": {
+      "states": {
+        "default": {
+          "animations": [{ "move": "query.modified_move_speed" }]
+        }
+      }
+    },
+    "controller.animation.spitfiremkix.on_ground": {
+      "states": {
+        "default": {
+          "animations": [{ "on_ground": "query.is_on_ground" }]
+        }
+      }
+    },
+    "controller.animation.spitfiremkix.retract_gear": {
+      "states": {
+        "default": {
+          "animations": [{ "retract_gear": "!query.is_on_ground" }]
+        }
+      }
+    }
+  }
+}

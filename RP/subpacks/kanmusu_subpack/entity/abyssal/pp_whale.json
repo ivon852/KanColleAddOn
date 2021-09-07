@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:pp_whale",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pp_whale"
+      },
+      "geometry": {
+        "default": "geometry.pp_whale"
+      },
+      "animations": {
+        "move": "animation.pp_whale.move",
+        "attack": "animation.pp_whale.attack",
+        "c3_move": "controller.animation.pp_whale.move",
+        "c3_attack": "controller.animation.pp_whale.attack"
+      },
+      "scripts": {
+        "animate": ["c3_move", "c3_attack"],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "render_controllers": ["controller.render.newmob"]
+    }
+  }
+}

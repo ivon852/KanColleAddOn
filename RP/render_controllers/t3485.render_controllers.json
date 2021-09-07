@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.t3485": {
+      "arrays": {
+        "textures": {
+          "Array.base": [
+            "Texture.default",
+            "Texture.normal"
+          ]
+        }
+      },
+      "textures": ["Array.base[query.variant]"],
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }]
+    }
+  }
+}

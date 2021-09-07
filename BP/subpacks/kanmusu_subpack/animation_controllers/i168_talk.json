@@ -1,0 +1,73 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.i168_talk": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "voiceline1": "query.mark_variant==2 && math.random(1,10)<3"
+            },
+            {
+              "voiceline2": "query.mark_variant==2 && math.random(1,10)>=3 && math.random(1,10)<=5"
+            },
+            {
+              "voiceline3": "query.mark_variant==2 && (math.random(1,10)>5 && math.random(1,10)<=7)"
+            },
+            {
+              "voiceline4": "query.mark_variant==2 && (math.random(1,10)>7)"
+            }
+          ]
+        },
+        "voiceline1": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @p ~ ~ ~ playsound i168.say @s ~ ~ ~ 1 1 1",
+            "/tellraw @a {\"rawtext\":[{\"translate\":\"chat.type.announcement.i168.say\",\"with\":[\"value1\",\"value2\"]}]}",
+            "@s i168:stop_talking"
+          ]
+        },
+        "voiceline2": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @p ~ ~ ~ playsound i168.say2 @s ~ ~ ~ 1 1 1",
+            "/tellraw @a {\"rawtext\":[{\"translate\":\"chat.type.announcement.i168.say2\",\"with\":[\"value1\",\"value2\"]}]}",
+            "@s i168:stop_talking"
+          ]
+        },
+        "voiceline3": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @p ~ ~ ~ playsound i168.say3 @s ~ ~ ~ 1 1 1",
+            "/tellraw @a {\"rawtext\":[{\"translate\":\"chat.type.announcement.i168.say3\",\"with\":[\"value1\",\"value2\"]}]}",
+            "@s i168:stop_talking"
+          ]
+        },
+        "voiceline4": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @p ~ ~ ~ playsound i168.say4 @s ~ ~ ~ 1 1 1",
+            "/tellraw @a {\"rawtext\":[{\"translate\":\"chat.type.announcement.i168.say4\",\"with\":[\"value1\",\"value2\"]}]}",
+            "@s i168:stop_talking"
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "tiers": [
+    {
+      "trades": [
+        {
+          "wants": [
+            {
+              "item": "minecraft:emerald",
+              "quantity": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "newitem:irako",
+              "quantity": {
+                "min": 2,
+                "max": 5
+              }
+            }
+          ]
+        },
+        {
+          "wants": [
+            {
+              "item": "minecraft:coal",
+              "quantity": {
+                "min": 8,
+                "max": 16
+              }
+            }
+          ],
+          "gives": [
+            {
+              "item": "newitem:irako"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.f4u1d.retract_gear": {
+      "loop": true,
+      "bones": {
+        "Right_cap": {
+          "rotation": [0, 0, 90]
+        },
+        "Right_gear": {
+          "rotation": [90, 0, 0]
+        },
+        "bone25": {
+          "position": [0, 0, -6]
+        },
+        "bone26": {
+          "position": [0, 0, -4]
+        },
+        "bone27": {
+          "rotation": [-125, 0, 0]
+        },
+        "bone28": {
+          "rotation": [-115, 0, 0],
+          "position": [0, 0, -5]
+        },
+        "Rightwheel": {
+          "rotation": [0, 90, 0]
+        },
+        "Left_gear": {
+          "rotation": [90, 0, 0]
+        },
+        "bone24": {
+          "position": [0, 0, -5]
+        },
+        "bone29": {
+          "position": [0, 0, -5]
+        },
+        "bone30": {
+          "rotation": [-125, 0, 0]
+        },
+        "bone31": {
+          "rotation": [-110, 0, 0],
+          "position": [0, 0, -6]
+        },
+        "LeftWheel": {
+          "rotation": [0, -90, 0]
+        },
+        "Right_cap2": {
+          "rotation": [0, 0, -90]
+        },
+        "Left_cap2": {
+          "rotation": [0, 0, -90]
+        },
+        "Left_cap": {
+          "rotation": [0, 0, 90]
+        },
+        "Tail_gear": {
+          "rotation": [65, 0, 0],
+          "scale": [0.8, 0.6, 0.7]
+        },
+        "bone34": {
+          "rotation": [-35, 0, 0]
+        },
+        "Tailhook": {
+          "rotation": [30, 0, 0]
+        }
+      }
+    },
+    "animation.f4u1d.move": {
+      "loop": true,
+      "animation_length": 0.24,
+      "bones": {
+        "Spin": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.24": [0, 0, 360]
+          }
+        }
+      }
+    },
+    "animation.f4u1d.on_ground": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [-10, 0, 0]
+        },
+        "bone3": {
+          "rotation": [0, 30, 0]
+        },
+        "bone10": {
+          "rotation": [0, 45, 0]
+        },
+        "bone11": {
+          "rotation": [0, 45, 0]
+        },
+        "bone12": {
+          "rotation": [0, 30, 0]
+        },
+        "bone13": {
+          "rotation": [0, -30, 0]
+        },
+        "bone14": {
+          "rotation": [0, -45, 0]
+        },
+        "bone15": {
+          "rotation": [0, -30, 0]
+        },
+        "bone16": {
+          "rotation": [0, -55, 0]
+        },
+        "Cowling_flaps": {
+          "rotation": [-40, 0, 0]
+        },
+        "Slip_cap": {
+          "position": [0, 0, 28]
+        }
+      }
+    },
+    "animation.f4u1d.sit": {
+      "loop": true,
+      "animation_length": 1,
+      "bones": {
+        "bone5": {
+          "rotation": [0, 0, -110]
+        },
+        "bone7": {
+          "rotation": [0, 0, 110]
+        }
+      }
+    }
+  }
+}

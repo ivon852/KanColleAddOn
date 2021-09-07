@@ -1,0 +1,122 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aircraft:mxy7",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "events": {
+      "q_explode": {
+        "add": {
+          "component_groups": [
+            "q_explode"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "q_explode": {
+        "minecraft:mark_variant": {
+          "value": 4
+        },
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 20,
+          "causes_fire": true,
+          "destroy_affected_by_griefing": true
+        },
+        "minecraft:despawn": {}
+      }
+    },
+    "components": {
+      "minecraft:mark_variant": {
+        "value": 3
+      },
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "rider_can_interact": true,
+        "crouching_skip_interact": true,
+        "family_types": [
+          "player",
+          "villager"
+        ],
+        "interact_text": "action.interact.mxy7.get_on",
+        "seats": [
+          {
+            "position": [
+              0.9,
+              1.2,
+              -4.8
+            ]
+          }
+        ]
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": 5,
+        "time_down_event": {
+          "event": "q_explode",
+          "target": "self"
+        }
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "on_damage": {
+            "filters": {
+              "test": "has_damage",
+              "subject": "self",
+              "value": "contact"
+            },
+            "event": "q_explode"
+          },
+          "deals_damage": false
+        }
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:type_family": {
+        "family": [
+          "rocket",
+          "kamikaze"
+        ]
+      },
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 14.0,
+        "hard_distance": 1.0,
+        "max_distance": 20.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

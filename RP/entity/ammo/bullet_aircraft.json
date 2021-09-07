@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:bullet_aircraft",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/127mmbrowning"
+      },
+      "geometry": {
+        "default": "geometry.bullet_aircraft"
+      },
+      "render_controllers": [ "controller.render.newmob" ]
+    }
+  }
+}

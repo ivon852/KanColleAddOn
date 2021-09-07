@@ -1,0 +1,385 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aircraft:g4m2e",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.g4m2e_mechanic",
+        "weapon": "controller.animation.g4m2e_weapon",
+        "mxy7": "controller.animation.g4m2e_mxy7"
+      },
+      "scripts": {
+        "animate": [
+          "mechanic",
+          "weapon",
+          "mxy7"
+        ]
+      }
+    },
+    "events": {
+      "fire_type91torpedo": {
+        "add": {
+          "component_groups": [
+            "fire_type91torpedo"
+          ]
+        }
+      },
+      "remove_type91torpedo": {
+        "remove": {
+          "component_groups": [
+            "fire_type91torpedo"
+          ]
+        }
+      },
+      "fire_mxy7": {
+        "add": {
+          "component_groups": [
+            "fire_mxy7"
+          ]
+        }
+      },
+      "remove_mxy7": {
+        "remove": {
+          "component_groups": [
+            "fire_mxy7"
+          ]
+        }
+      },
+      "install_mxy7": {
+        "add": {
+          "component_groups": [
+            "install_mxy7"
+          ]
+        }
+      },
+      "install_bombload60kg": {
+        "add": {
+          "component_groups": [
+            "install_bombload60kg"
+          ]
+        }
+      },
+      "install_type91torpedo": {
+        "add": {
+          "component_groups": [
+            "install_type91torpedo"
+          ]
+        }
+      },
+      "reset_aircraft": {
+        "add": {
+          "component_groups": [
+            "normal_aircraft"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned",
+            "normal_aircraft"
+          ]
+        }
+      },
+      "disappear": {
+        "add": {
+          "component_groups": [
+            "disappear"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "fire_type91torpedo": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "weapon:type91torpedo",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.04,
+          "time_down_event": {
+            "event": "remove_type91torpedo",
+            "target": "self"
+          }
+        }
+      },
+      "fire_mxy7": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "aircraft:mxy7",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.04,
+          "time_down_event": {
+            "event": "remove_mxy7",
+            "target": "self"
+          }
+        }
+      },
+      "disappear": {
+        "minecraft:despawn": {}
+      },
+      "install_mxy7": {
+        "minecraft:mark_variant": {
+          "value": 3
+        }
+      },
+      "install_bombload60kg": {
+        "minecraft:mark_variant": {
+          "value": 4
+        }
+      },
+      "install_type91torpedo": {
+        "minecraft:mark_variant": {
+          "value": 5
+        }
+      },
+      "normal_aircraft": {
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+      },
+      "player_spawned": {
+        "minecraft:pushable": {
+          "is_pushable": true,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "leather",
+              "heal_amount": 5
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 1.5
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:wrench"
+                    },
+                    {
+                      "test": "is_mark_variant",
+                      "subject": "self",
+                      "operator": "not",
+                      "value": 2
+                    }
+                  ]
+                },
+                "event": "reset_aircraft",
+                "target": "self"
+              },
+              "hurt_item": 1,
+              "interact_text": "action.interact.g4m2e.uninstall",
+              "swing": true,
+              "play_sounds": "random.anvil_use"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:mxy7"
+                    },
+                    {
+                      "test": "is_mark_variant",
+                      "subject": "self",
+                      "operator": "equals",
+                      "value": 2
+                    }
+                  ]
+                },
+                "event": "install_mxy7",
+                "target": "self"
+              },
+              "interact_text": "action.interact.g4m2e.install",
+              "play_sounds": "block.smithing_table.use"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:bombload60kg"
+                    },
+                    {
+                      "test": "is_mark_variant",
+                      "subject": "self",
+                      "operator": "equals",
+                      "value": 2
+                    }
+                  ]
+                },
+                "event": "install_bombload60kg",
+                "target": "self"
+              },
+              "interact_text": "action.interact.g4m2e.install",
+              "play_sounds": "block.smithing_table.use"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:type91torpedo"
+                    },
+                    {
+                      "test": "is_mark_variant",
+                      "subject": "self",
+                      "operator": "equals",
+                      "value": 2
+                    }
+                  ]
+                },
+                "event": "install_type91torpedo",
+                "target": "self"
+              },
+              "play_sounds": "block.smithing_table.use",
+              "interact_text": "action.interact.g4m2e.install"
+            }
+          ]
+        },
+        "minecraft:rideable": {
+          "seat_count": 7,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player",
+            "villager"
+          ],
+          "pull_in_entities": true,
+          "interact_text": "action.interact.g4m2e.get_on",
+          "seats": [
+            {
+              "position": [
+                1.7,
+                6.5,
+                2.2
+              ]
+            },
+            {
+              "position": [
+                0,
+                6.5,
+                2
+              ]
+            },
+            {
+              "position": [
+                0,
+                6.5,
+                0
+              ]
+            },
+            {
+              "position": [
+                0.8,
+                7.3,
+                -7
+              ]
+            },
+            {
+              "position": [
+                1.6,
+                4.5,
+                -13.2
+              ]
+            },
+            {
+              "position": [
+                0.2,
+                4.5,
+                -13.2
+              ]
+            },
+            {
+              "position": [
+                0.9,
+                4.5,
+                -28.7
+              ]
+            }
+          ]
+        },
+        "minecraft:scale": {
+          "value": 0.8
+        },
+        "minecraft:collision_box": {
+          "width": 5,
+          "height": 5
+        }
+      }
+    },
+    "components": {
+      "minecraft:type_family": {
+        "family": [
+          "bomber",
+          "aircraft",
+          "kanmusu"
+        ]
+      },
+      "minecraft:health": {
+        "value": 80,
+        "max": 80
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/g4m2e.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

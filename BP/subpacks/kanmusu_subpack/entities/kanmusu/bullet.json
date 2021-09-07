@@ -1,0 +1,68 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "newmob:bullet",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "minecraft:exploding": {
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 1.5,
+          "causes_fire": false,
+          "destroy_affected_by_griefing": true
+        }
+      }
+    },
+    "events": {
+      "minecraft:explode": {
+        "add": {
+          "component_groups": ["minecraft:exploding"]
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 0.1
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "knockback": true,
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "minecraft:explode",
+              "target": "self"
+            }
+          }
+        },
+        "particle_on_hit": {
+          "particle_type": "lava_particle",
+          "on_other_hit": true
+        },
+        "particle": "lava_particle",
+        "shoottarget": true,
+        "power": 1.4,
+        "gravity": 0.05,
+        "uncertaintyBase": 0,
+        "anchor": 1,
+        "inertia": 1.0,
+        "liquid_inertia": 0.9,
+        "remove_on_hit": {}
+      },
+
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

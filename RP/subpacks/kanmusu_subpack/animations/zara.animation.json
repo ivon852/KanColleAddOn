@@ -1,0 +1,97 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.zara.move": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": ["variable.tcos0", 0, 0]
+				},
+				"leftLeg": {
+					"rotation": ["variable.tcos0 * -1.4", 0, 0]
+				},
+				"rightArm": {
+					"rotation": ["-variable.tcos0", 0, 0]
+				},
+				"rightLeg": {
+					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				}
+			}
+		},
+		"animation.zara.attack": {
+			"animation_length": 1.56,
+			"bones": {
+				"Head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.52": [0, 0, -20]
+					}
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [-90, -5, 0],
+						"0.64": [-95, -5, 0],
+						"1.08": [-90, -5, 0]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.24": [-85, 50, 0],
+						"0.68": [-85, 50, 5],
+						"1.08": [-85, 50, 0]
+					}
+				},
+				"turret": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.52": [-20, 0, 0]
+					}
+				},
+				"gun": {
+					"rotation": [0, -10, 0]
+				},
+				"gun2": {
+					"rotation": [0, -10, 0]
+				},
+				"turret2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.56": [-20, 0, 0]
+					}
+				},
+				"gun3": {
+					"rotation": [0, -10, 0]
+				},
+				"gun4": {
+					"rotation": [0, -10, 0]
+				},
+				"turret3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.56": [-20, 0, 0]
+					}
+				},
+				"gun5": {
+					"rotation": [0, 10, 0]
+				},
+				"gun6": {
+					"rotation": [0, 10, 0]
+				},
+				"turret4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.6": [-20, 0, 0]
+					}
+				},
+				"gun7": {
+					"rotation": [0, 10, 0]
+				},
+				"gun8": {
+					"rotation": [0, 10, 0]
+				}
+			}
+		}
+	}
+}

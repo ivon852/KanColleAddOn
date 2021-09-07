@@ -1,0 +1,47 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:northern_princess",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/northern_princess",
+        "angry": "textures/entity/northern_princess_angry"
+      },
+      "geometry": {
+        "default": "geometry.northern_princess"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.northern_princess.move",
+        "attack": "animation.northern_princess.attack",
+        "attack_barehand": "animation.northern_princess.attack_barehand",
+        "general": "animation.northern_princess.general",
+        "c3_move": "controller.animation.northern_princess.move",
+        "c3_general": "controller.animation.northern_princess.general",
+        "c3_attack": "controller.animation.northern_princess.attack",
+        "c3_attack_barehand": "controller.animation.northern_princess.attack_barehand"
+      },
+      "scripts": {
+        "animate": [
+          "c3_move",
+          "c3_general",
+          "look_at_target",
+          "c3_attack",
+          "c3_attack_barehand"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);",
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "render_controllers": ["controller.render.northern_princess"],
+      "spawn_egg": {
+        "texture": "spawn_northern_princess",
+        "texture_index": 0
+      }
+    }
+  }
+}

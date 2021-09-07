@@ -1,0 +1,15 @@
+give @s newitem:127cmbelt
+give @s newitem:hvar
+give @s newitem:bomb
+give @s newitem:75cmap_item
+give @s newitem:m46he_item
+give @s newitem:ziss53ap_item
+give @s newitem:pzgrpatr40kwk40
+give @s newitem:type1ap
+give @s newitem:qf47apcbc
+give @s newitem:flamethrower
+give @s newitem:wrench
+give @s newitem:mxy7
+give @s newitem:bombload60kg
+give @s newitem:type91torpedo
+give @s newitem:32cmrocket_item

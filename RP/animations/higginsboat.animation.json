@@ -1,0 +1,29 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.higginsboat.down": {
+      "loop": true,
+      "bones": {
+        "door": {
+          "rotation": [102.5, 0, 0]
+        },
+        "line": {
+          "rotation": [45, 0, 0],
+          "scale": [1, 1, 10]
+        }
+      }
+    },
+    "animation.higginsboat.move": {
+      "loop": true,
+      "animation_length": 0.52,
+      "bones": {
+        "spin": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.52": [0, 0, 360]
+          }
+        }
+      }
+    }
+  }
+}

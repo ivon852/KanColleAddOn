@@ -1,0 +1,73 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.souya_talk": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "voiceline1": "query.mark_variant==2 && math.random(1,10)<3"
+            },
+            {
+              "voiceline2": "query.mark_variant==2 && math.random(1,10)>=3 && math.random(1,10)<=5"
+            },
+            {
+              "voiceline3": "query.mark_variant==2 && (math.random(1,10)>5 && math.random(1,10)<=7)"
+            },
+            {
+              "voiceline4": "query.mark_variant==2 && (math.random(1,10)>7)"
+            }
+          ]
+        },
+        "voiceline1": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @p ~ ~ ~ playsound souya.say @s ~ ~ ~ 1 1 1",
+            "/tellraw @a {\"rawtext\":[{\"translate\":\"chat.type.announcement.souya.say\",\"with\":[\"value1\",\"value2\"]}]}",
+            "@s souya:stop_talking"
+          ]
+        },
+        "voiceline2": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @p ~ ~ ~ playsound souya.say2 @s ~ ~ ~ 1 1 1",
+            "/tellraw @a {\"rawtext\":[{\"translate\":\"chat.type.announcement.souya.say2\",\"with\":[\"value1\",\"value2\"]}]}",
+            "@s souya:stop_talking"
+          ]
+        },
+        "voiceline3": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @p ~ ~ ~ playsound souya.say3 @s ~ ~ ~ 1 1 1",
+            "/tellraw @a {\"rawtext\":[{\"translate\":\"chat.type.announcement.souya.say3\",\"with\":[\"value1\",\"value2\"]}]}",
+            "@s souya:stop_talking"
+          ]
+        },
+        "voiceline4": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @p ~ ~ ~ playsound souya.say4 @s ~ ~ ~ 1 1 1",
+            "/tellraw @a {\"rawtext\":[{\"translate\":\"chat.type.announcement.souya.say4\",\"with\":[\"value1\",\"value2\"]}]}",
+            "@s souya:stop_talking"
+          ]
+        }
+      }
+    }
+  }
+}

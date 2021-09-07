@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:pzgrpatr40kwk40",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pzgrpatr40kwk40"
+      },
+      "geometry": {
+        "default": "geometry.pzgrpatr40kwk40"
+      },
+      "render_controllers": [ "controller.render.newmob" ]
+    }
+  }
+}

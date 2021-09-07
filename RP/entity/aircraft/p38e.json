@@ -1,0 +1,36 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aircraft:p38e",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/p38e"
+      },
+      "geometry": {
+        "default": "geometry.p38e"
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "animations": {
+        "move": "animation.p38e.move",
+        "retract_gear": "animation.p38e.retract_gear",
+        "p38e_controller": "controller.animation.p38e.move",
+        "p38e_retract_gear_controller": "controller.animation.p38e.retract_gear",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "p38e_controller",
+          "look_at_target",
+          "p38e_retract_gear_controller"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_p38e",
+        "texture_index": 0
+      }
+    }
+  }
+}

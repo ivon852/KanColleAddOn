@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:aircraft_carrier_princess_armament",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/aircraft_carrier_princess_armament",
+        "damaged": "textures/entity/aircraft_carrier_princess_armament_damaged"
+      },
+      "geometry": {
+        "default": "geometry.aircraft_carrier_princess_armament"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": ["look_at_target"],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);",
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "render_controllers": [
+        "controller.render.aircraft_carrier_princess_armament"
+      ]
+    }
+  }
+}

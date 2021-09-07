@@ -1,0 +1,226 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tank:panzeriv",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.panzeriv_mechanic"
+      },
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      }
+    },
+    "events": {
+      "panzeriv:shoot": {
+        "add": {
+          "component_groups": [
+            "panzeriv:shoot"
+          ]
+        }
+      },
+      "panzeriv:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "panzeriv:shoot"
+          ]
+        }
+      },
+      "panzeriv:machinegun": {
+        "add": {
+          "component_groups": [
+            "panzeriv:machinegun"
+          ]
+        }
+      },
+      "panzeriv:stop_machinegun": {
+        "remove": {
+          "component_groups": [
+            "panzeriv:machinegun"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "panzeriv:shoot": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:pzgrpatr40kwk40",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "panzeriv:stop_shoot",
+            "target": "self"
+          }
+        }
+      },
+      "panzeriv:machinegun": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:mg34"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "panzeriv:stop_machinegun",
+            "target": "self"
+          }
+        }
+      },
+      "player_spawned": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:pzgrpatr40kwk40"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "panzeriv:shoot"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.panzeriv.fire"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:127cmbelt"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "panzeriv:machinegun"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.panzeriv.fire"
+            }
+          ]
+        },
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "iron_block",
+              "heal_amount": 20
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+        },
+        "minecraft:movement": {
+          "value": 0.15
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.panzeriv.get_on",
+          "seats": {
+            "position": [
+              0,
+              2.9,
+              0.3
+            ]
+          }
+        },
+        "minecraft:scale": {
+          "value": 1
+        },
+        "minecraft:collision_box": {
+          "width": 2,
+          "height": 4.5
+        }
+      }
+    },
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "tank",
+          "kanmusu"
+        ]
+      },
+      "minecraft:health": {
+        "value": 120,
+        "max": 120
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 14.0,
+        "hard_distance": 1.0,
+        "max_distance": 20.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/panzeriv.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

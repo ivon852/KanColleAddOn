@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:depthcharge",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/depthcharge"
+      },
+      "geometry": {
+        "default": "geometry.depthcharge"
+      },
+      "render_controllers": ["controller.render.newmob"]
+    }
+  }
+}

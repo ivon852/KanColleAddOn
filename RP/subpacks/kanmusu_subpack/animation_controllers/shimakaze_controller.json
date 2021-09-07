@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.shimakaze.move": {
+      "states": {
+        "default": {
+          "animations": [{ "move": "query.modified_move_speed" }]
+        }
+      }
+    },
+    "controller.animation.shimakaze.attack": {
+      "initial_state": "prepare",
+      "states": {
+        "prepare": {
+          "animations": [{ "prepare": "query.has_target" }],
+          "transitions": [{ "attack": "query.all_animations_finished" }]
+        },
+        "attack": {
+          "animations": [{ "attack": "query.has_target" }]
+        }
+      }
+    }
+  }
+}

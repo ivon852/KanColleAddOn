@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.pacific_princess.move": {
+      "states": {
+        "default": {
+          "animations": [{ "move": "query.modified_move_speed" }]
+        }
+      }
+    },
+    "controller.animation.pacific_princess.sit": {
+      "states": {
+        "default": {
+          "animations": [{ "sit": "query.is_riding" }]
+        }
+      }
+    },
+    "controller.animation.pacific_princess.attack": {
+      "states": {
+        "default": {
+          "animations": [{ "attack": "query.has_target" }]
+        }
+      }
+    }
+  }
+}

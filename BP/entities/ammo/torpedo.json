@@ -1,0 +1,72 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "newmob:torpedo",
+      "runtime_identifier": "minecraft:snowball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "component_groups": {
+      "minecraft:exploding": {
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 1,
+          "causes_fire": true,
+          "destroy_affected_by_griefing": true
+        }
+      }
+    },
+    "events": {
+      "minecraft:explode": {
+        "add": {
+          "component_groups": ["minecraft:exploding"]
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 0.1
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 5,
+            "knockback": true
+          },
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "minecraft:explode",
+              "target": "self"
+            }
+          }
+        },
+        "particle_on_hit": {
+          "particle_type": "explode",
+          "on_other_hit": true
+        },
+        "particle": "explode",
+        "shoottarget": true,
+        "power": 3,
+        "gravity": 0.05,
+        "uncertaintyBase": 0,
+        "anchor": 1,
+        "inertia": 1.1,
+        "liquid_inertia": 1.1,
+        "remove_on_hit": {}
+      },
+
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "newitem:bombload60kg",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "bombload60kg",
+      "minecraft:use_animation": "bow",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

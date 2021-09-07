@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:ptimpgroup",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/ptimpgroup_type1",
+        "type2": "textures/entity/ptimpgroup_type2",
+        "type3": "textures/entity/ptimpgroup_type3"
+      },
+      "geometry": {
+        "default": "geometry.ptimpgroup_type1",
+        "type2": "geometry.ptimpgroup_type2",
+        "type3": "geometry.ptimpgroup_type3"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "attack": "animation.ptimpgroup.attack",
+        "move": "animation.ptimpgroup.move",
+        "c_controller": "controller.animation.ptimpgroup"
+      },
+      "scripts": {
+        "animate": ["look_at_target", "c_controller"],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);"
+        ]
+      },
+      "render_controllers": ["controller.render.ptimpgroup"],
+      "spawn_egg": {
+        "texture": "spawn_ptimpgroup",
+        "texture_index": 0
+      }
+    }
+  }
+}

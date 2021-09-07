@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aircraft:bf109g6",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/bf109g6"
+      },
+      "geometry": {
+        "default": "geometry.bf109g6"
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "animations": {
+        "move": "animation.bf109g6.move",
+        "on_ground": "animation.bf109g6.on_ground",
+        "retract_gear": "animation.bf109g6.retract_gear",
+        "bf109g6_controller": "controller.animation.bf109g6.move",
+        "bf109g6_on_ground_controller": "controller.animation.bf109g6.on_ground",
+        "bf109g6_retract_gear_controller": "controller.animation.bf109g6.retract_gear",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "bf109g6_controller",
+          "look_at_target",
+          "bf109g6_on_ground_controller",
+          "bf109g6_retract_gear_controller"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_bf109g6",
+        "texture_index": 0
+      }
+    }
+  }
+}

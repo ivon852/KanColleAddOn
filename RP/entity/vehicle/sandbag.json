@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "weapon:sandbag",
+      "materials": {
+        "default": "shulker"
+      },
+      "textures": {
+        "default": "textures/entity/sandbag"
+      },
+      "geometry": {
+        "default": "geometry.sandbag"
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "spawn_egg": {
+        "texture": "sandbag",
+        "texture_index": 0
+      }
+    }
+  }
+}

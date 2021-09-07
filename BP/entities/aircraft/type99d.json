@@ -1,0 +1,329 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "aircraft:type99d",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      },
+      "animations": {
+        "mechanic": "controller.animation.type99d_mechanic"
+      }
+    },
+    "events": {
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "kanmusu_spawned"
+          ]
+        }
+      },
+      "type99d:dropbomb": {
+        "add": {
+          "component_groups": [
+            "type99d:dropbomb"
+          ]
+        }
+      },
+      "type99d:stop_dropbomb": {
+        "remove": {
+          "component_groups": [
+            "type99d:dropbomb"
+          ]
+        }
+      },
+      "type99d:shoot": {
+        "add": {
+          "component_groups": [
+            "type99d:shoot"
+          ]
+        }
+      },
+      "type99d:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "type99d:shoot"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned"
+          ]
+        }
+      },
+      "disappear": {
+        "add": {
+          "component_groups": [
+            "disappear"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "type99d:dropbomb": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "minecraft:tnt"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.11,
+          "time_down_event": {
+            "event": "tpye99d:stop_dropbomb",
+            "target": "self"
+          }
+        }
+      },
+      "kanmusu_spawned": {
+        "minecraft:pushable": {
+          "is_pushable": true,
+          "is_pushable_by_piston": true
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 60,
+          "time_down_event": {
+            "event": "disappear",
+            "target": "self"
+          }
+        },
+        "minecraft:scale": {
+          "value": 0.05
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 1,
+          "within_radius": 64,
+          "target_search_height": 20.0,
+          "must_see": true,
+          "entity_types": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "operator": "!=",
+                    "value": "aircraft"
+                  },
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "abyssal"
+                  }
+                ]
+              },
+              "max_dist": 64
+            },
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "abyssal"
+                  }
+                ]
+              },
+              "max_dist": 64
+            }
+          ]
+        },
+        "minecraft:behavior.ranged_attack": {
+          "priority": 3,
+          "attack_interval_min": 2,
+          "attack_interval_max": 5,
+          "charge_charged_trigger": 0.0,
+          "charge_shoot_trigger": 0.1,
+          "attack_radius": 10,
+          "burst_shots": 1,
+          "burst_interval": 1
+        },
+        "minecraft:shooter": {
+          "def": "minecraft:tnt"
+        },
+        "minecraft:navigation.float": {
+          "can_path_over_water": true
+        },
+        "minecraft:behavior.float_wander": {
+          "priority": 2,
+          "xz_dist": 10,
+          "y_dist": 10,
+          "y_offset": -2.0,
+          "random_reselect": true,
+          "float_duration": [
+            0.1,
+            0.35
+          ]
+        },
+        "minecraft:can_fly": {},
+        "minecraft:flying_speed": {
+          "value": 0.4
+        },
+        "minecraft:movement": {
+          "value": 0.06
+        },
+        "minecraft:collision_box": {
+          "width": 0.5,
+          "height": 0.5
+        }
+      },
+      "type99d:shoot": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "bullet:type9777"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.05,
+          "time_down_event": {
+            "event": "type99d:stop_shoot",
+            "target": "self"
+          }
+        }
+      },
+      "disappear": {
+        "minecraft:despawn": {}
+      },
+      "player_spawned": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:127cmbelt"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "type99d:shoot"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.type99d.fire"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:bomb"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "type99d:dropbomb"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.type99d.drop"
+            }
+          ]
+        },
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "leather",
+              "heal_amount": 5
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.type99d.get_on",
+          "seats": {
+            "position": [
+              0,
+              1.8,
+              0
+            ]
+          }
+        },
+        "minecraft:scale": {
+          "value": 1.0
+        },
+        "minecraft:collision_box": {
+          "width": 2,
+          "height": 4
+        }
+      }
+    },
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "kanmusu",
+          "bomber",
+          "aircraft"
+        ]
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": false,
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

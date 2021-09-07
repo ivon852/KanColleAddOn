@@ -1,0 +1,500 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "weapon:higginsboat",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.higginsboat_mechanic"
+      },
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      }
+    },
+    "events": {
+      "higginsboat:down": {
+        "add": {
+          "component_groups": [
+            "higginsboat:down"
+          ]
+        }
+      },
+      "higginsboat:up": {
+        "add": {
+          "component_groups": [
+            "higginsboat:up"
+          ]
+        }
+      },
+      "higginsboat:machinegun": {
+        "add": {
+          "component_groups": [
+            "higginsboat:machinegun"
+          ]
+        }
+      },
+      "higginsboat:stop_machinegun": {
+        "remove": {
+          "component_groups": [
+            "higginsboat:machinegun"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned",
+            "higginsboat:up"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "higginsboat:down": {
+        "minecraft:variant": {
+          "value": 2
+        }
+      },
+      "higginsboat:up": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "higginsboat:machinegun": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:bullet_aircraft"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 1,
+          "time_down_event": {
+            "event": "higginsboat:stop_machinegun",
+            "target": "self"
+          }
+        }
+      },
+      "player_spawned": {
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "iron_block",
+              "heal_amount": 10
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.05
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.15
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:wrench"
+                    },
+                    {
+                      "test": "is_variant",
+                      "subject": "self",
+                      "operator": "equals",
+                      "value": 1
+                    }
+                  ]
+                },
+                "event": "higginsboat:down",
+                "target": "self"
+              },
+              "interact_text": "action.interact.higginsboat.down"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:wrench"
+                    },
+                    {
+                      "test": "is_variant",
+                      "subject": "self",
+                      "operator": "equals",
+                      "value": 2
+                    }
+                  ]
+                },
+                "event": "higginsboat:up",
+                "target": "self"
+              },
+              "interact_text": "action.interact.higginsboat.up"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:127cmbelt"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "higginsboat:machinegun"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.higginsboat.fire"
+            }
+          ]
+        },
+        "minecraft:rideable": {
+          "seat_count": 36,
+          "controlling_seat": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "pull_in_entities": true,
+          "family_types": [
+            "player",
+            "villager"
+          ],
+          "interact_text": "action.interact.higginsboat.get_on",
+          "seats": [
+            {
+              "position": [
+                0,
+                2.2,
+                -0.6
+              ]
+            },
+            {
+              "position": [
+                -1.7,
+                2.2,
+                -0.6
+              ]
+            },
+            {
+              "position": [
+                -1.8,
+                2.2,
+                -2.3
+              ]
+            },
+            {
+              "position": [
+                0.1,
+                2.2,
+                -2.3
+              ]
+            },
+            {
+              "position": [
+                0.1,
+                1.5,
+                1.4
+              ]
+            },
+            {
+              "position": [
+                0.1,
+                1.5,
+                2.2
+              ]
+            },
+            {
+              "position": [
+                0.1,
+                1.5,
+                3.2
+              ]
+            },
+            {
+              "position": [
+                0.1,
+                1.5,
+                4.2
+              ]
+            },
+            {
+              "position": [
+                0.1,
+                1.5,
+                5.2
+              ]
+            },
+            {
+              "position": [
+                0.1,
+                1.5,
+                6.2
+              ]
+            },
+            {
+              "position": [
+                0.1,
+                1.5,
+                6.6
+              ]
+            },
+            {
+              "position": [
+                -0.5,
+                2.2,
+                -2.3
+              ]
+            },
+            {
+              "position": [
+                -0.5,
+                1.5,
+                1.4
+              ]
+            },
+            {
+              "position": [
+                -0.5,
+                1.5,
+                2.2
+              ]
+            },
+            {
+              "position": [
+                -0.5,
+                1.5,
+                3.2
+              ]
+            },
+            {
+              "position": [
+                -0.5,
+                1.5,
+                4.2
+              ]
+            },
+            {
+              "position": [
+                -0.5,
+                1.5,
+                5.2
+              ]
+            },
+            {
+              "position": [
+                -0.5,
+                1.5,
+                6.2
+              ]
+            },
+            {
+              "position": [
+                -0.5,
+                1.5,
+                6.6
+              ]
+            },
+            {
+              "position": [
+                -1.7,
+                2.2,
+                -2.3
+              ]
+            },
+            {
+              "position": [
+                -1.7,
+                1.5,
+                1.4
+              ]
+            },
+            {
+              "position": [
+                -1.7,
+                1.5,
+                2.2
+              ]
+            },
+            {
+              "position": [
+                -1.7,
+                1.5,
+                3.2
+              ]
+            },
+            {
+              "position": [
+                -1.7,
+                1.5,
+                4.2
+              ]
+            },
+            {
+              "position": [
+                -1.7,
+                1.5,
+                5.2
+              ]
+            },
+            {
+              "position": [
+                -1.7,
+                1.5,
+                6.2
+              ]
+            },
+            {
+              "position": [
+                -1.7,
+                1.5,
+                6.6
+              ]
+            },
+            {
+              "position": [
+                -1.2,
+                2.2,
+                -2.3
+              ]
+            },
+            {
+              "position": [
+                -1.2,
+                1.5,
+                1.4
+              ]
+            },
+            {
+              "position": [
+                -1.2,
+                1.5,
+                2.2
+              ]
+            },
+            {
+              "position": [
+                -1.2,
+                1.5,
+                3.2
+              ]
+            },
+            {
+              "position": [
+                -1.2,
+                1.5,
+                4.2
+              ]
+            },
+            {
+              "position": [
+                -1.2,
+                1.5,
+                5.2
+              ]
+            },
+            {
+              "position": [
+                -1.2,
+                1.5,
+                6.2
+              ]
+            },
+            {
+              "position": [
+                -1.2,
+                1.5,
+                6.6
+              ]
+            },
+            {
+              "position": [
+                -1.2,
+                1.5,
+                6.6
+              ]
+            },
+            {
+              "position": [
+                -0.5,
+                2,
+                -1
+              ]
+            }
+          ]
+        },
+        "minecraft:scale": {
+          "value": 1
+        },
+        "minecraft:collision_box": {
+          "width": 5,
+          "height": 4
+        }
+      }
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/entities/higginsboat.json"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "vehicle",
+          "kanmusu"
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:jump.static": {},
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 10.0,
+        "hard_distance": 12.0,
+        "max_distance": 15.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

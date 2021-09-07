@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.higginsboat.root": {
+      "states": {
+        "default": {
+          "animations": [{ "down": "query.variant==2" }]
+        }
+      }
+    },
+
+    "controller.animation.higginsboat.root2": {
+      "states": {
+        "default": {
+          "animations": [{ "move": "query.modified_move_speed" }]
+        }
+      }
+    }
+  }
+}

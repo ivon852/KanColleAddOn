@@ -1,0 +1,854 @@
+{
+  "format_version": "1.14.0",
+  "sound_definitions": {
+     //Kanmusu
+     "souya.say": {
+      "max_distance": 25.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/souya/say"
+      ]
+    },
+    "souya.say2": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/souya/say2"
+      ]
+    },
+    "souya.say3": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/souya/say3"
+      ]
+    },
+    "souya.say4": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/souya/intro"
+      ]
+    },
+    "souya.attack": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/souya/attack",
+        "sounds/mob/souya/attack2",
+        "sounds/mob/souya/attack3"
+      ]
+    },
+    "souya.hurt": {
+      "max_distance": 3.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/souya/hurt",
+        "sounds/mob/souya/hurt2",
+        "sounds/mob/souya/hurt3"
+      ]
+    },
+    "souya.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/souya/death"
+      ]
+    },
+    "tsushima.say": {
+      "max_distance": 25.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/tsushima/say"
+      ]
+    },
+    "tsushima.say2": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/tsushima/say2"
+      ]
+    },
+    "tsushima.say3": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/tsushima/say3"
+      ]
+    },
+    "tsushima.say4": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/tsushima/intro"
+      ]
+    },
+    "tsushima.attack": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/tsushima/attack",
+        "sounds/mob/tsushima/attack2",
+        "sounds/mob/tsushima/attack3"
+      ]
+    },
+    "tsushima.hurt": {
+      "max_distance": 3.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/tsushima/hurt",
+        "sounds/mob/tsushima/hurt2",
+        "sounds/mob/tsushima/hurt3"
+      ]
+    },
+    "tsushima.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/tsushima/death"
+      ]
+    },
+    "mob.sheep.step": {
+      "__use_legacy_max_distance": "true",
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/sheep/step1",
+        "sounds/mob/sheep/step2",
+        "sounds/mob/sheep/step3",
+        "sounds/mob/sheep/step4",
+        "sounds/mob/sheep/step5"
+      ]
+    },
+    "mob.sheep.say": {
+      "__use_legacy_max_distance": "true",
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/sheep/say1",
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/mob/sheep/say2"
+        },
+        "sounds/mob/sheep/say3"
+      ]
+    },
+    "gotland.say": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/gotland/say"
+      ]
+    },
+    "gotland.say2": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/gotland/say2"
+      ]
+    },
+    "gotland.say3": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/gotland/say3"
+      ]
+    },
+    "gotland.say4": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/gotland/intro"
+      ]
+    },
+    "gotland.attack": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/gotland/attack",
+        "sounds/mob/gotland/attack2"
+      ]
+    },
+    "gotland.hurt": {
+      "max_distance": 3.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/gotland/hurt",
+        "sounds/mob/gotland/hurt2",
+        "sounds/mob/gotland/hurt3"
+      ]
+    },
+    "gotland.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/gotland/death"
+      ]
+    },
+    "irako.say": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/irako/say",
+        "sounds/mob/irako/say2"
+      ]
+    },
+    "mamiya.say": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/mamiya/say",
+        "sounds/mob/mamiya/say2"
+      ]
+    },
+    "u511.say": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/u511_kanmusu/say"
+      ]
+    },
+    "u511.say2": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/u511_kanmusu/say2"
+      ]
+    },
+    "u511.say3": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/u511_kanmusu/say3"
+      ]
+    },
+    "u511.say4": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/u511_kanmusu/intro"
+      ]
+    },
+    "u511.attack": {
+      "max_distance": 3.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/u511_kanmusu/attack",
+        "sounds/mob/u511_kanmusu/attack2"
+      ]
+    },
+    "u511.hurt": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/u511_kanmusu/hurt",
+        "sounds/mob/u511_kanmusu/hurt2",
+        "sounds/mob/u511_kanmusu/hurt3"
+      ]
+    },
+    "u511.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/u511_kanmusu/death"
+      ]
+    },
+    "i168.say": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/i168/say"
+      ]
+    },
+    "i168.say2": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/i168/say2"
+      ]
+    },
+    "i168.say3": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/i168/say3"
+      ]
+    },
+    "i168.say4": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/i168/intro"
+      ]
+    },
+    "i168.attack": {
+      "max_distance": 3.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/i168/attack",
+        "sounds/mob/i168/attack2"
+      ]
+    },
+    "i168.hurt": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/i168/hurt",
+        "sounds/mob/i168/hurt2",
+        "sounds/mob/i168/hurt3"
+      ]
+    },
+    "i168.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/i168/death"
+      ]
+    },
+    "zara.say": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/zara/say"
+      ]
+    },
+    "zara.say2": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/zara/say2"
+      ]
+    },
+    "zara.say3": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/zara/say3"
+      ]
+    },
+    "zara.say4": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/zara/intro"
+      ]
+    },
+    "zara.attack": {
+      "max_distance": 3.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/zara/attack",
+        "sounds/mob/zara/attack2",
+        "sounds/mob/zara/attack3",
+        "sounds/mob/zara/attack4"
+      ]
+    },
+    "zara.hurt": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/zara/hurt",
+        "sounds/mob/zara/hurt2",
+        "sounds/mob/zara/hurt3"
+      ]
+    },
+    "zara.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/zara/death"
+      ]
+    },
+    "hiryu.say": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/hiryu/say"
+      ]
+    },
+    "hiryu.say2": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/hiryu/say"
+      ]
+    },
+    "hiryu.say3": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/hiryu/say"
+      ]
+    },
+    "hiryu.say4": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/hiryu/intro"
+      ]
+    },
+    "hiryu.attack": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/hiryu/attack",
+        "sounds/mob/hiryu/attack2"
+      ]
+    },
+    "hiryu.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/hiryu/death"
+      ]
+    },
+    "hiryu.hurt": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/hiryu/hurt",
+        "sounds/mob/hiryu/hurt2",
+        "sounds/mob/hiryu/hurt3"
+      ]
+    },
+    "bismarck.say": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bismarck/say"
+      ]
+    },
+    "bismarck.say2": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bismarck/say2"
+      ]
+    },
+    "bismarck.say3": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bismarck/say3"
+      ]
+    },
+    "bismarck.say4": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bismarck/intro"
+      ]
+    },
+    "bismarck.attack": {
+      "max_distance": 3.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bismarck/attack",
+        "sounds/mob/bismarck/attack2"
+      ]
+    },
+    "bismarck.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bismarck/death"
+      ]
+    },
+    "bismarck.hurt": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bismarck/hurt",
+        "sounds/mob/bismarck/hurt2",
+        "sounds/mob/bismarck/hurt3"
+      ]
+    },
+    "shimakaze.say": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/shimakaze/say"
+      ]
+    },
+    "shimakaze.say2": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/shimakaze/intro"
+      ]
+    },
+    "shimakaze.say3": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/shimakaze/say2"
+      ]
+    },
+    "shimakaze.say4": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/shimakaze/say3"
+      ]
+    },
+    "shimakaze.attack": {
+      "max_distance": 3.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/shimakaze/attack",
+        "sounds/mob/shimakaze/attack2",
+        "sounds/mob/shimakaze/attack3"
+      ]
+    },
+    "shimakaze.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/shimakaze/death"
+      ]
+    },
+    "shimakaze.hurt": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/shimakaze/hurt",
+        "sounds/mob/shimakaze/hurt2",
+        "sounds/mob/shimakaze/hurt3",
+        "sounds/mob/shimakaze/hurt4",
+        "sounds/mob/shimakaze/hurt5"
+      ]
+    },
+    //Abyssals
+    "mob.drowned.death_water": {
+      "sounds": [
+        "sounds/mob/drowned/water/death1",
+        "sounds/mob/drowned/water/death2"
+      ]
+    },
+    "mob.drowned.hurt_water": {
+      "sounds": [
+        "sounds/mob/drowned/water/hurt1",
+        "sounds/mob/drowned/water/hurt2",
+        "sounds/mob/drowned/water/hurt3"
+      ]
+    },
+    "ptimpgroup.say": {
+      "sounds": [
+        "sounds/mob/ptimpgroup/say"
+      ]
+    },
+    "ptimpgroup.hurt": {
+      "sounds": [
+        "sounds/mob/ptimpgroup/hurt"
+      ]
+    },
+    "aircraft_carrier_princess.say": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/aircraft_carrier_demon/say"
+      ]
+    },
+    "aircraft_carrier_princess.shoot": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/aircraft_carrier_demon/attack",
+        "sounds/mob/aircraft_carrier_demon/attack2"
+      ]
+    },
+    "aircraft_carrier_princess.hurt": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/aircraft_carrier_demon/hurt"
+      ]
+    },
+    "aircraft_carrier_princess.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/aircraft_carrier_demon/death"
+      ]
+    },
+    "northern_princess.say": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/northern_princess/say",
+        "sounds/mob/northern_princess/say2"
+      ]
+    },
+    "northern_princess.attack": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/northern_princess/attack",
+        "sounds/mob/northern_princess/attack2",
+        "sounds/mob/northern_princess/attack3"
+      ]
+    },
+    "northern_princess.hurt": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/northern_princess/hurt",
+        "sounds/mob/northern_princess/hurt2"
+      ]
+    },
+    "northern_princess.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/northern_princess/death"
+      ]
+    },
+    "pacific_princess.say": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/pacific_princess/say",
+        "sounds/mob/pacific_princess/say2"
+      ]
+    },
+    "pacific_princess.attack": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/pacific_princess/attack",
+        "sounds/mob/pacific_princess/attack2"
+      ]
+    },
+    "pacific_princess.hurt": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/pacific_princess/hurt",
+        "sounds/mob/pacific_princess/hurt2"
+      ]
+    },
+    "pacific_princess.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/pacific_princess/death"
+      ]
+    },
+    "pacific_princess.battle_bgm": {
+      "category": "music",
+      "sounds": [
+        "sounds/music/pp_battle_bgm"
+      ]
+    },
+    "pp_whale.say": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/pp_whale/attack"
+      ]
+    },
+    //Aircraft
+    "g4m2e.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/g4m2e/engine"
+      ]
+    },
+    "type99d.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/type99d/engine"
+      ]
+    },
+    "type99d.drop_bomb": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/type99d/drop_bomb"
+      ]
+    },
+    "p38e.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/p38e/engine"
+      ]
+    },
+    "bf109g6.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bf109g6/engine"
+      ]
+    },
+    "spitfiremkix.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/spitfiremkix/engine"
+      ]
+    },
+    "ki_61.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/ki_61/engine"
+      ]
+    },
+    "f4u1d.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/f4u1d/engine"
+      ]
+    },
+    "me163b.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/me163b/engine"
+      ]
+    },
+    "hvar.fly": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/hvar/hvar"
+      ]
+    },
+    "hispanomkii.shoot": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/hispanomkii/hispanomkii"
+      ]
+    },
+    "mg15120.shoot": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/mg15120/mg15120"
+      ]
+    },
+    "type9777.shoot": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/type9777/type9777"
+      ]
+    },
+    "bullet_aircraft.shoot": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bullet_aircraft/127mm"
+      ]
+    },
+    "bullet_mk108.shoot": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bullet_mk108/mk108"
+      ]
+    },
+    //Vehicles
+    "m4a1dd.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/m4a1dd/engine"
+      ]
+    },
+    "m4a1dd.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/m4a1dd/fire"
+      ]
+    },
+    "t3485.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/t3485/engine"
+      ]
+    },
+    "t3485.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/t3485/fire"
+      ]
+    },
+    "762mmdp.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/762mmdp/fire"
+      ]
+    },
+    "churchillmkvii.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/churchillmkvii/engine"
+      ]
+    },
+    "m46he.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/m46he/fire"
+      ]
+    },
+    "panzeriv.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/panzeriv/engine"
+      ]
+    },
+    "panzeriv.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/panzeriv/fire"
+      ]
+    },
+    "mg34.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/mg34/fire"
+      ]
+    },
+    "type2kami.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/type2kami/engine"
+      ]
+    },
+    "type2kami.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/type2kami/fire"
+      ]
+    },
+    "s35.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/s35/engine"
+      ]
+    },
+    "s35.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/s35/fire"
+      ]
+    },
+    "75mmmacmle1931.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/75mmmacmle1931/fire"
+      ]
+    },
+    "mob.irongolem.hit": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/irongolem/hit1",
+        "sounds/mob/irongolem/hit2",
+        "sounds/mob/irongolem/hit3",
+        "sounds/mob/irongolem/hit4"
+      ]
+    },
+    "32cmrocket.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/32cmrocket/fire"
+      ]
+    },
+    "hit.sand": {
+      "__use_legacy_max_distance": "true",
+      "category": "neutral",
+      "sounds": [
+        {
+          "load_on_low_memory": true,
+          "name": "sounds/step/sand1"
+        },
+        "sounds/step/sand2",
+        "sounds/step/sand3",
+        "sounds/step/sand4",
+        "sounds/step/sand5"
+      ]
+    },
+    "higginsboat.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/higginsboat/engine"
+      ]
+    }
+  }
+}

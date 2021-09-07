@@ -1,0 +1,171 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.northern_princess.general": {
+			"loop": true,
+			"animation_length": 2.04,
+			"bones": {
+				"leftLeg": {
+					"rotation": [-25, -20, 0]
+				},
+				"leftCalf": {
+					"rotation": [100, 0, 0]
+				},
+				"rightFeet": {
+					"rotation": [35, 0, 0]
+				},
+				"rightLeg": {
+					"rotation": [0, 20, 5]
+				},
+				"rightCalf": {
+					"rotation": [-20, 0, -5]
+				},
+				"rightFeet2": {
+					"rotation": [40, 0, 0]
+				},
+				"body": {
+					"rotation": [0, 0, -5]
+				},
+				"head": {
+					"rotation": [-10, 0, 0]
+				},
+				"hair": {
+					"rotation": [0, 0, 0]
+				},
+				"hair49": {
+					"rotation": [10, 0, 0]
+				},
+				"leftArm": {
+					"rotation": [-25, 0, 0]
+				},
+				"leftHand": {
+					"rotation": [-90, -20, 0]
+				},
+				"rightArm": {
+					"rotation": [-35, 0, 0]
+				},
+				"rightHand": {
+					"rotation": [-40, 0, 0]
+				},
+				"glove2": {
+					"rotation": [-45, 10, 25]
+				},
+				"zero_21": {
+					"rotation": [85, 210, 0]
+				},
+				"waist": {
+					"rotation": [0, 0, 10]
+				},
+				"main": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.5167": [0, -1, 0],
+						"1.5167": [0, 1, 0],
+						"2.0333": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.northern_princess.attack": {
+			"animation_length": 1.04,
+			"bones": {
+				"main": {
+					"position": [0, -7, 0]
+				},
+				"body": {
+					"rotation": [35, 0, 0]
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.32": [-30, 0, 0]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.52": [-85, 0, 0],
+						"0.68": [-115, -20, 0]
+					}
+				},
+				"leftHand": {
+					"rotation": [-40, 70, 5]
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.84": [-35, 0, -35]
+					}
+				},
+				"rightHand": {
+					"rotation": [-75, -35, 145]
+				},
+				"glove2": {
+					"rotation": [15, -5, 50]
+				},
+				"zero_21": {
+					"rotation": [40, -25, 15],
+					"position": [3, 3, 0]
+				},
+				"waist": {
+					"rotation": [-15, 0, 0]
+				},
+				"rightLeg": {
+					"rotation": [-15, 0, 5]
+				},
+				"rightCalf": {
+					"rotation": [90, 0, 0]
+				},
+				"leftLeg": {
+					"rotation": [-5, 0, -5]
+				},
+				"leftCalf": {
+					"rotation": [75, -10, 0]
+				}
+			}
+		},
+		"animation.northern_princess.attack_barehand": {
+			"animation_length": 2.04,
+			"bones": {
+				"body": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4833": [45, 0, 0],
+						"1.4833": [0, 0, 0]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4833": [-25, 0, 0],
+						"1.4833": [0, 0, 0]
+					}
+				},
+				"waist": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4833": [-35, 0, 0],
+						"1.4833": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.northern_princess.move": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": ["variable.tcos0", 0, 0]
+				},
+				"leftLeg": {
+					"rotation": ["variable.tcos0 * -1.4", 0, 0]
+				},
+				"rightArm": {
+					"rotation": ["-variable.tcos0", 0, 0]
+				},
+				"rightLeg": {
+					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				}
+			}
+		}
+	}
+}

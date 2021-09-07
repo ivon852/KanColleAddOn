@@ -1,0 +1,140 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.pacific_princess.move": {
+      "animation_length": 1,
+      "loop": true,
+      "bones": {
+        "cape": {
+          "rotation": {
+            "0.0": [10, 0, 0],
+            "0.5": [-5, 0, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "leftLeg": {
+          "rotation": ["math.cos(query.anim_time * 300.17) *  40.0", 0, 0]
+        },
+        "rightLeg": {
+          "rotation": ["math.cos(query.anim_time * 300.17) * -40.0", 0, 0]
+        },
+        "leftArm": {
+          "rotation": ["math.cos(query.anim_time * 300.17) *  40.0", 0, 0]
+        },
+        "rightArm": {
+          "rotation": ["math.cos(query.anim_time * 300.17) *  40.0", 0, 0]
+        }
+      }
+    },
+    "animation.pacific_princess.sit": {
+      "loop": true,
+      "bones": {
+        "waist": {
+          "rotation": [0, -30, 0]
+        },
+        "shirt": {
+          "rotation": [-15, 0, 0]
+        },
+        "rightLeg": {
+          "rotation": [-40, 0, 0]
+        },
+        "rightCalf": {
+          "rotation": [85, -35, 5]
+        },
+        "leftLeg": {
+          "rotation": [-65, -5, -15]
+        },
+        "leftCalf": {
+          "rotation": [55, 0, 10]
+        },
+        "body": {
+          "rotation": [-10, 0, 0]
+        },
+        "cape": {
+          "rotation": [30, 0, 0]
+        },
+        "wasit_cape": {
+          "rotation": [10, 0, 0]
+        },
+        "head": {
+          "rotation": [25, 35, 0]
+        },
+        "leftArm": {
+          "rotation": [0, 0, 20]
+        },
+        "leftHand": {
+          "rotation": [10, -65, -15]
+        },
+        "rightArm": {
+          "rotation": [0, 0, -20]
+        },
+        "rightHand": {
+          "rotation": [0, 0, -85]
+        }
+      }
+    },
+    "animation.pacific_princess.attack": {
+      "loop": true,
+      "animation_length": 2,
+      "bones": {
+        "waist": {
+          "rotation": [20, 0, 0]
+        },
+        "rightLeg": {
+          "rotation": [-10, 0, 0]
+        },
+        "rightCalf": {
+          "rotation": [0, -45, 10]
+        },
+        "leftLeg": {
+          "rotation": [-35, 0, 0]
+        },
+        "leftCalf": {
+          "rotation": [15, 0, 0]
+        },
+        "body": {
+          "rotation": [-20, 0, 0]
+        },
+        "cape": {
+          "rotation": {
+            "0.0": [60, 0, 0],
+            "0.5667": [70, 0, 0],
+            "1.0": [50, 0, 0],
+            "1.5167": [70, 0, 0]
+          }
+        },
+        "wasit_cape": {
+          "rotation": {
+            "0.0": [20, 0, 0],
+            "0.5167": [35, 0, 0],
+            "1.0": [30, 0, 0],
+            "1.5167": [10, 0, 0]
+          }
+        },
+        "leftArm": {
+          "rotation": {
+            "0.0": [75, 70, 110],
+            "0.5167": [75, 70, 145],
+            "1.0333": [90, -5, 135],
+            "1.6": [70, 55, 90],
+            "2.0": [0, 55, 60]
+          }
+        },
+        "leftHand": {
+          "rotation": [20, -65, 10]
+        },
+        "rightArm": {
+          "rotation": {
+            "0.0": [0, 0, -30],
+            "0.5167": [0, 0, -45],
+            "1.0": [0, 0, -65],
+            "1.5167": [0, 0, -35]
+          }
+        },
+        "rightHand": {
+          "rotation": [-35, 0, -5]
+        }
+      }
+    }
+  }
+}

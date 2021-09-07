@@ -1,0 +1,165 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "kanmusu:irako",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "too_close": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "abyssal"
+              },
+              "max_dist": 10,
+              "walk_speed_multiplier": 1.5,
+              "sprint_speed_multiplier": 1.5
+            }
+          ]
+        }
+      }
+    },
+
+    "events": {
+      "too_close": {
+        "add": {
+          "component_groups": ["too_close"]
+        }
+      },
+      "range_attack": {
+        "remove": {
+          "component_groups": ["too_close"]
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:behavior.trade_with_player": {
+        "priority": 1
+      },
+      "minecraft:behavior.trade_interest": {
+        "priority": 5,
+        "within_radius": 5.0,
+        "interest_time": 45.0,
+        "remove_item_time": 1.0,
+        "carried_item_switch_time": 2.0,
+        "cooldown": 2.0
+      },
+      "minecraft:trade_table": {
+        "display_name": "Irako's Shop",
+        "table": "trading/irako_trades.json",
+        "convert_trades_economy": true
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "newitem:irako",
+            "heal_amount": 20
+          },
+          {
+            "item": "newitem:irako",
+            "heal_amount": 15
+          }
+        ]
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 2,
+        "speed_multiplier": 1.25,
+        "items": ["newitem:admiral_cap"]
+      },
+
+      "minecraft:target_nearby_sensor": {
+        "inside_range": 14,
+        "outside_range": 15,
+        "on_inside_range": {
+          "event": "too_close",
+          "target": "self"
+        },
+        "on_outside_range": {
+          "event": "range_attack",
+          "target": "self"
+        }
+      },
+
+      "minecraft:type_family": {
+        "family": ["kanmusu", "irako", "food_supply_ship"]
+      },
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:navigation.generic": {
+        "can_path_over_water": true,
+        "can_walk": true,
+        "can_sink": false
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 2
+      },
+
+      "minecraft:movement": {
+        "value": 0.2
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.15
+      },
+
+      "minecraft:behavior.random_stroll": {
+        "priority": 5
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 2
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:behavior.panic": {
+        "priority": 1,
+        "speed_multiplier": 1.25
+      },
+      "minecraft:behavior.mount_pathing": {
+        "priority": 2,
+        "speed_multiplier": 1.5,
+        "target_dist": 0.0,
+        "track_target": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/irako.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

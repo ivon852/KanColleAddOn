@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "bullet:mg15120",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/mg15120"
+      },
+      "geometry": {
+        "default": "geometry.mg15120"
+      },
+      "render_controllers": [ "controller.render.newmob" ]
+    }
+  }
+}

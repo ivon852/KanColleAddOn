@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.type91torpedo_mechanic": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "working": "query.is_in_water"
+            },
+            {
+              "remove": "!query.is_in_water"
+            }
+          ]
+        },
+        "working": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": ["/execute @s ~ ~ ~ tag @s add inwater"]
+        },
+        "remove": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": ["/execute @s ~ ~ ~ tag @s remove inwater"]
+        }
+      }
+    }
+  }
+}

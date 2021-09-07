@@ -1,0 +1,107 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "weapon:type91torpedo",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.type91torpedo_mechanic"
+      },
+      "scripts": {
+        "animate": ["mechanic"]
+      }
+    },
+
+    "events": {
+      "q_explode": {
+        "add": {
+          "component_groups": ["q_explode"]
+        }
+      }
+    },
+
+    "component_groups": {
+      "q_explode": {
+        "minecraft:mark_variant": {
+          "value": 4
+        },
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 15,
+          "causes_fire": true,
+          "destroy_affected_by_griefing": true
+        },
+        "minecraft:despawn": {}
+      }
+    },
+
+    "components": {
+      "minecraft:mark_variant": {
+        "value": 3
+      },
+      "minecraft:timer": {
+        "looping": false,
+        "time": 10,
+        "time_down_event": {
+          "event": "q_explode",
+          "target": "self"
+        }
+      },
+      "minecraft:damage_sensor": {
+        "triggers": {
+          "on_damage": {
+            "filters": {
+              "test": "has_damage",
+              "subject": "self",
+              "value": "contact"
+            },
+            "event": "q_explode"
+          },
+          "deals_damage": false
+        }
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:navigation.walk": {
+        "can_path_over_water": true
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:type_family": {
+        "family": ["type91torpedo"]
+      },
+      "minecraft:health": {
+        "value": 30,
+        "max": 30
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 14.0,
+        "hard_distance": 1.0,
+        "max_distance": 20.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

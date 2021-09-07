@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.boku.move": {
+      "states": {
+        "default": {
+          "animations": [{ "moving": "query.modified_move_speed" }]
+        }
+      }
+    },
+    "controller.animation.boku.ears": {
+      "states": {
+        "default": {
+          "animations": [{ "earing": "query.ground_speed==0" }],
+          "transitions": [
+            {
+              "eyeing": "math.random(-100,100)>99.5&&query.all_animations_finished"
+            }
+          ]
+        },
+        "eyeing": {
+          "animations": ["eyeing"],
+          "transitions": [
+            {
+              "default": "query.all_animations_finished&&math.random(0,100)>50"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.boku.attack": {
+      "states": {
+        "default": {
+          "animations": [{ "attacking": "variable.attack_time > 0" }]
+        }
+      }
+    }
+  }
+}

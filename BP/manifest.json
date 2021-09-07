@@ -1,0 +1,59 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "pack.name",
+		"description": "pack.description",
+		"uuid": "7d2347c0-3f14-47b7-880e-0f813f3d0751",
+		"min_engine_version": [
+			1,
+			16,
+			0
+		],
+		"version": [
+			1,
+			1,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "Kantai Collection Addon\nBy Twitter@Ivon852",
+			"type": "data",
+			"uuid": "6da1b426-5f84-4172-8971-0592394cea19",
+			"version": [
+				1,
+				1,
+				0
+			]
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "subpack1",
+			"name": "Vehicles only.",
+			"memory_tier": 0
+		},
+		{
+			"folder_name": "kanmusu_subpack",
+			"name": "Enable Shipgirls.",
+			"memory_tier": 1
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				1,
+				0
+			],
+			"uuid": "e3ce74be-9b4d-4cd3-a948-bea0af40ec81"
+		}
+	],
+	"metadata": {
+		"authors": [
+			"Ivon852"
+		],
+		"license": "",
+		"url": "https://mcpedl.com/kantai-collection-add-on/"
+	}
+}

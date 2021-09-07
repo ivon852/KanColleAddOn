@@ -1,0 +1,53 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aircraft:g4m2e",
+      "materials": {
+        "default": "entity_alphatest",
+        "mxy7": "entity_alphatest",
+        "bombload60kg": "entity_alphatest",
+        "type91torpedo": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/g4m2e/g4m2e",
+        "mxy7": "textures/entity/g4m2e/mxy7",
+        "bombload60kg": "textures/entity/g4m2e/bombload60kg",
+        "type91torpedo": "textures/entity/g4m2e/type91torpedo"
+      },
+      "geometry": {
+        "default": "geometry.g4m2e",
+        "mxy7": "geometry.mxy7",
+        "bombload60kg": "geometry.bombload60kg",
+        "type91torpedo": "geometry.type91torpedo"
+      },
+      "render_controllers": [
+        "controller.render.g4m2e",
+        { "controller.render.mxy7": "query.mark_variant==3" },
+        { "controller.render.bombload60kg": "query.mark_variant==4" },
+        { "controller.render.type91torpedo": "query.mark_variant==5" }
+      ],
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.g4m2e.moving",
+        "retract_gear": "animation.g4m2e.retract_gear",
+        "on_ground": "animation.g4m2e.on_ground",
+        "move_controller": "controller.animation.g4m2e.move",
+        "retract_gear_controller": "controller.animation.g4m2e.retract_gear",
+        "on_ground_controller": "controller.animation.g4m2e.on_ground"
+      },
+      "scripts": {
+        "animate": [
+          "look_at_target",
+          "move_controller",
+          "retract_gear_controller",
+          "on_ground_controller"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_g4m2e",
+        "texture_index": 0
+      }
+    }
+  }
+}

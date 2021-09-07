@@ -1,0 +1,157 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.m4a1dd": {
+      "textures": ["Texture.default"],
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "part_visibility": [
+        { "*": true },
+        {
+          "duplexdrive": "query.is_on_ground"
+        },
+        {
+          "bone88": "query.is_on_ground"
+        },
+        {
+          "bone90": "query.is_on_ground"
+        },
+        {
+          "bone92": "query.is_on_ground"
+        },
+        {
+          "bone93": "query.is_on_ground"
+        },
+        {
+          "bone94": "query.is_on_ground"
+        },
+        {
+          "bone95": "query.is_on_ground"
+        },
+        {
+          "bone96": "query.is_on_ground"
+        },
+        {
+          "bone97": "query.is_on_ground"
+        },
+        {
+          "bone98": "query.is_on_ground"
+        },
+        {
+          "bone99": "query.is_on_ground"
+        },
+        {
+          "bone89": "query.is_on_ground"
+        },
+        {
+          "bone91": "query.is_on_ground"
+        },
+        {
+          "bone100": "query.is_on_ground"
+        },
+        {
+          "bone114": "query.is_on_ground"
+        },
+        {
+          "bone115": "query.is_on_ground"
+        },
+        {
+          "bar": "query.is_on_ground"
+        },
+        {
+          "bar2": "query.is_on_ground"
+        },
+        {
+          "bone102": "query.is_on_ground"
+        },
+        {
+          "bone103": "query.is_on_ground"
+        },
+        {
+          "bone101": "query.is_on_ground"
+        },
+        {
+          "deplex_on": "query.is_in_water"
+        },
+        {
+          "bone104": "query.is_in_water"
+        },
+        {
+          "bone105": "query.is_in_water"
+        },
+        {
+          "bone106": "query.is_in_water"
+        },
+        {
+          "bone107": "query.is_in_water"
+        },
+        {
+          "bone108": "query.is_in_water"
+        },
+        {
+          "bone109": "query.is_in_water"
+        },
+        {
+          "bone110": "query.is_in_water"
+        },
+        {
+          "bone111": "query.is_in_water"
+        },
+        {
+          "bone112": "query.is_in_water"
+        },
+        {
+          "bone113": "query.is_in_water"
+        },
+        {
+          "bone116": "query.is_in_water"
+        },
+        {
+          "bar3": "query.is_in_water"
+        },
+        {
+          "bar5": "query.is_in_water"
+        },
+        {
+          "bar7": "query.is_in_water"
+        },
+        {
+          "bar8": "query.is_in_water"
+        },
+        {
+          "bar6": "query.is_in_water"
+        },
+        {
+          "bar4": "query.is_in_water"
+        },
+        {
+          "bone117": "query.is_in_water"
+        },
+        {
+          "bone118": "query.is_in_water"
+        },
+        {
+          "bone120": "query.is_in_water"
+        },
+        {
+          "bone121": "query.is_in_water"
+        },
+        {
+          "bone122": "query.is_in_water"
+        },
+        {
+          "bone123": "query.is_in_water"
+        },
+        {
+          "bone125": "query.is_in_water"
+        },
+        {
+          "bone124": "query.is_in_water"
+        },
+        {
+          "bone119": "query.is_in_water"
+        }
+      ]
+    }
+  }
+}

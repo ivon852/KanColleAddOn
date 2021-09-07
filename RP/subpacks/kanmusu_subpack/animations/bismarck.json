@@ -1,0 +1,130 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.bismarck.move": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": [ "variable.tcos0", 0.0, 0.0 ]
+				},
+				"leftLeg": {
+					"rotation": [ "variable.tcos0 * -1.4", 0.0, 0.0 ]
+				},
+				"rightArm": {
+					"rotation": [ "-variable.tcos0", 0.0, 0.0 ]
+				},
+				"rightLeg": {
+					"rotation": [ "variable.tcos0 * 1.4", 0.0, 0.0 ]
+				}
+			}
+		},
+		"animation.bismarck.attack": {
+			"loop": true,
+			"animation_length": 1.4833,
+			"bones": {
+				"waist": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ 0, 0, 0 ]
+					}
+				},
+				"rightLeg": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ -25, 5, -15 ]
+					}
+				},
+				"rightCalf": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ 25, 0, 0 ]
+					}
+				},
+				"leftLeg": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ 35, 15, 5 ]
+					}
+				},
+				"leftCalf": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ -40, 0, 0 ]
+					}
+				},
+				"body": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ -10, 0, 0 ]
+					}
+				},
+				"head": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ 5, 0, 0 ]
+					}
+				},
+				"leftArm": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ -65, 20, 0 ]
+					}
+				},
+				"leftHand": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ -15, 0, -20 ]
+					}
+				},
+				"rightArm": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ 35, -15, -30 ]
+					}
+				},
+				"rightHand": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ -100, 0, 0 ]
+					}
+				},
+				"right_bottom_gun": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"0.4833": [ -15, 0, 0 ]
+					}
+				},
+				"right_top_on_gun": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.4833": [ 0, 0, 30 ]
+					}
+				},
+				"left_top_on_gun": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.4833": [ 0, 0, -30 ]
+					}
+				},
+				"left_bottom_gun_body": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ -15, 0, 0 ]
+					}
+				},
+				"right_top_gun_body": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.0167": [ -15, 0, 0 ]
+					}
+				},
+				"left_top_gun_body": {
+					"rotation": {
+						"0.0": [ 0, 0, 0 ],
+						"1.4833": [ 15, 0, 0 ]
+					}
+				}
+			}
+		}
+	}
+}

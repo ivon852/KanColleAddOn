@@ -1,0 +1,42 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.ki_61.move": {
+      "loop": true,
+      "animation_length": 0.24,
+      "bones": {
+        "propeller": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.24": [0, 0, 360]
+          }
+        }
+      }
+    },
+    "animation.ki_61.on_ground": {
+      "loop": true,
+      "bones": {
+        "head1": {
+          "rotation": [10, 0, 0]
+        }
+      }
+    },
+    "animation.ki_61.retract_gear": {
+      "loop": true,
+      "bones": {
+        "leftwheel": {
+          "rotation": [0, 0, -90]
+        },
+        "leftwheelcap": {
+          "rotation": [0, 0, -90]
+        },
+        "rightwheelcap": {
+          "rotation": [0, 0, -90]
+        },
+        "rightwheel": {
+          "rotation": [0, 0, 90]
+        }
+      }
+    }
+  }
+}

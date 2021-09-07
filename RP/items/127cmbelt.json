@@ -1,0 +1,13 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "newitem:127cmbelt",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": "127cmbelt",
+      "minecraft:render_offsets": "tools"
+    }
+  }
+}

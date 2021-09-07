@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:dd_roclass",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/dd_roclass"
+      },
+      "geometry": {
+        "default": "geometry.dd_roclass"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.dd_roclass.move",
+        "general": "animation.dd_roclass.general",
+        "c_move": "controller.animation.dd_roclass.move",
+        "c_general": "controller.animation.dd_roclass.general"
+      },
+      "scripts": {
+        "animate": ["c_move", "c_general", "look_at_target"]
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "spawn_egg": {
+        "texture": "spawn_dd_roclass",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.nbw41_mechanic2": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "1": "query.mark_variant==5"
+            }
+          ]
+        },
+        "1": {
+          "on_exit": ["@s minecraft:sspawns"],
+          "animations": ["delay"],
+          "transitions": [
+            {
+              "2": "query.any_animation_finished"
+            }
+          ]
+        },
+        "2": {
+          "on_exit": ["@s minecraft:sspawns"],
+          "animations": ["delay"],
+          "transitions": [
+            {
+              "3": "query.any_animation_finished"
+            }
+          ]
+        },
+        "3": {
+          "on_exit": ["@s minecraft:sspawns"],
+          "animations": ["delay"],
+          "transitions": [
+            {
+              "4": "query.any_animation_finished"
+            }
+          ]
+        },
+        "4": {
+          "animations": ["delay"],
+          "transitions": [
+            {
+              "5": "query.any_animation_finished"
+            }
+          ]
+        },
+        "5": {
+          "animations": ["delay"],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+
+    "controller.animation.nbw41_mechanic": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "working": "query.mark_variant==5"
+            }
+          ]
+        },
+        "working": {
+          "on_entry": [
+            "/execute @e[r=100,type=weapon:32cmrocket] ~ ~ ~ tp @s ^ ^2 ^5",
+            "/execute @s ~ ~ ~ particle minecraft:huge_explosion_emitter ~ ~ ~",
+            "/execute @e[r=100,type=weapon:32cmrocket] ~ ~ ~ particle minecraft:huge_explosion_emitter ~ ~ ~"
+          ],
+          "transitions": [
+            {
+              "loop": "query.mark_variant==5"
+            },
+            {
+              "default": "query.mark_variant==0"
+            }
+          ]
+        },
+        "loop": {
+          "transitions": [
+            {
+              "working": "1F"
+            },
+            {
+              "default": "query.mark_variant==0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

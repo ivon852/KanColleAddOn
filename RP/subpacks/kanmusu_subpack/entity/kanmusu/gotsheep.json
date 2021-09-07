@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "kanmusu:gotsheep",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/gotsheep"
+      },
+      "geometry": {
+        "default": "geometry.gotsheep"
+      },
+
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.gotsheep.move",
+        "controller_move": "controller.animation.gotsheep.move"
+      },
+      "scripts": {
+        "animate": ["controller_move", "look_at_target"],
+        "pre_animation": [
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "render_controllers": ["controller.render.newmob"]
+    }
+  }
+}

@@ -1,0 +1,253 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.nbw41": {
+      "textures": ["Texture.default"],
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "part_visibility": [
+        { "*": true },
+        {
+          "rocket4": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon49": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon50": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon52": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon53": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon51": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon54": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon55": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon56": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon57": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon58": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon59": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon60": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon61": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon62": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon63": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon64": "query.mark_variant>0 && query.mark_variant<5"
+        },
+        {
+          "single4": "query.mark_variant>0"
+        },
+        {
+          "frame7": "query.mark_variant>0"
+        },
+        {
+          "frame8": "query.mark_variant>0"
+        },
+        {
+          "rocket5": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon65": "query.mark_variant>1&& query.mark_variant<5"
+        },
+        {
+          "hexadecagon66": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon67": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon68": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon69": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon70": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon71": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon72": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon73": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon74": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon75": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon76": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon77": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon78": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon79": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon80": "query.mark_variant>1 && query.mark_variant<5"
+        },
+        {
+          "single5": "query.mark_variant>1 "
+        },
+        {
+          "frame9": "query.mark_variant>1 "
+        },
+        {
+          "frame10": "query.mark_variant>1 "
+        },
+        {
+          "rocket6": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon81": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon82": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon83": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon84": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon85": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon86": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon87": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon88": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon89": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon90": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon91": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon92": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon93": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon94": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon95": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon96": "query.mark_variant>2 && query.mark_variant<5"
+        },
+        {
+          "single6": "query.mark_variant>2"
+        },
+        {
+          "frame11": "query.mark_variant>2"
+        },
+        {
+          "frame12": "query.mark_variant>2"
+        },
+        {
+          "rocket7": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon97": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon98": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon99": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon100": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon101": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon102": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon103": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon104": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon105": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon106": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon107": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon108": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon109": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon110": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon111": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "hexadecagon112": "query.mark_variant>3 && query.mark_variant<5"
+        },
+        {
+          "single7": "query.mark_variant>3"
+        },
+        {
+          "frame13": "query.mark_variant>3"
+        },
+        {
+          "frame14": "query.mark_variant>3"
+        }
+      ]
+    }
+  }
+}

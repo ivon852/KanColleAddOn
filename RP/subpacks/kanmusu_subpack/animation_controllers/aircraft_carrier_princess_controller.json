@@ -1,0 +1,62 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.aircraft_carrier_princess.face": {
+      "states": {
+        "default": {
+          "animations": ["elbows"],
+          "transitions": [
+            {
+              "emotion": "math.random(0,100)<0.2"
+            }
+          ]
+        },
+        "emotion": {
+          "animations": ["eyes"],
+          "transitions": [
+            {
+              "default": "query.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.aircraft_carrier_princess.sit": {
+      "states": {
+        "default": {
+          "animations": [{ "sit": "query.is_sitting" }]
+        }
+      }
+    },
+    "controller.animation.aircraft_carrier_princess.move": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "move": "query.modified_move_speed && !query.is_riding&&!query.is_sitting"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.aircraft_carrier_princess.general": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [{ "general": "query.is_riding" }]
+        }
+      }
+    },
+    "controller.animation.aircraft_carrier_princess.attack": {
+      "states": {
+        "default": {
+          "transitions":[{"attacking":"query.is_casting"}]
+        },
+        "attacking": {
+          "animations": [{ "attack": "query.is_casting && query.is_riding" }],
+          "transitions":[{"default":"!query.is_charged && query.any_animation_finished"}]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.newmob": {
+      "textures": ["Texture.default"],
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }]
+    },
+
+    "controller.render.newmob.third_person": {
+      "geometry": "Geometry.newmob",
+      "materials": [{ "*": "Material.newmob" }],
+      "textures": ["Texture.newmob"]
+    },
+
+    "controller.render.newmob.first_person": {
+      "geometry": "Geometry.newmob",
+      "materials": [{ "*": "Material.newmob" }],
+      "textures": ["Texture.newmob"]
+    }
+  }
+}

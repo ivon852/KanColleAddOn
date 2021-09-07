@@ -1,0 +1,38 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.higginsboat_mechanic": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "working": "query.has_rider"
+            },
+            {
+              "remove": "!query.has_rider"
+            }
+          ]
+        },
+        "working": {
+          "on_entry": [
+            "/execute @s ~ ~ ~ tag @s add riding",
+            "/execute @p[r=2] ~ ~ ~ playsound higginsboat.engine @s ~ ~ ~ 0.1 1 0.1"
+          ],
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ]
+        },
+        "remove": {
+          "on_entry": ["/execute @s ~ ~ ~ tag @s remove riding"],
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

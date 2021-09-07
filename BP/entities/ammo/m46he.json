@@ -1,0 +1,83 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "newmob:m46he",
+      "runtime_identifier": "minecraft:egg",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+
+    "events": {
+      "minecraft:explode": {
+        "add": {
+          "component_groups": ["minecraft:exploding"]
+        }
+      }
+    },
+    "component_groups": {
+      "minecraft:exploding": {
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 1,
+          "causes_fire": false,
+          "destroy_affected_by_griefing": true
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:scale": {
+        "value": 0.2
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:spawn_entity": {
+        "entities": {
+          "min_wait_time": 0,
+          "max_wait_time": 0,
+          "num_to_spawn": 1,
+          "spawn_entity": "IDK:WHY",
+          "single_use": true,
+          "spawn_sound": "ambient"
+        }
+      },
+
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 10,
+            "knockback": false
+          },
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "minecraft:explode",
+              "target": "self"
+            }
+          },
+          "particle_on_hit": {
+            "particle_type": "explode",
+            "on_other_hit": true
+          }
+        },
+        "shoottarget": true,
+        "power": 4,
+        "gravity": 0.01,
+        "uncertaintyBase": 0,
+        "anchor": 1,
+        "inertia": 1,
+        "liquid_inertia": 0.9
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

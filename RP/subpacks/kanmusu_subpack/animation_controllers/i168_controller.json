@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.i168.move": {
+      "states": {
+        "default": {
+          "animations": [{ "move": "query.modified_move_speed" }]
+        }
+      }
+    },
+    "controller.animation.i168.swim": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [{ "swim": "query.is_in_water" }]
+        }
+      }
+    },
+    "controller.animation.i168.attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "transitions":[{"attacking":"query.is_charged"}]
+        },
+        "attacking": {
+          "animations": ["attack"],
+          "transitions":[{"default":"!query.is_charged && query.any_animation_finished"}]
+        }
+      }
+    }
+  }
+}

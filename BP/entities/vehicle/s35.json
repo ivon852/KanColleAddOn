@@ -1,0 +1,223 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tank:s35",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.s35_mechanic"
+      },
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      }
+    },
+    "events": {
+      "s35:shoot": {
+        "add": {
+          "component_groups": [
+            "s35:shoot"
+          ]
+        }
+      },
+      "s35:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "s35:shoot"
+          ]
+        }
+      },
+      "s35:machinegun": {
+        "add": {
+          "component_groups": [
+            "s35:machinegun"
+          ]
+        }
+      },
+      "s35:stop_machinegun": {
+        "remove": {
+          "component_groups": [
+            "s35:machinegun"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "s35:shoot": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:qf47apcbc",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "s35:stop_shoot",
+            "target": "self"
+          }
+        }
+      },
+      "s35:machinegun": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:75mmmacmle1931"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.4,
+          "time_down_event": {
+            "event": "s35:stop_machinegun",
+            "target": "self"
+          }
+        }
+      },
+      "player_spawned": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:qf47apcbc"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "s35:shoot"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.s35.fire"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:127cmbelt"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "s35:machinegun"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.s35.fire"
+            }
+          ]
+        },
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "iron_block",
+              "heal_amount": 20
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+        },
+        "minecraft:movement": {
+          "value": 0.15
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.s35.get_on",
+          "seats": {
+            "position": [
+              -0.6,
+              2.1,
+              -0.3
+            ]
+          }
+        },
+        "minecraft:scale": {
+          "value": 1
+        },
+        "minecraft:collision_box": {
+          "width": 2,
+          "height": 4
+        }
+      }
+    },
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "tank",
+          "kanmusu"
+        ]
+      },
+      "minecraft:health": {
+        "value": 100,
+        "max": 100
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 14.0,
+        "hard_distance": 1.0,
+        "max_distance": 20.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

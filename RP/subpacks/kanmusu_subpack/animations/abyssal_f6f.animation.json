@@ -1,0 +1,21 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.abyssal_f6f.move": {
+			"animation_length": 3,
+			"loop": true,
+			"bones": {
+				"jawl": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5167": [40, 0, 0],
+						"1.0": [-10, 0, 0],
+						"1.5667": [0, 0, 0],
+						"2.0": [30, 0, 0],
+						"2.5167": [0, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}

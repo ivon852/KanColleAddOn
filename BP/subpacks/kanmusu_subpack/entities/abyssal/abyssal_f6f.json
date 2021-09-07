@@ -1,0 +1,163 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "abyssal:abyssal_f6f",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "lifetime": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": 60,
+          "time_down_event": {
+            "event": "disappear",
+            "target": "self"
+          }
+        }
+      },
+      "disappear": {
+        "minecraft:despawn": {}
+      }
+    },
+    "events": {
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "life_time"
+          ]
+        }
+      },
+      "disappear": {
+        "add": {
+          "component_groups": [
+            "disappear"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:behavior.ranged_attack": {
+        "priority": 3,
+        "attack_interval_min": 5,
+        "attack_interval_max": 10,
+        "charge_charged_trigger": 0.0,
+        "charge_shoot_trigger": 0.1,
+        "attack_radius": 20,
+        "burst_shots": 2,
+        "burst_interval": 1
+      },
+      "minecraft:shooter": {
+        "def": "newmob:bullet_aircraft"
+      },
+      "minecraft:behavior.avoid_mob_type": {
+        "priority": 4,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "kanmusu"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "aircraft"
+                }
+              ]
+            },
+            "max_dist": 10,
+            "walk_speed_multiplier": 1,
+            "sprint_speed_multiplier": 1
+          }
+        ]
+      },
+      "minecraft:experience_reward": {
+        "on_death": "query.last_hit_by_player ? 10 : 0"
+      },
+      "minecraft:scale": {
+        "value": 0.2
+      },
+      "minecraft:type_family": {
+        "family": [
+          "abyssal",
+          "fighter",
+          "aircraft",
+          "monster"
+        ]
+      },
+      "minecraft:nameable": {},
+      "minecraft:health": {
+        "value": 20,
+        "max": 20
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:movement": {
+        "value": 0.05
+      },
+      "minecraft:follow_range": {
+        "value": 64,
+        "max": 64
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 1,
+        "within_radius": 64.0,
+        "target_search_height": 80.0,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "kanmusu"
+                },
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "player"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "minecraft:navigation.float": {
+        "can_path_over_water": true
+      },
+      "minecraft:behavior.float_wander": {
+        "priority": 2,
+        "xz_dist": 10,
+        "y_dist": 10,
+        "y_offset": -2.0,
+        "random_reselect": true,
+        "float_duration": [
+          0.1,
+          0.35
+        ]
+      },
+      "minecraft:behavior.float": {
+        "priority": 5
+      },
+      "minecraft:flying_speed": {
+        "value": 0.2
+      },
+      "minecraft:jump.static": {},
+      "minecraft:can_fly": {},
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

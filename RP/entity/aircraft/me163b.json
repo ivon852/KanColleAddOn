@@ -1,0 +1,37 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aircraft:me163b",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/me163b",
+        "on": "textures/entity/me163b_on"
+      },
+      "geometry": {
+        "default": "geometry.me163b"
+      },
+      "render_controllers": ["controller.render.me163b"],
+      "animations": {
+        "move": "animation.me163b.move",
+        "retract_gear": "animation.me163b.retract_gear",
+        "move_controller": "controller.animation.me163b.move",
+        "retract_gear_controller": "controller.animation.me163b.retract_gear",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "move_controller",
+          "look_at_target",
+          "retract_gear_controller"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_me163b",
+        "texture_index": 0
+      }
+    }
+  }
+}

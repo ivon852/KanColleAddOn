@@ -1,0 +1,41 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.northern_princess.move": {
+      "states": {
+        "default": {
+          "animations": [
+            { "move": "query.modified_move_speed && !query.is_riding" }
+          ]
+        }
+      }
+    },
+    "controller.animation.northern_princess.general": {
+      "states": {
+        "default": {
+          "animations": [{ "general": "query.is_riding" }]
+        }
+      }
+    },
+    "controller.animation.northern_princess.attack": {
+      "states": {
+        "default": {
+          "transitions":[{"attacking":"query.is_charged"}]
+        },
+        "attacking": {
+          "animations": ["attack"],
+          "transitions":[{"default":"!query.is_charged && query.any_animation_finished"}]
+        }
+      }
+    },
+    "controller.animation.northern_princess.attack_barehand": {
+      "states": {
+        "default": {
+          "animations": [
+            { "attack_barehand": "variable.attack_time>0 && !query.is_riding" }
+          ]
+        }
+      }
+    }
+  }
+}

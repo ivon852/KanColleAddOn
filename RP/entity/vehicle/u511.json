@@ -1,0 +1,30 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "submarine:u511",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/u511"
+      },
+      "geometry": {
+        "default": "geometry.u511"
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "animations": {
+        "move": "animation.u511.move",
+        "root": "controller.animation.u511.root",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": ["root", "look_at_target"]
+      },
+      "spawn_egg": {
+        "texture": "spawn_u511",
+        "texture_index": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aircraft:ki_61",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/ki_61"
+      },
+      "geometry": {
+        "default": "geometry.ki_61"
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "animations": {
+        "move": "animation.ki_61.move",
+        "on_ground": "animation.ki_61.on_ground",
+        "retract_gear": "animation.ki_61.retract_gear",
+        "ki_61_controller": "controller.animation.ki_61.move",
+        "ki_61_on_ground_controller": "controller.animation.ki_61.on_ground",
+        "ki_61_retract_gear_controller": "controller.animation.ki_61.retract_gear",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "ki_61_controller",
+          "look_at_target",
+          "ki_61_on_ground_controller",
+          "ki_61_retract_gear_controller"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_ki_61",
+        "texture_index": 0
+      }
+    }
+  }
+}

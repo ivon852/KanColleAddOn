@@ -1,0 +1,46 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.spitfiremkix.move": {
+			"loop": true,
+			"animation_length": 0.24,
+			"bones": {
+				"spin": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.24": [0, 0, 360]
+					}
+				}
+			}
+		},
+		"animation.spitfiremkix.retract_gear": {
+			"loop": true,
+			"bones": {
+				"canopy": {
+					"position": [0, 0, -12]
+				},
+				"gear2": {
+					"rotation": [32.5, 0, 92.5]
+				},
+				"gear": {
+					"rotation": [32.5, 0, -92.5]
+				}
+			}
+		},
+		"animation.spitfiremkix.on_ground": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [-12.5, 0, 0],
+					"position": [0, 0, 0]
+				},
+				"flap2": {
+					"rotation": [-60, 0, 0]
+				},
+				"flap": {
+					"rotation": [-60, 0, 0]
+				}
+			}
+		}
+	}
+}

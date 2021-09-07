@@ -1,0 +1,31 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tank:t3485",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/t3485",
+        "normal": "textures/entity/t3485_normal"
+      },
+      "geometry": {
+        "default": "geometry.t3485"
+      },
+      "render_controllers": ["controller.render.t3485"],
+      "animations": {
+        "move": "animation.t3485.move",
+        "move_controller": "controller.animation.t3485.move",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": ["move_controller", "look_at_target"]
+      },
+      "spawn_egg": {
+        "texture": "spawn_t3485",
+        "texture_index": 0
+      }
+    }
+  }
+}

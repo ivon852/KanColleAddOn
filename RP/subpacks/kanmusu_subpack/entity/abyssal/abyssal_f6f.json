@@ -1,0 +1,26 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:abyssal_f6f",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/abyssal_f6f"
+      },
+      "geometry": {
+        "default": "geometry.abyssal_f6f"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.abyssal_f6f.move",
+        "c5_move": "controller.animation.abyssal_f6f.move"
+      },
+      "scripts": {
+        "animate": ["c5_move", "look_at_target"]
+      },
+      "render_controllers": ["controller.render.newmob"]
+    }
+  }
+}

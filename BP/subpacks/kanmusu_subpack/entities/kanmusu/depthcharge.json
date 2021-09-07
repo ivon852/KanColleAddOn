@@ -1,0 +1,65 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "newmob:depthcharge",
+      "runtime_identifier": "minecraft:snowball",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "component_groups": {
+      "minecraft:exploding": {
+        "minecraft:explode": {
+          "fuse_length": 0,
+          "fuse_lit": true,
+          "power": 2.0,
+          "causes_fire": false,
+          "destroy_affected_by_griefing": true
+        }
+      }
+    },
+    "events": {
+      "minecraft:explode": {
+        "add": {
+          "component_groups": ["minecraft:exploding"]
+        }
+      }
+    },
+    "components": {
+      "minecraft:collision_box": {
+        "width": 0.9,
+        "height": 0.1
+      },
+      "minecraft:scale": {
+        "value":0.5
+      },
+      "minecraft:projectile": {
+        "on_hit": {
+          "knockback": true,
+          "definition_event": {
+            "affect_projectile": true,
+            "event_trigger": {
+              "event": "minecraft:explode",
+              "target": "self"
+            }
+          }
+        },
+        "shoottarget": true,
+        "power": 1.5,
+        "gravity": 0.01,
+        "uncertaintyBase": 0,
+        "anchor": 1,
+        "inertia": 1,
+        "liquid_inertia": 0.5,
+        "remove_on_hit": {}
+      },
+
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": false,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

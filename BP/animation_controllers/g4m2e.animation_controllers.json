@@ -1,0 +1,138 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.g4m2e_mxy7": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "working": "1.0"
+            }
+          ]
+        },
+        "working": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @e[type=aircraft:mxy7] ^ ^ ^ tp @s ^ ^ ^3 true",
+            "/execute @e[type=aircraft:mxy7] ~ ~ ~ particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @e[type=weapon:type91torpedo, tag=inwater] ^ ^ ^ tp @s ^ ^ ^2 true"
+          ]
+        }
+      }
+    },
+    "controller.animation.g4m2e_weapon": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "drop_bomb": "query.get_equipped_item_name=='bomb' && query.mark_variant==4"
+            },
+            {
+              "mxy7": "query.get_equipped_item_name=='mxy7' && query.mark_variant==3"
+            },
+            {
+              "type91torpedo": "query.get_equipped_item_name=='type91torpedo' && query.mark_variant==5"
+            }
+          ]
+        },
+        "drop_bomb": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~+5 ~-1 ~ summon tnt",
+            "/execute @s ~-5 ~-1 ~ summon tnt",
+            "/execute @s ~ ~-1 ~+5 summon tnt",
+            "/execute @s ~ ~-1 ~-5 summon tnt",
+            "/execute @s ~+5 ~-1 ~+5 summon tnt",
+            "/execute @s ~+5 ~-1 ~-5 summon tnt",
+            "/execute @s ~-5 ~-1 ~+5 summon tnt",
+            "/execute @s ~+5 ~-1 ~-5 summon tnt",
+            "/execute @s ~ ~-1 ~ summon tnt",
+            "/execute @s ~ ~-1 ~ summon tnt",
+            "/execute @s ~ ~-1 ~ summon tnt",
+            "/execute @s ~ ~-1 ~ summon tnt",
+            "/execute @p ~ ~ ~ playsound type99d.drop_bomb @s ~ ~ ~ 1 1 1"
+          ],
+          "on_exit": [
+            "/execute @e[type=aircraft:g4m2e, tag=flying] ~ ~ ~ replaceitem entity @s slot.weapon.mainhand 0 air"
+          ]
+        },
+        "mxy7": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "@s fire_mxy7",
+            "/execute @p ~ ~ ~ playsound me163b.engine @s ~ ~ ~ 1 1 1"
+          ],
+          "on_exit": [
+            "/execute @e[type=aircraft:g4m2e, tag=flying] ~ ~ ~ replaceitem entity @s slot.weapon.mainhand 0 air",
+            "@s reset_aircraft"
+          ]
+        },
+        "type91torpedo": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": ["@s fire_type91torpedo"],
+          "on_exit": [
+            "/execute @e[type=aircraft:g4m2e, tag=flying] ~ ~ ~ replaceitem entity @s slot.weapon.mainhand 0 air",
+            "@s reset_aircraft"
+          ]
+        }
+      }
+    },
+    "controller.animation.g4m2e_mechanic": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "working": "query.has_rider"
+            },
+            {
+              "remove": "!query.has_rider"
+            }
+          ]
+        },
+        "remove": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": ["/execute @s ~ ~ ~ tag @s remove flying"]
+        },
+        "working": {
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ~ ~ ~ tag @s add flying",
+            "/execute @p[rx=-72,rxm=-90] ~ ~ ~ execute @e[tag=flying,type=aircraft:g4m2e,c=1] ~ ~ ~ tp @s ~ ~-0.5 ~ ~ -90 true",
+            "/execute @p[rx=-54,rxm=-72] ~ ~ ~ execute @e[tag=flying,type=aircraft:g4m2e,c=1] ~ ~ ~ effect @s levitation 1 1 true",
+            "/execute @p[rx=-36,rxm=-54] ~ ~ ~ execute @e[tag=flying,type=aircraft:g4m2e,c=1] ~ ~ ~ effect @s levitation 1 2 true",
+            "/execute @p[rx=-18,rxm=-36] ~ ~ ~ execute @e[tag=flying,type=aircraft:g4m2e,c=1] ~ ~ ~ effect @s levitation 1 1 true",
+            "/execute @p[rx=0,rxm=-18] ~ ~ ~ execute @e[tag=flying,type=aircraft:g4m2e,c=1] ~ ~ ~ effect @s levitation 1 0 true",
+            "/execute @p[rx=45,rxm=0] ~ ~ ~ execute @e[tag=flying,type=aircraft:g4m2e,c=1] ~ ~ ~ effect @s slow_falling 1 2 true",
+            "/execute @p[rx=75,rxm=45] ~ ~ ~ execute @e[tag=flying,type=aircraft:g4m2e,c=1] ~ ~ ~ effect @s slow_falling 1 1 true",
+            "/execute @p[rx=90,rxm=80] ~ ~ ~ execute @e[tag=flying,type=aircraft:g4m2e,c=1] ~ ~ ~ tp @s ~ ~-0.5 ~ ~ 90 true",
+            "/execute @p[r=2] ~ ~ ~ playsound g4m2e.engine @s ~ ~ ~ 1 1 1"
+          ]
+        }
+      }
+    }
+  }
+}

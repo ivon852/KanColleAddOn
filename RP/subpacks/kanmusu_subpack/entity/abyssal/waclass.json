@@ -1,0 +1,28 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:waclass",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/waclass"
+      },
+      "geometry": {
+        "default": "geometry.waclass"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": ["look_at_target"]
+      },
+      "render_controllers": ["controller.render.waclass"],
+      "spawn_egg": {
+        "texture": "spawn_waclass",
+        "texture_index": 0
+      }
+    }
+  }
+}

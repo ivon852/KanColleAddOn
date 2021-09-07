@@ -1,0 +1,25 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.panzeriv.move": {
+      "states": {
+        "default": {
+          "animations": [{ "move": "query.modified_move_speed" }],
+          "transitions": [
+            {
+              "open": "query.modified_move_speed==0"
+            }
+          ]
+        },
+        "open": {
+          "animations": ["open"],
+          "transitions": [
+            {
+              "default": "query.modified_move_speed>0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

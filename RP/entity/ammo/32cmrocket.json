@@ -1,0 +1,26 @@
+ {
+
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "weapon:32cmrocket",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/32cmrocket"
+      },
+      "geometry": {
+        "default": "geometry.32cmrocket"
+      },
+      "render_controllers": [ "controller.render.newmob" ],
+      "spawn_egg": {
+        "texture": "spawn_32cmrocket",
+        "texture_index": 0
+      }
+
+
+    }
+}
+}   
+

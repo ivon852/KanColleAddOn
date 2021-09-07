@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:type1ap",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/type1ap"
+      },
+      "geometry": {
+        "default": "geometry.type1ap"
+      },
+      "render_controllers": [ "controller.render.newmob" ]
+    }
+  }
+}

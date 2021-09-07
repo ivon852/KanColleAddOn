@@ -1,0 +1,329 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tank:m4a1dd",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.m4a1dd_mechanic"
+      },
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      }
+    },
+    "events": {
+      "m4a1dd:inwater": {
+        "add": {
+          "component_groups": [
+            "m4a1dd:inwater"
+          ]
+        }
+      },
+      "m4a1dd:onland": {
+        "add": {
+          "component_groups": [
+            "m4a1dd:onland"
+          ]
+        }
+      },
+      "m4a1dd:machinegun": {
+        "add": {
+          "component_groups": [
+            "m4a1dd:machinegun"
+          ]
+        }
+      },
+      "m4a1dd:stop_machinegun": {
+        "remove": {
+          "component_groups": [
+            "m4a1dd:machinegun"
+          ]
+        }
+      },
+      "m4a1dd:shoot": {
+        "add": {
+          "component_groups": [
+            "m4a1dd:shoot"
+          ]
+        }
+      },
+      "m4a1dd:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "m4a1dd:shoot"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "kanmusu_spawned"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned"
+          ]
+        }
+      },
+      "disappear": {
+        "add": {
+          "component_groups": [
+            "disappear"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "m4a1dd:inwater": {
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.m4a1dd.get_on",
+          "seats": {
+            "position": [
+              -0.5,
+              1.5,
+              -1
+            ]
+          }
+        }
+      },
+      "m4a1dd:onland": {
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.m4a1dd.get_on",
+          "seats": {
+            "position": [
+              -0.5,
+              5.5,
+              -1
+            ]
+          }
+        }
+      },
+      "m4a1dd:machinegun": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:bullet_aircraft"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 1,
+          "time_down_event": {
+            "event": "m4a1dd:stop_machinegun",
+            "target": "self"
+          }
+        }
+      },
+      "m4a1dd:shoot": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:75cmap",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "m4a1dd:stop_shoot",
+            "target": "self"
+          }
+        }
+      },
+      "disappear": {
+        "minecraft:despawn": {}
+      },
+      "player_spawned": {
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "iron_block",
+              "heal_amount": 20
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.2
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:75cmap_item"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "m4a1dd:shoot"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.m4a1dd.fire"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:127cmbelt"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "m4a1dd:machinegun"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.m4a1dd.fire"
+            }
+          ]
+        },
+        "minecraft:scale": {
+          "value": 0.6
+        },
+        "minecraft:collision_box": {
+          "width": 8,
+          "height": 8
+        }
+      }
+    },
+    "components": {
+      "minecraft:behavior.float": {},
+      "minecraft:buoyant": {
+        "base_buoyancy": 0.5,
+        "apply_gravity": true,
+        "simulate_waves": true,
+        "big_wave_probability": 0.02,
+        "big_wave_speed": 10.0,
+        "liquid_blocks": [
+          "minecraft:water",
+          "minecraft:flowing_water"
+        ]
+      },
+      "minecraft:environment_sensor": {
+        "triggers": [
+          {
+            "filters": {
+              "test": "in_water",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "event": "m4a1dd:inwater"
+          },
+          {
+            "filters": {
+              "test": "is_underwater",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "event": "m4a1dd:inwater"
+          },
+          {
+            "filters": {
+              "test": "in_lava",
+              "subject": "self",
+              "operator": "==",
+              "value": true
+            },
+            "event": "m4a1dd:inwater"
+          },
+          {
+            "filters": {
+              "test": "in_water",
+              "subject": "self",
+              "operator": "==",
+              "value": false
+            },
+            "event": "m4a1dd:onland"
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "tank",
+          "kanmusu"
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:health": {
+        "value": 140,
+        "max": 140
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/m4a1dd.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

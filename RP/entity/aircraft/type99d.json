@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "aircraft:type99d",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/type99d"
+      },
+      "geometry": {
+        "default": "geometry.type99d"
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "animations": {
+        "move": "animation.type99d.move",
+        "on_ground": "animation.type99d.on_ground",
+        "type99d_controller": "controller.animation.type99d.move",
+        "type99d_on_ground": "controller.animation.type99d.on_ground",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": ["type99d_controller", "look_at_target", "type99d_on_ground"]
+      },
+      "spawn_egg": {
+        "texture": "spawn_type99d",
+        "texture_index": 0
+      }
+    }
+  }
+}

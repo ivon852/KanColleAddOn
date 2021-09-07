@@ -1,0 +1,269 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tank:t3485",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.t3485_mechanic"
+      },
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      }
+    },
+    "events": {
+      "t3485:machinegun": {
+        "add": {
+          "component_groups": [
+            "t3485:machinegun"
+          ]
+        }
+      },
+      "t3485:stop_machinegun": {
+        "remove": {
+          "component_groups": [
+            "t3485:machinegun"
+          ]
+        }
+      },
+      "t3485:shoot": {
+        "add": {
+          "component_groups": [
+            "t3485:shoot"
+          ]
+        }
+      },
+      "t3485:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "t3485:shoot"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "kanmusu_spawned"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "t3485:makewhite",
+                    "player_spawned"
+                  ]
+                }
+              },
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "t3485:makenormal",
+                    "player_spawned"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "disappear": {
+        "add": {
+          "component_groups": [
+            "disappear"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "t3485:makewhite": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "t3485:makenormal": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
+      "t3485:machinegun": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:762mmdp"
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 1,
+          "time_down_event": {
+            "event": "t3485:stop_machinegun",
+            "target": "self"
+          }
+        }
+      },
+      "t3485:shoot": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:ziss53ap",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "t3485:stop_shoot",
+            "target": "self"
+          }
+        }
+      },
+      "disappear": {
+        "minecraft:despawn": {}
+      },
+      "player_spawned": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:ziss53ap_item"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "t3485:shoot"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.t3485.fire"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:127cmbelt"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "t3485:machinegun"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.t3485.fire"
+            }
+          ]
+        },
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "iron_block",
+              "heal_amount": 20
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.2
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.t3485.get_on",
+          "seats": {
+            "position": [
+              0.6,
+              3.8,
+              -1.4
+            ]
+          }
+        },
+        "minecraft:scale": {
+          "value": 0.8
+        },
+        "minecraft:collision_box": {
+          "width": 5,
+          "height": 6
+        }
+      }
+    },
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "tank",
+          "kanmusu"
+        ]
+      },
+      "minecraft:health": {
+        "value": 140,
+        "max": 140
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 14.0,
+        "hard_distance": 1.0,
+        "max_distance": 20.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/t3485.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

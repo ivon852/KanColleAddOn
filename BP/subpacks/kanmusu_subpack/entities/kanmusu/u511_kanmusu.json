@@ -1,0 +1,470 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "kanmusu:u511",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "scripts": {
+        "animate": [
+          "mechanic",
+          "u511_kanmusu_talk"
+        ]
+      },
+      "animations": [
+        {
+          "mechanic": "controller.animation.u511_kanmusu_mechanic"
+        },
+        {
+          "u511_kanmusu_talk": "controller.animation.u511_kanmusu_talk"
+        }
+      ]
+    },
+
+    "component_groups": {
+      "u511_kanmusu:stop_talking": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "u511_kanmusu:start_talking": {
+        "minecraft:mark_variant": {
+          "value": 2
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "u511_kanmusu:stop_talking",
+            "target": "self"
+          }
+        }
+      },
+      "runaway": {
+        "minecraft:timer": {
+          "looping": false,
+          "time": 10,
+          "time_down_event": {
+            "event": "battle_end",
+            "target": "self"
+          }
+        },
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "abyssal"
+              },
+              "max_dist": 20,
+              "walk_speed_multiplier": 1.2,
+              "sprint_speed_multiplier": 1.2
+            }
+          ]
+        }
+      },
+      "battle_start": {
+        "minecraft:behavior.ranged_attack": {
+          "priority": 3,
+          "attack_interval_min": 1,
+          "attack_interval_max": 2,
+          "attack_radius": 5,
+          "burst_shots": 2,
+          "burst_interval": 5,
+          "charge_shoot_trigger": 0.1
+        },
+        "minecraft:shooter": {
+          "def": "newmob:torpedo"
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 10,
+          "time_down_event": {
+            "event": "runaway",
+            "target": "self"
+          }
+        }
+      },
+      "onland": {
+        "minecraft:movement.amphibious": {},
+        "minecraft:behavior.move_to_water": {
+          "priority": 3,
+          "search_range": 10,
+          "search_height": 10
+        },
+        "minecraft:target_nearby_sensor": {
+          "inside_range": 5,
+          "outside_range": 6,
+          "on_inside_range": {
+            "event": "too_close",
+            "target": "self"
+          },
+          "on_outside_range": {
+            "event": "range_attack",
+            "target": "self"
+          }
+        },
+        "minecraft:ambient_sound_interval": {
+          "event_name": "ambient",
+          "range": 1.0,
+          "value": 1
+        },
+        "minecraft:behavior.random_stroll": {
+          "priority": 7
+        },
+        "minecraft:navigation.generic": {
+          "is_amphibious": true,
+          "can_path_over_water": true,
+          "can_swim": true,
+          "can_walk": true,
+          "can_breach": true,
+          "can_sink": false
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "on_ground",
+                    "operator": "==",
+                    "value": false
+                  },
+                  {
+                    "test": "in_water",
+                    "operator": "==",
+                    "value": true
+                  }
+                ]
+              },
+              "event": "inwater"
+            }
+          ]
+        }
+      },
+      "inwater": {
+        "minecraft:on_target_acquired": {
+          "target": "self",
+          "event": "battle_start"
+        },
+        "minecraft:ambient_sound_interval": {
+          "event_name": "ambient",
+          "range": 0,
+          "value": 0
+        },
+        "minecraft:behavior.nearest_attackable_target": {
+          "priority": 4,
+          "entity_types": [
+            {
+              "filters": {
+                "any_of": [
+                  {
+                    "test": "is_family",
+                    "subject": "other",
+                    "value": "abyssal"
+                  }
+                ]
+              }
+            }
+          ],
+          "must_see": true,
+          "within_radius": 64,
+          "reselect_targets": true
+        },
+        "minecraft:navigation.generic": {
+          "is_amphibious": true,
+          "can_path_over_water": false,
+          "can_swim": true,
+          "can_walk": false,
+          "can_breach": false,
+          "can_sink": false
+        },
+        "minecraft:behavior.random_swim": {
+          "priority": 4,
+          "interval": 0,
+          "xz_dist": 20,
+          "y_dist": 20
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "on_ground",
+                    "operator": "==",
+                    "value": true
+                  },
+                  {
+                    "test": "in_water",
+                    "operator": "!=",
+                    "value": true
+                  }
+                ]
+              },
+              "event": "onland"
+            }
+          ]
+        }
+      },
+      "too_close": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "abyssal"
+              },
+              "max_dist": 10,
+              "walk_speed_multiplier": 1.5,
+              "sprint_speed_multiplier": 1.5
+            }
+          ]
+        }
+      }
+    },
+
+    "events": {
+      "u511_kanmusu:start_talking": {
+        "remove": {
+          "component_groups": [
+            "u511_kanmusu:stop_talking"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "u511_kanmusu:start_talking"
+          ]
+        }
+      },
+      "u511_kanmusu:stop_talking": {
+        "remove": {
+          "component_groups": [
+            "u511_kanmusu:start_talking"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "u511_kanmusu:stop_talking"
+          ]
+        }
+      },
+      "battle_end": {
+        "remove": {
+          "component_groups": [
+            "runaway"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "battle_start"
+          ]
+        }
+      },
+      "runaway": {
+        "remove": {
+          "component_groups": [
+            "battle_start"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "runaway"
+          ]
+        }
+      },
+      "battle_start": {
+        "add": {
+          "component_groups": [
+            "battle_start"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "inwater"
+          ]
+        }
+      },
+      "onland": {
+        "remove": {
+          "component_groups": [
+            "inwater"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "onland"
+          ]
+        }
+      },
+      "inwater": {
+        "remove": {
+          "component_groups": [
+            "onland"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "inwater"
+          ]
+        }
+      },
+      "too_close": {
+        "add": {
+          "component_groups": [
+            "too_close"
+          ]
+        }
+      },
+      "range_attack": {
+        "remove": {
+          "component_groups": [
+            "too_close"
+          ]
+        }
+      }
+    },
+    "components": {
+      "minecraft:mark_variant": {
+        "value": 1
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:admiral_cap"
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "u511_kanmusu:start_talking"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.talk"
+          }
+        ]
+      },
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "newitem:mamiya",
+            "heal_amount": 20
+          },
+          {
+            "item": "newitem:irako",
+            "heal_amount": 15
+          }
+        ]
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 2,
+        "speed_multiplier": 1.25,
+        "items": [
+          "newitem:admiral_cap",
+          "newitem:mamiya"
+        ]
+      },
+      "minecraft:behavior.follow_mob": {},
+      "minecraft:type_family": {
+        "family": [
+          "kanmusu",
+          "u511",
+          "submarine"
+        ]
+      },
+      "minecraft:health": {
+        "value": 15,
+        "max": 15
+      },
+      "minecraft:jump.static": {},
+      "minecraft:movement.amphibious": {},
+      "minecraft:can_climb": {},
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 2
+      },
+      "minecraft:follow_range": {
+        "value": 48,
+        "max": 48
+      },
+      "minecraft:movement": {
+        "value": 0.15
+      },
+      "minecraft:water_movement": {
+        "value": 0.15
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.15
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 5
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:attack": {
+        "damage": 5
+      },
+      "minecraft:behavior.hurt_by_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "abyssal"
+                }
+              ]
+            },
+            "max_dist": 64
+          }
+        ]
+      },
+      "minecraft:behavior.mount_pathing": {
+        "speed_multiplier": 1.25,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/u511_kanmusu.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

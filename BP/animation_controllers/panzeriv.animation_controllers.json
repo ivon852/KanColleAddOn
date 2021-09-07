@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.panzeriv_mechanic": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "remove": "!query.has_rider"
+            },
+            {
+              "is_riding": "query.has_rider"
+            }
+          ]
+        },
+        "remove": {
+          "on_entry": ["/execute @s ~ ~ ~ tag @s remove riding"],
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ]
+        },
+        "is_riding": {
+          "on_entry": ["/execute @s ~ ~ ~ tag @s add riding"],
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

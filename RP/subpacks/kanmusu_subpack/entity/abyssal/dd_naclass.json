@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:dd_naclass",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/dd_naclass"
+      },
+      "geometry": {
+        "default": "geometry.dd_naclass"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.dd_naclass.move",
+        "general": "animation.dd_naclass.general",
+        "c_move": "controller.animation.dd_naclass.move",
+        "c_general": "controller.animation.dd_naclass.general"
+      },
+      "scripts": {
+        "animate": ["c_move", "c_general", "look_at_target"]
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "spawn_egg": {
+        "texture": "spawn_dd_naclass",
+        "texture_index": 0
+      }
+    }
+  }
+}

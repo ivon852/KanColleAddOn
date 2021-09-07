@@ -1,0 +1,297 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "kanmusu:shimakaze",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "shimakaze_talk": "controller.animation.shimakaze_talk"
+      },
+      "scripts": {
+        "animate": ["shimakaze_talk"]
+      }
+    },
+
+    "component_groups": {
+      "shimakaze:stop_talking":{
+        "minecraft:mark_variant":{
+          "value":1
+        }
+      },
+      "shimakaze:start_talking":{
+        "minecraft:mark_variant":{
+          "value":2
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "shimakaze:stop_talking",
+            "target": "self"
+          }
+        }
+      },
+      "shimakaze_too_close": {
+        "minecraft:behavior.avoid_mob_type": {
+          "priority": 1,
+          "entity_types": [
+            {
+              "filters": {
+                "test": "is_family",
+                "subject": "other",
+                "value": "abyssal"
+              },
+              "max_dist": 10,
+              "walk_speed_multiplier": 2.5,
+              "sprint_speed_multiplier": 2.5
+            }
+          ]
+        }
+      }
+    },
+
+    "events": {
+      "shimakaze:start_talking": {
+        "remove": {
+          "component_groups": ["shimakaze:stop_talking"]
+        },
+        "add": {
+          "component_groups": ["shimakaze:start_talking"]
+        }
+      },
+      "shimakaze:stop_talking": {
+        "remove": {
+          "component_groups": ["shimakaze:start_talking"]
+        },
+        "add": {
+          "component_groups": ["shimakaze:stop_talking"]
+        }
+      },
+      "shimakaze_too_close": {
+        "add": {
+          "component_groups": ["shimakaze_too_close"]
+        }
+      },
+      "shimakaze_range_attack": {
+        "remove": {
+          "component_groups": ["shimakaze_too_close"]
+        }
+      }
+    },
+
+    "components": {
+      "minecraft:mark_variant":{
+        "value":1
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:admiral_cap"
+                  }
+                ]
+              },
+              "target": "self",
+              "event":"shimakaze:start_talking"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.talk"
+          }
+        ]
+      },
+      /*
+      "minecraft:lookat": {
+        "look_event": "shimakaze:start_talking",
+        "allow_invulnerable":true,
+        "search_radius": 64.0,
+        "look_cooldown": 5.0,
+        "filters": {
+          "all_of": [
+            {
+              "subject": "other",
+              "test": "is_family",
+              "value": "player"
+            },
+            {
+              "test": "has_equipment",
+              "domain": "head",
+              "subject": "other",
+              "operator": "not",
+              "value": "carved_pumpkin"
+            }
+          ]
+        }
+      },
+      */
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "newitem:mamiya",
+            "heal_amount": 20
+          },
+          {
+            "item": "newitem:irako",
+            "heal_amount": 15
+          }
+        ]
+      },
+      "minecraft:behavior.tempt": {
+        "priority": 2,
+        "speed_multiplier": 1.25,
+        "items": ["newitem:admiral_cap", "newitem:mamiya"]
+      },
+      "minecraft:target_nearby_sensor": {
+        "inside_range": 9,
+        "outside_range": 10,
+        "on_inside_range": {
+          "event": "shimakaze_too_close",
+          "target": "self"
+        },
+        "on_outside_range": {
+          "event": "shimakaze_range_attack",
+          "target": "self"
+        }
+      },
+      "minecraft:behavior.follow_mob": {},
+      "minecraft:type_family": {
+        "family": ["kanmusu", "shimakaze", "mob"]
+      },
+      "minecraft:health": {
+        "value": 36,
+        "max": 36
+      },
+      "minecraft:navigation.generic": {
+        "can_path_over_water": true,
+        "can_walk": true,
+        "can_sink": false
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:jump.static": {},
+      "minecraft:scale": {
+        "value": 1.0
+      },
+      "minecraft:fire_immune": true,
+      "minecraft:floats_in_liquid": {},
+      "minecraft:behavior.float": {},
+      "minecraft:breathable": {
+        "breathesAir": true,
+        "breathesWater": true
+      },
+      "minecraft:collision_box": {
+        "width": 1.2567,
+        "height": 1.21
+      },
+
+      "minecraft:movement": {
+        "value": 0.49
+      },
+      "minecraft:underwater_movement": {
+        "value": 0.5
+      },
+
+      "minecraft:behavior.random_stroll": {
+        "priority": 5
+      },
+      "minecraft:behavior.look_at_player": {
+        "priority": 6,
+        "look_distance": 5
+      },
+      "minecraft:behavior.random_look_around": {
+        "priority": 7
+      },
+      "minecraft:spawn_entity": {
+        "entities": {
+          "should_leash": true,
+          "min_wait_time": 1,
+          "max_wait_time": 1,
+          "num_to_spawn": 3,
+          "spawn_entity": "kanmusu:127cm",
+          "single_use": true
+        }
+      },
+
+      "minecraft:attack": {
+        "damage": 10
+      },
+
+      "minecraft:behavior.ranged_attack": {
+        "priority": 3,
+        "attack_interval_min": 5,
+        "attack_interval_max": 10,
+        "attack_radius": 18,
+        "burst_shots": 5,
+        "burst_interval": 5,
+        "charge_shoot_trigger": 0.1
+      },
+      "minecraft:shooter": {
+        "def": "newmob:torpedo"
+      },
+
+      "minecraft:behavior.hurt_by_target": {
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "abyssal"
+                }
+              ]
+            },
+            "max_dist": 64
+          }
+        ]
+      },
+      "minecraft:behavior.mount_pathing": {
+        "speed_multiplier": 1,
+        "target_dist": 0,
+        "track_target": true
+      },
+      "minecraft:behavior.nearest_attackable_target": {
+        "priority": 4,
+        "entity_types": [
+          {
+            "filters": {
+              "any_of": [
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "abyssal"
+                }
+              ]
+            }
+          }
+        ],
+        "must_see": true,
+        "within_radius": 64,
+        "reselect_targets":true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 4.0,
+        "hard_distance": 6.0,
+        "max_distance": 10.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/shimakaze.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

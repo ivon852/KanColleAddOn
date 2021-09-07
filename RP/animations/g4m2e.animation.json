@@ -1,0 +1,56 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.g4m2e.retract_gear": {
+      "loop": true,
+      "bones": {
+        "cap": {
+          "rotation": [0, 0, 80]
+        },
+        "cap2": {
+          "rotation": [0, 0, -80]
+        },
+        "wheelset": {
+          "rotation": [-100, 0, 0],
+          "scale": [1, 0.3, 0.3]
+        },
+        "cap3": {
+          "rotation": [0, 0, -80]
+        },
+        "cap4": {
+          "rotation": [0, 0, 80]
+        },
+        "wheelset2": {
+          "rotation": [-110, 0, 0],
+          "scale": [1, 0.3, 0.3]
+        }
+      }
+    },
+    "animation.g4m2e.moving": {
+      "loop": true,
+      "animation_length": 0.24,
+      "bones": {
+        "propeller": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.2333": [0, 0, -360]
+          }
+        },
+        "propeller2": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.2333": [0, 0, 360]
+          }
+        }
+      }
+    },
+    "animation.g4m2e.on_ground": {
+      "loop": true,
+      "bones": {
+        "g4m2e": {
+          "rotation": [-5, 0, 0]
+        }
+      }
+    }
+  }
+}

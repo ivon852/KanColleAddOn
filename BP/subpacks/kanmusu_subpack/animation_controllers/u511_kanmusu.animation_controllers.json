@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.u511_kanmusu_mechanic": {
+      "states": {
+        "default": {
+          "on_entry": [
+            "/execute @e[r=2, type=player] ~ ~ ~ effect @s conduit_power 5 5 true"
+          ],
+          "transitions": [
+            {
+              "working": "query.is_in_water"
+            }
+          ]
+        },
+        "working": {
+          "transitions": [
+            {
+              "default": "query.is_in_water"
+            }
+          ],
+          "on_entry": [
+            "/execute @e[r=2, type=player] ~ ~ ~ effect @s conduit_power 5 5 true"
+          ]
+        }
+      }
+    }
+  }
+}

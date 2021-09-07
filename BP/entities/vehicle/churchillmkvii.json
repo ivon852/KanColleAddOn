@@ -1,0 +1,244 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "tank:churchillmkvii",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.churchillmkvii_mechanic"
+      },
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      }
+    },
+    "events": {
+      "churchillmkvii:shoot": {
+        "add": {
+          "component_groups": [
+            "churchillmkvii:shoot"
+          ]
+        }
+      },
+      "churchillmkvii:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "churchillmkvii:shoot"
+          ]
+        }
+      },
+      "churchillmkvii:fireflame": {
+        "add": {
+          "component_groups": [
+            "churchillmkvii:fireflame"
+          ]
+        }
+      },
+      "churchillmkvii:stopfireflame": {
+        "add": {
+          "component_groups": [
+            "churchillmkvii:stopfireflame"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "kanmusu_spawned"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned"
+          ]
+        }
+      },
+      "disappear": {
+        "add": {
+          "component_groups": [
+            "disappear"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "churchillmkvii:shoot": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:m46he",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "churchillmkvii:stop_shoot",
+            "target": "self"
+          }
+        }
+      },
+      "churchillmkvii:stopfireflame": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "churchillmkvii:fireflame": {
+        "minecraft:mark_variant": {
+          "value": 1
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 1,
+          "time_down_event": {
+            "event": "churchillmkvii:stopfireflame",
+            "target": "self"
+          }
+        }
+      },
+      "disappear": {
+        "minecraft:despawn": {}
+      },
+      "player_spawned": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:m46he_item"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "churchillmkvii:shoot"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.churchillmkvii.fire"
+            },
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:flamethrower"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "churchillmkvii:fireflame"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.churchillmkvii.firem"
+            }
+          ]
+        },
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "iron_block",
+              "heal_amount": 20
+            }
+          ]
+        },
+        "minecraft:mark_variant": {
+          "value": 0
+        },
+        "minecraft:movement": {
+          "value": 0.1
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.churchillmkvii.get_on",
+          "seats": {
+            "position": [
+              0.6,
+              3.5,
+              -1
+            ]
+          }
+        },
+        "minecraft:scale": {
+          "value": 1
+        },
+        "minecraft:collision_box": {
+          "width": 5,
+          "height": 5
+        }
+      }
+    },
+    "components": {
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:type_family": {
+        "family": [
+          "tank",
+          "kanmusu"
+        ]
+      },
+      "minecraft:health": {
+        "value": 150,
+        "max": 150
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 14.0,
+        "hard_distance": 1.0,
+        "max_distance": 20.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/churchillmkvii.json"
+      },
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    }
+  }
+}

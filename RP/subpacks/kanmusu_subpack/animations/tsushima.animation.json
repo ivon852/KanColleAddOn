@@ -1,0 +1,66 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.tsushima.move": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": ["variable.tcos0 *1.5", 0, 0]
+				},
+				"leftLeg": {
+					"rotation": ["variable.tcos0 * -1.4", 0, 0]
+				},
+				"rightArm": {
+					"rotation": ["-variable.tcos0 *1.5 ", 0, 0]
+				},
+				"rightLeg": {
+					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				}
+			}
+		},
+		"animation.tsushima.attack": {
+			"animation_length": 5.76,
+			"bones": {
+				"body": {
+					"rotation": [-12.5, 0, 0]
+				},
+				"RightArm": {
+					"rotation": {
+						"0.0": {
+							"post": [0, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.56": {
+							"post": [7.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"0.96": {
+							"post": [7.5, 0, 0],
+							"lerp_mode": "catmullrom"
+						},
+						"2.08": {
+							"post": [7.5, 0, 75],
+							"lerp_mode": "catmullrom"
+						},
+						"2.64": [-40, -2.5, 75],
+						"3.4": [-52.5, -2.5, 75],
+						"4.12": [-65, -137.5, 87.5],
+						"4.56": [-65, -182.5, 87.5]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.52": [0, 32.5, -27.5]
+					}
+				},
+				"RightLeg": {
+					"rotation": [-15, 0, 10]
+				},
+				"LeftLeg": {
+					"rotation": [17.5, 17.5, 0]
+				}
+			}
+		}
+	}
+}

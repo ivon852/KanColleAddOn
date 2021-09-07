@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:torpedo",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/torpedo"
+      },
+      "geometry": {
+        "default": "geometry.torpedo"
+      },
+      "render_controllers": ["controller.render.newmob"]
+    }
+  }
+}

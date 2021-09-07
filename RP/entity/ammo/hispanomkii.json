@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "bullet:hispanomkii",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/hispanomkii"
+      },
+      "geometry": {
+        "default": "geometry.hispanomkii"
+      },
+      "render_controllers": [ "controller.render.newmob" ]
+    }
+  }
+}

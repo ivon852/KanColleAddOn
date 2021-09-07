@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:m46he",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/m46he"
+      },
+      "geometry": {
+        "default": "geometry.m46he"
+      },
+      "render_controllers": [ "controller.render.newmob" ]
+    }
+  }
+}

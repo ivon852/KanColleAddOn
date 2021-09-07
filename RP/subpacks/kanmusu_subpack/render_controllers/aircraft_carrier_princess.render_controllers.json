@@ -1,0 +1,15 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.aircraft_carrier_princess": {
+      "arrays": {
+        "textures": {
+          "array.skins": ["Texture.default", "Texture.damaged"]
+        }
+      },
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "textures": ["query.health<100?array.skins[1]:array.skins[0]"]
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.hiryu.move": {
+      "states": {
+        "default": {
+          "animations": [{ "move": "query.modified_move_speed" }]
+        }
+      }
+    },
+    "controller.animation.hiryu.attack": {
+      "initial_state": "default",
+      "states": {
+        "default": {
+          "animations": [{ "attack": "query.has_target" }]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "resource_pack_name": "KanColle RP",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "spawn_ptimpgroup": {
+      "textures": "textures/items/spawn_ptimpgroup"
+    },
+    "spawn_waclass": {
+      "textures": "textures/items/spawn_waclass"
+    },
+    "spawn_aircraft_carrier_princess": {
+      "textures": "textures/items/spawn_aircraft_carrier_princess"
+    },
+    "spawn_dd_naclass": {
+      "textures": "textures/items/spawn_dd_naclass"
+    },
+    "spawn_dd_niclass": {
+      "textures": "textures/items/spawn_dd_niclass"
+    },
+    "spawn_dd_haclass": {
+      "textures": "textures/items/spawn_dd_haclass"
+    },
+    "spawn_dd_roclass": {
+      "textures": "textures/items/spawn_dd_roclass"
+    },
+    "spawn_dd_iclass": {
+      "textures": "textures/items/spawn_dd_iclass"
+    },
+    "spawn_northern_princess": {
+      "textures": "textures/items/spawn_northern_princess"
+    },
+    "spawn_souya": {
+      "textures": "textures/items/spawn_souya"
+    },
+    "spawn_irako": {
+      "textures": "textures/items/spawn_irako"
+    },
+    "spawn_mamiya": {
+      "textures": "textures/items/spawn_mamiya"
+    },
+    "spawn_u511_kanmusu": {
+      "textures": "textures/items/spawn_u511_kanmusu"
+    },
+    "spawn_i168": {
+      "textures": "textures/items/spawn_i168"
+    },
+    "spawn_zara": {
+      "textures": "textures/items/spawn_zara"
+    },
+    "spawn_hiryu": {
+      "textures": "textures/items/spawn_hiryu"
+    },
+    "spawn_bismarck": {
+      "textures": "textures/items/spawn_bismarck"
+    },
+    "spawn_shimakaze": {
+      "textures": "textures/items/spawn_shimakaze"
+    },
+    "spawn_boku": {
+      "textures": "textures/items/spawn_boku"
+    },
+    "pp_weapon": {
+      "textures": "textures/items/pp_weapon"
+    },
+    "spawn_ki_61": {
+      "textures": "textures/items/spawn_ki_61"
+    },
+    "spawn_f4u1d": {
+      "textures": "textures/items/spawn_f4u1d"
+    },
+    "spawn_type99d": {
+      "textures": "textures/items/spawn_type99d"
+    },
+    "spawn_me163b": {
+      "textures": "textures/items/spawn_me163b"
+    },
+    "75cmap_item": {
+      "textures": "textures/items/75cmap_item"
+    },
+    "spawn_m4a1dd": {
+      "textures": "textures/items/spawn_m4a1dd"
+    },
+    "spawn_t3485": {
+      "textures": "textures/items/spawn_t3485"
+    },
+    "ziss53ap_item": {
+      "textures": "textures/items/ziss53ap_item"
+    },
+    "spawn_pacific_princess": {
+      "textures": "textures/items/spawn_pacific_princess"
+    },
+    "spawn_nbw41": {
+      "textures": "textures/items/spawn_nbw41"
+    },
+    "32cmrocket_item": {
+      "textures": "textures/items/32cmrocket_item"
+    },
+    "spawn_churchillmkvii": {
+      "textures": "textures/items/spawn_churchillmkvii"
+    },
+    "m46he_item": {
+      "textures": "textures/items/m46he_item"
+    },
+    "admiral_cap": {
+      "textures": "textures/items/admiral_cap"
+    },
+    "spawn_g4m2e": {
+      "textures": "textures/items/spawn_g4m2e"
+    },
+    "wrench": {
+      "textures": "textures/items/wrench"
+    },
+    "mxy7": {
+      "textures": "textures/items/mxy7"
+    },
+    "bombload60kg": {
+      "textures": "textures/items/bombload60kg"
+    },
+    "type91torpedo": {
+      "textures": "textures/items/type91torpedo"
+    },
+    "bomb": {
+      "textures": "textures/items/bomb"
+    },
+    "127cmbelt": {
+      "textures": "textures/items/127cmbelt"
+    },
+    "hvar": {
+      "textures": "textures/items/hvar"
+    },
+    "flamethrower": {
+      "textures": "textures/items/flamethrower"
+    },
+    "sandbag": {
+      "textures": "textures/items/sandbag"
+    },
+    "spawn_higginsboat": {
+      "textures": "textures/items/spawn_higginsboat"
+    },
+    "spawn_u511": {
+      "textures": "textures/items/spawn_u511"
+    },
+    "spawn_panzeriv": {
+      "textures": "textures/items/spawn_panzeriv"
+    },
+    "pzgrpatr40kwk40_item": {
+      "textures": "textures/items/pzgrpatr40kwk40_item"
+    },
+    "mamiya_item": {
+      "textures": "textures/items/mamiya_item"
+    },
+    "irako_item": {
+      "textures": "textures/items/irako_item"
+    },
+    "spawn_gotland": {
+      "textures": "textures/items/spawn_gotland"
+    },
+    "spawn_tsushima": {
+      "textures": "textures/items/spawn_tsushima"
+    },
+    "spawn_spitfiremkix": {
+      "textures": "textures/items/spawn_spitfiremkix"
+    },
+    "spawn_bf109g6": {
+      "textures": "textures/items/spawn_bf109g6"
+    },
+    "spawn_type2kami": {
+      "textures": "textures/items/spawn_type2kami"
+    },
+    "type1ap_item": {
+      "textures": "textures/items/type1ap_item"
+    },
+    "spawn_p38e": {
+      "textures": "textures/items/spawn_p38e"
+    },
+    "spawn_s35": {
+      "textures": "textures/items/spawn_s35"
+    },
+    "qf47apcbc_item": {
+      "textures": "textures/items/qf47apcbc_item"
+    }
+  }
+}

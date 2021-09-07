@@ -1,0 +1,18 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.ptimpgroup": {
+      "arrays": {
+        "textures": {
+          "array.skins": ["Texture.default", "Texture.type2", "Texture.type3"]
+        },
+        "geometries": {
+          "array.geometries": ["Geometry.default", "Geometry.type2", "Geometry.type3"]
+        }
+      },
+      "textures": ["Array.skins[query.variant]"],
+      "geometry": "Array.geometries[query.variant]",
+      "materials": [{ "*": "Material.default" }]
+    }
+  }
+}

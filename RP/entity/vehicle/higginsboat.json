@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "weapon:higginsboat",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/higginsboat"
+      },
+      "geometry": {
+        "default": "geometry.higginsboat"
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "animations": {
+        "down": "animation.higginsboat.down",
+        "move": "animation.higginsboat.move",
+        "root": "controller.animation.higginsboat.root",
+        "root2": "controller.animation.higginsboat.root2",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": ["root", "root2", "look_at_target"]
+      },
+      "spawn_egg": {
+        "texture": "spawn_higginsboat",
+        "texture_index": 0
+      }
+    }
+  }
+}

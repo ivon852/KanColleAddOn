@@ -1,0 +1,46 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.dd_naclass.general": {
+      "loop": true,
+      "animation_length": 1.04,
+      "bones": {
+        "crawl": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.5167": [25, 0, 0],
+            "1.0333": [0, 0, 0]
+          }
+        }
+      }
+    },
+    "animation.dd_naclass.move": {
+      "loop": true,
+      "animation_length": 1,
+      "bones": {
+        "leg": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.4833": [0, 25, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "leg2": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.4833": [0, -25, 0],
+            "1.0": [0, 0, 0]
+          }
+        },
+        "tail": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.2333": [0, 20, 0],
+            "0.7667": [0, -20, 0],
+            "1.0": [0, 0, 0]
+          }
+        }
+      }
+    }
+  }
+}

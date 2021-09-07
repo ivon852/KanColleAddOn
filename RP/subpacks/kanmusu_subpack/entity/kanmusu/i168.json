@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "kanmusu:i168",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/i168"
+      },
+      "geometry": {
+        "default": "geometry.i168"
+      },
+
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.i168.move",
+        "swim": "animation.i168.swim",
+        "attack": "animation.i168.attack",
+        "controller_move": "controller.animation.i168.move",
+        "controller_attack": "controller.animation.i168.attack",
+        "controller_swim": "controller.animation.i168.swim"
+      },
+      "scripts": {
+        "animate": [
+          "controller_move",
+          "controller_attack",
+          "controller_swim",
+          "look_at_target"
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);",
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "render_controllers": ["controller.render.newmob"],
+      "spawn_egg": {
+        "texture": "spawn_i168",
+        "texture_index": 0
+      }
+    }
+  }
+}

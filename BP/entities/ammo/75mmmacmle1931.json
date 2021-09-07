@@ -1,0 +1,56 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "newmob:75mmmacmle1931",
+      "runtime_identifier": "minecraft:egg",
+      "is_spawnable": false,
+      "is_summonable": true,
+      "is_experimental": false
+    },
+    "components": {
+      "minecraft:scale": {
+        "value": 0.5
+      },
+      "minecraft:collision_box": {
+        "width": 1,
+        "height": 1
+      },
+      "minecraft:spawn_entity": {
+        "entities": {
+          "min_wait_time": 0,
+          "max_wait_time": 0,
+          "num_to_spawn": 1,
+          "spawn_entity": "IDK:WHY",
+          "single_use": true,
+          "spawn_sound": "ambient"
+        }
+      },
+
+      "minecraft:projectile": {
+        "on_hit": {
+          "impact_damage": {
+            "damage": 4,
+            "knockback": false
+          },
+          "particle_on_hit": {
+            "particle_type": "explode",
+            "on_other_hit": true
+          }
+        },
+        "shoottarget": true,
+        "power": 1.8,
+        "gravity": 0.05,
+        "uncertaintyBase": 0,
+        "anchor": 1,
+        "inertia": 2.1,
+        "liquid_inertia": 1
+      },
+      "minecraft:physics": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}

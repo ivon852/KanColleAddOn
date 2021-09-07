@@ -1,0 +1,33 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.f4u1d.move": {
+      "states": {
+        "default": {
+          "animations": [{ "move": "query.modified_move_speed" }]
+        }
+      }
+    },
+    "controller.animation.f4u1d.on_ground": {
+      "states": {
+        "default": {
+          "animations": [{ "on_ground": "query.is_on_ground" }]
+        }
+      }
+    },
+    "controller.animation.f4u1d.retract_gear": {
+      "states": {
+        "default": {
+          "animations": [{ "retract_gear": "!query.is_on_ground" }]
+        }
+      }
+    },
+    "controller.animation.f4u1d.sit": {
+      "states": {
+        "default": {
+          "animations": [{ "sit": "query.is_on_ground && ! query.has_rider" }]
+        }
+      }
+    }
+  }
+}

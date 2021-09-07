@@ -1,0 +1,24 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "weapon:type91torpedo",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/g4m2e/type91torpedo"
+      },
+      "geometry": {
+        "default": "geometry.type91torpedo"
+      },
+      "render_controllers": ["controller.render.type91torpedo_entity"],
+      "animations": {
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": ["look_at_target"]
+      }
+    }
+  }
+}

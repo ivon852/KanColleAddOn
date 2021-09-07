@@ -1,0 +1,54 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "abyssal:aircraft_carrier_princess",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/aircraft_carrier_princess",
+        "damaged": "textures/entity/aircraft_carrier_princess_damaged"
+      },
+      "geometry": {
+        "default": "geometry.aircraft_carrier_princess"
+      },
+      "animations": {
+        "look_at_target": "animation.common.look_at_target",
+        "move": "animation.aircraft_carrier_princess.move",
+        "sit": "animation.aircraft_carrier_princess.sit",
+        "attack": "animation.aircraft_carrier_princess.attack",
+        "general": "animation.aircraft_carrier_princess.general",
+        "eyes": "animation.aircraft_carrier_princess.eyes",
+        "elbows": "animation.aircraft_carrier_princess.elbows",
+        "controller_move": "controller.animation.aircraft_carrier_princess.move",
+        "controller_general": "controller.animation.aircraft_carrier_princess.general",
+        "controller_attack": "controller.animation.aircraft_carrier_princess.attack",
+        "controller_sit": "controller.animation.aircraft_carrier_princess.sit",
+        "controller_face": "controller.animation.aircraft_carrier_princess.face"
+      },
+      "scripts": {
+        "animate": [
+          "controller_move",
+          "controller_general",
+          "look_at_target",
+          "controller_attack",
+          "controller_sit",
+          "controller_face",
+          {
+            "eyes": "math.random(0,100)<10"
+          }
+        ],
+        "pre_animation": [
+          "variable.attack = Math.sin(variable.attack_time * 38.17);",
+          "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"
+        ]
+      },
+      "render_controllers": ["controller.render.aircraft_carrier_princess"],
+      "spawn_egg": {
+        "texture": "spawn_aircraft_carrier_princess",
+        "texture_index": 0
+      }
+    }
+  }
+}

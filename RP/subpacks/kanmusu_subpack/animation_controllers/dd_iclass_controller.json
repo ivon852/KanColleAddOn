@@ -1,0 +1,19 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.dd_iclass.general": {
+      "states": {
+        "default": {
+          "animations": ["general"]
+        }
+      }
+    },
+    "controller.animation.dd_iclass.move": {
+      "states": {
+        "default": {
+          "animations": [{ "move": "query.modified_move_speed" }]
+        }
+      }
+    }
+  }
+}

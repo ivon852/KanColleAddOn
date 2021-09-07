@@ -1,0 +1,142 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.aircraft_carrier_princess.eyes": {
+			"animation_length": 1.5,
+			"bones": {
+				"eyes": {
+					"position": {
+						"1": [1, 0, 0],
+						"0.0": [0, 0, 0],
+						"0.5": [1, 0, 0],
+						"1.5": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.aircraft_carrier_princess.elbows": {
+			"loop": true,
+			"animation_length": 1.5,
+			"bones": {
+				"elbows": {
+					"scale": {
+						"1": [1, 0, 1],
+						"0.0": [1, 0, 1],
+						"1.25": [1, 22, 1],
+						"1.5": [1, 0, 1]
+					}
+				}
+			}
+		},
+		"animation.aircraft_carrier_princess.sit": {
+			"loop": true,
+			"bones": {
+				"waist": {
+					"position": [0, -13, 0]
+				},
+				"RightLeg": {
+					"rotation": [-90, 0, 0]
+				},
+				"LeftLeg": {
+					"rotation": [-90, 0, 0]
+				}
+			}
+		},
+		"animation.aircraft_carrier_princess.move": {
+			"loop": true,
+			"bones": {
+				"leftArm": {
+					"rotation": ["variable.tcos0", 0, 0]
+				},
+				"leftLeg": {
+					"rotation": ["variable.tcos0 * -1.4", 0, 0]
+				},
+				"rightArm": {
+					"rotation": ["-variable.tcos0", 0, 0]
+				},
+				"rightLeg": {
+					"rotation": ["variable.tcos0 * 1.4", 0, 0]
+				}
+			}
+		},
+		"animation.aircraft_carrier_princess.general": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"rotation": [15, -5, 0]
+				},
+				"Body": {
+					"rotation": [-25, 0, 0]
+				},
+				"RightArm": {
+					"rotation": [-40, -45, 110]
+				},
+				"LeftArm": {
+					"rotation": [0, 0, -20]
+				},
+				"RightLeg": {
+					"rotation": [-85, 15, 0]
+				},
+				"LeftLeg": {
+					"rotation": [-75, 0, 0]
+				}
+			}
+		},
+		"animation.aircraft_carrier_princess.attack": {
+			"animation_length": 2.88,
+			"bones": {
+				"RightArm": {
+					"rotation": {
+						"0.64": [0, 0, 0],
+						"1.4": [-180, 0, 0],
+						"1.72": [-180, 0, -25],
+						"2.08": [-180, 0, 2.5],
+						"2.72": [-180, 0, -27.5]
+					}
+				},
+				"LeftArm": {
+					"rotation": {
+						"0.56": [0, 0, 0],
+						"1.04": [0, 0, -145],
+						"1.56": [0, 0, -145],
+						"1.76": [0, 0, -125],
+						"2.28": [0, 0, -190],
+						"2.68": [0, 0, -155]
+					}
+				},
+				"Head": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.36": [-17.5, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.aircraft_carrier_princess.damaged": {
+			"loop": true,
+			"bones": {
+				"Head": {
+					"rotation": [0, 20, -10]
+				},
+				"Body": {
+					"rotation": [0, 0, 10]
+				},
+				"RightArm": {
+					"rotation": [-85, 45, 20]
+				},
+				"LeftArm": {
+					"rotation": [0, 0, -35]
+				},
+				"RightLeg": {
+					"rotation": [-10, 5, 0]
+				},
+				"LeftLeg": {
+					"rotation": [15, 50, -10]
+				},
+				"waist": {
+					"rotation": [0, -30, 0]
+				}
+			}
+		}
+	}
+}

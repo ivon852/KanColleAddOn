@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:127cmshell",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/bullet"
+      },
+      "geometry": {
+        "default": "geometry.127cmshell"
+      },
+      "render_controllers": ["controller.render.newmob"]
+    }
+  }
+}

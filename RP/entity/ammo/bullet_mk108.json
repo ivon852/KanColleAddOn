@@ -1,0 +1,18 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:bullet_mk108",
+      "materials": {
+        "default": "entity_emissive"
+      },
+      "textures": {
+        "default": "textures/entity/bullet_mk108"
+      },
+      "geometry": {
+        "default": "geometry.bullet_mk108"
+      },
+      "render_controllers": [ "controller.render.bullet_mk108" ]
+    }
+  }
+}

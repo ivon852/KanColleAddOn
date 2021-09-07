@@ -1,0 +1,25 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.type99d.move": {
+      "loop": true,
+      "animation_length": 0.24,
+      "bones": {
+        "prpeller": {
+          "rotation": {
+            "0.0": [0, 0, 0],
+            "0.24": [0, 0, 360]
+          }
+        }
+      }
+    },
+    "animation.type99d.on_ground": {
+      "loop": true,
+      "bones": {
+        "head1": {
+          "rotation": [-5, 0, 0]
+        }
+      }
+    }
+  }
+}

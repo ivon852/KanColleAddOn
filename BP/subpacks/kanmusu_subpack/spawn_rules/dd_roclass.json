@@ -1,0 +1,47 @@
+{
+  "format_version": "1.8.0",
+  "minecraft:spawn_rules": {
+    "description": {
+      "identifier": "newmob:dd_roclass",
+      "population_control": "monster"
+    },
+    "conditions": [
+      {
+        "minecraft:spawns_on_surface": {},
+        "minecraft:spawns_underwater": {},
+
+        "minecraft:brightness_filter": {
+          "min": 0,
+          "max": 4,
+          "adjust_for_weather": true
+        },
+
+        "minecraft:difficulty_filter": {
+          "min": "hard",
+          "max": "hard"
+        },
+
+        "minecraft:weight": {
+          "default": 30
+        },
+        "minecraft:density_limit": {
+          "surface": 2
+        },
+        "minecraft:herd": {
+          "min_size": 2,
+          "max_size": 4
+        },
+
+        "minecraft:biome_filter": {
+          "any_of": [
+            {
+              "test": "has_biome_tag",
+              "operator": "==",
+              "value": "ocean"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

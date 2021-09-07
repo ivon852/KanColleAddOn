@@ -1,0 +1,31 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.g4m2e": {
+      "textures": ["Texture.default"],
+      "geometry": "Geometry.default",
+      "materials": [{ "*": "Material.default" }],
+      "part_visibility": [
+        { "*": true },
+        {
+          "bellycap": "query.mark_variant==2"
+        }
+      ]
+    },
+    "controller.render.mxy7": {
+      "textures": ["Texture.mxy7"],
+      "geometry": "Geometry.mxy7",
+      "materials": [{ "*": "Material.mxy7" }]
+    },
+    "controller.render.bombload60kg": {
+      "textures": ["Texture.bombload60kg"],
+      "geometry": "Geometry.bombload60kg",
+      "materials": [{ "*": "Material.bombload60kg" }]
+    },
+    "controller.render.type91torpedo": {
+      "textures": ["Texture.type91torpedo"],
+      "geometry": "Geometry.type91torpedo",
+      "materials": [{ "*": "Material.type91torpedo" }]
+    }
+  }
+}

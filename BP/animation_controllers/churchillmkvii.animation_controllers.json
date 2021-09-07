@@ -1,0 +1,61 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.churchillmkvii_mechanic": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "working": "query.mark_variant==1"
+            },
+            {
+              "remove": "!query.has_rider"
+            },
+            {
+              "is_riding": "query.has_rider"
+            }
+          ]
+        },
+        "remove": {
+          "on_entry": ["/execute @s ~ ~ ~ tag @s remove riding"],
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ]
+        },
+        "is_riding": {
+          "on_entry": ["/execute @s ~ ~ ~ tag @s add riding"],
+          "transitions": [
+            {
+              "default": "1.0"
+            }
+          ]
+        },
+        "working": {
+          "transitions": [
+            {
+              "default": "query.mark_variant==1"
+            }
+          ],
+          "on_entry": [
+            "/execute @s ^ ^ ^ fill ^1 ^ ^1 ^1 ^ ^15 fire",
+            "/execute @s ^ ^1 ^3 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^4 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^5 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^6 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^7 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^8 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^9 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^10 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^11 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^12 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^13 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^14 particle minecraft:mobflame_single ~ ~ ~",
+            "/execute @s ^ ^1 ^15 particle minecraft:mobflame_single ~ ~ ~"
+          ]
+        }
+      }
+    }
+  }
+}

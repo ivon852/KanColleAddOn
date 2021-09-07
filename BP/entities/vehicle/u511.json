@@ -1,0 +1,244 @@
+{
+  "format_version": "1.16.0",
+  "minecraft:entity": {
+    "description": {
+      "identifier": "submarine:u511",
+      "is_spawnable": true,
+      "is_summonable": true,
+      "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.u511_mechanic"
+      },
+      "scripts": {
+        "animate": [
+          "mechanic"
+        ]
+      }
+    },
+    "events": {
+      "u511:dive_mode": {
+        "remove": {
+          "component_groups": [
+            "u511:float_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "u511:dive_mode"
+          ]
+        }
+      },
+      "u511:float_mode": {
+        "remove": {
+          "component_groups": [
+            "u511:dive_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "u511:float_mode"
+          ]
+        }
+      },
+      "u511:torpedo": {
+        "add": {
+          "component_groups": [
+            "u511:torpedo"
+          ]
+        }
+      },
+      "u511:stop_torpedo": {
+        "remove": {
+          "component_groups": [
+            "u511:torpedo"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned",
+            "u511:float_mode"
+          ]
+        }
+      }
+    },
+    "component_groups": {
+      "u511:float_mode": {
+        "minecraft:navigation.generic": {
+          "is_amphibious": true,
+          "can_path_over_water": false,
+          "can_swim": true,
+          "can_walk": false,
+          "can_breach": true,
+          "can_sink": false
+        },
+        "minecraft:variant": {
+          "value": 1
+        },
+        "minecraft:floats_in_liquid": {},
+        "minecraft:behavior.float": {}
+      },
+      "u511:dive_mode": {
+        "minecraft:variant": {
+          "value": 2
+        },
+        "minecraft:navigation.generic": {
+          "is_amphibious": true,
+          "can_path_over_water": false,
+          "can_swim": true,
+          "can_walk": false,
+          "can_breach": true,
+          "can_sink": true
+        }
+      },
+      "u511:torpedo": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "newmob:torpedo",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.5,
+          "time_down_event": {
+            "event": "u511:stop_torpedo",
+            "target": "self"
+          }
+        }
+      },
+      "player_spawned": {
+        "minecraft:interact": {
+          "interactions": [
+            {
+              "on_interact": {
+                "filters": {
+                  "all_of": [
+                    {
+                      "test": "is_riding",
+                      "subject": "other",
+                      "operator": "equals",
+                      "value": true
+                    },
+                    {
+                      "test": "has_equipment",
+                      "subject": "other",
+                      "domain": "hand",
+                      "operator": "equals",
+                      "value": "newitem:type91torpedo"
+                    }
+                  ]
+                },
+                "target": "self",
+                "event": "u511:torpedo"
+              },
+              "use_item": false,
+              "interact_text": "action.interact.u511.fire"
+            }
+          ]
+        },
+        "minecraft:environment_sensor": {
+          "triggers": [
+            {
+              "filters": {
+                "test": "has_tag",
+                "subject": "self",
+                "operator": "==",
+                "value": "up"
+              },
+              "event": "u511:float_mode"
+            },
+            {
+              "filters": {
+                "test": "has_tag",
+                "subject": "self",
+                "operator": "==",
+                "value": "down"
+              },
+              "event": "u511:dive_mode"
+            }
+          ]
+        },
+        "minecraft:healable": {
+          "items": [
+            {
+              "item": "iron_block",
+              "heal_amount": 10
+            }
+          ]
+        },
+        "minecraft:movement": {
+          "value": 0.05
+        },
+        "minecraft:underwater_movement": {
+          "value": 0.12
+        },
+        "minecraft:movement.basic": {},
+        "minecraft:input_ground_controlled": {},
+        "minecraft:behavior.controlled_by_player": {},
+        "minecraft:rideable": {
+          "seat_count": 1,
+          "rider_can_interact": true,
+          "crouching_skip_interact": true,
+          "family_types": [
+            "player"
+          ],
+          "interact_text": "action.interact.u511.get_on",
+          "seats": {
+            "position": [
+              0,
+              1.1,
+              0
+            ]
+          }
+        },
+        "minecraft:scale": {
+          "value": 10
+        },
+        "minecraft:collision_box": {
+          "width": 1.5,
+          "height": 1.2
+        }
+      }
+    },
+    "components": {
+      "minecraft:loot": {
+        "table": "loot_tables/entities/u511.json"
+      },
+      "minecraft:type_family": {
+        "family": [
+          "vehicle",
+          "kanmusu"
+        ]
+      },
+      "minecraft:knockback_resistance": {
+        "value": 2.0
+      },
+      "minecraft:health": {
+        "value": 50,
+        "max": 50
+      },
+      "minecraft:jump.static": {},
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 10.0,
+        "hard_distance": 12.0,
+        "max_distance": 15.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:nameable": {},
+      "minecraft:physics": {},
+      "minecraft:persistent": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      }
+    }
+  }
+}
