@@ -178,6 +178,9 @@
     },
     "qf47apcbc_item": {
       "textures": "textures/items/qf47apcbc_item"
+    },
+    "spawn_kv11941": {
+      "textures": "textures/items/spawn_kv11941"
     }
   }
 }

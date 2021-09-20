@@ -2,12 +2,23 @@
 	"type": "minecraftBedrock",
 	"name": "Kancolle Add-On",
 	"namespace": "kancolle",
-	"author": "Ivon852",
 	"targetVersion": "1.17.0",
 	"description": "",
-	"capabilities": [],
 	"packs": {
 		"behaviorPack": "./BP",
 		"resourcePack": "./RP"
-	}
+	},
+	"experimentalGameplay": {
+		"enableGameTestFramework": false,
+		"additionalModdingCapabilities": false,
+		"cavesAndCliffs": true,
+		"holidayCreatorFeatures": true,
+		"creationOfCustomBiomes": true,
+		"upcomingCreatorFeatures": true,
+		"experimentalMolangFeatures": true,
+		"educationEdition": true
+	},
+	"authors": [
+		"Ivon852"
+	]
 }

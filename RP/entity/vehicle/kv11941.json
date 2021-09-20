@@ -1,0 +1,35 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tank:kv11941",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/kv11941"
+      },
+      "geometry": {
+        "default": "geometry.kv11941"
+      },
+      "render_controllers": [
+        "controller.render.newmob"
+      ],
+      "animations": {
+        "move": "animation.kv11941.move",
+        "move_controller": "controller.animation.kv11941.move",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          "move_controller",
+          "look_at_target"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_kv11941",
+        "texture_index": 0
+      }
+    }
+  }
+}

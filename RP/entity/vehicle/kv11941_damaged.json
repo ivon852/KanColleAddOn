@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "tank:kv11941_damaged",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/kv11941_damaged"
+      },
+      "geometry": {
+        "default": "geometry.kv11941_damaged"
+      },
+      "render_controllers": [
+        "controller.render.newmob"
+      ]
+    }
+  }
+}

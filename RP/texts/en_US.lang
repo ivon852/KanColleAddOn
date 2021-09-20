@@ -162,6 +162,13 @@ item.newitem:hvar.name=HVAR Rocket
 
 ## Vehicle
 
+item.spawn_egg.entity.tank:kv11941.name=Spawn KV-1 1941
+entity.tank:kv11941.name=KV-1 1941
+action.interact.kv11941.get_on=Get on
+action.interact.kv11941.fire=Fire
+action.hint.exit.tank:kv11941=Tap sneak to dismount
+entity.tank:kv11941_damaged.name=KV-1 1941 (Damaged)
+
 item.spawn_egg.entity.tank:s35.name=Spawn SOMUA S-35
 entity.tank:s35.name=SOMUA S-35
 action.interact.s35.get_on=Get on
