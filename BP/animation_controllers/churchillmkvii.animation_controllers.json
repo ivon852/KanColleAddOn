@@ -17,7 +17,9 @@
           ]
         },
         "remove": {
-          "on_entry": ["/execute @s ~ ~ ~ tag @s remove riding"],
+          "on_entry": [
+            "/execute @s ~ ~ ~ tag @s remove riding"
+          ],
           "transitions": [
             {
               "default": "1.0"
@@ -25,7 +27,9 @@
           ]
         },
         "is_riding": {
-          "on_entry": ["/execute @s ~ ~ ~ tag @s add riding"],
+          "on_entry": [
+            "/execute @s ~ ~ ~ tag @s add riding"
+          ],
           "transitions": [
             {
               "default": "1.0"

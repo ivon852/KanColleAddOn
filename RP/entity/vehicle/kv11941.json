@@ -17,6 +17,7 @@
       ],
       "animations": {
         "move": "animation.kv11941.move",
+        "fire": "animation.kv11941.fire",
         "move_controller": "controller.animation.kv11941.move",
         "look_at_target": "animation.common.look_at_target"
       },

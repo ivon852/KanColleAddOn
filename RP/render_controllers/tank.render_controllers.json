@@ -1,0 +1,27 @@
+{
+  "format_version": "1.8.0",
+  "render_controllers": {
+    "controller.render.tank": {
+      "textures": [
+        "Texture.default"
+      ],
+      "geometry": "Geometry.default",
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        },
+        {
+          "decal": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal2": "query.actor_property('property:display_decal') == true"
+        }
+      ]
+    }
+  }
+}

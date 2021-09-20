@@ -6,6 +6,22 @@
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
+      "properties": {
+        "property:display_decal": {
+          "values": [
+            false,
+            true
+          ],
+          "client_sync": true
+        },
+        "property:open_hatch": {
+          "values": [
+            false,
+            true
+          ],
+          "client_sync": true
+        }
+      },
       "animations": {
         "mechanic": "controller.animation.churchillmkvii_mechanic"
       },
@@ -13,57 +29,6 @@
         "animate": [
           "mechanic"
         ]
-      }
-    },
-    "events": {
-      "churchillmkvii:shoot": {
-        "add": {
-          "component_groups": [
-            "churchillmkvii:shoot"
-          ]
-        }
-      },
-      "churchillmkvii:stop_shoot": {
-        "remove": {
-          "component_groups": [
-            "churchillmkvii:shoot"
-          ]
-        }
-      },
-      "churchillmkvii:fireflame": {
-        "add": {
-          "component_groups": [
-            "churchillmkvii:fireflame"
-          ]
-        }
-      },
-      "churchillmkvii:stopfireflame": {
-        "add": {
-          "component_groups": [
-            "churchillmkvii:stopfireflame"
-          ]
-        }
-      },
-      "minecraft:entity_born": {
-        "add": {
-          "component_groups": [
-            "kanmusu_spawned"
-          ]
-        }
-      },
-      "minecraft:entity_spawned": {
-        "add": {
-          "component_groups": [
-            "player_spawned"
-          ]
-        }
-      },
-      "disappear": {
-        "add": {
-          "component_groups": [
-            "disappear"
-          ]
-        }
       }
     },
     "component_groups": {
@@ -102,108 +67,122 @@
             "target": "self"
           }
         }
-      },
-      "disappear": {
-        "minecraft:despawn": {}
-      },
-      "player_spawned": {
-        "minecraft:interact": {
-          "interactions": [
-            {
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_riding",
-                      "subject": "other",
-                      "operator": "equals",
-                      "value": true
-                    },
-                    {
-                      "test": "has_equipment",
-                      "subject": "other",
-                      "domain": "hand",
-                      "operator": "equals",
-                      "value": "newitem:m46he_item"
-                    }
-                  ]
-                },
-                "target": "self",
-                "event": "churchillmkvii:shoot"
-              },
-              "use_item": false,
-              "interact_text": "action.interact.churchillmkvii.fire"
-            },
-            {
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_riding",
-                      "subject": "other",
-                      "operator": "equals",
-                      "value": true
-                    },
-                    {
-                      "test": "has_equipment",
-                      "subject": "other",
-                      "domain": "hand",
-                      "operator": "equals",
-                      "value": "newitem:flamethrower"
-                    }
-                  ]
-                },
-                "target": "self",
-                "event": "churchillmkvii:fireflame"
-              },
-              "use_item": false,
-              "interact_text": "action.interact.churchillmkvii.firem"
-            }
-          ]
-        },
-        "minecraft:healable": {
-          "items": [
-            {
-              "item": "iron_block",
-              "heal_amount": 20
-            }
-          ]
-        },
-        "minecraft:mark_variant": {
-          "value": 0
-        },
-        "minecraft:movement": {
-          "value": 0.1
-        },
-        "minecraft:movement.basic": {},
-        "minecraft:input_ground_controlled": {},
-        "minecraft:behavior.controlled_by_player": {},
-        "minecraft:rideable": {
-          "seat_count": 1,
-          "rider_can_interact": true,
-          "crouching_skip_interact": true,
-          "family_types": [
-            "player"
-          ],
-          "interact_text": "action.interact.churchillmkvii.get_on",
-          "seats": {
-            "position": [
-              0.6,
-              3.5,
-              -1
-            ]
-          }
-        },
-        "minecraft:scale": {
-          "value": 1
-        },
-        "minecraft:collision_box": {
-          "width": 5,
-          "height": 5
-        }
       }
     },
     "components": {
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:wrench"
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "churchillmkvii:open_hatch"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.tank.open_hatch"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_riding",
+                    "subject": "other",
+                    "operator": "equals",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:m46he_item"
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "churchillmkvii:shoot"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.tank.fire"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_riding",
+                    "subject": "other",
+                    "operator": "equals",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:flamethrower"
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "churchillmkvii:fireflame"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.churchillmkvii.firem"
+          }
+        ]
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "iron_block",
+            "heal_amount": 20
+          }
+        ]
+      },
+      "minecraft:mark_variant": {
+        "value": 0
+      },
+      "minecraft:movement": {
+        "value": 0.1
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:input_ground_controlled": {},
+      "minecraft:behavior.controlled_by_player": {},
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "rider_can_interact": true,
+        "crouching_skip_interact": true,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "action.interact.churchillmkvii.get_on",
+        "seats": {
+          "position": [
+            0.6,
+            3.5,
+            -1
+          ]
+        }
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:collision_box": {
+        "width": 5,
+        "height": 5
+      },
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
@@ -239,6 +218,56 @@
       "minecraft:nameable": {},
       "minecraft:physics": {},
       "minecraft:persistent": {}
+    },
+    "events": {
+      "churchillmkvii:shoot": {
+        "add": {
+          "component_groups": [
+            "churchillmkvii:shoot"
+          ]
+        }
+      },
+      "churchillmkvii:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "churchillmkvii:shoot"
+          ]
+        }
+      },
+      "churchillmkvii:fireflame": {
+        "add": {
+          "component_groups": [
+            "churchillmkvii:fireflame"
+          ]
+        }
+      },
+      "churchillmkvii:stopfireflame": {
+        "add": {
+          "component_groups": [
+            "churchillmkvii:stopfireflame"
+          ]
+        }
+      },
+      "churchillmkvii:open_hatch": {
+        "set_actor_property": {
+          "property:open_hatch": true
+        }
+      },
+      "churchillmkvii:close_hatch": {
+        "set_actor_property": {
+          "property:open_hatch": false
+        }
+      },
+      "churchillmkvii:show_decal": {
+        "set_actor_property": {
+          "property:display_decal": true
+        }
+      },
+      "churchillmkvii:hide_decal": {
+        "set_actor_property": {
+          "property:display_decal": false
+        }
+      }
     }
   }
 }

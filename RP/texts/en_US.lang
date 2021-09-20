@@ -162,10 +162,11 @@ item.newitem:hvar.name=HVAR Rocket
 
 ## Vehicle
 
+action.interact.tank.fire=Fire
+action.interact.tank.get_on=Get on
+
 item.spawn_egg.entity.tank:kv11941.name=Spawn KV-1 1941
 entity.tank:kv11941.name=KV-1 1941
-action.interact.kv11941.get_on=Get on
-action.interact.kv11941.fire=Fire
 action.hint.exit.tank:kv11941=Tap sneak to dismount
 entity.tank:kv11941_damaged.name=KV-1 1941 (Damaged)
 
@@ -229,8 +230,6 @@ action.hint.exit.tank:t3485=Tap sneak to dismount
 
 item.spawn_egg.entity.tank:churchillmkvii.name=Spawn Churchill Mk.VII
 entity.tank:churchillmkvii.name=Churchill Mk.VII
-action.interact.churchillmkvii.fire=Fire
-action.interact.churchillmkvii.get_on=Get on
 action.interact.churchillmkvii.firem=Fire
 item.newitem:m46he_item.name= M46 HE
 action.hint.exit.tank:churchillmkvii=Tap sneak to dismount

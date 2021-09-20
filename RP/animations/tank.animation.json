@@ -1,0 +1,25 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		//Credit to bmheades's M1A2 Add-on
+		"animation.tank.climb": {
+			"loop": true,
+			"bones": {
+				"head": {
+					"rotation": [
+						"query.vertical_speed * -1.5",
+						0,
+						0
+					]
+				},
+				"body": {
+					"rotation": [
+						"query.vertical_speed * -1.5",
+						0,
+						0
+					]
+				}
+			}
+		}
+	}
+}

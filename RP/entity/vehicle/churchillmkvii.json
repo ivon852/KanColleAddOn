@@ -12,14 +12,29 @@
       "geometry": {
         "default": "geometry.churchillmkvii"
       },
-      "render_controllers": ["controller.render.churchillmkvii"],
+      "render_controllers": [
+        "controller.render.tank"
+      ],
       "animations": {
         "move": "animation.churchillmkvii.move",
+        "open": "animation.churchillmkvii.open",
+        "climb": "animation.tank.climb",
         "move_controller": "controller.animation.churchillmkvii.move",
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
-        "animate": ["move_controller", "look_at_target"]
+        "animate": [
+          {
+            "move": "query.modified_move_speed"
+          },
+          {
+            "open": "query.actor_property('property:open_hatch') == true"
+          },
+          {
+            "climb": "query.has_rider"
+          },
+          "look_at_target"
+        ]
       },
       "spawn_egg": {
         "texture": "spawn_churchillmkvii",
