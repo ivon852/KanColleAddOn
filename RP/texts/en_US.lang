@@ -164,6 +164,10 @@ item.newitem:hvar.name=HVAR Rocket
 
 action.interact.tank.fire=Fire
 action.interact.tank.get_on=Get on
+action.interact.tank.open_hatch=Open hatch
+action.interact.tank.close_hatch=Close hatch
+action.interact.tank.show_decal=Show decal
+action.interact.tank.hide_decal=Hide decal
 
 item.spawn_egg.entity.tank:kv11941.name=Spawn KV-1 1941
 entity.tank:kv11941.name=KV-1 1941
@@ -217,7 +221,8 @@ entity.tank:m4a1dd.name=M4A1 Sherman Duplex Drive
 action.interact.m4a1dd.fire=Fire
 action.interact.m4a1dd.get_on=Get on
 action.interact.m4a1d.firem=Fire
-item.newitem:75cmap_item.name= 75cm AP
+item.newitem:ap75cm_item.name=75cm AP
+entity.newmob:ap75cm.name=75cm AP
 action.hint.exit.tank:m4a1dd=Tap sneak to dismount
 
 item.spawn_egg.entity.tank:t3485.name=Spawn T34/85
@@ -231,7 +236,8 @@ action.hint.exit.tank:t3485=Tap sneak to dismount
 item.spawn_egg.entity.tank:churchillmkvii.name=Spawn Churchill Mk.VII
 entity.tank:churchillmkvii.name=Churchill Mk.VII
 action.interact.churchillmkvii.firem=Fire
-item.newitem:m46he_item.name= M46 HE
+item.newitem:m46he_item.name=M46 HE
+entity.newmob:m46he.name=M46 HE
 action.hint.exit.tank:churchillmkvii=Tap sneak to dismount
 item.newitem:flamethrower.name=Flame Thrower
 

@@ -1,7 +1,7 @@
 give @s newitem:127cmbelt
 give @s newitem:hvar
 give @s newitem:bomb
-give @s newitem:75cmap_item
+give @s newitem:ap75cm_item
 give @s newitem:m46he_item
 give @s newitem:ziss53ap_item
 give @s newitem:pzgrpatr40kwk40

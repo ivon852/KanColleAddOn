@@ -18,14 +18,19 @@
       "animations": {
         "move": "animation.m4a1dd.move",
         "body": "animation.m4a1dd.body",
-        "move_controller": "controller.animation.m4a1dd.move",
+        "climb": "animation.tank.climb",
         "body_controller": "controller.animation.m4a1dd.body",
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
         //Float in water animation
         "animate": [
-          "move_controller",
+          {
+            "move": "query.modified_move_speed"
+          },
+          {
+            "climb": "query.has_rider"
+          },
           "look_at_target",
           "body_controller"
         ]

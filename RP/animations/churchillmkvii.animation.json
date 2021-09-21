@@ -399,36 +399,65 @@
 				}
 			}
 		},
-		"animation.churchillmkvii.open": {
-			"loop": true,
+		"animation.churchillmkvii.open_hatch": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
 			"bones": {
 				"hatch2": {
-					"rotation": [
-						0,
-						0,
-						-92.5
-					]
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							0,
+							0,
+							-92.5
+						]
+					}
 				},
 				"hatch": {
-					"rotation": [
-						0,
-						0,
-						92.5
-					]
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							0,
+							0,
+							92.5
+						]
+					}
 				},
 				"hatch4": {
-					"rotation": [
-						-92.5,
-						0,
-						0
-					]
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							-92.5,
+							0,
+							0
+						]
+					}
 				},
 				"hatch3": {
-					"rotation": [
-						92.5,
-						0,
-						0
-					]
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							92.5,
+							0,
+							0
+						]
+					}
 				}
 			}
 		}

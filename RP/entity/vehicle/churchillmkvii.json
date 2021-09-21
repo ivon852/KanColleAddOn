@@ -17,9 +17,8 @@
       ],
       "animations": {
         "move": "animation.churchillmkvii.move",
-        "open": "animation.churchillmkvii.open",
+        "open_hatch": "animation.churchillmkvii.open_hatch",
         "climb": "animation.tank.climb",
-        "move_controller": "controller.animation.churchillmkvii.move",
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
@@ -28,7 +27,7 @@
             "move": "query.modified_move_speed"
           },
           {
-            "open": "query.actor_property('property:open_hatch') == true"
+            "open_hatch": "query.actor_property('property:open_hatch') == true "
           },
           {
             "climb": "query.has_rider"

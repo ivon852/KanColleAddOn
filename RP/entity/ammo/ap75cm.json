@@ -2,15 +2,15 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:75cmap",
+      "identifier": "newmob:ap75cm",
       "materials": {
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/75cmap"
+        "default": "textures/entity/ap75cm"
       },
       "geometry": {
-        "default": "geometry.75cmap"
+        "default": "geometry.ap75cm"
       },
       "render_controllers": [ "controller.render.newmob" ]
     }

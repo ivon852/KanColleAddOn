@@ -2,7 +2,7 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:75cmap_item",
+      "identifier": "newitem:ap75cm_item",
       "category": "equipment"
     },
     "components": {

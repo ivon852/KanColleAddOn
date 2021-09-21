@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "newmob:75cmap",
+      "identifier": "newmob:ap75cm",
       "runtime_identifier": "minecraft:egg",
       "is_spawnable": false,
       "is_summonable": true,
@@ -26,7 +26,6 @@
           "spawn_sound": "ambient"
         }
       },
-
       "minecraft:projectile": {
         "on_hit": {
           "impact_damage": {

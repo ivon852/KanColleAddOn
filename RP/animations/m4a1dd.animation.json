@@ -148,12 +148,6 @@
 			"bones": {
 				"body": {
 					"position": [0, -70, 0]
-				},
-				"deplex_on": {
-					"position": [0, -70, 0]
-				},
-				"duplexdrive": {
-					"position": [0, -70, 0]
 				}
 			}
 		}
