@@ -94,7 +94,8 @@
               "target": "self",
               "event": "churchillmkvii:shoot"
             },
-            "use_item": false,
+            "use_item": true,
+            "cooldown":5,
             "interact_text": "action.interact.tank.fire"
           },
           {
@@ -119,7 +120,8 @@
               "target": "self",
               "event": "churchillmkvii:fireflame"
             },
-            "use_item": false,
+            "use_item": true,
+            "cooldown":10,
             "interact_text": "action.interact.churchillmkvii.firem"
           }
         ]
@@ -193,9 +195,6 @@
         "max_distance": 20.0
       },
       "minecraft:balloonable": {},
-      "minecraft:loot": {
-        "table": "loot_tables/entities/churchillmkvii.json"
-      },
       "minecraft:nameable": {},
       "minecraft:physics": {},
       "minecraft:persistent": {}

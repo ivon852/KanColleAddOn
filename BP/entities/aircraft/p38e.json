@@ -51,7 +51,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:bullet_aircraft"
+            "spawn_entity": "newmob:m2browning"
           }
         },
         "minecraft:timer": {
@@ -84,7 +84,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:127cmbelt"
+                      "value": "newitem:bullet_belt"
                     }
                   ]
                 },
@@ -92,6 +92,7 @@
                 "event": "p38e:shoot"
               },
               "use_item": false,
+              "cooldown":1,
               "interact_text": "action.interact.p38e.fire"
             }
           ]

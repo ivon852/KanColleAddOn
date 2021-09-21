@@ -84,14 +84,15 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:127cmbelt"
+                      "value": "newitem:bullet_belt"
                     }
                   ]
                 },
                 "target": "self",
                 "event": "bf109g6:shoot"
               },
-              "use_item": false,
+              "use_item": true,
+              "cooldown": 1,
               "interact_text": "action.interact.bf109g6.fire"
             }
           ]

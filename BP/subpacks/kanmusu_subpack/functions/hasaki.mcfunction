@@ -1,4 +1,4 @@
-give @s newitem:127cmbelt
+give @s newitem:bullet_belt
 give @s newitem:hvar
 give @s newitem:bomb
 give @s newitem:ap75cm_item

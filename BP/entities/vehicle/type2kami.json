@@ -198,7 +198,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:127cmbelt"
+                      "value": "newitem:bullet_belt"
                     }
                   ]
                 },

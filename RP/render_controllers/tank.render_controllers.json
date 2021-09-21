@@ -20,6 +20,18 @@
         },
         {
           "decal2": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal3": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal4": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal5": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal6": "query.actor_property('property:display_decal') == true"
         }
       ]
     }

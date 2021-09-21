@@ -712,10 +712,10 @@
         "sounds/mob/type9777/type9777"
       ]
     },
-    "bullet_aircraft.shoot": {
+    "m2browning.shoot": {
       "category": "neutral",
       "sounds": [
-        "sounds/mob/bullet_aircraft/127mm"
+        "sounds/mob/m2browning/m2browning"
       ]
     },
     "bullet_mk108.shoot": {
@@ -809,10 +809,10 @@
         "sounds/mob/s35/fire"
       ]
     },
-    "75mmmacmle1931.fire": {
+    "macmle193175mm.fire": {
       "category": "neutral",
       "sounds": [
-        "sounds/mob/75mmmacmle1931/fire"
+        "sounds/mob/macmle193175mm/fire"
       ]
     },
     "mob.irongolem.hit": {

@@ -7,9 +7,6 @@
       "is_summonable": true,
       "is_experimental": false
     },
-
-    "events": {},
-
     "components": {
       "minecraft:interact": {
         "interactions": [
@@ -53,7 +50,9 @@
         "height": 0.3
       },
       "minecraft:type_family": {
-        "family": ["sandbag"]
+        "family": [
+          "sandbag"
+        ]
       },
       "minecraft:health": {
         "value": 20,

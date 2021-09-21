@@ -685,7 +685,7 @@
           }
         }
       },
-      "newmob:75mmmacmle1931": {
+      "newmob:macmle193175mm": {
         "volume": 4,
         "pitch": [
           1,
@@ -693,7 +693,7 @@
         ],
         "events": {
           "ambient": {
-            "sound": "75mmmacmle1931.fire",
+            "sound": "macmle193175mm.fire",
             "volume": 4,
             "pitch": 1.0
           }
@@ -713,7 +713,7 @@
           }
         }
       },
-      "newmob:bullet_aircraft": {
+      "newmob:m2browning": {
         "volume": 4,
         "pitch": [
           1,
@@ -721,7 +721,7 @@
         ],
         "events": {
           "ambient": {
-            "sound": "bullet_aircraft.shoot",
+            "sound": "m2browning.shoot",
             "volume": 4,
             "pitch": 1.0
           }

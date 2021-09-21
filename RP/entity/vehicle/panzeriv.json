@@ -12,15 +12,28 @@
       "geometry": {
         "default": "geometry.panzeriv"
       },
-      "render_controllers": ["controller.render.panzeriv"],
+      "render_controllers": [
+        "controller.render.tank"
+      ],
       "animations": {
         "move": "animation.panzeriv.move",
-        "open": "animation.panzeriv.open",
-        "move_controller": "controller.animation.panzeriv.move",
+        "open_hatch": "animation.panzeriv.open_hatch",
+        "climb": "animation.tank.climb",
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
-        "animate": ["move_controller", "look_at_target"]
+        "animate": [
+          {
+            "move": "query.modified_move_speed"
+          },
+          {
+            "open_hatch": "query.actor_property('property:open_hatch') == true "
+          },
+          {
+            "climb": "query.has_rider"
+          },
+          "look_at_target"
+        ]
       },
       "spawn_egg": {
         "texture": "spawn_panzeriv",

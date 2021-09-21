@@ -122,8 +122,8 @@
     "bomb": {
       "textures": "textures/items/bomb"
     },
-    "127cmbelt": {
-      "textures": "textures/items/127cmbelt"
+    "bullet_belt": {
+      "textures": "textures/items/bullet_belt"
     },
     "hvar": {
       "textures": "textures/items/hvar"

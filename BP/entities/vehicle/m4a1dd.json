@@ -40,7 +40,7 @@
           "family_types": [
             "player"
           ],
-          "interact_text": "action.interact.m4a1dd.get_on",
+          "interact_text": "action.interact.tank.get_on",
           "seats": {
             "position": [
               -0.5,
@@ -58,7 +58,7 @@
           "family_types": [
             "player"
           ],
-          "interact_text": "action.interact.m4a1dd.get_on",
+          "interact_text": "action.interact.tank.get_on",
           "seats": {
             "position": [
               -0.5,
@@ -73,7 +73,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:bullet_aircraft"
+            "spawn_entity": "newmob:m2browning"
           }
         },
         "minecraft:timer": {
@@ -149,7 +149,7 @@
                 "event": "m4a1dd:shoot"
               },
               "use_item": false,
-              "interact_text": "action.interact.m4a1dd.fire"
+              "interact_text": "action.interact.tank.fire"
             },
             {
               "on_interact": {
@@ -166,7 +166,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:127cmbelt"
+                      "value": "newitem:bullet_belt"
                     }
                   ]
                 },
@@ -174,7 +174,7 @@
                 "event": "m4a1dd:machinegun"
               },
               "use_item": false,
-              "interact_text": "action.interact.m4a1dd.fire"
+              "interact_text": "action.interact.tank.firem"
             }
           ]
         },
@@ -270,9 +270,6 @@
         "max_distance": 10.0
       },
       "minecraft:balloonable": {},
-      "minecraft:loot": {
-        "table": "loot_tables/entities/m4a1dd.json"
-      },
       "minecraft:nameable": {},
       "minecraft:physics": {},
       "minecraft:persistent": {}

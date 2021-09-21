@@ -2,15 +2,15 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:bullet_aircraft",
+      "identifier": "newmob:m2browning",
       "materials": {
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/127mmbrowning"
+        "default": "textures/entity/m2browning"
       },
       "geometry": {
-        "default": "geometry.bullet_aircraft"
+        "default": "geometry.m2browning"
       },
       "render_controllers": [ "controller.render.newmob" ]
     }

@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "newmob:75mmmacmle1931",
+      "identifier": "newmob:m2browning",
       "runtime_identifier": "minecraft:egg",
       "is_spawnable": false,
       "is_summonable": true,
@@ -26,11 +26,10 @@
           "spawn_sound": "ambient"
         }
       },
-
       "minecraft:projectile": {
         "on_hit": {
           "impact_damage": {
-            "damage": 4,
+            "damage": 2,
             "knockback": false
           },
           "particle_on_hit": {
@@ -38,13 +37,14 @@
             "on_other_hit": true
           }
         },
+        "catch_fire": true,
         "shoottarget": true,
-        "power": 1.8,
+        "power": 1.5,
         "gravity": 0.05,
         "uncertaintyBase": 0,
         "anchor": 1,
-        "inertia": 2.1,
-        "liquid_inertia": 1
+        "inertia": 1.5,
+        "liquid_inertia": 0.9
       },
       "minecraft:physics": {},
       "minecraft:pushable": {

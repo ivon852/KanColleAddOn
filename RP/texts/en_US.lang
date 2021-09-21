@@ -157,12 +157,14 @@ action.interact.g4m2e.install=Install
 action.hint.exit.aircraft:g4m2e=Tap sneak to dismount
 
 item.newitem:bomb.name=Standard Bomb
-item.newitem:127cmbelt.name=Standard bullet belt
+item.newitem:bullet_belt.name=Standard bullet belt
 item.newitem:hvar.name=HVAR Rocket
 
 ## Vehicle
 
+##General
 action.interact.tank.fire=Fire
+action.interact.tank.firem=Fire machine gun
 action.interact.tank.get_on=Get on
 action.interact.tank.open_hatch=Open hatch
 action.interact.tank.close_hatch=Close hatch
@@ -176,10 +178,10 @@ entity.tank:kv11941_damaged.name=KV-1 1941 (Damaged)
 
 item.spawn_egg.entity.tank:s35.name=Spawn SOMUA S-35
 entity.tank:s35.name=SOMUA S-35
-action.interact.s35.get_on=Get on
-action.interact.s35.fire=Fire
 action.hint.exit.tank:s35=Tap sneak to dismount
 item.newitem:qf47apcbc.name=Fixed QF 47x380 mm. R APCBC
+entity.newmob:qf47apcbc.name=Fixed QF 47x380 mm. R APCBC
+entity.newmob:macmle193175mm.name=MAC mle 1931 7.5mm
 
 item.spawn_egg.entity.tank:type2kami.name=Spawn Special Type 2 Launch Ka Mi
 entity.tank:type2kami.name=Special Type 2 Launch Ka Mi
@@ -190,10 +192,9 @@ item.newitem:type1ap.name=Type 1 AP
 
 item.spawn_egg.entity.tank:panzeriv.name=Spawn Panzer IV Ausf. H
 entity.tank:panzeriv.name=Panzer IV Ausf. H
-action.interact.panzeriv.get_on=Get on
-action.interact.panzeriv.fire=Fire
 action.hint.exit.tank:panzeriv=Tap sneak to dismount
 item.newitem:pzgrpatr40kwk40.name=Pzgr. Patr. 40 KwK 40
+entity.newmob:pzgrpatr40kwk40.name=Pzgr. Patr. 40 KwK 40
 
 item.spawn_egg.entity.submarine:u511.name=Spawn U-511
 entity.submarine:u511.name=U-511
@@ -218,12 +219,10 @@ action.interact.nbw41.fire=Fire
 
 item.spawn_egg.entity.tank:m4a1dd.name=Spawn M4A1 Sherman Duplex Drive
 entity.tank:m4a1dd.name=M4A1 Sherman Duplex Drive
-action.interact.m4a1dd.fire=Fire
-action.interact.m4a1dd.get_on=Get on
-action.interact.m4a1d.firem=Fire
 item.newitem:ap75cm_item.name=75cm AP
 entity.newmob:ap75cm.name=75cm AP
 action.hint.exit.tank:m4a1dd=Tap sneak to dismount
+entity.newmob:m2browning.name=12.7cm M2 Browning
 
 item.spawn_egg.entity.tank:t3485.name=Spawn T34/85
 entity.tank:t3485.name=T34/85
@@ -235,7 +234,7 @@ action.hint.exit.tank:t3485=Tap sneak to dismount
 
 item.spawn_egg.entity.tank:churchillmkvii.name=Spawn Churchill Mk.VII
 entity.tank:churchillmkvii.name=Churchill Mk.VII
-action.interact.churchillmkvii.firem=Fire
+action.interact.churchillmkvii.firem=Shoot flame
 item.newitem:m46he_item.name=M46 HE
 entity.newmob:m46he.name=M46 HE
 action.hint.exit.tank:churchillmkvii=Tap sneak to dismount

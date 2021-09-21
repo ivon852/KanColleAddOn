@@ -50,7 +50,7 @@
         "burst_interval": 1
       },
       "minecraft:shooter": {
-        "def": "newmob:bullet_aircraft"
+        "def": "newmob:m2browning"
       },
       "minecraft:behavior.avoid_mob_type": {
         "priority": 4,

@@ -215,7 +215,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:127cmbelt"
+                      "value": "newitem:bullet_belt"
                     }
                   ]
                 },
@@ -223,6 +223,7 @@
                 "event": "type99d:shoot"
               },
               "use_item": false,
+              "cooldown":1,
               "interact_text": "action.interact.type99d.fire"
             },
             {
@@ -248,6 +249,7 @@
                 "event": "type99d:dropbomb"
               },
               "use_item": false,
+              "cooldown":1,
               "interact_text": "action.interact.type99d.drop"
             }
           ]

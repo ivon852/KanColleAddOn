@@ -6,6 +6,22 @@
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
+      "properties": {
+        "property:display_decal": {
+          "values": [
+            false,
+            true
+          ],
+          "client_sync": true
+        },
+        "property:open_hatch": {
+          "values": [
+            false,
+            true
+          ],
+          "client_sync": true
+        }
+      },
       "animations": {
         "mechanic": "controller.animation.panzeriv_mechanic"
       },
@@ -13,43 +29,6 @@
         "animate": [
           "mechanic"
         ]
-      }
-    },
-    "events": {
-      "panzeriv:shoot": {
-        "add": {
-          "component_groups": [
-            "panzeriv:shoot"
-          ]
-        }
-      },
-      "panzeriv:stop_shoot": {
-        "remove": {
-          "component_groups": [
-            "panzeriv:shoot"
-          ]
-        }
-      },
-      "panzeriv:machinegun": {
-        "add": {
-          "component_groups": [
-            "panzeriv:machinegun"
-          ]
-        }
-      },
-      "panzeriv:stop_machinegun": {
-        "remove": {
-          "component_groups": [
-            "panzeriv:machinegun"
-          ]
-        }
-      },
-      "minecraft:entity_spawned": {
-        "add": {
-          "component_groups": [
-            "player_spawned"
-          ]
-        }
       }
     },
     "component_groups": {
@@ -87,105 +66,103 @@
             "target": "self"
           }
         }
-      },
-      "player_spawned": {
-        "minecraft:interact": {
-          "interactions": [
-            {
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_riding",
-                      "subject": "other",
-                      "operator": "equals",
-                      "value": true
-                    },
-                    {
-                      "test": "has_equipment",
-                      "subject": "other",
-                      "domain": "hand",
-                      "operator": "equals",
-                      "value": "newitem:pzgrpatr40kwk40"
-                    }
-                  ]
-                },
-                "target": "self",
-                "event": "panzeriv:shoot"
-              },
-              "use_item": false,
-              "interact_text": "action.interact.panzeriv.fire"
-            },
-            {
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "is_riding",
-                      "subject": "other",
-                      "operator": "equals",
-                      "value": true
-                    },
-                    {
-                      "test": "has_equipment",
-                      "subject": "other",
-                      "domain": "hand",
-                      "operator": "equals",
-                      "value": "newitem:127cmbelt"
-                    }
-                  ]
-                },
-                "target": "self",
-                "event": "panzeriv:machinegun"
-              },
-              "use_item": false,
-              "interact_text": "action.interact.panzeriv.fire"
-            }
-          ]
-        },
-        "minecraft:healable": {
-          "items": [
-            {
-              "item": "iron_block",
-              "heal_amount": 20
-            }
-          ]
-        },
-        "minecraft:mark_variant": {
-          "value": 0
-        },
-        "minecraft:movement": {
-          "value": 0.15
-        },
-        "minecraft:movement.basic": {},
-        "minecraft:input_ground_controlled": {},
-        "minecraft:behavior.controlled_by_player": {},
-        "minecraft:rideable": {
-          "seat_count": 1,
-          "rider_can_interact": true,
-          "crouching_skip_interact": true,
-          "family_types": [
-            "player"
-          ],
-          "interact_text": "action.interact.panzeriv.get_on",
-          "seats": {
-            "position": [
-              0,
-              2.9,
-              0.3
-            ]
-          }
-        },
-        "minecraft:scale": {
-          "value": 1
-        },
-        "minecraft:collision_box": {
-          "width": 2,
-          "height": 4.5
-        }
       }
     },
     "components": {
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_riding",
+                    "subject": "other",
+                    "operator": "equals",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:pzgrpatr40kwk40"
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "panzeriv:shoot"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.tank.fire"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "is_riding",
+                    "subject": "other",
+                    "operator": "equals",
+                    "value": true
+                  },
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:bullet_belt"
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "panzeriv:machinegun"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.tank.firem"
+          }
+        ]
+      },
+      "minecraft:healable": {
+        "items": [
+          {
+            "item": "iron_block",
+            "heal_amount": 20
+          }
+        ]
+      },
+      "minecraft:mark_variant": {
+        "value": 0
+      },
+      "minecraft:movement": {
+        "value": 0.15
+      },
+      "minecraft:movement.basic": {},
+      "minecraft:input_ground_controlled": {},
+      "minecraft:behavior.controlled_by_player": {},
+      "minecraft:rideable": {
+        "seat_count": 1,
+        "rider_can_interact": true,
+        "crouching_skip_interact": true,
+        "family_types": [
+          "player"
+        ],
+        "interact_text": "action.interact.panzeriv.get_on",
+        "seats": {
+          "position": [
+            0,
+            2.9,
+            -1.2
+          ]
+        }
+      },
+      "minecraft:scale": {
+        "value": 1
+      },
+      "minecraft:collision_box": {
+        "width": 3.2,
+        "height": 4.2
+      },
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
@@ -215,12 +192,79 @@
         "max_distance": 20.0
       },
       "minecraft:balloonable": {},
-      "minecraft:loot": {
-        "table": "loot_tables/entities/panzeriv.json"
-      },
       "minecraft:nameable": {},
       "minecraft:physics": {},
       "minecraft:persistent": {}
+    },
+    "events": {
+      "panzeriv:shoot": {
+        "add": {
+          "component_groups": [
+            "panzeriv:shoot"
+          ]
+        }
+      },
+      "panzeriv:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "panzeriv:shoot"
+          ]
+        }
+      },
+      "panzeriv:machinegun": {
+        "add": {
+          "component_groups": [
+            "panzeriv:machinegun"
+          ]
+        }
+      },
+      "panzeriv:stop_machinegun": {
+        "remove": {
+          "component_groups": [
+            "panzeriv:machinegun"
+          ]
+        }
+      },
+      "panzeriv:open_hatch": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s add open_hatch"
+          ]
+        },
+        "set_actor_property": {
+          "property:open_hatch": true
+        }
+      },
+      "panzeriv:close_hatch": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s remove open_hatch"
+          ]
+        },
+        "set_actor_property": {
+          "property:open_hatch": false
+        }
+      },
+      "panzeriv:show_decal": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s add display_decal"
+          ]
+        },
+        "set_actor_property": {
+          "property:display_decal": true
+        }
+      },
+      "panzeriv:hide_decal": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s remove display_decal"
+          ]
+        },
+        "set_actor_property": {
+          "property:display_decal": false
+        }
+      }
     }
   }
 }
