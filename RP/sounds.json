@@ -492,7 +492,7 @@
           }
         }
       },
-      "newmob:762mmdp": {
+      "newmob:dp762mm": {
         "volume": 4,
         "pitch": [
           1,
@@ -500,7 +500,7 @@
         ],
         "events": {
           "ambient": {
-            "sound": "762mmdp.fire",
+            "sound": "dp762mm.fire",
             "volume": 4,
             "pitch": 1.0
           }
@@ -783,7 +783,7 @@
           }
         }
       },
-      "weapon:32cmrocket": {
+      "weapon:rocket32cm": {
         "volume": 4,
         "pitch": [
           1,
@@ -791,7 +791,7 @@
         ],
         "events": {
           "ambient": {
-            "sound": "32cmrocket.fire",
+            "sound": "rocket32cm.fire",
             "volume": 4,
             "pitch": 1.0
           }

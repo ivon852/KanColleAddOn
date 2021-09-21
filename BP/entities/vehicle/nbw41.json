@@ -19,6 +19,230 @@
         "delay": "animation.nbw41.delay"
       }
     },
+    "component_groups": {
+      "minecraft:sspawns": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "single_use": true,
+            "spawn_entity": "weapon:rocket32cm",
+            "num_to_spawn": 1,
+            "min_wait_time": 0,
+            "max_wait_time": 0
+          }
+        }
+      },
+      "ignite": {
+        "minecraft:mark_variant": {
+          "value": 5
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 5,
+          "time_down_event": {
+            "event": "launch",
+            "target": "self"
+          }
+        }
+      },
+      "default": {
+        "minecraft:mark_variant": {
+          "value": 0
+        }
+      },
+      "set1": {
+        "minecraft:mark_variant": {
+          "value": 1
+        }
+      },
+      "set2": {
+        "minecraft:mark_variant": {
+          "value": 2
+        }
+      },
+      "set3": {
+        "minecraft:mark_variant": {
+          "value": 3
+        }
+      },
+      "set4": {
+        "minecraft:mark_variant": {
+          "value": 4
+        }
+      }
+    },
+    "components": {
+      "minecraft:movement.basic": {},
+      "minecraft:pushable": {
+        "is_pushable": true,
+        "is_pushable_by_piston": true
+      },
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:rocket32cm_item"
+                  },
+                  {
+                    "test": "is_mark_variant",
+                    "subject": "self",
+                    "operator": "equals",
+                    "value": 0
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "set1"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.nbw41.set"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:rocket32cm_item"
+                  },
+                  {
+                    "test": "is_mark_variant",
+                    "subject": "self",
+                    "operator": "equals",
+                    "value": 1
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "set2"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.nbw41.set"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:rocket32cm_item"
+                  },
+                  {
+                    "test": "is_mark_variant",
+                    "subject": "self",
+                    "operator": "equals",
+                    "value": 2
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "set3"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.nbw41.set"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "newitem:rocket32cm_item"
+                  },
+                  {
+                    "test": "is_mark_variant",
+                    "subject": "self",
+                    "operator": "equals",
+                    "value": 3
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "set4"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.nbw41.set"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "flint_and_steel"
+                  },
+                  {
+                    "test": "is_mark_variant",
+                    "subject": "self",
+                    "operator": "equals",
+                    "value": 4
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "ignite"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.nbw41.fire",
+            "spawn_entities": "weapon:rocket32cm"
+          }
+        ]
+      },
+      "minecraft:scale": {
+        "value": 0.1
+      },
+      "minecraft:collision_box": {
+        "width": 5,
+        "height": 2
+      },
+      "minecraft:type_family": {
+        "family": [
+          "mortar"
+        ]
+      },
+      "minecraft:health": {
+        "value": 10,
+        "max": 10
+      },
+      "minecraft:knockback_resistance": {
+        "value": 1.0
+      },
+      "minecraft:jump.static": {},
+      "minecraft:fire_immune": true,
+      "minecraft:breathable": {
+        "breathes_air": true,
+        "breathes_water": true
+      },
+      "minecraft:leashable": {
+        "soft_distance": 14.0,
+        "hard_distance": 1.0,
+        "max_distance": 20.0
+      },
+      "minecraft:balloonable": {},
+      "minecraft:loot": {
+        "table": "loot_tables/entities/nbw41.json"
+      },
+      "minecraft:physics": {},
+      "minecraft:persistent": {}
+    },
     "events": {
       "minecraft:sspawns": {
         "remove": {
@@ -91,230 +315,6 @@
           ]
         }
       }
-    },
-    "component_groups": {
-      "minecraft:sspawns": {
-        "minecraft:spawn_entity": {
-          "entities": {
-            "single_use": true,
-            "spawn_entity": "weapon:32cmrocket",
-            "num_to_spawn": 1,
-            "min_wait_time": 0,
-            "max_wait_time": 0
-          }
-        }
-      },
-      "ignite": {
-        "minecraft:mark_variant": {
-          "value": 5
-        },
-        "minecraft:timer": {
-          "looping": false,
-          "time": 5,
-          "time_down_event": {
-            "event": "launch",
-            "target": "self"
-          }
-        }
-      },
-      "default": {
-        "minecraft:mark_variant": {
-          "value": 0
-        }
-      },
-      "set1": {
-        "minecraft:mark_variant": {
-          "value": 1
-        }
-      },
-      "set2": {
-        "minecraft:mark_variant": {
-          "value": 2
-        }
-      },
-      "set3": {
-        "minecraft:mark_variant": {
-          "value": 3
-        }
-      },
-      "set4": {
-        "minecraft:mark_variant": {
-          "value": 4
-        }
-      }
-    },
-    "components": {
-      "minecraft:movement.basic": {},
-      "minecraft:pushable": {
-        "is_pushable": true,
-        "is_pushable_by_piston": true
-      },
-      "minecraft:interact": {
-        "interactions": [
-          {
-            "on_interact": {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "has_equipment",
-                    "subject": "other",
-                    "domain": "hand",
-                    "operator": "equals",
-                    "value": "newitem:32cmrocket_item"
-                  },
-                  {
-                    "test": "is_mark_variant",
-                    "subject": "self",
-                    "operator": "equals",
-                    "value": 0
-                  }
-                ]
-              },
-              "target": "self",
-              "event": "set1"
-            },
-            "use_item": false,
-            "interact_text": "action.interact.nbw41.set"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "has_equipment",
-                    "subject": "other",
-                    "domain": "hand",
-                    "operator": "equals",
-                    "value": "newitem:32cmrocket_item"
-                  },
-                  {
-                    "test": "is_mark_variant",
-                    "subject": "self",
-                    "operator": "equals",
-                    "value": 1
-                  }
-                ]
-              },
-              "target": "self",
-              "event": "set2"
-            },
-            "use_item": false,
-            "interact_text": "action.interact.nbw41.set"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "has_equipment",
-                    "subject": "other",
-                    "domain": "hand",
-                    "operator": "equals",
-                    "value": "newitem:32cmrocket_item"
-                  },
-                  {
-                    "test": "is_mark_variant",
-                    "subject": "self",
-                    "operator": "equals",
-                    "value": 2
-                  }
-                ]
-              },
-              "target": "self",
-              "event": "set3"
-            },
-            "use_item": false,
-            "interact_text": "action.interact.nbw41.set"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "has_equipment",
-                    "subject": "other",
-                    "domain": "hand",
-                    "operator": "equals",
-                    "value": "newitem:32cmrocket_item"
-                  },
-                  {
-                    "test": "is_mark_variant",
-                    "subject": "self",
-                    "operator": "equals",
-                    "value": 3
-                  }
-                ]
-              },
-              "target": "self",
-              "event": "set4"
-            },
-            "use_item": false,
-            "interact_text": "action.interact.nbw41.set"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "all_of": [
-                  {
-                    "test": "has_equipment",
-                    "subject": "other",
-                    "domain": "hand",
-                    "operator": "equals",
-                    "value": "flint_and_steel"
-                  },
-                  {
-                    "test": "is_mark_variant",
-                    "subject": "self",
-                    "operator": "equals",
-                    "value": 4
-                  }
-                ]
-              },
-              "target": "self",
-              "event": "ignite"
-            },
-            "use_item": false,
-            "interact_text": "action.interact.nbw41.fire",
-            "spawn_entities": "weapon:32cmrocket"
-          }
-        ]
-      },
-      "minecraft:scale": {
-        "value": 0.1
-      },
-      "minecraft:collision_box": {
-        "width": 5,
-        "height": 2
-      },
-      "minecraft:type_family": {
-        "family": [
-          "mortar"
-        ]
-      },
-      "minecraft:health": {
-        "value": 100,
-        "max": 100
-      },
-      "minecraft:knockback_resistance": {
-        "value": 1.0
-      },
-      "minecraft:jump.static": {},
-      "minecraft:fire_immune": true,
-      "minecraft:breathable": {
-        "breathes_air": true,
-        "breathes_water": true
-      },
-      "minecraft:leashable": {
-        "soft_distance": 14.0,
-        "hard_distance": 1.0,
-        "max_distance": 20.0
-      },
-      "minecraft:balloonable": {},
-      "minecraft:loot": {
-        "table": "loot_tables/entities/nbw41.json"
-      },
-      "minecraft:physics": {},
-      "minecraft:persistent": {}
     }
   }
 }

@@ -6,6 +6,22 @@
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
+      "properties": {
+        "property:display_decal": {
+          "values": [
+            false,
+            true
+          ],
+          "client_sync": true
+        },
+        "property:open_hatch": {
+          "values": [
+            false,
+            true
+          ],
+          "client_sync": true
+        }
+      },
       "animations": {
         "mechanic": "controller.animation.type2kami_mechanic"
       },
@@ -13,71 +29,6 @@
         "animate": [
           "mechanic"
         ]
-      }
-    },
-    "events": {
-      "type2kami:inwater": {
-        "add": {
-          "component_groups": [
-            "type2kami:inwater"
-          ]
-        }
-      },
-      "type2kami:onland": {
-        "add": {
-          "component_groups": [
-            "type2kami:onland"
-          ]
-        }
-      },
-      "type2kami:machinegun": {
-        "add": {
-          "component_groups": [
-            "type2kami:machinegun"
-          ]
-        }
-      },
-      "type2kami:stop_machinegun": {
-        "remove": {
-          "component_groups": [
-            "type2kami:machinegun"
-          ]
-        }
-      },
-      "type2kami:shoot": {
-        "add": {
-          "component_groups": [
-            "type2kami:shoot"
-          ]
-        }
-      },
-      "type2kami:stop_shoot": {
-        "remove": {
-          "component_groups": [
-            "type2kami:shoot"
-          ]
-        }
-      },
-      "minecraft:entity_born": {
-        "add": {
-          "component_groups": [
-            "kanmusu_spawned"
-          ]
-        }
-      },
-      "minecraft:entity_spawned": {
-        "add": {
-          "component_groups": [
-            "player_spawned"
-          ]
-        }
-      },
-      "disappear": {
-        "add": {
-          "component_groups": [
-            "disappear"
-          ]
-        }
       }
     },
     "component_groups": {
@@ -89,7 +40,7 @@
           "family_types": [
             "player"
           ],
-          "interact_text": "action.interact.type2kami.get_on",
+          "interact_text": "action.interact.tank.get_on",
           "seats": {
             "position": [
               0,
@@ -107,7 +58,7 @@
           "family_types": [
             "player"
           ],
-          "interact_text": "action.interact.type2kami.get_on",
+          "interact_text": "action.interact.tank.get_on",
           "seats": {
             "position": [
               0,
@@ -152,8 +103,8 @@
           }
         }
       },
-      "disappear": {
-        "minecraft:despawn": {}
+      "type2kami:disappear": {
+        "minecraft:instant_despawn": {}
       },
       "player_spawned": {
         "minecraft:interact": {
@@ -180,7 +131,8 @@
                 "target": "self",
                 "event": "type2kami:shoot"
               },
-              "use_item": false,
+              "use_item": true,
+              "cooldown": 5,
               "interact_text": "action.interact.type2kami.fire"
             },
             {
@@ -205,7 +157,8 @@
                 "target": "self",
                 "event": "type2kami:machinegun"
               },
-              "use_item": false,
+              "use_item": true,
+              "cooldown": 1,
               "interact_text": "action.interact.type2kami.fire"
             }
           ]
@@ -235,6 +188,7 @@
           "height": 3
         }
       }
+      //Spawned by Kanmusu
     },
     "components": {
       "minecraft:environment_sensor": {
@@ -300,8 +254,8 @@
         ]
       },
       "minecraft:health": {
-        "value": 100,
-        "max": 100
+        "value": 80,
+        "max": 80
       },
       "minecraft:knockback_resistance": {
         "value": 1.0
@@ -321,6 +275,111 @@
       "minecraft:nameable": {},
       "minecraft:physics": {},
       "minecraft:persistent": {}
+    },
+    "events": {
+      "type2kami:inwater": {
+        "add": {
+          "component_groups": [
+            "type2kami:inwater"
+          ]
+        }
+      },
+      "type2kami:onland": {
+        "add": {
+          "component_groups": [
+            "type2kami:onland"
+          ]
+        }
+      },
+      "type2kami:machinegun": {
+        "add": {
+          "component_groups": [
+            "type2kami:machinegun"
+          ]
+        }
+      },
+      "type2kami:stop_machinegun": {
+        "remove": {
+          "component_groups": [
+            "type2kami:machinegun"
+          ]
+        }
+      },
+      "type2kami:shoot": {
+        "add": {
+          "component_groups": [
+            "type2kami:shoot"
+          ]
+        }
+      },
+      "type2kami:stop_shoot": {
+        "remove": {
+          "component_groups": [
+            "type2kami:shoot"
+          ]
+        }
+      },
+      "minecraft:entity_born": {
+        "add": {
+          "component_groups": [
+            "kanmusu_spawned"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned"
+          ]
+        }
+      },
+      "type2kami:disappear": {
+        "add": {
+          "component_groups": [
+            "type2kami:disappear"
+          ]
+        }
+      },
+      "type2kami:open_hatch": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s add open_hatch"
+          ]
+        },
+        "set_actor_property": {
+          "property:open_hatch": true
+        }
+      },
+      "type2kami:close_hatch": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s remove open_hatch"
+          ]
+        },
+        "set_actor_property": {
+          "property:open_hatch": false
+        }
+      },
+      "type2kami:show_decal": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s add display_decal"
+          ]
+        },
+        "set_actor_property": {
+          "property:display_decal": true
+        }
+      },
+      "type2kami:hide_decal": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s remove display_decal"
+          ]
+        },
+        "set_actor_property": {
+          "property:display_decal": false
+        }
+      }
     }
   }
 }

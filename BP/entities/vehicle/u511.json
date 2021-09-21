@@ -15,54 +15,6 @@
         ]
       }
     },
-    "events": {
-      "u511:dive_mode": {
-        "remove": {
-          "component_groups": [
-            "u511:float_mode"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "u511:dive_mode"
-          ]
-        }
-      },
-      "u511:float_mode": {
-        "remove": {
-          "component_groups": [
-            "u511:dive_mode"
-          ]
-        },
-        "add": {
-          "component_groups": [
-            "u511:float_mode"
-          ]
-        }
-      },
-      "u511:torpedo": {
-        "add": {
-          "component_groups": [
-            "u511:torpedo"
-          ]
-        }
-      },
-      "u511:stop_torpedo": {
-        "remove": {
-          "component_groups": [
-            "u511:torpedo"
-          ]
-        }
-      },
-      "minecraft:entity_spawned": {
-        "add": {
-          "component_groups": [
-            "player_spawned",
-            "u511:float_mode"
-          ]
-        }
-      }
-    },
     "component_groups": {
       "u511:float_mode": {
         "minecraft:navigation.generic": {
@@ -238,6 +190,54 @@
       "minecraft:pushable": {
         "is_pushable": true,
         "is_pushable_by_piston": true
+      }
+    },
+    "events": {
+      "u511:dive_mode": {
+        "remove": {
+          "component_groups": [
+            "u511:float_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "u511:dive_mode"
+          ]
+        }
+      },
+      "u511:float_mode": {
+        "remove": {
+          "component_groups": [
+            "u511:dive_mode"
+          ]
+        },
+        "add": {
+          "component_groups": [
+            "u511:float_mode"
+          ]
+        }
+      },
+      "u511:torpedo": {
+        "add": {
+          "component_groups": [
+            "u511:torpedo"
+          ]
+        }
+      },
+      "u511:stop_torpedo": {
+        "remove": {
+          "component_groups": [
+            "u511:torpedo"
+          ]
+        }
+      },
+      "minecraft:entity_spawned": {
+        "add": {
+          "component_groups": [
+            "player_spawned",
+            "u511:float_mode"
+          ]
+        }
       }
     }
   }

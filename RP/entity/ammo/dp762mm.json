@@ -2,17 +2,19 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:762mmdp",
+      "identifier": "newmob:dp762mm",
       "materials": {
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/762mmdp"
+        "default": "textures/entity/dp762mm"
       },
       "geometry": {
-        "default": "geometry.762mmdp"
+        "default": "geometry.dp762mm"
       },
-      "render_controllers": [ "controller.render.newmob" ]
+      "render_controllers": [
+        "controller.render.newmob"
+      ]
     }
   }
 }

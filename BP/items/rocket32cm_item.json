@@ -2,7 +2,7 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:32cmrocket_item",
+      "identifier": "newitem:rocket32cm_item",
       "category": "equipment"
     },
     "components": {

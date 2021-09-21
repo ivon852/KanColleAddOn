@@ -12,4 +12,4 @@ give @s newitem:wrench
 give @s newitem:mxy7
 give @s newitem:bombload60kg
 give @s newitem:type91torpedo
-give @s newitem:32cmrocket_item
+give @s newitem:rocket32cm_item

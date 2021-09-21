@@ -93,7 +93,8 @@
               "target": "self",
               "event": "panzeriv:shoot"
             },
-            "use_item": false,
+            "use_item": true,
+            "cooldown":5,
             "interact_text": "action.interact.tank.fire"
           },
           {
@@ -118,7 +119,8 @@
               "target": "self",
               "event": "panzeriv:machinegun"
             },
-            "use_item": false,
+            "use_item": true,
+            "cooldown":1,
             "interact_text": "action.interact.tank.firem"
           }
         ]

@@ -22,14 +22,23 @@
       "animations": {
         "move": "animation.type2kami.move",
         "body": "animation.type2kami.body",
-        "move_controller": "controller.animation.type2kami.move",
+        "open_hatch": "animation.type2kami.open_hatch",
+        "climb": "animation.tank.climb",
         "body_controller": "controller.animation.type2kami.body",
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
         //Float in water animation
         "animate": [
-          "move_controller",
+          {
+            "move": "query.modified_move_speed"
+          },
+          {
+            "open_hatch": "query.actor_property('property:open_hatch') == true"
+          },
+          {
+            "climb": "query.has_rider"
+          },
           "look_at_target",
           "body_controller"
         ]

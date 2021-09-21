@@ -2,14 +2,72 @@
   "format_version": "1.8.0",
   "render_controllers": {
     "controller.render.type2kami": {
-      "textures": ["Texture.default"],
+      "textures": [
+        "Texture.default"
+      ],
       "geometry": "Geometry.default",
-      "materials": [{ "*": "Material.default" }]
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        },
+        {
+          "decal": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal2": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal3": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal4": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal5": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal6": "query.actor_property('property:display_decal') == true"
+        }
+      ]
     },
     "controller.render.type2kami_inwater": {
-      "textures": ["Texture.default"],
+      "textures": [
+        "Texture.default"
+      ],
       "geometry": "Geometry.inwater",
-      "materials": [{ "*": "Material.default" }]
+      "materials": [
+        {
+          "*": "Material.default"
+        }
+      ],
+      "part_visibility": [
+        {
+          "*": true
+        },
+        {
+          "decal": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal2": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal3": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal4": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal5": "query.actor_property('property:display_decal') == true"
+        },
+        {
+          "decal6": "query.actor_property('property:display_decal') == true"
+        }
+      ]
     }
   }
 }

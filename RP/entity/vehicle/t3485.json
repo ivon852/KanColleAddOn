@@ -13,14 +13,28 @@
       "geometry": {
         "default": "geometry.t3485"
       },
-      "render_controllers": ["controller.render.t3485"],
+      "render_controllers": [
+        "controller.render.t3485"
+      ],
       "animations": {
         "move": "animation.t3485.move",
-        "move_controller": "controller.animation.t3485.move",
+        "open_hatch": "animation.t3485.open_hatch",
+        "climb": "animation.tank.climb",
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
-        "animate": ["move_controller", "look_at_target"]
+        "animate": [
+          {
+            "move": "query.modified_move_speed"
+          },
+          {
+            "open_hatch": "query.actor_property('property:open_hatch') == true "
+          },
+          {
+            "climb": "query.has_rider"
+          },
+          "look_at_target"
+        ]
       },
       "spawn_egg": {
         "texture": "spawn_t3485",

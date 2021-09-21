@@ -92,8 +92,8 @@
     "spawn_nbw41": {
       "textures": "textures/items/spawn_nbw41"
     },
-    "32cmrocket_item": {
-      "textures": "textures/items/32cmrocket_item"
+    "rocket32cm_item": {
+      "textures": "textures/items/rocket32cm_item"
     },
     "spawn_churchillmkvii": {
       "textures": "textures/items/spawn_churchillmkvii"

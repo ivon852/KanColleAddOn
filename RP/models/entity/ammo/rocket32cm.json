@@ -3,7 +3,7 @@
 	"minecraft:geometry": [
 		{
 			"description": {
-				"identifier": "geometry.32cmrocket",
+				"identifier": "geometry.rocket32cm",
 				"texture_width": 2048,
 				"texture_height": 2048,
 				"visible_bounds_width": 81,

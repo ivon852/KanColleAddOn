@@ -103,7 +103,7 @@
           }
         }
       },
-      "disappear": {
+      "m4a1dd:disappear": {
         "minecraft:instant_despawn": {}
       },
       "player_spawned": {
@@ -148,7 +148,8 @@
                 "target": "self",
                 "event": "m4a1dd:shoot"
               },
-              "use_item": false,
+              "use_item": true,
+              "cooldown":5,
               "interact_text": "action.interact.tank.fire"
             },
             {
@@ -173,7 +174,8 @@
                 "target": "self",
                 "event": "m4a1dd:machinegun"
               },
-              "use_item": false,
+              "use_item": true,
+              "cooldown":1,
               "interact_text": "action.interact.tank.firem"
             }
           ]
@@ -331,10 +333,10 @@
           ]
         }
       },
-      "disappear": {
+      "m4a1dd:disappear": {
         "add": {
           "component_groups": [
-            "disappear"
+            "m4a1dd:disappear"
           ]
         }
       },

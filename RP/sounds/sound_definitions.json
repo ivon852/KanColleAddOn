@@ -749,10 +749,10 @@
         "sounds/mob/t3485/fire"
       ]
     },
-    "762mmdp.fire": {
+    "dp762mm.fire": {
       "category": "neutral",
       "sounds": [
-        "sounds/mob/762mmdp/fire"
+        "sounds/mob/dp762mm/fire"
       ]
     },
     "churchillmkvii.engine": {
@@ -824,10 +824,10 @@
         "sounds/mob/irongolem/hit4"
       ]
     },
-    "32cmrocket.fire": {
+    "rocket32cm.fire": {
       "category": "neutral",
       "sounds": [
-        "sounds/mob/32cmrocket/fire"
+        "sounds/mob/rocket32cm/fire"
       ]
     },
     "hit.sand": {

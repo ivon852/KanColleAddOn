@@ -185,10 +185,10 @@ entity.newmob:macmle193175mm.name=MAC mle 1931 7.5mm
 
 item.spawn_egg.entity.tank:type2kami.name=Spawn Special Type 2 Launch Ka Mi
 entity.tank:type2kami.name=Special Type 2 Launch Ka Mi
-action.interact.type2kami.get_on=Get on
-action.interact.type2kami.fire=Fire
 action.hint.exit.tank:type2kami=Tap sneak to dismount
 item.newitem:type1ap.name=Type 1 AP
+entity.newmob:type1ap.name=Type 1 AP
+entity.newmob:type9777.name=Type 97 7.7mm
 
 item.spawn_egg.entity.tank:panzeriv.name=Spawn Panzer IV Ausf. H
 entity.tank:panzeriv.name=Panzer IV Ausf. H
@@ -210,10 +210,10 @@ action.interact.higginsboat.fire=Fire
 action.interact.higginsboat.down=Open Door
 action.interact.higginsboat.up=Close Door
 
-item.newitem:32cmrocket_item.name=32cm Rocket
+item.newitem:rocket32cm_item.name=32cm Rocket
 item.spawn_egg.entity.weapon:nbw41.name=Spawn 28cm/32cm Nebelwerfer 41
 entity.weapon:nbw41.name=28cm/32cm Nebelwerfer 41
-entity.weapon:32cmrocket.name=32cm Rocket
+entity.weapon:rocket32cm.name=32cm Rocket
 action.interact.nbw41.set=Set
 action.interact.nbw41.fire=Fire
 
@@ -226,10 +226,9 @@ entity.newmob:m2browning.name=12.7cm M2 Browning
 
 item.spawn_egg.entity.tank:t3485.name=Spawn T34/85
 entity.tank:t3485.name=T34/85
-action.interact.t3485.fire=Fire
-action.interact.t3485.get_on=Get on
-action.interact.t3485.firem=Fire Machine Gun
-item.newitem:ziss53ap_item.name= ZIS-S-53 AP
+item.newitem:ziss53ap_item.name=ZIS-S-53 AP
+entity.newmob:ziss53ap.name=ZIS-S-53 AP
+entity.newmob:dp762mm.name=DP 7.62 mm
 action.hint.exit.tank:t3485=Tap sneak to dismount
 
 item.spawn_egg.entity.tank:churchillmkvii.name=Spawn Churchill Mk.VII

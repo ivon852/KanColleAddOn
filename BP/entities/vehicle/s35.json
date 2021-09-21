@@ -120,7 +120,7 @@
               "event": "s35:machinegun"
             },
             "use_item": true,
-            "cooldown":2,
+            "cooldown":1,
             "interact_text": "action.interact.tank.firem"
             
           }

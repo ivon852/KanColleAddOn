@@ -1,21 +1,24 @@
 {
   "format_version": "1.10.0",
   "animation_controllers": {
-    "controller.animation.type2kami.move": {
-      "states": {
-        "default": {
-          "animations": [{ "move": "query.modified_move_speed" }]
-        }
-      }
-    },
     "controller.animation.type2kami.body": {
       "states": {
         "default": {
-          "transitions": [{ "inwater": "query.is_in_water" }]
+          "transitions": [
+            {
+              "inwater": "query.is_in_water"
+            }
+          ]
         },
         "inwater": {
-          "animations": ["body"],
-          "transitions": [{ "default": "!query.is_in_water && query.any_animation_finished" }]
+          "animations": [
+            "body"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_in_water && query.any_animation_finished"
+            }
+          ]
         }
       }
     }
