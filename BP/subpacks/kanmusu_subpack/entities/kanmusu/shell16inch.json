@@ -2,12 +2,11 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "newmob:bullet",
+      "identifier": "newmob:shell16inch",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
     },
-
     "component_groups": {
       "minecraft:exploding": {
         "minecraft:explode": {
@@ -22,11 +21,12 @@
     "events": {
       "minecraft:explode": {
         "add": {
-          "component_groups": ["minecraft:exploding"]
+          "component_groups": [
+            "minecraft:exploding"
+          ]
         }
       }
     },
-
     "components": {
       "minecraft:collision_box": {
         "width": 0.9,
@@ -57,7 +57,6 @@
         "liquid_inertia": 0.9,
         "remove_on_hit": {}
       },
-
       "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,

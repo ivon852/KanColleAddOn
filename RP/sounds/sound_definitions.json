@@ -718,10 +718,10 @@
         "sounds/mob/m2browning/m2browning"
       ]
     },
-    "bullet_mk108.shoot": {
+    "mk108.shoot": {
       "category": "neutral",
       "sounds": [
-        "sounds/mob/bullet_mk108/mk108"
+        "sounds/mob/mk108/mk108"
       ]
     },
     //Vehicles

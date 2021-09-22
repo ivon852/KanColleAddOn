@@ -2,17 +2,19 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:bullet_player",
+      "identifier": "newmob:shell127cm",
       "materials": {
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/bullet"
+        "default": "textures/entity/shell127cm"
       },
       "geometry": {
-        "default": "geometry.bullet"
+        "default": "geometry.shell127cm"
       },
-      "render_controllers": ["controller.render.newmob"]
+      "render_controllers": [
+        "controller.render.newmob"
+      ]
     }
   }
 }

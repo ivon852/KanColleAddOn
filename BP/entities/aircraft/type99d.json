@@ -182,7 +182,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "bullet:type9777"
+            "spawn_entity": "newmob:type9777"
           }
         },
         "minecraft:timer": {

@@ -2,17 +2,19 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:127cmshell",
+      "identifier": "newmob:shell16inch",
       "materials": {
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/bullet"
+        "default": "textures/entity/shell16inch"
       },
       "geometry": {
-        "default": "geometry.127cmshell"
+        "default": "geometry.shell16inch"
       },
-      "render_controllers": ["controller.render.newmob"]
+      "render_controllers": [
+        "controller.render.newmob"
+      ]
     }
   }
 }

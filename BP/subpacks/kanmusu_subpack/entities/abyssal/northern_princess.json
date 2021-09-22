@@ -115,7 +115,7 @@
         "burst_interval": 5
       },
       "minecraft:shooter": {
-        "def": "newmob:bullet"
+        "def": "newmob:shell16inch"
       },
 
       "minecraft:behavior.nearest_attackable_target": {

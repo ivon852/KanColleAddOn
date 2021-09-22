@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:shell16inch_player",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/shell16inch_player"
+      },
+      "geometry": {
+        "default": "geometry.shell16inch_player"
+      },
+      "render_controllers": [
+        "controller.render.newmob"
+      ]
+    }
+  }
+}

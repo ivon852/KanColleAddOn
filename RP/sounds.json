@@ -727,7 +727,7 @@
           }
         }
       },
-      "newmob:bullet_mk108": {
+      "newmob:mk108": {
         "volume": 4,
         "pitch": [
           1,
@@ -735,13 +735,13 @@
         ],
         "events": {
           "ambient": {
-            "sound": "bullet_mk108.shoot",
+            "sound": "mk108.shoot",
             "volume": 4,
             "pitch": 1.0
           }
         }
       },
-      "bullet:type9777": {
+      "newmob:type9777": {
         "volume": 4,
         "pitch": [
           1,
@@ -755,7 +755,7 @@
           }
         }
       },
-      "bullet:hispanomkii": {
+      "newmob:hispanomkii": {
         "volume": 4,
         "pitch": [
           1,
@@ -769,7 +769,7 @@
           }
         }
       },
-      "bullet:mg15120": {
+      "newmob:mg15120": {
         "volume": 4,
         "pitch": [
           1,

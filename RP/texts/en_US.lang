@@ -60,6 +60,7 @@ entity.kanmusu:souya.name=Souya
 
 item.spawn_egg.entity.kanmusu:tsushima.name=Spawn Tsushima
 entity.kanmusu:tsushima.name=Tsushima
+entity.newmob:depth_charge.name=Depth Charge
 
 item.spawn_egg.entity.kanmusu:gotland.name=Spawn Gotland
 entity.kanmusu:gotland.name=Gotland
@@ -90,6 +91,10 @@ entity.kanmusu:bismarck.name=Bismarck
 
 item.spawn_egg.entity.kanmusu:shimakaze.name=Spawn Shimakaze
 entity.kanmusu:shimakaze.name=Shimakaze
+entity.newmob:shell127cm.name=12.7cm Shell
+entity.newmob:shell16inch.name=16 inch Shell
+entity.newmob:shell16inch_player.name=16 inch Shell (Player)
+entity.newmob:torpedo.name=Torpedo
 
 item.spawn_egg.entity.kanmusu:boku.name=Spawn Boku Kawauso
 entity.kanmusu:boku.name=Boku
@@ -107,12 +112,14 @@ entity.aircraft:bf109g6.name=Bf-109G6
 action.interact.bf109g6.fire=Fire
 action.interact.bf109g6.get_on=Get on
 action.hint.exit.aircraft:bf109g6=Tap sneak to dismount
+entity.newmob:mg15120.name=MG 151/20mm
 
 item.spawn_egg.entity.aircraft:spitfiremkix.name=Spawn Spitifre Mk.IX
 entity.aircraft:spitfiremkix.name=Spitifre Mk.IX
 action.interact.spitfiremkix.fire=Fire
 action.interact.spitfiremkix.get_on=Get on
 action.hint.exit.aircraft:spitfiremkix=Tap sneak to dismount
+entity.newmob:hispanomkvii.name=Hispano Mk.VII
 
 item.spawn_egg.entity.aircraft:type99d.name=Spawn Type 99 Dive Bomber
 entity.aircraft:type99d.name=Type99 Dive Bomber
@@ -134,12 +141,14 @@ action.interact.f4u1d.drop=Drop bombs
 action.interact.f4u1d.fire=Fire
 action.interact.f4u1d.get_on=Get on
 action.hint.exit.aircraft:f4u1d=Tap sneak to dismount
+entity.newmob:hvar.name=HVAR
 
 item.spawn_egg.entity.aircraft:me163b.name=Spawn Me-163B
 entity.aircraft:me163b.name=Me-163B
 action.interact.me163b.fire=Fire
 action.interact.me163b.get_on=Get on
 action.hint.exit.aircraft:me163b=Tap sneak to dismount
+entity.newmob:mk108.name=MK-108 30mm
 
 item.spawn_egg.entity.aircraft:g4m2e.name=Spawn G4M2e
 entity.aircraft:g4m2e.name=G4M2e
@@ -195,6 +204,7 @@ entity.tank:panzeriv.name=Panzer IV Ausf. H
 action.hint.exit.tank:panzeriv=Tap sneak to dismount
 item.newitem:pzgrpatr40kwk40.name=Pzgr. Patr. 40 KwK 40
 entity.newmob:pzgrpatr40kwk40.name=Pzgr. Patr. 40 KwK 40
+entity.newmob:mg34.name=MG34
 
 item.spawn_egg.entity.submarine:u511.name=Spawn U-511
 entity.submarine:u511.name=U-511
@@ -222,7 +232,7 @@ entity.tank:m4a1dd.name=M4A1 Sherman Duplex Drive
 item.newitem:ap75cm_item.name=75cm AP
 entity.newmob:ap75cm.name=75cm AP
 action.hint.exit.tank:m4a1dd=Tap sneak to dismount
-entity.newmob:m2browning.name=12.7cm M2 Browning
+entity.newmob:m2browning.name=12.7mm M2 Browning
 
 item.spawn_egg.entity.tank:t3485.name=Spawn T34/85
 entity.tank:t3485.name=T34/85

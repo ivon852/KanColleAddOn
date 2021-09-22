@@ -51,7 +51,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "bullet:mg15120"
+            "spawn_entity": "newmob:mg15120"
           }
         },
         "minecraft:timer": {

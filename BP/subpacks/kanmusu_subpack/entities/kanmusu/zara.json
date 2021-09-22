@@ -232,7 +232,7 @@
         "charge_shoot_trigger": 0.1
       },
       "minecraft:shooter": {
-        "def": "newmob:bullet"
+        "def": "newmob:shell16inch"
       },
       "minecraft:behavior.hurt_by_target": {
         "entity_types": [

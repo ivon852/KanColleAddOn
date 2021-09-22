@@ -215,7 +215,7 @@
         "charge_shoot_trigger": 0.1
       },
       "minecraft:shooter": {
-        "def": "newmob:127cmshell"
+        "def": "newmob:shell127cm"
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 4,

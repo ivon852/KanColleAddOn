@@ -10,17 +10,18 @@
         "attack": "controller.animation.attack"
       },
       "scripts": {
-        "animate": ["attack"]
+        "animate": [
+          "attack"
+        ]
       }
     },
-
     "component_groups": {
       "pp_weapon:shoot": {
         "minecraft:spawn_entity": {
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:bullet_player",
+            "spawn_entity": "newmob:shell16inch_player",
             "num_to_spawn": 1
           }
         },
@@ -33,7 +34,6 @@
           }
         }
       },
-
       "minecraft:add_bad_omen": {
         "minecraft:spell_effects": {
           "add_effects": [
@@ -45,7 +45,10 @@
           ]
         },
         "minecraft:timer": {
-          "time": [0.0, 0.0],
+          "time": [
+            0.0,
+            0.0
+          ],
           "looping": false,
           "time_down_event": {
             "event": "minecraft:clear_add_bad_omen",
@@ -68,13 +71,14 @@
         }
       }
     },
-
     "components": {
       "minecraft:experience_reward": {
         "on_death": "Math.Min(query.player_level * 7, 100)"
       },
       "minecraft:type_family": {
-        "family": ["player"]
+        "family": [
+          "player"
+        ]
       },
       "minecraft:is_hidden_when_invisible": {},
       "minecraft:loot": {
@@ -140,17 +144,27 @@
       },
       "minecraft:rideable": {
         "seat_count": 2,
-        "family_types": ["parrot_tame"],
+        "family_types": [
+          "parrot_tame"
+        ],
         "pull_in_entities": true,
         "seats": [
           {
-            "position": [0.4, -0.2, -0.1],
+            "position": [
+              0.4,
+              -0.2,
+              -0.1
+            ],
             "min_rider_count": 0,
             "max_rider_count": 0,
             "lock_rider_rotation": 0
           },
           {
-            "position": [-0.4, -0.2, -0.1],
+            "position": [
+              -0.4,
+              -0.2,
+              -0.1
+            ],
             "min_rider_count": 1,
             "max_rider_count": 2,
             "lock_rider_rotation": 0
@@ -159,40 +173,52 @@
       },
       "minecraft:scaffolding_climber": {}
     },
-
     "events": {
       "pp_weapon:shoot": {
         "add": {
-          "component_groups": ["pp_weapon:shoot"]
+          "component_groups": [
+            "pp_weapon:shoot"
+          ]
         }
       },
       "pp_weapon:stop_shoot": {
         "remove": {
-          "component_groups": ["pp_weapon:shoot"]
+          "component_groups": [
+            "pp_weapon:shoot"
+          ]
         }
       },
-
       "minecraft:gain_bad_omen": {
         "add": {
-          "component_groups": ["minecraft:add_bad_omen"]
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
         }
       },
       "minecraft:clear_add_bad_omen": {
         "remove": {
-          "component_groups": ["minecraft:add_bad_omen"]
+          "component_groups": [
+            "minecraft:add_bad_omen"
+          ]
         },
         "add": {
-          "component_groups": ["minecraft:clear_bad_omen_spell_effect"]
+          "component_groups": [
+            "minecraft:clear_bad_omen_spell_effect"
+          ]
         }
       },
       "minecraft:trigger_raid": {
         "add": {
-          "component_groups": ["minecraft:raid_trigger"]
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
         }
       },
       "minecraft:remove_raid_trigger": {
         "remove": {
-          "component_groups": ["minecraft:raid_trigger"]
+          "component_groups": [
+            "minecraft:raid_trigger"
+          ]
         }
       }
     }

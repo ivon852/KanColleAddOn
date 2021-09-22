@@ -2,13 +2,13 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanmusu:127cm",
+      "identifier": "kanmusu:rensouhouchan",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
     },
     "component_groups": {
-      "127cm_too_close": {
+      "rensouhouchan_too_close": {
         "minecraft:behavior.avoid_mob_type": {
           "priority": 1,
           "entity_types": [
@@ -27,18 +27,21 @@
       }
     },
     "events": {
-      "127cm_too_close": {
+      "rensouhouchan_too_close": {
         "add": {
-          "component_groups": ["127cm_too_close"]
+          "component_groups": [
+            "rensouhouchan_too_close"
+          ]
         }
       },
-      "127cm_range_attack": {
+      "rensouhouchan_range_attack": {
         "remove": {
-          "component_groups": ["127cm_too_close"]
+          "component_groups": [
+            "rensouhouchan_too_close"
+          ]
         }
       }
     },
-
     "components": {
       "minecraft:pushable": {
         "is_pushable": true,
@@ -48,17 +51,21 @@
         "inside_range": 9,
         "outside_range": 10,
         "on_inside_range": {
-          "event": "127cm_too_close",
+          "event": "rensouhouchan_too_close",
           "target": "self"
         },
         "on_outside_range": {
-          "event": "127cm_range_attack",
+          "event": "rensouhouchan_range_attack",
           "target": "self"
         }
       },
       "minecraft:behavior.follow_mob": {},
       "minecraft:type_family": {
-        "family": ["shimakaze", "mob", "kanmusu"]
+        "family": [
+          "shimakaze",
+          "mob",
+          "kanmusu"
+        ]
       },
       "minecraft:behavior.follow_parent": {
         "priority": 5,
@@ -89,14 +96,12 @@
         "width": 1,
         "height": 0.6
       },
-
       "minecraft:movement": {
         "value": 0.2
       },
       "minecraft:underwater_movement": {
         "value": 0.5
       },
-
       "minecraft:behavior.random_stroll": {
         "priority": 5
       },
@@ -107,11 +112,9 @@
       "minecraft:behavior.random_look_around": {
         "priority": 7
       },
-
       "minecraft:attack": {
         "damage": 2
       },
-
       "minecraft:behavior.ranged_attack": {
         "priority": 3,
         "attack_interval_min": 1,
@@ -123,9 +126,8 @@
         "burst_interval": 1
       },
       "minecraft:shooter": {
-        "def": "newmob:127cmshell"
+        "def": "newmob:shell127cm"
       },
-
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 4,
         "entity_types": [
@@ -143,7 +145,7 @@
         ],
         "must_see": true,
         "within_radius": 64,
-        "reselect_targets":true
+        "reselect_targets": true
       },
       "minecraft:behavior.mount_pathing": {
         "speed_multiplier": 1.25,
@@ -155,7 +157,11 @@
           {
             "filters": {
               "all_of": [
-                { "test": "is_family", "subject": "other", "value": "abyssal" }
+                {
+                  "test": "is_family",
+                  "subject": "other",
+                  "value": "abyssal"
+                }
               ]
             },
             "max_dist": 64
@@ -168,9 +174,6 @@
         "max_distance": 10
       },
       "minecraft:balloonable": {},
-      "minecraft:loot": {
-        "table": "loot_tables/entities/shimakaze.json"
-      },
       "minecraft:nameable": {},
       "minecraft:physics": {},
       "minecraft:persistent": {}

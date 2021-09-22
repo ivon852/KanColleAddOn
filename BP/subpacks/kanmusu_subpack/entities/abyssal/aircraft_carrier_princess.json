@@ -274,7 +274,7 @@
         "burst_interval": 2
       },
       "minecraft:shooter": {
-        "def": "newmob:bullet"
+        "def": "newmob:shell16inch"
       },
       "minecraft:behavior.mount_pathing": {
         "speed_multiplier": 1.25,

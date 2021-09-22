@@ -136,7 +136,7 @@
         "charge_shoot_trigger": 0.1
       },
       "minecraft:shooter": {
-        "def": "newmob:bullet"
+        "def": "newmob:shell16inch"
       },
 
       "minecraft:behavior.nearest_attackable_target": {

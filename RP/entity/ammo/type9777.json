@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "bullet:type9777",
+      "identifier": "newmob:type9777",
       "materials": {
         "default": "entity_alphatest"
       },
