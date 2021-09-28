@@ -220,10 +220,10 @@ item.kancolle:pzgrpatr40kwk40_item.name=Pzgr. Patr. 40 KwK 40
 entity.kancolle:pzgrpatr40kwk40.name=Pzgr. Patr. 40 KwK 40
 entity.kancolle:mg34.name=MG34
 
-item.spawn_egg.entity.submarine:u511.name=Spawn U-511
-entity.submarine:u511.name=U-511
+item.spawn_egg.entity.kancolle:u511.name=Spawn U-511
+entity.kancolle:u511.name=U-511
 action.interact.u511.fire=Fire
-action.hint.exit.submarine:u511=Tap sneak to dismount
+action.hint.exit.kancolle:u511=Tap sneak to dismount
 action.interact.u511.get_on=Get on
 
 item.spawn_egg.entity.kancolle:higginsboat.name=Spawn LCVP

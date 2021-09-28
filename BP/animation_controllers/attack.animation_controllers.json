@@ -47,7 +47,7 @@
           ],
           "on_entry": [
             "/replaceitem entity @e[type=kancolle:g4m2e, tag=flying,c=1] slot.weapon.mainhand 0 kancolle:type91torpedo_item",
-            "/replaceitem entity @e[type=submarine:u511, tag=riding,c=1] slot.weapon.mainhand 0 kancolle:type91torpedo_item"
+            "/replaceitem entity @e[type=kancolle:u511, tag=riding,c=1] slot.weapon.mainhand 0 kancolle:type91torpedo_item"
           ]
         },
         "ppweapon_shoot": {

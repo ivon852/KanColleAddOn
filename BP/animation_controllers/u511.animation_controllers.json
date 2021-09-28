@@ -17,10 +17,10 @@
           "on_entry": [
             "/execute @s ~ ~ ~ tag @s add riding",
             "/execute @e[r=10, type=player] ~ ~ ~ effect @s water_breathing 5 5 true",
-            "/execute @p[rx=-60,rxm=-90] ~ ~ ~ execute @e[tag=riding,type=submarine:u511] ~ ~ ~ tag @s add up",
-            "/execute @p[rx=-60,rxm=-90] ~ ~ ~ execute @e[tag=riding,type=submarine:u511] ~ ~ ~ tag @s remove down",
-            "/execute @p[rx=90,rxm=80] ~ ~ ~ execute @e[tag=riding,type=submarine:u511] ~ ~ ~ tag @s add down",
-            "/execute @p[rx=90,rxm=80] ~ ~ ~ execute @e[tag=riding,type=submarine:u511] ~ ~ ~ tag @s remove up"
+            "/execute @p[rx=-60,rxm=-90] ~ ~ ~ execute @e[tag=riding,type=kancolle:u511] ~ ~ ~ tag @s add up",
+            "/execute @p[rx=-60,rxm=-90] ~ ~ ~ execute @e[tag=riding,type=kancolle:u511] ~ ~ ~ tag @s remove down",
+            "/execute @p[rx=90,rxm=80] ~ ~ ~ execute @e[tag=riding,type=kancolle:u511] ~ ~ ~ tag @s add down",
+            "/execute @p[rx=90,rxm=80] ~ ~ ~ execute @e[tag=riding,type=kancolle:u511] ~ ~ ~ tag @s remove up"
           ],
           "transitions": [
             {
@@ -29,7 +29,9 @@
           ]
         },
         "remove": {
-          "on_entry": ["/execute @s ~ ~ ~ tag @s remove riding"],
+          "on_entry": [
+            "/execute @s ~ ~ ~ tag @s remove riding"
+          ],
           "transitions": [
             {
               "default": "1.0"
