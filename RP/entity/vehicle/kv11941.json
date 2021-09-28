@@ -13,17 +13,29 @@
         "default": "geometry.kv11941"
       },
       "render_controllers": [
-        "controller.render.newmob"
+        "controller.render.tank"
       ],
       "animations": {
         "move": "animation.kv11941.move",
         "fire": "animation.kv11941.fire",
-        "move_controller": "controller.animation.kv11941.move",
+        "climb": "animation.tank.climb",
+        "open_hatch": "animation.kv11941.open_hatch",
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
         "animate": [
-          "move_controller",
+          {
+            "move": "query.modified_move_speed"
+          },
+          {
+            "fire": "query.variant == 2"
+          },
+          {
+            "open_hatch": "query.actor_property('property:open_hatch') == true "
+          },
+          {
+            "climb": "query.has_rider"
+          },
           "look_at_target"
         ]
       },

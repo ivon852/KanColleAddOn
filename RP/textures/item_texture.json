@@ -181,6 +181,9 @@
     },
     "spawn_kv11941": {
       "textures": "textures/items/spawn_kv11941"
+    },
+    "zis576mmaphe_item": {
+      "textures": "textures/items/zis576mmaphe_item"
     }
   }
 }

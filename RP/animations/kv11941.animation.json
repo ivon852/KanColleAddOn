@@ -778,22 +778,37 @@
 				}
 			}
 		},
-		"animation.kv11941.open": {
-			"loop": true,
+		"animation.kv11941.open_hatch": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
 			"bones": {
 				"hatch": {
-					"rotation": [
-						-92.5,
-						0,
-						0
-					]
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							-92.5,
+							0,
+							0
+						]
+					}
 				},
 				"hatch2": {
-					"rotation": [
-						100,
-						0,
-						0
-					]
+					"rotation": {
+						"0.0": [
+							0,
+							0,
+							0
+						],
+						"0.5": [
+							92.5,
+							0,
+							0
+						]
+					}
 				}
 			}
 		}

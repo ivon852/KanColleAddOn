@@ -21,14 +21,6 @@
           ],
           "client_sync": true
         }
-      },
-      "animations": {
-        "mechanic": "controller.animation.m4a1dd_mechanic"
-      },
-      "scripts": {
-        "animate": [
-          "mechanic"
-        ]
       }
     },
     "component_groups": {
@@ -149,7 +141,7 @@
                 "event": "m4a1dd:shoot"
               },
               "use_item": true,
-              "cooldown":5,
+              "cooldown": 5,
               "interact_text": "action.interact.tank.fire"
             },
             {
@@ -175,7 +167,7 @@
                 "event": "m4a1dd:machinegun"
               },
               "use_item": true,
-              "cooldown":1,
+              "cooldown": 1,
               "interact_text": "action.interact.tank.firem"
             }
           ]

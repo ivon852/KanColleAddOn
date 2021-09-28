@@ -21,14 +21,6 @@
           ],
           "client_sync": true
         }
-      },
-      "animations": {
-        "mechanic": "controller.animation.panzeriv_mechanic"
-      },
-      "scripts": {
-        "animate": [
-          "mechanic"
-        ]
       }
     },
     "component_groups": {

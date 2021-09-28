@@ -1,7 +1,4 @@
 {
-  "individual_event_sounds": {
-    "events": {}
-  },
   "entity_sounds": {
     "entities": {
       //Kanmusu
@@ -699,6 +696,40 @@
           }
         }
       },
+      "tank:kv11941": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "step": {
+            "sound": "kv11941.engine",
+            "volume": 4,
+            "pitch": 1.0
+          },
+          "hurt": {
+            "sound": "mob.irongolem.hit",
+            "volume": 4,
+            "pitch": 0.5
+          }
+        }
+      },
+      "newmob:zis576mmaphe": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "ambient": {
+            "sound": "kv11941.fire",
+            "volume": 4,
+            "pitch": 1.0
+          }
+        }
+      },
+
       "newmob:hvar": {
         "volume": 4,
         "pitch": [

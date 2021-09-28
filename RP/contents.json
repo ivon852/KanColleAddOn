@@ -1,0 +1,1790 @@
+{
+    "content": [
+        {
+            "path": "contents.json"
+        },
+        {
+            "path": "contents_generator.py"
+        },
+        {
+            "path": "LICENSE"
+        },
+        {
+            "path": "manifest.json"
+        },
+        {
+            "path": "pack_icon.png"
+        },
+        {
+            "path": "sounds.json"
+        },
+        {
+            "path": "texture_list_generator.py"
+        },
+        {
+            "path": ".vscode/settings.json"
+        },
+        {
+            "path": "animations/bf109g6.animation.json"
+        },
+        {
+            "path": "animations/churchillmkvii.animation.json"
+        },
+        {
+            "path": "animations/f4u1d.animation.json"
+        },
+        {
+            "path": "animations/g4m2e.animation.json"
+        },
+        {
+            "path": "animations/higginsboat.animation.json"
+        },
+        {
+            "path": "animations/hvar.json"
+        },
+        {
+            "path": "animations/ki_61.json"
+        },
+        {
+            "path": "animations/kv11941.animation.json"
+        },
+        {
+            "path": "animations/m4a1dd.animation.json"
+        },
+        {
+            "path": "animations/me163b.animation.json"
+        },
+        {
+            "path": "animations/p38e.animation.json"
+        },
+        {
+            "path": "animations/panzerivh.animation.json"
+        },
+        {
+            "path": "animations/s35.animation.json"
+        },
+        {
+            "path": "animations/spitfiremkix.animation.json"
+        },
+        {
+            "path": "animations/t3485.animation.json"
+        },
+        {
+            "path": "animations/tank.animation.json"
+        },
+        {
+            "path": "animations/type2kami.animation.json"
+        },
+        {
+            "path": "animations/type99d.json"
+        },
+        {
+            "path": "animations/u511.animation.json"
+        },
+        {
+            "path": "animation_controllers/bf109g6.json"
+        },
+        {
+            "path": "animation_controllers/f4u1d_controller.json"
+        },
+        {
+            "path": "animation_controllers/g4m2e_controller.json"
+        },
+        {
+            "path": "animation_controllers/higginsboat_controller.json"
+        },
+        {
+            "path": "animation_controllers/hvar_controller.json"
+        },
+        {
+            "path": "animation_controllers/ki_61_controller .json"
+        },
+        {
+            "path": "animation_controllers/m4a1dd_controller.json"
+        },
+        {
+            "path": "animation_controllers/me163b_controller.json"
+        },
+        {
+            "path": "animation_controllers/p38e.json"
+        },
+        {
+            "path": "animation_controllers/panzeriv_controller.json"
+        },
+        {
+            "path": "animation_controllers/spifiremkix.json"
+        },
+        {
+            "path": "animation_controllers/type2kami.json"
+        },
+        {
+            "path": "animation_controllers/type99d_controller.json"
+        },
+        {
+            "path": "animation_controllers/u511_controller.json"
+        },
+        {
+            "path": "entity/aircraft/bf109g6.json"
+        },
+        {
+            "path": "entity/aircraft/f4u1d.json"
+        },
+        {
+            "path": "entity/aircraft/g4m2e.json"
+        },
+        {
+            "path": "entity/aircraft/ki_61.json"
+        },
+        {
+            "path": "entity/aircraft/me163b.json"
+        },
+        {
+            "path": "entity/aircraft/mxy7.json"
+        },
+        {
+            "path": "entity/aircraft/p38e.json"
+        },
+        {
+            "path": "entity/aircraft/spifiremkix.json"
+        },
+        {
+            "path": "entity/aircraft/type99d.json"
+        },
+        {
+            "path": "entity/ammo/ap75cm.json"
+        },
+        {
+            "path": "entity/ammo/depthcharge.json"
+        },
+        {
+            "path": "entity/ammo/dp762mm.json"
+        },
+        {
+            "path": "entity/ammo/hispanomkii.json"
+        },
+        {
+            "path": "entity/ammo/hvar.json"
+        },
+        {
+            "path": "entity/ammo/m2browning.json"
+        },
+        {
+            "path": "entity/ammo/m46he.json"
+        },
+        {
+            "path": "entity/ammo/macmle193175mm.json"
+        },
+        {
+            "path": "entity/ammo/mg15120.json"
+        },
+        {
+            "path": "entity/ammo/mg34.json"
+        },
+        {
+            "path": "entity/ammo/mk108.json"
+        },
+        {
+            "path": "entity/ammo/pzgrpatr40kwk40.json"
+        },
+        {
+            "path": "entity/ammo/qf47apcbc.json"
+        },
+        {
+            "path": "entity/ammo/rocket32cm.json"
+        },
+        {
+            "path": "entity/ammo/shell127cm.json"
+        },
+        {
+            "path": "entity/ammo/shell16inch.json"
+        },
+        {
+            "path": "entity/ammo/shell16inch_player.json"
+        },
+        {
+            "path": "entity/ammo/torpedo.json"
+        },
+        {
+            "path": "entity/ammo/type1ap.json"
+        },
+        {
+            "path": "entity/ammo/type91torpedo.json"
+        },
+        {
+            "path": "entity/ammo/type9777.json"
+        },
+        {
+            "path": "entity/ammo/zis576mmaphe.json"
+        },
+        {
+            "path": "entity/ammo/ziss53ap.json"
+        },
+        {
+            "path": "entity/vehicle/churchillmkvii.json"
+        },
+        {
+            "path": "entity/vehicle/higginsboat.json"
+        },
+        {
+            "path": "entity/vehicle/kv11941.json"
+        },
+        {
+            "path": "entity/vehicle/kv11941_damaged.json"
+        },
+        {
+            "path": "entity/vehicle/m4a1dd.json"
+        },
+        {
+            "path": "entity/vehicle/nbw41.json"
+        },
+        {
+            "path": "entity/vehicle/panzeriv.json"
+        },
+        {
+            "path": "entity/vehicle/s35.json"
+        },
+        {
+            "path": "entity/vehicle/sandbag.json"
+        },
+        {
+            "path": "entity/vehicle/t3485.json"
+        },
+        {
+            "path": "entity/vehicle/type2kami.json"
+        },
+        {
+            "path": "entity/vehicle/u511.json"
+        },
+        {
+            "path": "items/ap75cm_item.json"
+        },
+        {
+            "path": "items/bomb.json"
+        },
+        {
+            "path": "items/bombload60kg.json"
+        },
+        {
+            "path": "items/bullet_belt.json"
+        },
+        {
+            "path": "items/flamethrower.json"
+        },
+        {
+            "path": "items/hvar.json"
+        },
+        {
+            "path": "items/m46he.json"
+        },
+        {
+            "path": "items/mxy7.json"
+        },
+        {
+            "path": "items/pzgrpatr40kwk40.json"
+        },
+        {
+            "path": "items/qf47apcbc.json"
+        },
+        {
+            "path": "items/rocket32cm_item.json"
+        },
+        {
+            "path": "items/type1ap.json"
+        },
+        {
+            "path": "items/type91torpedo.json"
+        },
+        {
+            "path": "items/wrench.json"
+        },
+        {
+            "path": "items/zis576mmaphe.json"
+        },
+        {
+            "path": "items/ziss53ap.json"
+        },
+        {
+            "path": "models/entity/aircraft/bf109g6.geo.json"
+        },
+        {
+            "path": "models/entity/aircraft/f4u1d.geo.json"
+        },
+        {
+            "path": "models/entity/aircraft/g4m2e.geo.json"
+        },
+        {
+            "path": "models/entity/aircraft/ki_61.geo.json"
+        },
+        {
+            "path": "models/entity/aircraft/me163b.geo.json"
+        },
+        {
+            "path": "models/entity/aircraft/mxy7.geo.json"
+        },
+        {
+            "path": "models/entity/aircraft/p38e.geo.json"
+        },
+        {
+            "path": "models/entity/aircraft/spitfiremkix.geo.json"
+        },
+        {
+            "path": "models/entity/aircraft/type99d.json"
+        },
+        {
+            "path": "models/entity/ammo/ap75cm.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/bombload60kg.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/depthcharge.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/depthcharge.json"
+        },
+        {
+            "path": "models/entity/ammo/dp762mm.json"
+        },
+        {
+            "path": "models/entity/ammo/hispanomkii.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/hvar.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/m2browning.json"
+        },
+        {
+            "path": "models/entity/ammo/m46he.json"
+        },
+        {
+            "path": "models/entity/ammo/macmle193175mm.json"
+        },
+        {
+            "path": "models/entity/ammo/mg15120.json"
+        },
+        {
+            "path": "models/entity/ammo/mg34.json"
+        },
+        {
+            "path": "models/entity/ammo/mk108.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/pzgrpatr40kwk40.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/qf47apcbc.json"
+        },
+        {
+            "path": "models/entity/ammo/rocket32cm.json"
+        },
+        {
+            "path": "models/entity/ammo/shell127cm.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/shell16inch.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/shell16inch_player.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/torpedo.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/type1ap.json"
+        },
+        {
+            "path": "models/entity/ammo/type91torpedo.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/type9777.json"
+        },
+        {
+            "path": "models/entity/ammo/zis576mmaphe.geo.json"
+        },
+        {
+            "path": "models/entity/ammo/ziss53ap.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/churchillmkvii.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/higginsboat.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/kv11941.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/kv11941_damaged.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/m4a1dd.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/nbw41.json"
+        },
+        {
+            "path": "models/entity/vehicle/panzeriv.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/s35.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/sandbag.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/t3485.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/type2kami.geo.json"
+        },
+        {
+            "path": "models/entity/vehicle/type2kami_inwater.json"
+        },
+        {
+            "path": "models/entity/vehicle/u511.geo.json"
+        },
+        {
+            "path": "render_controllers/g4m2e.render_controllers.json"
+        },
+        {
+            "path": "render_controllers/m4a1dd.render_controllers.json"
+        },
+        {
+            "path": "render_controllers/me163b.render_controllers.json"
+        },
+        {
+            "path": "render_controllers/mxy7_entity.render_controllers.json"
+        },
+        {
+            "path": "render_controllers/nbw41.render_controllers.json"
+        },
+        {
+            "path": "render_controllers/newmob.render_controllers.json"
+        },
+        {
+            "path": "render_controllers/t3485.render_controllers.json"
+        },
+        {
+            "path": "render_controllers/tank.render_controllers.json"
+        },
+        {
+            "path": "render_controllers/type2kami.json"
+        },
+        {
+            "path": "render_controllers/type91torpedo_entity.render_controllers.json"
+        },
+        {
+            "path": "sounds/sound_definitions.json"
+        },
+        {
+            "path": "sounds/mob/bf109g6/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/churchillmkvii/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/dp762mm/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/f4u1d/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/g4m2e/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/higginsboat/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/hispanomkii/hispanomkii.ogg"
+        },
+        {
+            "path": "sounds/mob/hvar/hvar.ogg"
+        },
+        {
+            "path": "sounds/mob/ki_61/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/kv11941/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/kv11941/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/m2browning/m2browning.ogg"
+        },
+        {
+            "path": "sounds/mob/m46he/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/m4a1dd/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/m4a1dd/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/macmle193175mm/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/me163b/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/mg15120/mg15120.ogg"
+        },
+        {
+            "path": "sounds/mob/mg34/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/mk108/mk108.ogg"
+        },
+        {
+            "path": "sounds/mob/p38e/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/panzeriv/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/panzeriv/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/rocket32cm/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/s35/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/s35/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/spitfiremkix/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/t3485/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/t3485/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/type2kami/engine.ogg"
+        },
+        {
+            "path": "sounds/mob/type2kami/fire.ogg"
+        },
+        {
+            "path": "sounds/mob/type9777/type9777.ogg"
+        },
+        {
+            "path": "sounds/mob/type99d/drop_bomb.ogg"
+        },
+        {
+            "path": "sounds/mob/type99d/engine.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/abyssal_f6f.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/aircraft_carrier_princess.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/bismarck.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/boku.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/dd_haclass.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/dd_iclass.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/dd_naclass.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/dd_niclass.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/dd_roclass.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/gotland.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/gotsheep.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/hiryu.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/i168.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/irako.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/mamiya.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/northern_princess_armament.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/nothern_princess.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/pacific_princess.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/pp_whale.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/ptimpgroup.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/shimakaze.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/souya.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/tsushima.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/u511_kanmusu.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animations/zara.animation.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/abyssal_f6f_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/aircraft_carrier_princess_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/bismarck_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/boku_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/dd_haclass_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/dd_iclass_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/dd_naclass_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/dd_niclass_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/dd_roclass_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/gotland.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/gotsheep.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/hiryu_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/i168_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/irako_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/mamiya_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/northern_princess_arament_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/northern_princess_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/pacific_princess_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/pp_whale_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/ptimpgroup_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/shimakaze_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/souya.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/tsushima.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/u511_kanmusu_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/animation_controllers/zara_controller.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/abyssal_f6f.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/aircraft_carrier_princess.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/aircraft_carrier_princess_armament.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/dd_haclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/dd_iclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/dd_naclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/dd_niclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/dd_roclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/northern_princess.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/northern_princess_arament.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/pacific_princess.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/pp_whale.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/ptimpgroup.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/abyssal/waclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/bismarck.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/boku.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/gotland.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/gotsheep.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/hiryu.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/i168.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/irako.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/mamiya.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/rensouhouchan.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/shimakaze.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/souya.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/tsushima.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/u511_kanmusu.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/entity/kanmusu/zara.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/items/admiral_cap.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/items/irako.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/items/mamiya.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/items/pp_weapon.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/abyssal_f6f.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/aircraft_carrier_princess.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/aircraft_carrier_princess_armament.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/dd_haclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/dd_iclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/dd_naclass.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/dd_niclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/dd_roclass.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/northern_princess_armament.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/nothern_princess.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/pacific_princess.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/pp_whale.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/ptimpgroup_type1.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/ptimpgroup_type2.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/ptimpgroup_type3.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/abyssal/wacalss.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/bismarck.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/boku.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/gotland.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/gotsheep.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/hiryu.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/i168.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/irako.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/mamiya.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/rensouhouchan.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/shimakaze.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/souya.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/tsushima.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/u511_kanmusu.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/models/entity/kanmusu/zara.geo.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/render_controllers/aircraft_carrier_princess.render_controllers.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/render_controllers/aircraft_carrier_princess_armament.render_controllers.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/render_controllers/boku.render_controllers.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/render_controllers/newmob.render_controllers.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/render_controllers/northern_princess.render_controllers.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/render_controllers/ptimpgroup.render_controllers.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/render_controllers/u511_kanmusu.render_controllers.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/render_controllers/waclass.render_controllers.json"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_demon/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_demon/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_demon/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_demon/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_demon/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_princess/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_princess/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_princess/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_princess/death2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_princess/death3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_princess/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_princess/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/aircraft_carrier_princess/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/hurt3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/intro.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/bismarck/say3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/hurt3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/intro.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/gotland/say3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/hurt3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/intro.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/hiryu/say3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/hurt3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/intro.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/i168/say3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/irako/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/irako/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/mamiya/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/mamiya/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/northern_princess/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/northern_princess/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/northern_princess/attack3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/northern_princess/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/northern_princess/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/northern_princess/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/northern_princess/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/northern_princess/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/pacific_princess/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/pacific_princess/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/pacific_princess/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/pacific_princess/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/pacific_princess/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/pacific_princess/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/pacific_princess/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/pp_whale/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/ptimpgroup/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/ptimpgroup/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/ptimpgroup/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/attack3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/hurt3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/hurt4.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/hurt5.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/intro.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/shimakaze/say3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/attack3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/hurt3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/intro.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/souya/say3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/hurt3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/intro.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/tsushima/say3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/hurt3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/intro.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/u511_kanmusu/say3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/attack.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/attack2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/attack3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/attack4.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/death.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/hurt.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/hurt2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/hurt3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/intro.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/say.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/say2.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/sounds/mob/zara/say3.ogg"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/abyssal_f6f.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/aircraft_carrier_princess.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/aircraft_carrier_princess_armament.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/aircraft_carrier_princess_armament_damaged.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/aircraft_carrier_princess_damaged.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/bismarck.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/boku.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/dd_haclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/dd_iclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/dd_naclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/dd_niclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/dd_roclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/gotland.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/gotsheep.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/hiryu.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/i168.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/irako.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/mamiya.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/northern_princess.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/northern_princess_angry.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/northern_princess_arament.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/pacific_princess.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/pp_whale.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/ptimpgroup_type1.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/ptimpgroup_type2.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/ptimpgroup_type3.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/rensouhouchan.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/shimakaze.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/souya.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/tsushima.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/u511_kanmusu.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/waclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/entity/zara.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/admiral_cap.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/irako_item.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/mamiya_item.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/pp_weapon.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_aircraft_carrier_princess.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_bismarck.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_boku.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_dd_haclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_dd_iclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_dd_naclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_dd_niclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_dd_roclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_gotland.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_hiryu.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_i168.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_irako.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_mamiya.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_northern_princess.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_pacific_princess.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_ptimpgroup.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_shimakaze.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_souya.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_tsushima.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_u511_kanmusu.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_waclass.png"
+        },
+        {
+            "path": "subpacks/kanmusu_subpack/textures/items/spawn_zara.png"
+        },
+        {
+            "path": "texts/en_US.lang"
+        },
+        {
+            "path": "texts/languages.json"
+        },
+        {
+            "path": "texts/zh_CN.lang"
+        },
+        {
+            "path": "texts/zh_TW.lang"
+        },
+        {
+            "path": "textures/item_texture.json"
+        },
+        {
+            "path": "textures/entity/127mmbrowning.png"
+        },
+        {
+            "path": "textures/entity/airfield.png"
+        },
+        {
+            "path": "textures/entity/ap75cm.png"
+        },
+        {
+            "path": "textures/entity/bf109g6.png"
+        },
+        {
+            "path": "textures/entity/churchillmkvii.png"
+        },
+        {
+            "path": "textures/entity/depthcharge.png"
+        },
+        {
+            "path": "textures/entity/dp762mm.png"
+        },
+        {
+            "path": "textures/entity/f4u1d.png"
+        },
+        {
+            "path": "textures/entity/higginsboat.png"
+        },
+        {
+            "path": "textures/entity/hispanomkii.png"
+        },
+        {
+            "path": "textures/entity/hvar.png"
+        },
+        {
+            "path": "textures/entity/ki_61.png"
+        },
+        {
+            "path": "textures/entity/kv11941.png"
+        },
+        {
+            "path": "textures/entity/kv11941_damaged.png"
+        },
+        {
+            "path": "textures/entity/m2browning.png"
+        },
+        {
+            "path": "textures/entity/m46he.png"
+        },
+        {
+            "path": "textures/entity/m4a1dd.png"
+        },
+        {
+            "path": "textures/entity/macmle193175mm.png"
+        },
+        {
+            "path": "textures/entity/me163b.png"
+        },
+        {
+            "path": "textures/entity/me163b_on.png"
+        },
+        {
+            "path": "textures/entity/mg15120.png"
+        },
+        {
+            "path": "textures/entity/mg34.png"
+        },
+        {
+            "path": "textures/entity/mk108.tga"
+        },
+        {
+            "path": "textures/entity/nbw41.png"
+        },
+        {
+            "path": "textures/entity/nine.png"
+        },
+        {
+            "path": "textures/entity/p38e.png"
+        },
+        {
+            "path": "textures/entity/panzeriv.png"
+        },
+        {
+            "path": "textures/entity/pzgrpatr40kwk40.png"
+        },
+        {
+            "path": "textures/entity/qf47apcbc.png"
+        },
+        {
+            "path": "textures/entity/rocket32cm.png"
+        },
+        {
+            "path": "textures/entity/s35.png"
+        },
+        {
+            "path": "textures/entity/sandbag.png"
+        },
+        {
+            "path": "textures/entity/shell127cm.png"
+        },
+        {
+            "path": "textures/entity/shell16inch.png"
+        },
+        {
+            "path": "textures/entity/shell16inch_player.png"
+        },
+        {
+            "path": "textures/entity/spitfiremkix.png"
+        },
+        {
+            "path": "textures/entity/t3485.png"
+        },
+        {
+            "path": "textures/entity/t3485_normal.png"
+        },
+        {
+            "path": "textures/entity/torpedo.png"
+        },
+        {
+            "path": "textures/entity/type1ap.png"
+        },
+        {
+            "path": "textures/entity/type2kami.png"
+        },
+        {
+            "path": "textures/entity/type9777.png"
+        },
+        {
+            "path": "textures/entity/type99d.png"
+        },
+        {
+            "path": "textures/entity/u511.png"
+        },
+        {
+            "path": "textures/entity/zis576mmaphe.png"
+        },
+        {
+            "path": "textures/entity/ziss53ap.png"
+        },
+        {
+            "path": "textures/entity/g4m2e/bombload60kg.png"
+        },
+        {
+            "path": "textures/entity/g4m2e/g4m2e.png"
+        },
+        {
+            "path": "textures/entity/g4m2e/mxy7.png"
+        },
+        {
+            "path": "textures/entity/g4m2e/type91torpedo.png"
+        },
+        {
+            "path": "textures/items/ap75cm_item.png"
+        },
+        {
+            "path": "textures/items/bomb.png"
+        },
+        {
+            "path": "textures/items/bombload60kg.png"
+        },
+        {
+            "path": "textures/items/bullet_belt.png"
+        },
+        {
+            "path": "textures/items/flamethrower.png"
+        },
+        {
+            "path": "textures/items/hvar.png"
+        },
+        {
+            "path": "textures/items/m46he_item.png"
+        },
+        {
+            "path": "textures/items/mxy7.png"
+        },
+        {
+            "path": "textures/items/pzgrpatr40kwk40_item.png"
+        },
+        {
+            "path": "textures/items/qf47apcbc_item.png"
+        },
+        {
+            "path": "textures/items/rocket32cm_item.png"
+        },
+        {
+            "path": "textures/items/sandbag.png"
+        },
+        {
+            "path": "textures/items/spawn_airfield.png"
+        },
+        {
+            "path": "textures/items/spawn_bf109g6.png"
+        },
+        {
+            "path": "textures/items/spawn_churchillmkvii.png"
+        },
+        {
+            "path": "textures/items/spawn_f4u1d.png"
+        },
+        {
+            "path": "textures/items/spawn_g4m2e.png"
+        },
+        {
+            "path": "textures/items/spawn_higginsboat.png"
+        },
+        {
+            "path": "textures/items/spawn_ki_61.png"
+        },
+        {
+            "path": "textures/items/spawn_kv11941.png"
+        },
+        {
+            "path": "textures/items/spawn_m4a1dd.png"
+        },
+        {
+            "path": "textures/items/spawn_me163b.png"
+        },
+        {
+            "path": "textures/items/spawn_nbw41.png"
+        },
+        {
+            "path": "textures/items/spawn_p38e.png"
+        },
+        {
+            "path": "textures/items/spawn_panzeriv.png"
+        },
+        {
+            "path": "textures/items/spawn_s35.png"
+        },
+        {
+            "path": "textures/items/spawn_spitfiremkix.png"
+        },
+        {
+            "path": "textures/items/spawn_t3485.png"
+        },
+        {
+            "path": "textures/items/spawn_type2kami.png"
+        },
+        {
+            "path": "textures/items/spawn_type99d.png"
+        },
+        {
+            "path": "textures/items/spawn_u511.png"
+        },
+        {
+            "path": "textures/items/type1ap_item.png"
+        },
+        {
+            "path": "textures/items/type91torpedo.png"
+        },
+        {
+            "path": "textures/items/wrench.png"
+        },
+        {
+            "path": "textures/items/zis576mmaphe_item.png"
+        },
+        {
+            "path": "textures/items/ziss53ap_item.png"
+        }
+    ],
+    "version": 1
+}

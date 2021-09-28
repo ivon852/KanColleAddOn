@@ -1,8 +1,8 @@
 {
   "format_version": "1.14.0",
   "sound_definitions": {
-     //Kanmusu
-     "souya.say": {
+    //Kanmusu
+    "souya.say": {
       "max_distance": 25.0,
       "category": "neutral",
       "sounds": [
@@ -813,6 +813,18 @@
       "category": "neutral",
       "sounds": [
         "sounds/mob/macmle193175mm/fire"
+      ]
+    },
+    "kv11941.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/kv11941/engine"
+      ]
+    },
+    "kv11941.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/kv11941/fire"
       ]
     },
     "mob.irongolem.hit": {

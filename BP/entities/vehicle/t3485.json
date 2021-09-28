@@ -21,14 +21,6 @@
           ],
           "client_sync": true
         }
-      },
-      "animations": {
-        "mechanic": "controller.animation.t3485_mechanic"
-      },
-      "scripts": {
-        "animate": [
-          "mechanic"
-        ]
       }
     },
     "component_groups": {

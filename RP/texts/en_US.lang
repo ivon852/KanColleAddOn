@@ -184,6 +184,8 @@ item.spawn_egg.entity.tank:kv11941.name=Spawn KV-1 1941
 entity.tank:kv11941.name=KV-1 1941
 action.hint.exit.tank:kv11941=Tap sneak to dismount
 entity.tank:kv11941_damaged.name=KV-1 1941 (Damaged)
+entity.newmob:zis576mmaphe_item.name=76mm ZIS-5 APHE
+item.newitem:zis576mmaphe_item.name=76mm ZIS-5 APHE
 
 item.spawn_egg.entity.tank:s35.name=Spawn SOMUA S-35
 entity.tank:s35.name=SOMUA S-35
