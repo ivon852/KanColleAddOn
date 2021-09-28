@@ -180,11 +180,23 @@ action.interact.tank.close_hatch=Close hatch
 action.interact.tank.show_decal=Show decal
 action.interact.tank.hide_decal=Hide decal
 
+item.spawn_egg.entity.vehicle:sdkfz251.name=Spawn Sd.Kfz. 251
+entity.vehicle:sdkfz251.name=Sd.Kfz. 251
+action.hint.exit.vehicle:sdkfz251=Tap sneak to dismount
+action.interact.sdkfz251.open_doors=Open doors
+action.interact.sdkfz251.close_doors=Close doors
+entity.newmob:mg42.name=MG42
+
+item.spawn_egg.entity.tank:bobsemple.name=Spawn Bob Semple Tank
+entity.tank:bobsemple.name=Bob Semple Tank
+action.hint.exit.tank:bobsemple=Tap sneak to dismount
+entity.newmob:bren77mm.name=Bren 7.7mm LMG
+
 item.spawn_egg.entity.tank:kv11941.name=Spawn KV-1 1941
 entity.tank:kv11941.name=KV-1 1941
 action.hint.exit.tank:kv11941=Tap sneak to dismount
 entity.tank:kv11941_damaged.name=KV-1 1941 (Damaged)
-entity.newmob:zis576mmaphe_item.name=76mm ZIS-5 APHE
+entity.newmob:zis576mmaphe.name=76mm ZIS-5 APHE
 item.newitem:zis576mmaphe_item.name=76mm ZIS-5 APHE
 
 item.spawn_egg.entity.tank:s35.name=Spawn SOMUA S-35

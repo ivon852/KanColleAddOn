@@ -184,6 +184,12 @@
     },
     "zis576mmaphe_item": {
       "textures": "textures/items/zis576mmaphe_item"
+    },
+    "spawn_bobsemple": {
+      "textures": "textures/items/spawn_bobsemple"
+    },
+    "spawn_sdkfz251": {
+      "textures": "textures/items/spawn_sdkfz251"
     }
   }
 }

@@ -1,0 +1,44 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "vehicle:sdkfz251",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/sdkfz251"
+      },
+      "geometry": {
+        "default": "geometry.sdkfz251"
+      },
+      "render_controllers": [
+        "controller.render.tank"
+      ],
+      "animations": {
+        "move": "animation.sdkfz251.move",
+        "climb": "animation.tank.climb",
+        "open_door": "animation.sdkfz251.open_door",
+        "look_at_target": "animation.common.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          {
+            "move": "query.modified_move_speed"
+          },
+          {
+            "open_door": "query.variant==2"
+          },
+          {
+            "climb": "query.has_rider"
+          },
+          "look_at_target"
+        ]
+      },
+      "spawn_egg": {
+        "texture": "spawn_sdkfz251",
+        "texture_index": 0
+      }
+    }
+  }
+}

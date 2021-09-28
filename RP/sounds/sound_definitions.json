@@ -827,6 +827,31 @@
         "sounds/mob/kv11941/fire"
       ]
     },
+    "bobsemple.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bobsemple/engine"
+      ]
+    },
+    "bren77mm.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/bren77mm/fire"
+      ]
+    },
+    "sdkfz251.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/sdkfz251/engine"
+      ]
+    },
+    "mg42.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/mg42/fire"
+      ]
+    },
+
     "mob.irongolem.hit": {
       "category": "neutral",
       "sounds": [

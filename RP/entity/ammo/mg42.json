@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:mg42",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/mg42"
+      },
+      "geometry": {
+        "default": "geometry.mg42"
+      },
+      "render_controllers": [
+        "controller.render.newmob"
+      ]
+    }
+  }
+}

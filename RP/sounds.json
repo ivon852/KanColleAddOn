@@ -729,6 +729,72 @@
           }
         }
       },
+      "tank:bobsemple": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "step": {
+            "sound": "bobsemple.engine",
+            "volume": 4,
+            "pitch": 1.0
+          },
+          "hurt": {
+            "sound": "mob.irongolem.hit",
+            "volume": 4,
+            "pitch": 0.5
+          }
+        }
+      },
+      "newmob:bren77mm": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "ambient": {
+            "sound": "bren77mm.fire",
+            "volume": 4,
+            "pitch": 1.0
+          }
+        }
+      },
+      "vehicle:sdkfz251": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "step": {
+            "sound": "sdkfz251.engine",
+            "volume": 4,
+            "pitch": 1.0
+          },
+          "hurt": {
+            "sound": "mob.irongolem.hit",
+            "volume": 4,
+            "pitch": 0.5
+          }
+        }
+      },
+      "newmob:mg42": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "ambient": {
+            "sound": "mg42.fire",
+            "volume": 4,
+            "pitch": 1.0
+          }
+        }
+      },
 
       "newmob:hvar": {
         "volume": 4,

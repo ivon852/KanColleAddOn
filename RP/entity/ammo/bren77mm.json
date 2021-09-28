@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "newmob:bren77mm",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/bren77mm"
+      },
+      "geometry": {
+        "default": "geometry.bren77mm"
+      },
+      "render_controllers": [
+        "controller.render.newmob"
+      ]
+    }
+  }
+}
