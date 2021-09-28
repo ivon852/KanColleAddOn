@@ -2,26 +2,21 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanmusu:u511",
+      "identifier": "kancolle:u511_kanmusu",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
+      "animations": {
+        "mechanic": "controller.animation.u511_kanmusu_mechanic",
+        "u511_kanmusu_talk": "controller.animation.u511_kanmusu_talk"
+      },
       "scripts": {
         "animate": [
           "mechanic",
           "u511_kanmusu_talk"
         ]
-      },
-      "animations": [
-        {
-          "mechanic": "controller.animation.u511_kanmusu_mechanic"
-        },
-        {
-          "u511_kanmusu_talk": "controller.animation.u511_kanmusu_talk"
-        }
-      ]
+      }
     },
-
     "component_groups": {
       "u511_kanmusu:stop_talking": {
         "minecraft:mark_variant": {
@@ -77,7 +72,7 @@
           "charge_shoot_trigger": 0.1
         },
         "minecraft:shooter": {
-          "def": "newmob:torpedo"
+          "def": "kancolle:torpedo"
         },
         "minecraft:timer": {
           "looping": false,
@@ -228,7 +223,6 @@
         }
       }
     },
-
     "events": {
       "u511_kanmusu:start_talking": {
         "remove": {
@@ -346,7 +340,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:admiral_cap"
+                    "value": "kancolle:admiral_cap"
                   }
                 ]
               },
@@ -365,11 +359,11 @@
       "minecraft:healable": {
         "items": [
           {
-            "item": "newitem:mamiya",
+            "item": "kancolle:mamiya_item",
             "heal_amount": 20
           },
           {
-            "item": "newitem:irako",
+            "item": "kancolle:irako_item",
             "heal_amount": 15
           }
         ]
@@ -378,8 +372,8 @@
         "priority": 2,
         "speed_multiplier": 1.25,
         "items": [
-          "newitem:admiral_cap",
-          "newitem:mamiya"
+          "kancolle:admiral_cap",
+          "kancolle:mamiya_item"
         ]
       },
       "minecraft:behavior.follow_mob": {},

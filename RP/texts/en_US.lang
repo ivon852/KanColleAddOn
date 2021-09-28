@@ -51,123 +51,123 @@ chat.type.announcement.tsushima.say4=§b[Tsushima]§rThe Etorofu-class costal de
 
 ## Kanmusu
 
-item.newitem:admiral_cap.name=Admiral Hat
-item.newitem:mamiya.name=Food Supply Ship Mamiya
-item.newitem:irako.name=Food Supply Ship Irako
+item.kancolle:admiral_cap.name=Admiral Hat
+item.kancolle:mamiya_item.name=Food Supply Ship Mamiya
+item.kancolle:irako_item.name=Food Supply Ship Irako
 
-item.spawn_egg.entity.kanmusu:souya.name=Spawn Souya
-entity.kanmusu:souya.name=Souya
+item.spawn_egg.entity.kancolle:souya.name=Spawn Souya
+entity.kancolle:souya.name=Souya
 
-item.spawn_egg.entity.kanmusu:tsushima.name=Spawn Tsushima
-entity.kanmusu:tsushima.name=Tsushima
-entity.newmob:depth_charge.name=Depth Charge
+item.spawn_egg.entity.kancolle:tsushima.name=Spawn Tsushima
+entity.kancolle:tsushima.name=Tsushima
+entity.kancolle:depth_charge.name=Depth Charge
 
-item.spawn_egg.entity.kanmusu:gotland.name=Spawn Gotland
-entity.kanmusu:gotland.name=Gotland
-entity.kanmusu:gotsheep.name=Gotsheep
+item.spawn_egg.entity.kancolle:gotland.name=Spawn Gotland
+entity.kancolle:gotland.name=Gotland
+entity.kancolle:gotsheep.name=Gotsheep
 
-item.spawn_egg.entity.kanmusu:mamiya.name=Spawn Mamiya
-entity.kanmusu:mamiya.name=Mamiya
+item.spawn_egg.entity.kancolle:mamiya.name=Spawn Mamiya
+entity.kancolle:mamiya.name=Mamiya
 
-item.spawn_egg.entity.kanmusu:mamiya.name=Spawn Mamiya
-entity.kanmusu:mamiya.name=Mamiya
-item.spawn_egg.entity.kanmusu:irako.name=Spawn Irako
-entity.kanmusu:irako.name=Irako
+item.spawn_egg.entity.kancolle:mamiya.name=Spawn Mamiya
+entity.kancolle:mamiya.name=Mamiya
+item.spawn_egg.entity.kancolle:irako.name=Spawn Irako
+entity.kancolle:irako.name=Irako
 
-item.spawn_egg.entity.kanmusu:u511.name=Spawn U-511
-entity.kanmusu:u511.name=U-511
+item.spawn_egg.entity.kancolle:u511_kanmusu.name=Spawn U-511
+entity.kancolle:u511_kanmusu.name=U-511
 
-item.spawn_egg.entity.kanmusu:i168.name=Spawn I-168
-entity.kanmusu:i168.name=I-168
+item.spawn_egg.entity.kancolle:i168.name=Spawn I-168
+entity.kancolle:i168.name=I-168
 
-item.spawn_egg.entity.kanmusu:zara.name=Spawn Zara
-entity.kanmusu:zara.name=Zara
+item.spawn_egg.entity.kancolle:zara.name=Spawn Zara
+entity.kancolle:zara.name=Zara
 
-item.spawn_egg.entity.kanmusu:hiryu.name=Spawn Hiryu
-entity.kanmusu:hiryu.name=Hiryu
+item.spawn_egg.entity.kancolle:hiryu.name=Spawn Hiryu
+entity.kancolle:hiryu.name=Hiryu
 
-item.spawn_egg.entity.kanmusu:bismarck.name=Spawn Bismarck
-entity.kanmusu:bismarck.name=Bismarck
+item.spawn_egg.entity.kancolle:bismarck.name=Spawn Bismarck
+entity.kancolle:bismarck.name=Bismarck
 
-item.spawn_egg.entity.kanmusu:shimakaze.name=Spawn Shimakaze
-entity.kanmusu:shimakaze.name=Shimakaze
-entity.newmob:shell127cm.name=12.7cm Shell
-entity.newmob:shell16inch.name=16 inch Shell
-entity.newmob:shell16inch_player.name=16 inch Shell (Player)
-entity.newmob:torpedo.name=Torpedo
+item.spawn_egg.entity.kancolle:shimakaze.name=Spawn Shimakaze
+entity.kancolle:shimakaze.name=Shimakaze
+entity.kancolle:shell127cm.name=12.7cm Shell
+entity.kancolle:shell16inch.name=16 inch Shell
+entity.kancolle:shell16inch_player.name=16 inch Shell (Player)
+entity.kancolle:torpedo.name=Torpedo
 
-item.spawn_egg.entity.kanmusu:boku.name=Spawn Boku Kawauso
-entity.kanmusu:boku.name=Boku
+item.spawn_egg.entity.kancolle:boku.name=Spawn Boku Kawauso
+entity.kancolle:boku.name=Boku
 
 ## Aircraft
 
-item.spawn_egg.entity.aircraft:p38e.name=Spawn P-38E
-entity.aircraft:p38e.name=P-38E
+item.spawn_egg.entity.kancolle:p38e.name=Spawn P-38E
+entity.kancolle:p38e.name=P-38E
 action.interact.p38e.fire=Fire
 action.interact.p38e.get_on=Get on
-action.hint.exit.aircraft:p38e=Tap sneak to dismount
+action.hint.exit.kancolle:p38e=Tap sneak to dismount
 
-item.spawn_egg.entity.aircraft:bf109g6.name=Spawn Bf-109G6
-entity.aircraft:bf109g6.name=Bf-109G6
+item.spawn_egg.entity.kancolle:bf109g6.name=Spawn Bf-109G6
+entity.kancolle:bf109g6.name=Bf-109G6
 action.interact.bf109g6.fire=Fire
 action.interact.bf109g6.get_on=Get on
-action.hint.exit.aircraft:bf109g6=Tap sneak to dismount
-entity.newmob:mg15120.name=MG 151/20mm
+action.hint.exit.kancolle:bf109g6=Tap sneak to dismount
+entity.kancolle:mg15120.name=MG 151/20mm
 
-item.spawn_egg.entity.aircraft:spitfiremkix.name=Spawn Spitifre Mk.IX
-entity.aircraft:spitfiremkix.name=Spitifre Mk.IX
+item.spawn_egg.entity.kancolle:spitfiremkix.name=Spawn Spitifre Mk.IX
+entity.kancolle:spitfiremkix.name=Spitifre Mk.IX
 action.interact.spitfiremkix.fire=Fire
 action.interact.spitfiremkix.get_on=Get on
-action.hint.exit.aircraft:spitfiremkix=Tap sneak to dismount
-entity.newmob:hispanomkvii.name=Hispano Mk.VII
+action.hint.exit.kancolle:spitfiremkix=Tap sneak to dismount
+entity.kancolle:hispanomkvii.name=Hispano Mk.VII
 
-item.spawn_egg.entity.aircraft:type99d.name=Spawn Type 99 Dive Bomber
-entity.aircraft:type99d.name=Type99 Dive Bomber
+item.spawn_egg.entity.kancolle:type99d.name=Spawn Type 99 Dive Bomber
+entity.kancolle:type99d.name=Type99 Dive Bomber
 action.interact.type99d.drop=Drop Bomb
 action.interact.type99d.fire=Fire
 action.interact.type99d.get_on=Get on
-action.hint.exit.aircraft:type99d=Tap sneak to dismount
+action.hint.exit.kancolle:type99d=Tap sneak to dismount
 
-item.spawn_egg.entity.aircraft:ki_61.name=Spawn Ki-61
-entity.aircraft:ki_61.name=Ki-61
+item.spawn_egg.entity.kancolle:ki_61.name=Spawn Ki-61
+entity.kancolle:ki_61.name=Ki-61
 action.interact.ki_61.fire=Fire
 action.interact.ki_61.get_on=Get on
-action.hint.exit.aircraft:ki_61=Tap sneak to dismount
+action.hint.exit.kancolle:ki_61=Tap sneak to dismount
 
-item.spawn_egg.entity.aircraft:f4u1d.name=Spawn F4U-1D
-entity.aircraft:f4u1d.name=F4U-1D
+item.spawn_egg.entity.kancolle:f4u1d.name=Spawn F4U-1D
+entity.kancolle:f4u1d.name=F4U-1D
 action.interact.f4u1d.fire_hvar=Fire HVAR
 action.interact.f4u1d.drop=Drop bombs
 action.interact.f4u1d.fire=Fire
 action.interact.f4u1d.get_on=Get on
-action.hint.exit.aircraft:f4u1d=Tap sneak to dismount
-entity.newmob:hvar.name=HVAR
+action.hint.exit.kancolle:f4u1d=Tap sneak to dismount
+entity.kancolle:hvar.name=HVAR
 
-item.spawn_egg.entity.aircraft:me163b.name=Spawn Me-163B
-entity.aircraft:me163b.name=Me-163B
+item.spawn_egg.entity.kancolle:me163b.name=Spawn Me-163B
+entity.kancolle:me163b.name=Me-163B
 action.interact.me163b.fire=Fire
 action.interact.me163b.get_on=Get on
-action.hint.exit.aircraft:me163b=Tap sneak to dismount
-entity.newmob:mk108.name=MK-108 30mm
+action.hint.exit.kancolle:me163b=Tap sneak to dismount
+entity.kancolle:mk108.name=MK-108 30mm
 
-item.spawn_egg.entity.aircraft:g4m2e.name=Spawn G4M2e
-entity.aircraft:g4m2e.name=G4M2e
+item.spawn_egg.entity.kancolle:g4m2e.name=Spawn G4M2e
+entity.kancolle:g4m2e.name=G4M2e
 action.interact.g4m2e.get_on=Get on
 action.interact.g4m2e.drop=Drop
 action.interact.g4m2e.fire=Fire
 action.interact.g4m2e.launch=Launch
-item.newitem:wrench.name=Wrench
-item.newitem:mxy7.name=MXY-7 Ohka
+item.kancolle:wrench_item.name=Wrench
+item.kancolle:mxy7_item.name=MXY-7 Ohka
 action.interact.mxy7.get_on=Get on
-item.newitem:bombload60kg.name=60kg bombload
-item.newitem:type91torpedo.name=Type 91 Torpedo
+item.kancolle:bombload60kg.name=60kg bombload
+item.kancolle:type91torpedo_item.name=Type 91 Torpedo
 action.interact.g4m2e.uninstall=Uninstall
 action.interact.g4m2e.install=Install
-action.hint.exit.aircraft:g4m2e=Tap sneak to dismount
+action.hint.exit.kancolle:g4m2e=Tap sneak to dismount
 
-item.newitem:bomb.name=Standard Bomb
-item.newitem:bullet_belt.name=Standard bullet belt
-item.newitem:hvar.name=HVAR Rocket
+item.kancolle:bomb_item.name=Standard Bomb
+item.kancolle:bullet_belt.name=Standard bullet belt
+item.kancolle:hvar_item.name=HVAR Rocket
 
 ## Vehicle
 
@@ -180,45 +180,45 @@ action.interact.tank.close_hatch=Close hatch
 action.interact.tank.show_decal=Show decal
 action.interact.tank.hide_decal=Hide decal
 
-item.spawn_egg.entity.vehicle:sdkfz251.name=Spawn Sd.Kfz. 251
-entity.vehicle:sdkfz251.name=Sd.Kfz. 251
-action.hint.exit.vehicle:sdkfz251=Tap sneak to dismount
+item.spawn_egg.entity.kancolle:sdkfz251.name=Spawn Sd.Kfz. 251
+entity.kancolle:sdkfz251.name=Sd.Kfz. 251
+action.hint.exit.kancolle:sdkfz251=Tap sneak to dismount
 action.interact.sdkfz251.open_doors=Open doors
 action.interact.sdkfz251.close_doors=Close doors
-entity.newmob:mg42.name=MG42
+entity.kancolle:mg42.name=MG42
 
-item.spawn_egg.entity.tank:bobsemple.name=Spawn Bob Semple Tank
-entity.tank:bobsemple.name=Bob Semple Tank
-action.hint.exit.tank:bobsemple=Tap sneak to dismount
-entity.newmob:bren77mm.name=Bren 7.7mm LMG
+item.spawn_egg.entity.kancolle:bobsemple.name=Spawn Bob Semple Tank
+entity.kancolle:bobsemple.name=Bob Semple Tank
+action.hint.exit.kancolle:bobsemple=Tap sneak to dismount
+entity.kancolle:bren77mm.name=Bren 7.7mm LMG
 
-item.spawn_egg.entity.tank:kv11941.name=Spawn KV-1 1941
-entity.tank:kv11941.name=KV-1 1941
-action.hint.exit.tank:kv11941=Tap sneak to dismount
-entity.tank:kv11941_damaged.name=KV-1 1941 (Damaged)
-entity.newmob:zis576mmaphe.name=76mm ZIS-5 APHE
-item.newitem:zis576mmaphe_item.name=76mm ZIS-5 APHE
+item.spawn_egg.entity.kancolle:kv11941.name=Spawn KV-1 1941
+entity.kancolle:kv11941.name=KV-1 1941
+action.hint.exit.kancolle:kv11941=Tap sneak to dismount
+entity.kancolle:kv11941_damaged.name=KV-1 1941 (Damaged)
+entity.kancolle:zis576mmaphe.name=76mm ZIS-5 APHE
+item.kancolle:zis576mmaphe_item.name=76mm ZIS-5 APHE
 
-item.spawn_egg.entity.tank:s35.name=Spawn SOMUA S-35
-entity.tank:s35.name=SOMUA S-35
-action.hint.exit.tank:s35=Tap sneak to dismount
-item.newitem:qf47apcbc.name=Fixed QF 47x380 mm. R APCBC
-entity.newmob:qf47apcbc.name=Fixed QF 47x380 mm. R APCBC
-entity.newmob:macmle193175mm.name=MAC mle 1931 7.5mm
+item.spawn_egg.entity.kancolle:s35.name=Spawn SOMUA S-35
+entity.kancolle:s35.name=SOMUA S-35
+action.hint.exit.kancolle:s35=Tap sneak to dismount
+item.kancolle:qf47apcbc_item.name=Fixed QF 47x380 mm. R APCBC
+entity.kancolle:qf47apcbc.name=Fixed QF 47x380 mm. R APCBC
+entity.kancolle:macmle193175mm.name=MAC mle 1931 7.5mm
 
-item.spawn_egg.entity.tank:type2kami.name=Spawn Special Type 2 Launch Ka Mi
-entity.tank:type2kami.name=Special Type 2 Launch Ka Mi
-action.hint.exit.tank:type2kami=Tap sneak to dismount
-item.newitem:type1ap.name=Type 1 AP
-entity.newmob:type1ap.name=Type 1 AP
-entity.newmob:type9777.name=Type 97 7.7mm
+item.spawn_egg.entity.kancolle:type2kami.name=Spawn Special Type 2 Launch Ka Mi
+entity.kancolle:type2kami.name=Special Type 2 Launch Ka Mi
+action.hint.exit.kancolle:type2kami=Tap sneak to dismount
+item.kancolle:type1ap_item.name=Type 1 AP
+entity.kancolle:type1ap.name=Type 1 AP
+entity.kancolle:type9777.name=Type 97 7.7mm
 
-item.spawn_egg.entity.tank:panzeriv.name=Spawn Panzer IV Ausf. H
-entity.tank:panzeriv.name=Panzer IV Ausf. H
-action.hint.exit.tank:panzeriv=Tap sneak to dismount
-item.newitem:pzgrpatr40kwk40.name=Pzgr. Patr. 40 KwK 40
-entity.newmob:pzgrpatr40kwk40.name=Pzgr. Patr. 40 KwK 40
-entity.newmob:mg34.name=MG34
+item.spawn_egg.entity.kancolle:panzeriv.name=Spawn Panzer IV Ausf. H
+entity.kancolle:panzeriv.name=Panzer IV Ausf. H
+action.hint.exit.kancolle:panzeriv=Tap sneak to dismount
+item.kancolle:pzgrpatr40kwk40_item.name=Pzgr. Patr. 40 KwK 40
+entity.kancolle:pzgrpatr40kwk40.name=Pzgr. Patr. 40 KwK 40
+entity.kancolle:mg34.name=MG34
 
 item.spawn_egg.entity.submarine:u511.name=Spawn U-511
 entity.submarine:u511.name=U-511
@@ -226,74 +226,74 @@ action.interact.u511.fire=Fire
 action.hint.exit.submarine:u511=Tap sneak to dismount
 action.interact.u511.get_on=Get on
 
-item.spawn_egg.entity.weapon:higginsboat.name=Spawn LCVP
-entity.weapon:higginsboat.name=LCVP
+item.spawn_egg.entity.kancolle:higginsboat.name=Spawn LCVP
+entity.kancolle:higginsboat.name=LCVP
 action.interact.higginsboat.get_on=Get on
-action.hint.exit.weapon:higginsboat=Tap sneak to dismount
+action.hint.exit.kancolle:higginsboat=Tap sneak to dismount
 action.interact.higginsboat.fire=Fire
 action.interact.higginsboat.down=Open Door
 action.interact.higginsboat.up=Close Door
 
-item.newitem:rocket32cm_item.name=32cm Rocket
-item.spawn_egg.entity.weapon:nbw41.name=Spawn 28cm/32cm Nebelwerfer 41
-entity.weapon:nbw41.name=28cm/32cm Nebelwerfer 41
-entity.weapon:rocket32cm.name=32cm Rocket
+item.kancolle:rocket32cm_item.name=32cm Rocket
+item.spawn_egg.entity.kancolle:nbw41.name=Spawn 28cm/32cm Nebelwerfer 41
+entity.kancolle:nbw41.name=28cm/32cm Nebelwerfer 41
+entity.kancolle:rocket32cm.name=32cm Rocket
 action.interact.nbw41.set=Set
 action.interact.nbw41.fire=Fire
 
-item.spawn_egg.entity.tank:m4a1dd.name=Spawn M4A1 Sherman Duplex Drive
-entity.tank:m4a1dd.name=M4A1 Sherman Duplex Drive
-item.newitem:ap75cm_item.name=75cm AP
-entity.newmob:ap75cm.name=75cm AP
-action.hint.exit.tank:m4a1dd=Tap sneak to dismount
-entity.newmob:m2browning.name=12.7mm M2 Browning
+item.spawn_egg.entity.kancolle:m4a1dd.name=Spawn M4A1 Sherman Duplex Drive
+entity.kancolle:m4a1dd.name=M4A1 Sherman Duplex Drive
+item.kancolle:ap75cm_item.name=75cm AP
+entity.kancolle:ap75cm.name=75cm AP
+action.hint.exit.kancolle:m4a1dd=Tap sneak to dismount
+entity.kancolle:m2browning.name=12.7mm M2 Browning
 
-item.spawn_egg.entity.tank:t3485.name=Spawn T34/85
-entity.tank:t3485.name=T34/85
-item.newitem:ziss53ap_item.name=ZIS-S-53 AP
-entity.newmob:ziss53ap.name=ZIS-S-53 AP
-entity.newmob:dp762mm.name=DP 7.62 mm
-action.hint.exit.tank:t3485=Tap sneak to dismount
+item.spawn_egg.entity.kancolle:t3485.name=Spawn T34/85
+entity.kancolle:t3485.name=T34/85
+item.kancolle:ziss53ap_item.name=ZIS-S-53 AP
+entity.kancolle:ziss53ap.name=ZIS-S-53 AP
+entity.kancolle:dp762mm.name=DP 7.62 mm
+action.hint.exit.kancolle:t3485=Tap sneak to dismount
 
-item.spawn_egg.entity.tank:churchillmkvii.name=Spawn Churchill Mk.VII
-entity.tank:churchillmkvii.name=Churchill Mk.VII
+item.spawn_egg.entity.kancolle:churchillmkvii.name=Spawn Churchill Mk.VII
+entity.kancolle:churchillmkvii.name=Churchill Mk.VII
 action.interact.churchillmkvii.firem=Shoot flame
-item.newitem:m46he_item.name=M46 HE
-entity.newmob:m46he.name=M46 HE
-action.hint.exit.tank:churchillmkvii=Tap sneak to dismount
-item.newitem:flamethrower.name=Flame Thrower
+item.kancolle:m46he_item.name=M46 HE
+entity.kancolle:m46he.name=M46 HE
+action.hint.exit.kancolle:churchillmkvii=Tap sneak to dismount
+item.kancolle:flamethrower.name=Flame Thrower
 
-item.spawn_egg.entity.weapon:sandbag.name=Sandbag
+item.spawn_egg.entity.kancolle:sandbag.name=Sandbag
 action.interact.sandbag.stack=Stack
 
 
 ## Abyssals
 
-item.spawn_egg.entity.abyssal:ptimpgroup.name=Spawn PT Imp Group
-entity.abyssal:ptimpgroup=PT Imp Group
+item.spawn_egg.entity.kancolle:ptimpgroup.name=Spawn PT Imp Group
+entity.kancolle:ptimpgroup=PT Imp Group
 
-item.spawn_egg.entity.abyssal:waclass.name=Spawn Abyssal Transport Ship Wa-Class
-entity.abyssal:waclass=Transport Ship Wa-Class
+item.spawn_egg.entity.kancolle:waclass.name=Spawn Abyssal Transport Ship Wa-Class
+entity.kancolle:waclass=Transport Ship Wa-Class
 
-item.newitem:pp_weapon.name= PP's Weapon
-item.spawn_egg.entity.abyssal:pacific_princess.name=Spawn Pacific Princess
-entity.abyssal:pp_whale.name=PP's Whale
-entity.abyssal:pacific_princess.name=Pacific Princess
-item.spawn_egg.entity.abyssal:northern_princess.name=Spawn Northern Princess
-entity.abyssal:northern_princess_arament.name=Northern Princess's Arament
-entity.abyssal:northern_princess.name=Northern Princess
-item.spawn_egg.entity.abyssal:aircraft_carrier_princess.name=Spawn Aircraft Carrier Demon
-entity.abyssal:aircraft_carrier_princess.name=Aircraft Carrier Demon
-entity.abyssal:aircraft_carrier_princess_armament.name=Aircraft Carrier Demon Armament
+item.kancolle:pp_weapon.name= PP's Weapon
+item.spawn_egg.entity.kancolle:pacific_princess.name=Spawn Pacific Princess
+entity.kancolle:pp_whale.name=PP's Whale
+entity.kancolle:pacific_princess.name=Pacific Princess
+item.spawn_egg.entity.kancolle:northern_princess.name=Spawn Northern Princess
+entity.kancolle:northern_princess_arament.name=Northern Princess's Arament
+entity.kancolle:northern_princess.name=Northern Princess
+item.spawn_egg.entity.kancolle:aircraft_carrier_princess.name=Spawn Aircraft Carrier Demon
+entity.kancolle:aircraft_carrier_princess.name=Aircraft Carrier Demon
+entity.kancolle:aircraft_carrier_princess_armament.name=Aircraft Carrier Demon Armament
 
 
-entity.abyssal:dd_iclass.name= Destroyer I-Class
-item.spawn_egg.entity.abyssal:dd_iclass.name= Spawn Destroyer I-Class
-entity.abyssal:dd_niclass.name= Destroyer Ni-Class
-item.spawn_egg.entity.abyssal:dd_niclass.name= Spawn Destroyer Ni-Class
-entity.abyssal:dd_naclass.name= Destroyer Na-Class
-item.spawn_egg.entity.abyssal:dd_naclass.name= Spawn Destroyer Na-Class
-entity.abyssal:dd_haclass.name= Destroyer Ha-Class
-item.spawn_egg.entity.abyssal:dd_haclass.name= Spawn Destroyer Ha-Class
-entity.abyssal:dd_roclass.name= Destroyer Ro-Class
-item.spawn_egg.entity.abyssal:dd_roclass.name= Spawn Destroyer Ro-Class
+entity.kancolle:dd_iclass.name= Destroyer I-Class
+item.spawn_egg.entity.kancolle:dd_iclass.name= Spawn Destroyer I-Class
+entity.kancolle:dd_niclass.name= Destroyer Ni-Class
+item.spawn_egg.entity.kancolle:dd_niclass.name= Spawn Destroyer Ni-Class
+entity.kancolle:dd_naclass.name= Destroyer Na-Class
+item.spawn_egg.entity.kancolle:dd_naclass.name= Spawn Destroyer Na-Class
+entity.kancolle:dd_haclass.name= Destroyer Ha-Class
+item.spawn_egg.entity.kancolle:dd_haclass.name= Spawn Destroyer Ha-Class
+entity.kancolle:dd_roclass.name= Destroyer Ro-Class
+item.spawn_egg.entity.kancolle:dd_roclass.name= Spawn Destroyer Ro-Class

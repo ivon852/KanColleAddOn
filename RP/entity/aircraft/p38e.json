@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "aircraft:p38e",
+      "identifier": "kancolle:p38e",
       "materials": {
         "default": "entity_alphatest"
       },

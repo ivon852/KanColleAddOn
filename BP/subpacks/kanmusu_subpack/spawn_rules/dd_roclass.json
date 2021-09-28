@@ -2,7 +2,7 @@
   "format_version": "1.8.0",
   "minecraft:spawn_rules": {
     "description": {
-      "identifier": "newmob:dd_roclass",
+      "identifier": "kancolle:dd_roclass",
       "population_control": "monster"
     },
     "conditions": [

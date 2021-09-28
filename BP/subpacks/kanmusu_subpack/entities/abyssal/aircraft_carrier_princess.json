@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "abyssal:aircraft_carrier_princess",
+      "identifier": "kancolle:aircraft_carrier_princess",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -107,7 +107,7 @@
             "min_wait_time": 0,
             "max_wait_time": 1,
             "num_to_spawn": 1,
-            "spawn_entity": "abyssal:aircraft_carrier_princess_armament"
+            "spawn_entity": "kancolle:aircraft_carrier_princess_armament"
           }
         },
         "minecraft:behavior.summon_entity": {
@@ -125,7 +125,7 @@
                   "target": "self",
                   "base_delay": 5.0,
                   "num_entities_spawned": 3,
-                  "entity_type": "abyssal:abyssal_f6f",
+                  "entity_type": "kancolle:abyssal_f6f",
                   "summon_cap": 8,
                   "summon_cap_radius": 16.0,
                   "size": 1.0,
@@ -274,7 +274,7 @@
         "burst_interval": 2
       },
       "minecraft:shooter": {
-        "def": "newmob:shell16inch"
+        "def": "kancolle:shell16inch"
       },
       "minecraft:behavior.mount_pathing": {
         "speed_multiplier": 1.25,

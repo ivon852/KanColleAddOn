@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanmusu:rensouhouchan",
+      "identifier": "kancolle:rensouhouchan",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
@@ -126,7 +126,7 @@
         "burst_interval": 1
       },
       "minecraft:shooter": {
-        "def": "newmob:shell127cm"
+        "def": "kancolle:shell127cm"
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 4,

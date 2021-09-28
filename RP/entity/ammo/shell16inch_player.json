@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:shell16inch_player",
+      "identifier": "kancolle:shell16inch_player",
       "materials": {
         "default": "entity_alphatest"
       },

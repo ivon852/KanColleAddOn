@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "weapon:nbw41",
+      "identifier": "kancolle:nbw41",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -24,7 +24,7 @@
         "minecraft:spawn_entity": {
           "entities": {
             "single_use": true,
-            "spawn_entity": "weapon:rocket32cm",
+            "spawn_entity": "kancolle:rocket32cm",
             "num_to_spawn": 1,
             "min_wait_time": 0,
             "max_wait_time": 0
@@ -87,7 +87,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:rocket32cm_item"
+                    "value": "kancolle:rocket32cm_item"
                   },
                   {
                     "test": "is_mark_variant",
@@ -112,7 +112,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:rocket32cm_item"
+                    "value": "kancolle:rocket32cm_item"
                   },
                   {
                     "test": "is_mark_variant",
@@ -137,7 +137,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:rocket32cm_item"
+                    "value": "kancolle:rocket32cm_item"
                   },
                   {
                     "test": "is_mark_variant",
@@ -162,7 +162,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:rocket32cm_item"
+                    "value": "kancolle:rocket32cm_item"
                   },
                   {
                     "test": "is_mark_variant",
@@ -202,7 +202,7 @@
             },
             "use_item": false,
             "interact_text": "action.interact.nbw41.fire",
-            "spawn_entities": "weapon:rocket32cm"
+            "spawn_entities": "kancolle:rocket32cm"
           }
         ]
       },

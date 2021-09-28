@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tank:panzeriv",
+      "identifier": "kancolle:panzeriv",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -29,7 +29,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:pzgrpatr40kwk40",
+            "spawn_entity": "kancolle:pzgrpatr40kwk40",
             "single_use": true
           }
         },
@@ -47,7 +47,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:mg34"
+            "spawn_entity": "kancolle:mg34"
           }
         },
         "minecraft:timer": {
@@ -78,7 +78,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:pzgrpatr40kwk40"
+                    "value": "kancolle:pzgrpatr40kwk40_item"
                   }
                 ]
               },
@@ -104,7 +104,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:bullet_belt"
+                    "value": "kancolle:bullet_belt"
                   }
                 ]
               },

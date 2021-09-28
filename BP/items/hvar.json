@@ -2,7 +2,7 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:hvar",
+      "identifier": "kancolle:hvar_item",
       "category": "equipment"
     },
     "components": {

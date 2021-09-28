@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "abyssal:dd_niclass",
+      "identifier": "kancolle:dd_niclass",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false

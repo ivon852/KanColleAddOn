@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "abyssal:abyssal_f6f",
+      "identifier": "kancolle:abyssal_f6f",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
@@ -50,7 +50,7 @@
         "burst_interval": 1
       },
       "minecraft:shooter": {
-        "def": "newmob:m2browning"
+        "def": "kancolle:m2browning"
       },
       "minecraft:behavior.avoid_mob_type": {
         "priority": 4,

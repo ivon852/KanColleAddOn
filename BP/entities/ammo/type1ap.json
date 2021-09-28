@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "newmob:type1ap",
+      "identifier": "kancolle:type1ap",
       "runtime_identifier": "minecraft:egg",
       "is_spawnable": false,
       "is_summonable": true,

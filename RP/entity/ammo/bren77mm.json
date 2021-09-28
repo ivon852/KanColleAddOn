@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:bren77mm",
+      "identifier": "kancolle:bren77mm",
       "materials": {
         "default": "entity_alphatest"
       },

@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "newmob:m2browning",
+      "identifier": "kancolle:m2browning",
       "runtime_identifier": "minecraft:egg",
       "is_spawnable": false,
       "is_summonable": true,

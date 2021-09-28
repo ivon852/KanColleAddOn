@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "kanmusu:i168",
+      "identifier": "kancolle:i168",
       "materials": {
         "default": "entity_alphatest"
       },

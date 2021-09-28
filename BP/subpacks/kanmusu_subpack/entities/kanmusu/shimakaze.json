@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanmusu:shimakaze",
+      "identifier": "kancolle:shimakaze",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -107,7 +107,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:admiral_cap"
+                    "value": "kancolle:admiral_cap"
                   }
                 ]
               },
@@ -150,11 +150,11 @@
       "minecraft:healable": {
         "items": [
           {
-            "item": "newitem:mamiya",
+            "item": "kancolle:mamiya_item",
             "heal_amount": 20
           },
           {
-            "item": "newitem:irako",
+            "item": "kancolle:irako_item",
             "heal_amount": 15
           }
         ]
@@ -163,8 +163,8 @@
         "priority": 2,
         "speed_multiplier": 1.25,
         "items": [
-          "newitem:admiral_cap",
-          "newitem:mamiya"
+          "kancolle:admiral_cap",
+          "kancolle:mamiya_item"
         ]
       },
       "minecraft:target_nearby_sensor": {
@@ -234,7 +234,7 @@
           "min_wait_time": 1,
           "max_wait_time": 1,
           "num_to_spawn": 3,
-          "spawn_entity": "kanmusu:rensouhouchan",
+          "spawn_entity": "kancolle:rensouhouchan",
           "single_use": true
         }
       },
@@ -251,7 +251,7 @@
         "charge_shoot_trigger": 0.1
       },
       "minecraft:shooter": {
-        "def": "newmob:torpedo"
+        "def": "kancolle:torpedo"
       },
       "minecraft:behavior.hurt_by_target": {
         "entity_types": [

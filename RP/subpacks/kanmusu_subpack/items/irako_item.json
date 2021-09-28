@@ -2,11 +2,11 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:mamiya",
+      "identifier": "kancolle:irako_item",
       "category": "equipment"
     },
     "components": {
-      "minecraft:icon": "mamiya_item",
+      "minecraft:icon": "irako_item",
       "minecraft:use_animation": "eat",
       "minecraft:render_offsets": "apple"
     }

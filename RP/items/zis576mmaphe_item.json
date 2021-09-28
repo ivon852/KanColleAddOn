@@ -2,12 +2,11 @@
   "format_version": "1.12.0",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:mxy7",
+      "identifier": "kancolle:zis576mmaphe_item",
       "category": "equipment"
     },
     "components": {
-      "minecraft:icon": "mxy7",
-      "minecraft:use_animation": "bow",
+      "minecraft:icon": "zis576mmaphe_item",
       "minecraft:render_offsets": "tools"
     }
   }

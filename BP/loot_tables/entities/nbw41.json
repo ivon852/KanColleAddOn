@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_actor_id",
-              "id": "weapon:nbw41"
+              "id": "kancolle:nbw41"
             },
             {
               "function": "set_count",

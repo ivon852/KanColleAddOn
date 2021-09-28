@@ -8,7 +8,7 @@
       "entries": [
         {
           "type": "item",
-          "name": "newitem:irako",
+          "name": "kancolle:irako_item",
           "weight": 1,
           "functions": [
             {
@@ -22,7 +22,7 @@
         },
         {
           "type": "item",
-          "name": "newitem:mamiya",
+          "name": "kancolle:mamiya_item",
           "weight": 1,
           "functions": [
             {

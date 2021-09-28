@@ -2,7 +2,7 @@
   "format_version": "1.12.0",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:bomb",
+      "identifier": "kancolle:bomb_item",
       "category": "equipment"
     },
     "components": {

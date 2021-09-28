@@ -2,11 +2,11 @@
   "format_version": "1.12.0",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:type1ap",
+      "identifier": "kancolle:pzgrpatr40kwk40_item",
       "category": "equipment"
     },
     "components": {
-      "minecraft:icon": "type1ap_item",
+      "minecraft:icon": "pzgrpatr40kwk40_item",
       "minecraft:render_offsets": "tools"
     }
   }

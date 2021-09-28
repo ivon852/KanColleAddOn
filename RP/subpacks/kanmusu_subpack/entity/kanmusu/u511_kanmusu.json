@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "kanmusu:u511",
+      "identifier": "kancolle:u511_kanmusu",
       "materials": {
         "default": "entity_alphatest"
       },
@@ -12,7 +12,9 @@
       "geometry": {
         "default": "geometry.u511_kanmusu"
       },
-      "render_controllers": ["controller.render.u511_kanmusu"],
+      "render_controllers": [
+        "controller.render.u511_kanmusu"
+      ],
       "animations": {
         "move": "animation.u511_kanmusu.move",
         "swim": "animation.u511_kanmusu.swim",
@@ -21,7 +23,11 @@
         "look_at_target": "animation.common.look_at_target"
       },
       "scripts": {
-        "animate": ["controller_move", "controller_swim", "look_at_target"],
+        "animate": [
+          "controller_move",
+          "controller_swim",
+          "look_at_target"
+        ],
         "pre_animation": [
           "variable.attack = Math.sin(variable.attack_time * 38.17);",
           "variable.tcos0 = (math.cos(query.modified_distance_moved * 38.17) * query.modified_move_speed / variable.gliding_speed_value) * 57.3;"

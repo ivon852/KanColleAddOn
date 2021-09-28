@@ -84,9 +84,9 @@
         },
         "working": {
           "on_entry": [
-            "/execute @e[r=100,type=weapon:rocket32cm] ~ ~ ~ tp @s ^ ^2 ^5",
+            "/execute @e[r=100,type=kancolle:rocket32cm] ~ ~ ~ tp @s ^ ^2 ^5",
             "/execute @s ~ ~ ~ particle minecraft:huge_explosion_emitter ~ ~ ~",
-            "/execute @e[r=100,type=weapon:rocket32cm] ~ ~ ~ particle minecraft:huge_explosion_emitter ~ ~ ~"
+            "/execute @e[r=100,type=kancolle:rocket32cm] ~ ~ ~ particle minecraft:huge_explosion_emitter ~ ~ ~"
           ],
           "transitions": [
             {

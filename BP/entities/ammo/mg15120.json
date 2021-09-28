@@ -2,13 +2,12 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "newmob:mg15120",
+      "identifier": "kancolle:mg15120",
       "runtime_identifier": "minecraft:egg",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
     },
-
     "components": {
       "minecraft:scale": {
         "value": 0.5
@@ -38,7 +37,7 @@
             "on_other_hit": true
           }
         },
-        "catch_fire":true,
+        "catch_fire": true,
         "particle": "lava_particle",
         "shoottarget": true,
         "power": 1.4,
@@ -49,7 +48,6 @@
         "liquid_inertia": 0.9,
         "remove_on_hit": {}
       },
-
       "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,

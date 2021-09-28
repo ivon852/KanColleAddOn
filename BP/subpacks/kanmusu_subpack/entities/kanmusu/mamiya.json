@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanmusu:mamiya",
+      "identifier": "kancolle:mamiya",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -64,11 +64,11 @@
       "minecraft:healable": {
         "items": [
           {
-            "item": "newitem:mamiya",
+            "item": "kancolle:mamiya_item",
             "heal_amount": 20
           },
           {
-            "item": "newitem:irako",
+            "item": "kancolle:irako_item",
             "heal_amount": 15
           }
         ]
@@ -76,7 +76,7 @@
       "minecraft:behavior.tempt": {
         "priority": 2,
         "speed_multiplier": 1.25,
-        "items": ["newitem:admiral_cap"]
+        "items": ["kancolle:admiral_cap"]
       },
 
       "minecraft:target_nearby_sensor": {

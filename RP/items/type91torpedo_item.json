@@ -2,11 +2,12 @@
   "format_version": "1.12.0",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:hvar",
+      "identifier": "kancolle:type91torpedo_item",
       "category": "equipment"
     },
     "components": {
-      "minecraft:icon": "hvar",
+      "minecraft:icon": "type91torpedo_item",
+      "minecraft:use_animation": "bow",
       "minecraft:render_offsets": "tools"
     }
   }

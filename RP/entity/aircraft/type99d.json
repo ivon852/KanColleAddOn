@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "aircraft:type99d",
+      "identifier": "kancolle:type99d",
       "materials": {
         "default": "entity_alphatest"
       },

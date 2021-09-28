@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "abyssal:aircraft_carrier_princess",
+      "identifier": "kancolle:aircraft_carrier_princess",
       "materials": {
         "default": "entity_alphatest"
       },

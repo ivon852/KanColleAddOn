@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tank:m4a1dd",
+      "identifier": "kancolle:m4a1dd",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -65,7 +65,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:m2browning"
+            "spawn_entity": "kancolle:m2browning"
           }
         },
         "minecraft:timer": {
@@ -82,7 +82,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:ap75cm",
+            "spawn_entity": "kancolle:ap75cm",
             "single_use": true
           }
         },
@@ -133,7 +133,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:ap75cm_item"
+                      "value": "kancolle:ap75cm_item"
                     }
                   ]
                 },
@@ -159,7 +159,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:bullet_belt"
+                      "value": "kancolle:bullet_belt"
                     }
                   ]
                 },

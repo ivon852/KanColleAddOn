@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "aircraft:p38e",
+      "identifier": "kancolle:p38e",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -51,7 +51,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:m2browning"
+            "spawn_entity": "kancolle:m2browning"
           }
         },
         "minecraft:timer": {
@@ -84,7 +84,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:bullet_belt"
+                      "value": "kancolle:bullet_belt"
                     }
                   ]
                 },

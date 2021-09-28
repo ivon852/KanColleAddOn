@@ -9,24 +9,24 @@
               "ppweapon_shoot": "(query.get_equipped_item_name=='pp_weapon') && query.is_using_item > 0"
             },
             {
-              "general_dropbomb": "(query.get_equipped_item_name=='bomb') && query.is_using_item > 0"
+              "g4m2e_dropbomb": "(query.get_equipped_item_name=='bombload60kg') && query.is_using_item > 0"
             },
             {
-              "g4m2e_mxy7": "(query.get_equipped_item_name=='mxy7') && query.is_using_item > 0"
+              "g4m2e_mxy7": "(query.get_equipped_item_name=='mxy7_item') && query.is_using_item > 0"
             },
             {
-              "g4m2e_type91torpedo": "(query.get_equipped_item_name=='type91torpedo') && query.is_using_item > 0"
+              "g4m2e_type91torpedo": "(query.get_equipped_item_name=='type91torpedo_item') && query.is_using_item > 0"
             }
           ]
         },
-        "general_dropbomb": {
+        "g4m2e_dropbomb": {
           "transitions": [
             {
               "default": "(1.0)"
             }
           ],
           "on_entry": [
-            "/replaceitem entity @e[type=aircraft:g4m2e, tag=flying,c=1] slot.weapon.mainhand 0 newitem:bomb"
+            "/replaceitem entity @e[type=kancolle:g4m2e, tag=flying,c=1] slot.weapon.mainhand 0 kancolle:bombload60kg"
           ]
         },
         "g4m2e_mxy7": {
@@ -36,7 +36,7 @@
             }
           ],
           "on_entry": [
-            "/replaceitem entity @e[type=aircraft:g4m2e, tag=flying,c=1] slot.weapon.mainhand 0 newitem:mxy7"
+            "/replaceitem entity @e[type=kancolle:g4m2e, tag=flying,c=1] slot.weapon.mainhand 0 kancolle:mxy7_item"
           ]
         },
         "g4m2e_type91torpedo": {
@@ -46,8 +46,8 @@
             }
           ],
           "on_entry": [
-            "/replaceitem entity @e[type=aircraft:g4m2e, tag=flying,c=1] slot.weapon.mainhand 0 newitem:type91torpedo",
-            "/replaceitem entity @e[type=submarine:u511, tag=riding,c=1] slot.weapon.mainhand 0 newitem:type91torpedo"
+            "/replaceitem entity @e[type=kancolle:g4m2e, tag=flying,c=1] slot.weapon.mainhand 0 kancolle:type91torpedo_item",
+            "/replaceitem entity @e[type=submarine:u511, tag=riding,c=1] slot.weapon.mainhand 0 kancolle:type91torpedo_item"
           ]
         },
         "ppweapon_shoot": {

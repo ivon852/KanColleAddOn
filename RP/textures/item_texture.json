@@ -116,7 +116,7 @@
     "bombload60kg": {
       "textures": "textures/items/bombload60kg"
     },
-    "type91torpedo": {
+    "type91torpedo_item": {
       "textures": "textures/items/type91torpedo"
     },
     "bomb": {

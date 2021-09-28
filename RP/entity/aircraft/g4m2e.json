@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "aircraft:g4m2e",
+      "identifier": "kancolle:g4m2e",
       "materials": {
         "default": "entity_alphatest",
         "mxy7": "entity_alphatest",

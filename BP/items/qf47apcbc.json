@@ -2,7 +2,7 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:qf47apcbc",
+      "identifier": "kancolle:qf47apcbc_item",
       "category": "equipment"
     },
     "components": {

@@ -29,7 +29,7 @@
           "functions": [
             {
               "function": "set_actor_id",
-              "id": "kanmusu:tsushima"
+              "id": "kancolle:tsushima"
             },
             {
               "function": "set_count",

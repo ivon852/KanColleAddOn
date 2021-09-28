@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanmusu:hiryu",
+      "identifier": "kancolle:hiryu",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -40,7 +40,7 @@
           "min_wait_time": 10,
           "max_wait_time": 20,
           "num_to_spawn": 3,
-          "spawn_entity": "aircraft:type99d",
+          "spawn_entity": "kancolle:type99d",
           "single_use": false
           }
         }
@@ -126,7 +126,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:admiral_cap"
+                    "value": "kancolle:admiral_cap"
                   }
                 ]
               },
@@ -145,11 +145,11 @@
       "minecraft:healable": {
         "items": [
           {
-            "item": "newitem:mamiya",
+            "item": "kancolle:mamiya_item",
             "heal_amount": 20
           },
           {
-            "item": "newitem:irako",
+            "item": "kancolle:irako_item",
             "heal_amount": 15
           }
         ]
@@ -157,7 +157,7 @@
       "minecraft:behavior.tempt": {
         "priority": 2,
         "speed_multiplier": 1.25,
-        "items": ["newitem:admiral_cap"]
+        "items": ["kancolle:admiral_cap"]
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 4,

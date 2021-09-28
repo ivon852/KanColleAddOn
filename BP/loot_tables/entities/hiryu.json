@@ -29,7 +29,7 @@
           "functions": [
             {
               "function": "set_actor_id",
-              "id": "newmob:hiryu"
+              "id": "kancolle:hiryu"
             },
             {
               "function": "set_count",

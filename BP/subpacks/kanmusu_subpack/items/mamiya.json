@@ -2,7 +2,7 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:mamiya"
+      "identifier": "kancolle:mamiya_item"
     },
     "components": {
       "minecraft:use_duration": 32,

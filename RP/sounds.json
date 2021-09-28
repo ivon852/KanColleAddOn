@@ -2,7 +2,7 @@
   "entity_sounds": {
     "entities": {
       //Kanmusu
-      "kanmusu:souya": {
+      "kancolle:souya": {
         "volume": 4,
         "pitch": [
           1,
@@ -18,7 +18,7 @@
           "death": "souya.death"
         }
       },
-      "kanmusu:tsushima": {
+      "kancolle:tsushima": {
         "volume": 4,
         "pitch": [
           1,
@@ -34,7 +34,7 @@
           "death": "tsushima.death"
         }
       },
-      "kanmusu:gotsheep": {
+      "kancolle:gotsheep": {
         "volume": 4,
         "pitch": [
           1,
@@ -51,7 +51,7 @@
           }
         }
       },
-      "kanmusu:gotland": {
+      "kancolle:gotland": {
         "volume": 4,
         "pitch": [
           1,
@@ -67,7 +67,7 @@
           "death": "gotland.death"
         }
       },
-      "kanmusu:irako": {
+      "kancolle:irako": {
         "volume": 4,
         "pitch": [
           1,
@@ -77,7 +77,7 @@
           "ambient": "irako.say"
         }
       },
-      "kanmusu:mamiya": {
+      "kancolle:mamiya": {
         "volume": 4,
         "pitch": [
           1,
@@ -87,7 +87,7 @@
           "ambient": "mamiya.say"
         }
       },
-      "kanmusu:u511": {
+      "kancolle:u511_kanmusu": {
         "volume": 4,
         "pitch": [
           1,
@@ -103,7 +103,7 @@
           "death": "u511.death"
         }
       },
-      "kanmusu:i168": {
+      "kancolle:i168": {
         "volume": 4,
         "pitch": [
           1,
@@ -119,7 +119,7 @@
           "death": "i168.death"
         }
       },
-      "kanmusu:zara": {
+      "kancolle:zara": {
         "volume": 4,
         "pitch": [
           1,
@@ -135,7 +135,7 @@
           "death": "zara.death"
         }
       },
-      "kanmusu:hiryu": {
+      "kancolle:hiryu": {
         "volume": 4,
         "pitch": [
           1,
@@ -151,7 +151,7 @@
           "death": "hiryu.death"
         }
       },
-      "kanmusu:bismarck": {
+      "kancolle:bismarck": {
         "volume": 4,
         "pitch": [
           1,
@@ -167,7 +167,7 @@
           "death": "bismarck.death"
         }
       },
-      "kanmusu:shimakaze": {
+      "kancolle:shimakaze": {
         "volume": 4,
         "pitch": [
           1,
@@ -183,7 +183,7 @@
           "death": "shimakaze.death"
         }
       },
-      "kanmusu:boku": {
+      "kancolle:boku": {
         "volume": 4,
         "pitch": [
           1,
@@ -196,7 +196,7 @@
         }
       },
       //Abyssal
-      "abyssal:ptimpgroup": {
+      "kancolle:ptimpgroup": {
         "volume": 4,
         "pitch": [
           1,
@@ -208,7 +208,7 @@
           "death": "ptimpgroup.hurt"
         }
       },
-      "abyssal:dd_iclass": {
+      "kancolle:dd_iclass": {
         "volume": 4,
         "pitch": [
           1,
@@ -219,7 +219,7 @@
           "death": "mob.drowned.death"
         }
       },
-      "abyssal:dd_roclass": {
+      "kancolle:dd_roclass": {
         "volume": 4,
         "pitch": [
           1,
@@ -230,7 +230,7 @@
           "death": "mob.drowned.death"
         }
       },
-      "abyssal:dd_haclass": {
+      "kancolle:dd_haclass": {
         "volume": 4,
         "pitch": [
           1,
@@ -241,7 +241,7 @@
           "death": "mob.drowned.death"
         }
       },
-      "abyssal:dd_niclass": {
+      "kancolle:dd_niclass": {
         "volume": 4,
         "pitch": [
           1,
@@ -252,7 +252,7 @@
           "death": "mob.drowned.death"
         }
       },
-      "abyssal:dd_naclass": {
+      "kancolle:dd_naclass": {
         "volume": 4,
         "pitch": [
           1,
@@ -263,7 +263,7 @@
           "death": "mob.drowned.death"
         }
       },
-      "abyssal:waclass": {
+      "kancolle:waclass": {
         "volume": 4,
         "pitch": [
           0.5,
@@ -274,7 +274,7 @@
           "death": "mob.drowned.death"
         }
       },
-      "abyssal:aircraft_carrier_princess": {
+      "kancolle:aircraft_carrier_princess": {
         "volume": 4,
         "pitch": [
           1,
@@ -287,7 +287,7 @@
           "death": "aircraft_carrier_princess.death"
         }
       },
-      "abyssal:northern_princess": {
+      "kancolle:northern_princess": {
         "volume": 4,
         "pitch": [
           1,
@@ -300,7 +300,7 @@
           "death": "northern_princess.death"
         }
       },
-      "abyssal:pacific_princess": {
+      "kancolle:pacific_princess": {
         "volume": 4,
         "pitch": [
           1,
@@ -313,7 +313,7 @@
           "death": "pacific_princess.death"
         }
       },
-      "abyssal:pp_whale": {
+      "kancolle:pp_whale": {
         "volume": 4,
         "pitch": [
           1,
@@ -324,7 +324,7 @@
         }
       },
       //Aircraft
-      "aircraft:p38e": {
+      "kancolle:p38e": {
         "volume": 1,
         "pitch": [
           1,
@@ -338,7 +338,7 @@
           }
         }
       },
-      "aircraft:bf109g6": {
+      "kancolle:bf109g6": {
         "volume": 1,
         "pitch": [
           1,
@@ -352,7 +352,7 @@
           }
         }
       },
-      "aircraft:spitfiremkix": {
+      "kancolle:spitfiremkix": {
         "volume": 1,
         "pitch": [
           1,
@@ -366,7 +366,7 @@
           }
         }
       },
-      "aircraft:mxy7": {
+      "kancolle:mxy7": {
         "volume": 1,
         "pitch": [
           1,
@@ -380,7 +380,7 @@
           }
         }
       },
-      "aircraft:g4m2e": {
+      "kancolle:g4m2e": {
         "volume": 4,
         "pitch": [
           1,
@@ -394,7 +394,7 @@
           }
         }
       },
-      "aircraft:ki_61": {
+      "kancolle:ki_61": {
         "volume": 1,
         "pitch": [
           1,
@@ -408,7 +408,7 @@
           }
         }
       },
-      "aircraft:f4u1d": {
+      "kancolle:f4u1d": {
         "volume": 1,
         "pitch": [
           1,
@@ -422,7 +422,7 @@
           }
         }
       },
-      "aircraft:me163b": {
+      "kancolle:me163b": {
         "volume": 1,
         "pitch": [
           1,
@@ -436,7 +436,7 @@
           }
         }
       },
-      "aircraft:type99d": {
+      "kancolle:type99d": {
         "volume": 1,
         "pitch": [
           1,
@@ -456,7 +456,7 @@
         }
       },
       //Vehicle
-      "tank:t3485": {
+      "kancolle:t3485": {
         "volume": 4,
         "pitch": [
           1,
@@ -475,7 +475,7 @@
           }
         }
       },
-      "newmob:ziss53ap": {
+      "kancolle:ziss53ap": {
         "volume": 4,
         "pitch": [
           1,
@@ -489,7 +489,7 @@
           }
         }
       },
-      "newmob:dp762mm": {
+      "kancolle:dp762mm": {
         "volume": 4,
         "pitch": [
           1,
@@ -503,7 +503,7 @@
           }
         }
       },
-      "tank:churchillmkvii": {
+      "kancolle:churchillmkvii": {
         "volume": 4,
         "pitch": [
           1,
@@ -522,7 +522,7 @@
           }
         }
       },
-      "newmob:m46he": {
+      "kancolle:m46he": {
         "volume": 4,
         "pitch": [
           1,
@@ -536,7 +536,7 @@
           }
         }
       },
-      "tank:m4a1dd": {
+      "kancolle:m4a1dd": {
         "volume": 4,
         "pitch": [
           1,
@@ -555,7 +555,7 @@
           }
         }
       },
-      "newmob:ap75cm": {
+      "kancolle:ap75cm": {
         "volume": 4,
         "pitch": [
           1,
@@ -569,7 +569,7 @@
           }
         }
       },
-      "tank:panzeriv": {
+      "kancolle:panzeriv": {
         "volume": 4,
         "pitch": [
           1,
@@ -588,7 +588,7 @@
           }
         }
       },
-      "newmob:pzgrpatr40kwk40": {
+      "kancolle:pzgrpatr40kwk40": {
         "volume": 4,
         "pitch": [
           1,
@@ -602,7 +602,7 @@
           }
         }
       },
-      "newmob:mg34": {
+      "kancolle:mg34": {
         "volume": 4,
         "pitch": [
           1,
@@ -616,7 +616,7 @@
           }
         }
       },
-      "tank:type2kami": {
+      "kancolle:type2kami": {
         "volume": 4,
         "pitch": [
           1,
@@ -635,7 +635,7 @@
           }
         }
       },
-      "newmob:type1ap": {
+      "kancolle:type1ap": {
         "volume": 4,
         "pitch": [
           1,
@@ -649,7 +649,7 @@
           }
         }
       },
-      "tank:s35": {
+      "kancolle:s35": {
         "volume": 4,
         "pitch": [
           1,
@@ -668,7 +668,7 @@
           }
         }
       },
-      "newmob:qf47apcbc": {
+      "kancolle:qf47apcbc": {
         "volume": 4,
         "pitch": [
           1,
@@ -682,7 +682,7 @@
           }
         }
       },
-      "newmob:macmle193175mm": {
+      "kancolle:macmle193175mm": {
         "volume": 4,
         "pitch": [
           1,
@@ -696,7 +696,7 @@
           }
         }
       },
-      "tank:kv11941": {
+      "kancolle:kv11941": {
         "volume": 4,
         "pitch": [
           1,
@@ -715,7 +715,7 @@
           }
         }
       },
-      "newmob:zis576mmaphe": {
+      "kancolle:zis576mmaphe": {
         "volume": 4,
         "pitch": [
           1,
@@ -729,7 +729,7 @@
           }
         }
       },
-      "tank:bobsemple": {
+      "kancolle:bobsemple": {
         "volume": 4,
         "pitch": [
           1,
@@ -748,7 +748,7 @@
           }
         }
       },
-      "newmob:bren77mm": {
+      "kancolle:bren77mm": {
         "volume": 4,
         "pitch": [
           1,
@@ -762,7 +762,7 @@
           }
         }
       },
-      "vehicle:sdkfz251": {
+      "kancolle:sdkfz251": {
         "volume": 4,
         "pitch": [
           1,
@@ -781,7 +781,7 @@
           }
         }
       },
-      "newmob:mg42": {
+      "kancolle:mg42": {
         "volume": 4,
         "pitch": [
           1,
@@ -796,7 +796,7 @@
         }
       },
 
-      "newmob:hvar": {
+      "kancolle:hvar": {
         "volume": 4,
         "pitch": [
           1,
@@ -810,7 +810,7 @@
           }
         }
       },
-      "newmob:m2browning": {
+      "kancolle:m2browning": {
         "volume": 4,
         "pitch": [
           1,
@@ -824,7 +824,7 @@
           }
         }
       },
-      "newmob:mk108": {
+      "kancolle:mk108": {
         "volume": 4,
         "pitch": [
           1,
@@ -838,7 +838,7 @@
           }
         }
       },
-      "newmob:type9777": {
+      "kancolle:type9777": {
         "volume": 4,
         "pitch": [
           1,
@@ -852,7 +852,7 @@
           }
         }
       },
-      "newmob:hispanomkii": {
+      "kancolle:hispanomkii": {
         "volume": 4,
         "pitch": [
           1,
@@ -866,7 +866,7 @@
           }
         }
       },
-      "newmob:mg15120": {
+      "kancolle:mg15120": {
         "volume": 4,
         "pitch": [
           1,
@@ -880,7 +880,7 @@
           }
         }
       },
-      "weapon:rocket32cm": {
+      "kancolle:rocket32cm": {
         "volume": 4,
         "pitch": [
           1,
@@ -894,7 +894,7 @@
           }
         }
       },
-      "weapon:higginsboat": {
+      "kancolle:higginsboat": {
         "volume": 4,
         "pitch": [
           1,
@@ -908,7 +908,7 @@
           }
         }
       },
-      "weapon:sandbag": {
+      "kancolle:sandbag": {
         "volume": 4,
         "pitch": [
           1,

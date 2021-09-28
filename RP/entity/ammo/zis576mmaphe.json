@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:zis576mmaphe",
+      "identifier": "kancolle:zis576mmaphe",
       "materials": {
         "default": "entity_alphatest"
       },

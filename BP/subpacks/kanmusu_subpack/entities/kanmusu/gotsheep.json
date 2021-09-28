@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanmusu:gotsheep",
+      "identifier": "kancolle:gotsheep",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
@@ -42,11 +42,11 @@
       "minecraft:healable": {
         "items": [
           {
-            "item": "newitem:irako",
+            "item": "kancolle:irako_item",
             "heal_amount": 20
           },
           {
-            "item": "newitem:irako",
+            "item": "kancolle:irako_item",
             "heal_amount": 15
           }
         ]

@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "aircraft:f4u1d",
+      "identifier": "kancolle:f4u1d",
       "materials": {
         "default": "entity_alphatest"
       },

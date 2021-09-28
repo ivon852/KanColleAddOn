@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:qf47apcbc",
+      "identifier": "kancolle:qf47apcbc",
       "materials": {
         "default": "entity_alphatest"
       },

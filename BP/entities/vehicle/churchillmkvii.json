@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tank:churchillmkvii",
+      "identifier": "kancolle:churchillmkvii",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -37,7 +37,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:m46he",
+            "spawn_entity": "kancolle:m46he",
             "single_use": true
           }
         },
@@ -87,7 +87,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:m46he_item"
+                    "value": "kancolle:m46he_item"
                   }
                 ]
               },
@@ -113,7 +113,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:flamethrower"
+                    "value": "kancolle:flamethrower"
                   }
                 ]
               },

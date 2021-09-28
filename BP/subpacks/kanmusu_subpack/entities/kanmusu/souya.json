@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanmusu:souya",
+      "identifier": "kancolle:souya",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -107,7 +107,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:admiral_cap"
+                    "value": "kancolle:admiral_cap"
                   }
                 ]
               },
@@ -126,11 +126,11 @@
       "minecraft:healable": {
         "items": [
           {
-            "item": "newitem:irako",
+            "item": "kancolle:irako_item",
             "heal_amount": 20
           },
           {
-            "item": "newitem:irako",
+            "item": "kancolle:irako_item",
             "heal_amount": 15
           }
         ]
@@ -139,7 +139,7 @@
         "priority": 2,
         "speed_multiplier": 1.25,
         "items": [
-          "newitem:admiral_cap"
+          "kancolle:admiral_cap"
         ]
       },
       "minecraft:target_nearby_sensor": {
@@ -215,7 +215,7 @@
         "charge_shoot_trigger": 0.1
       },
       "minecraft:shooter": {
-        "def": "newmob:shell127cm"
+        "def": "kancolle:shell127cm"
       },
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 4,

@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tank:kv11941",
+      "identifier": "kancolle:kv11941",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -26,7 +26,7 @@
     "component_groups": {
       "become_broken": {
         "minecraft:transformation": {
-          "into": "tank:kv11941_damaged",
+          "into": "kancolle:kv11941_damaged",
           "transformation_sound": "break",
           "keep_level": true,
           "drop_inventory": true,
@@ -38,7 +38,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:dp762mm"
+            "spawn_entity": "kancolle:dp762mm"
           }
         },
         "minecraft:timer": {
@@ -58,7 +58,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:zis576mmaphe",
+            "spawn_entity": "kancolle:zis576mmaphe",
             "single_use": true
           }
         },
@@ -105,7 +105,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:zis576mmaphe_item"
+                    "value": "kancolle:zis576mmaphe_item"
                   }
                 ]
               },
@@ -131,7 +131,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:bullet_belt"
+                    "value": "kancolle:bullet_belt"
                   }
                 ]
               },

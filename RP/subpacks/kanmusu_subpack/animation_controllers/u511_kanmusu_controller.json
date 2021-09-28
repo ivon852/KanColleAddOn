@@ -4,7 +4,14 @@
     "controller.animation.u511_kanmusu.move": {
       "states": {
         "default": {
-          "animations": [{ "move": "query.modified_move_speed" }]
+          "animations": [
+            {
+              "move": "query.modified_move_speed"
+            },
+            {
+              "swim": "query.is_in_water"
+            }
+          ]
         }
       }
     },
@@ -12,11 +19,21 @@
       "initial_state": "default",
       "states": {
         "default": {
-          "transitions":[{"attacking":"query.is_charged"}]
+          "transitions": [
+            {
+              "attacking": "query.is_charged"
+            }
+          ]
         },
         "attacking": {
-          "animations": ["attack"],
-          "transitions":[{"default":"!query.is_charged && query.any_animation_finished"}]
+          "animations": [
+            "attack"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_charged && query.any_animation_finished"
+            }
+          ]
         }
       }
     }

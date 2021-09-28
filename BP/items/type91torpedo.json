@@ -2,7 +2,7 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:type91torpedo",
+      "identifier": "kancolle:type91torpedo_item",
       "category": "equipment"
     },
     "components": {

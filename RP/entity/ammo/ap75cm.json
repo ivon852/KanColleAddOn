@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "newmob:ap75cm",
+      "identifier": "kancolle:ap75cm",
       "materials": {
         "default": "entity_alphatest"
       },

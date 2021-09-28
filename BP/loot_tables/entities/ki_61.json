@@ -29,7 +29,7 @@
           "functions": [
             {
               "function": "set_actor_id",
-              "id": "aircraft:ki_61"
+              "id": "kancolle:ki_61"
             },
             {
               "function": "set_count",

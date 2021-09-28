@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "aircraft:me163b",
+      "identifier": "kancolle:me163b",
       "materials": {
         "default": "entity_alphatest"
       },

@@ -2,12 +2,12 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "newmob:shell127cm",
+      "identifier": "kancolle:shell127cm",
+      "runtime_identifier": "minecraft:egg",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
     },
-
     "components": {
       "minecraft:collision_box": {
         "width": 1,
@@ -24,7 +24,6 @@
             "on_other_hit": true
           }
         },
-
         "particle": "lava_particle",
         "shoottarget": true,
         "power": 1.4,
@@ -35,7 +34,6 @@
         "liquid_inertia": 0.9,
         "remove_on_hit": {}
       },
-
       "minecraft:physics": {},
       "minecraft:pushable": {
         "is_pushable": false,

@@ -2,7 +2,7 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:m46he_item",
+      "identifier": "kancolle:m46he_item",
       "category": "equipment"
     },
     "components": {

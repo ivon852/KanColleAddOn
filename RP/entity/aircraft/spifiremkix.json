@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "aircraft:spitfiremkix",
+      "identifier": "kancolle:spitfiremkix",
       "materials": {
         "default": "entity_alphatest"
       },

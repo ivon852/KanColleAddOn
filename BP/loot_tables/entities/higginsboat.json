@@ -10,7 +10,7 @@
           "functions": [
             {
               "function": "set_actor_id",
-              "id": "weapon:higginsboat"
+              "id": "kancolle:higginsboat"
             },
             {
               "function": "set_count",

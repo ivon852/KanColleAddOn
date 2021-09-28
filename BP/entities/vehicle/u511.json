@@ -49,7 +49,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:torpedo",
+            "spawn_entity": "kancolle:torpedo",
             "single_use": true
           }
         },
@@ -80,7 +80,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:type91torpedo"
+                      "value": "kancolle:type91torpedo_item"
                     }
                   ]
                 },

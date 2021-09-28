@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "abyssal:dd_naclass",
+      "identifier": "kancolle:dd_naclass",
       "materials": {
         "default": "entity_alphatest"
       },

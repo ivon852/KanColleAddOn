@@ -29,11 +29,11 @@
           ],
           "on_entry": [
             "/execute @s ~ ~ ~ tag @s add flying",
-            "/execute @p[rx=-36,rxm=-72] ~ ~ ~ execute @e[tag=flying,type=aircraft:spitfiremkix,c=1] ~ ~ ~ effect @s levitation 1 9 true",
-            "/execute @p[rx=-18,rxm=-36] ~ ~ ~ execute @e[tag=flying,type=aircraft:spitfiremkix,c=1] ~ ~ ~ effect @s levitation 1 8 true",
-            "/execute @p[rx=20,rxm=-18] ~ ~ ~ execute @e[tag=flying,type=aircraft:spitfiremkix,c=1] ~ ~ ~ effect @s levitation 1 0 true",
-            "/execute @p[rx=45,rxm=20] ~ ~ ~ execute @e[tag=flying,type=aircraft:spitfiremkix,c=1] ~ ~ ~ effect @s slow_falling 1 2 true",
-            "/execute @p[rx=75,rxm=45] ~ ~ ~ execute @e[tag=flying,type=aircraft:spitfiremkix,c=1] ~ ~ ~ effect @s slow_falling 1 1 true",
+            "/execute @p[rx=-36,rxm=-72] ~ ~ ~ execute @e[tag=flying,type=kancolle:spitfiremkix,c=1] ~ ~ ~ effect @s levitation 1 9 true",
+            "/execute @p[rx=-18,rxm=-36] ~ ~ ~ execute @e[tag=flying,type=kancolle:spitfiremkix,c=1] ~ ~ ~ effect @s levitation 1 8 true",
+            "/execute @p[rx=20,rxm=-18] ~ ~ ~ execute @e[tag=flying,type=kancolle:spitfiremkix,c=1] ~ ~ ~ effect @s levitation 1 0 true",
+            "/execute @p[rx=45,rxm=20] ~ ~ ~ execute @e[tag=flying,type=kancolle:spitfiremkix,c=1] ~ ~ ~ effect @s slow_falling 1 2 true",
+            "/execute @p[rx=75,rxm=45] ~ ~ ~ execute @e[tag=flying,type=kancolle:spitfiremkix,c=1] ~ ~ ~ effect @s slow_falling 1 1 true",
             "/execute @p ~ ~ ~ playsound spitfiremkix.engine @s ~ ~ ~ 0.1 1 0.1"
           ]
         }

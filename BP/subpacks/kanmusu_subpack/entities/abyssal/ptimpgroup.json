@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "abyssal:ptimpgroup",
+      "identifier": "kancolle:ptimpgroup",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -23,7 +23,7 @@
             "min_wait_time": 1,
             "max_wait_time": 1,
             "num_to_spawn": 2,
-            "spawn_entity": "abyssal:ptimpgroup",
+            "spawn_entity": "kancolle:ptimpgroup",
             "single_use": true
           }
         }

@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "weapon:type91torpedo",
+      "identifier": "kancolle:type91torpedo",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false,

@@ -29,7 +29,7 @@
           "functions": [
             {
               "function": "set_actor_id",
-              "id": "kanmusu:bismarck"
+              "id": "kancolle:bismarck"
             },
             {
               "function": "set_count",

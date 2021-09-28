@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kanmusu:boku",
+      "identifier": "kancolle:boku",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -16,11 +16,11 @@
       "minecraft:healable": {
         "items": [
           {
-            "item": "newitem:mamiya",
+            "item": "kancolle:mamiya_item",
             "heal_amount": 40
           },
           {
-            "item": "newitem:irako",
+            "item": "kancolle:irako_item",
             "heal_amount": 20
           }
         ]

@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "aircraft:g4m2e",
+      "identifier": "kancolle:g4m2e",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -98,7 +98,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "weapon:type91torpedo",
+            "spawn_entity": "kancolle:type91torpedo",
             "single_use": true
           }
         },
@@ -116,7 +116,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "aircraft:mxy7",
+            "spawn_entity": "kancolle:mxy7",
             "single_use": true
           }
         },
@@ -182,7 +182,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:wrench"
+                      "value": "kancolle:wrench_item"
                     },
                     {
                       "test": "is_mark_variant",
@@ -209,7 +209,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:mxy7"
+                      "value": "kancolle:mxy7_item"
                     },
                     {
                       "test": "is_mark_variant",
@@ -234,7 +234,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:bombload60kg"
+                      "value": "kancolle:bombload60kg"
                     },
                     {
                       "test": "is_mark_variant",
@@ -259,7 +259,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:type91torpedo"
+                      "value": "kancolle:type91torpedo_item"
                     },
                     {
                       "test": "is_mark_variant",

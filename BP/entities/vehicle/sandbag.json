@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "weapon:sandbag",
+      "identifier": "kancolle:sandbag",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -28,7 +28,7 @@
                 ]
               }
             },
-            "spawn_entities": "weapon:sandbag",
+            "spawn_entities": "kancolle:sandbag",
             "use_item": true,
             "interact_text": "action.interact.sandbag.stack"
           }

@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "abyssal:pacific_princess",
+      "identifier": "kancolle:pacific_princess",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false
@@ -47,7 +47,7 @@
           "min_wait_time": 0.1,
           "max_wait_time": 0.1,
           "num_to_spawn": 1,
-          "spawn_entity": "abyssal:pp_whale"
+          "spawn_entity": "kancolle:pp_whale"
         }
       },
       "minecraft:target_nearby_sensor": {
@@ -135,7 +135,7 @@
         "burst_interval": 5
       },
       "minecraft:shooter": {
-        "def": "newmob:bullet"
+        "def": "kancolle:bullet"
       },
 
       "minecraft:behavior.nearest_attackable_target": {

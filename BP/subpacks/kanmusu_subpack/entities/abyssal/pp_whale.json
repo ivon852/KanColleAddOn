@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "abyssal:pp_whale",
+      "identifier": "kancolle:pp_whale",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
@@ -136,7 +136,7 @@
         "charge_shoot_trigger": 0.1
       },
       "minecraft:shooter": {
-        "def": "newmob:shell16inch"
+        "def": "kancolle:shell16inch"
       },
 
       "minecraft:behavior.nearest_attackable_target": {

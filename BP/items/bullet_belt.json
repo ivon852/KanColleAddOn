@@ -2,7 +2,7 @@
   "format_version": "1.10",
   "minecraft:item": {
     "description": {
-      "identifier": "newitem:bullet_belt",
+      "identifier": "kancolle:bullet_belt",
       "category": "equipment"
     },
     "components": {

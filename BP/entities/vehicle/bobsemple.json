@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tank:bobsemple",
+      "identifier": "kancolle:bobsemple",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -29,7 +29,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:bren77mm"
+            "spawn_entity": "kancolle:bren77mm"
           }
         },
         "minecraft:timer": {
@@ -60,7 +60,7 @@
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "newitem:bullet_belt"
+                    "value": "kancolle:bullet_belt"
                   }
                 ]
               },

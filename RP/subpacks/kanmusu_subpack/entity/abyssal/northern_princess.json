@@ -2,7 +2,7 @@
   "format_version": "1.10.0",
   "minecraft:client_entity": {
     "description": {
-      "identifier": "abyssal:northern_princess",
+      "identifier": "kancolle:northern_princess",
       "materials": {
         "default": "entity_alphatest"
       },

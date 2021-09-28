@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "tank:type2kami",
+      "identifier": "kancolle:type2kami",
       "is_spawnable": true,
       "is_summonable": true,
       "is_experimental": false,
@@ -65,7 +65,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:type9777"
+            "spawn_entity": "kancolle:type9777"
           }
         },
         "minecraft:timer": {
@@ -82,7 +82,7 @@
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "newmob:type1ap",
+            "spawn_entity": "kancolle:type1ap",
             "single_use": true
           }
         },
@@ -116,7 +116,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:type1ap"
+                      "value": "kancolle:type1ap_item"
                     }
                   ]
                 },
@@ -142,7 +142,7 @@
                       "subject": "other",
                       "domain": "hand",
                       "operator": "equals",
-                      "value": "newitem:bullet_belt"
+                      "value": "kancolle:bullet_belt"
                     }
                   ]
                 },
