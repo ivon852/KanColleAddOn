@@ -1,0 +1,20 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "kancolle:m1919762mm",
+      "materials": {
+        "default": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/m1919762mm"
+      },
+      "geometry": {
+        "default": "geometry.m1919762mm"
+      },
+      "render_controllers": [
+        "controller.render.newmob"
+      ]
+    }
+  }
+}

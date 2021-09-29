@@ -851,6 +851,24 @@
         "sounds/mob/mg42/fire"
       ]
     },
+    "m8greyhound.engine": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/m8greyhound/engine"
+      ]
+    },
+    "m8greyhound.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/m8greyhound/fire"
+      ]
+    },
+    "m1919762mm.fire": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/m1919762mm/fire"
+      ]
+    },
 
     "mob.irongolem.hit": {
       "category": "neutral",

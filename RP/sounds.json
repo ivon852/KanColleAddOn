@@ -795,6 +795,53 @@
           }
         }
       },
+      "kancolle:m8greyhound": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "step": {
+            "sound": "m8greyhound.engine",
+            "volume": 4,
+            "pitch": 1.0
+          },
+          "hurt": {
+            "sound": "mob.irongolem.hit",
+            "volume": 4,
+            "pitch": 0.5
+          }
+        }
+      },
+      "kancolle:m337mmhe": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "ambient": {
+            "sound": "m8greyhound.fire",
+            "volume": 4,
+            "pitch": 1.0
+          }
+        }
+      },
+      "kancolle:m1919762mm": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "ambient": {
+            "sound": "m1919762mm.fire",
+            "volume": 4,
+            "pitch": 1.0
+          }
+        }
+      },
 
       "kancolle:hvar": {
         "volume": 4,

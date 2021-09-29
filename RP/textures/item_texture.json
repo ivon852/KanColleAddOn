@@ -190,6 +190,12 @@
     },
     "spawn_sdkfz251": {
       "textures": "textures/items/spawn_sdkfz251"
+    },
+    "spawn_m8greyhound": {
+      "textures": "textures/items/spawn_m8greyhound"
+    },
+    "m337mmhe_item": {
+      "textures": "textures/items/m337mmhe_item"
     }
   }
 }

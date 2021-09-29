@@ -2,35 +2,62 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kancolle:sdkfz251",
+      "identifier": "kancolle:m8greyhound",
       "is_spawnable": true,
       "is_summonable": true,
-      "is_experimental": false
+      "is_experimental": false,
+      "properties": {
+        "property:display_decal": {
+          "values": [
+            false,
+            true
+          ],
+          "client_sync": true
+        },
+        "property:open_hatch": {
+          "values": [
+            false,
+            true
+          ],
+          "client_sync": true
+        }
+      }
     },
     "component_groups": {
-      "sdkfz251:open_doors": {
+      "m8greyhound:shoot": {
         "minecraft:variant": {
           "value": 2
-        }
-      },
-      "sdkfz251:close_doors": {
-        "minecraft:variant": {
-          "value": 1
-        }
-      },
-      "sdkfz251:machinegun": {
+        },
         "minecraft:spawn_entity": {
           "entities": {
             "min_wait_time": 0.1,
             "max_wait_time": 0.1,
-            "spawn_entity": "kancolle:mg42"
+            "spawn_entity": "kancolle:m337mmhe",
+            "single_use": true
+          }
+        },
+        "minecraft:timer": {
+          "looping": false,
+          "time": 0.01,
+          "time_down_event": {
+            "event": "m8greyhound:stop_shoot",
+            "target": "self"
+          }
+        }
+      },
+      "m8greyhound:machinegun": {
+        "minecraft:spawn_entity": {
+          "entities": {
+            "min_wait_time": 0.1,
+            "max_wait_time": 0.1,
+            "spawn_entity": "kancolle:m1919762mm"
           }
         },
         "minecraft:timer": {
           "looping": false,
           "time": 1,
           "time_down_event": {
-            "event": "sdkfz251:stop_machinegun",
+            "event": "m8greyhound:stop_machinegun",
             "target": "self"
           }
         }
@@ -47,48 +74,26 @@
               "filters": {
                 "all_of": [
                   {
-                    "test": "has_equipment",
+                    "test": "is_riding",
                     "subject": "other",
-                    "domain": "hand",
                     "operator": "equals",
-                    "value": "kancolle:wrench_item"
+                    "value": true
                   },
-                  {
-                    "test": "is_variant",
-                    "subject": "self",
-                    "operator": "equals",
-                    "value": 1
-                  }
-                ]
-              },
-              "event": "sdkfz251:open_doors",
-              "target": "self"
-            },
-            "interact_text": "action.interact.sdkfz251.open_doors"
-          },
-          {
-            "on_interact": {
-              "filters": {
-                "all_of": [
                   {
                     "test": "has_equipment",
                     "subject": "other",
                     "domain": "hand",
                     "operator": "equals",
-                    "value": "kancolle:wrench_item"
-                  },
-                  {
-                    "test": "is_variant",
-                    "subject": "self",
-                    "operator": "equals",
-                    "value": 2
+                    "value": "kancolle:m337mmhe_item"
                   }
                 ]
               },
-              "event": "sdkfz251:close_doors",
-              "target": "self"
+              "target": "self",
+              "event": "m8greyhound:shoot"
             },
-            "interact_text": "action.interact.sdkfz251.close_doors"
+            "use_item": true,
+            "cooldown": 5,
+            "interact_text": "action.interact.tank.fire"
           },
           {
             "on_interact": {
@@ -110,7 +115,7 @@
                 ]
               },
               "target": "self",
-              "event": "sdkfz251:machinegun"
+              "event": "m8greyhound:machinegun"
             },
             "use_item": true,
             "cooldown": 1,
@@ -128,117 +133,56 @@
       },
       "minecraft:movement.basic": {},
       "minecraft:movement": {
-        "value": 0.2
+        "value": 0.3
       },
       "minecraft:scale": {
-        "value": 0.8
+        "value": 1.3
       },
       "minecraft:input_ground_controlled": {},
       "minecraft:behavior.controlled_by_player": {},
       "minecraft:rideable": {
-        "seat_count": 12,
+        "seat_count": 1,
         "rider_can_interact": true,
         "crouching_skip_interact": true,
         "family_types": [
           "player",
-          "villager"
+          "illager"
         ],
         "interact_text": "action.interact.tank.get_on",
         "seats": [
           {
             "position": [
               0,
-              2.8,
-              0.4
+              1.5,
+              -0.3
             ]
           },
           {
             "position": [
-              0.4,
-              1.3,
-              1.7
+              0.3,
+              0.2,
+              1.1
             ]
           },
           {
             "position": [
               -0.4,
-              1.3,
-              1.7
+              0.2,
+              1.1
             ]
           },
           {
             "position": [
-              0.3,
-              1.3,
+              -0.3,
+              0.7,
               -0.2
-            ]
-          },
-          {
-            "position": [
-              -0.3,
-              1.3,
-              -0.2
-            ]
-          },
-          {
-            "position": [
-              -0.3,
-              1.3,
-              -0.9
-            ]
-          },
-          {
-            "position": [
-              0.3,
-              1.3,
-              -0.9
-            ]
-          },
-          {
-            "position": [
-              0.3,
-              1.3,
-              -2.1
-            ]
-          },
-          {
-            "position": [
-              -0.3,
-              1.3,
-              -2.1
-            ]
-          },
-          {
-            "position": [
-              0.3,
-              1.3,
-              -3
-            ]
-          },
-          {
-            "position": [
-              -0.3,
-              1.3,
-              -3
-            ]
-          },
-          {
-            "position": [
-              0.3,
-              1.3,
-              -3.8
             ]
           }
         ]
       },
       "minecraft:collision_box": {
-        "width": 3,
-        "height": 4.5
-      },
-      "minecraft:is_chested": {},
-      "minecraft:inventory": {
-        "inventory_size": 27,
-        "container_type": "horse"
+        "width": 2.5,
+        "height": 3.5
       },
       "minecraft:pushable": {
         "is_pushable": true,
@@ -246,8 +190,8 @@
       },
       "minecraft:type_family": {
         "family": [
-          "kanmusu",
-          "vehicle"
+          "tank",
+          "kanmusu"
         ]
       },
       "minecraft:health": {
@@ -274,32 +218,72 @@
       "minecraft:persistent": {}
     },
     "events": {
-      "sdkfz251:open_doors": {
+      "m8greyhound:shoot": {
         "add": {
           "component_groups": [
-            "sdkfz251:open_doors"
+            "m8greyhound:shoot"
           ]
         }
       },
-      "sdkfz251:close_doors": {
-        "add": {
-          "component_groups": [
-            "sdkfz251:close_doors"
-          ]
-        }
-      },
-      "sdkfz251:machinegun": {
-        "add": {
-          "component_groups": [
-            "sdkfz251:machinegun"
-          ]
-        }
-      },
-      "sdkfz251:stop_machinegun": {
+      "m8greyhound:stop_shoot": {
         "remove": {
           "component_groups": [
-            "sdkfz251:machinegun"
+            "m8greyhound:shoot"
           ]
+        }
+      },
+      "m8greyhound:machinegun": {
+        "add": {
+          "component_groups": [
+            "m8greyhound:machinegun"
+          ]
+        }
+      },
+      "m8greyhound:stop_machinegun": {
+        "remove": {
+          "component_groups": [
+            "m8greyhound:machinegun"
+          ]
+        }
+      },
+      "m8greyhound:open_hatch": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s add open_hatch"
+          ]
+        },
+        "set_actor_property": {
+          "property:open_hatch": true
+        }
+      },
+      "m8greyhound:close_hatch": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s remove open_hatch"
+          ]
+        },
+        "set_actor_property": {
+          "property:open_hatch": false
+        }
+      },
+      "m8greyhound:show_decal": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s add display_decal"
+          ]
+        },
+        "set_actor_property": {
+          "property:display_decal": true
+        }
+      },
+      "m8greyhound:hide_decal": {
+        "run_command": {
+          "command": [
+            "execute @s ~ ~ ~ tag @s remove display_decal"
+          ]
+        },
+        "set_actor_property": {
+          "property:display_decal": false
         }
       }
     }

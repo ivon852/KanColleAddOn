@@ -180,6 +180,13 @@ action.interact.tank.close_hatch=Close hatch
 action.interact.tank.show_decal=Show decal
 action.interact.tank.hide_decal=Hide decal
 
+item.spawn_egg.entity.kancolle:m8greyhound.name=Spawn M8 Greyhound
+entity.kancolle:m8greyhound.name=M8 Greyhound
+action.hint.exit.kancolle:m8greyhound=Tap sneak to dismount
+entity.kancolle:m337mmhe.name=37mm M3 HE
+item.kancolle:m337mmhe_item.name=37mm M3 HE
+entity.kancolle:m1919762mm.name=M1919 7.62mm
+
 item.spawn_egg.entity.kancolle:sdkfz251.name=Spawn Sd.Kfz. 251
 entity.kancolle:sdkfz251.name=Sd.Kfz. 251
 action.hint.exit.kancolle:sdkfz251=Tap sneak to dismount

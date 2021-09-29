@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kancolle:m46he",
+      "identifier": "kancolle:m337mmhe",
       "runtime_identifier": "minecraft:egg",
       "is_spawnable": false,
       "is_summonable": true,
@@ -30,7 +30,7 @@
     },
     "components": {
       "minecraft:scale": {
-        "value": 0.2
+        "value": 0.15
       },
       "minecraft:collision_box": {
         "width": 1,
@@ -49,7 +49,7 @@
       "minecraft:projectile": {
         "on_hit": {
           "impact_damage": {
-            "damage": 10,
+            "damage": 9,
             "knockback": false
           },
           "definition_event": {
@@ -69,8 +69,8 @@
         "gravity": 0.01,
         "uncertaintyBase": 0,
         "anchor": 1,
-        "inertia": 1,
-        "liquid_inertia": 0.9
+        "inertia": 1.2,
+        "liquid_inertia": 1
       },
       "minecraft:physics": {},
       "minecraft:pushable": {

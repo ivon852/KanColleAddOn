@@ -1,0 +1,89 @@
+{
+	"format_version": "1.8.0",
+	"animations": {
+		"animation.m8greyhound.open_hatch": {
+			"loop": "hold_on_last_frame",
+			"animation_length": 0.5,
+			"bones": {
+				"hatch3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4583": [-20, 0, 175]
+					}
+				},
+				"hatch4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4583": [-20, 0, -172.5]
+					}
+				},
+				"hatch": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4583": [120, 0, 0]
+					}
+				},
+				"hatch2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.4583": [120, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.m8greyhound.fire": {
+			"animation_length": 0.5,
+			"bones": {
+				"bone21": {
+					"position": {
+						"0.0": [0, 0, 0],
+						"0.2083": [0, 0, 2],
+						"0.5": [0, 0, 0]
+					}
+				}
+			}
+		},
+		"animation.m8greyhound.move": {
+			"loop": true,
+			"animation_length": 0.5,
+			"bones": {
+				"wheel": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [360, 0, 0]
+					}
+				},
+				"wheel2": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [360, 0, 0]
+					}
+				},
+				"wheel3": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [360, 0, 0]
+					}
+				},
+				"wheel4": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [360, 0, 0]
+					}
+				},
+				"wheel5": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [360, 0, 0]
+					}
+				},
+				"wheel6": {
+					"rotation": {
+						"0.0": [0, 0, 0],
+						"0.5": [360, 0, 0]
+					}
+				}
+			}
+		}
+	}
+}
