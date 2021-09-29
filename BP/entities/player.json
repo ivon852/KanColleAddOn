@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.17.10",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:player",
@@ -171,7 +171,27 @@
           }
         ]
       },
-      "minecraft:scaffolding_climber": {}
+      "minecraft:conditional_bandwidth_optimization": {},
+      "minecraft:block_climber": {},
+      "minecraft:environment_sensor": {
+        "triggers": {
+          "filters": {
+            "all_of": [
+              {
+                "test": "has_mob_effect",
+                "subject": "self",
+                "value": "bad_omen"
+              },
+              {
+                "test": "is_in_village",
+                "subject": "self",
+                "value": true
+              }
+            ]
+          },
+          "event": "minecraft:trigger_raid"
+        }
+      }
     },
     "events": {
       "pp_weapon:shoot": {

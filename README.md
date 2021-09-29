@@ -12,6 +12,6 @@ Kantai Collection (Combined Fleet Collection, Kancolle) is a Japanese web browse
 
 ## 這是什麼
 
-這個Add-on在Minecraft中加入了艦娘、二戰中的飛機和坦克。部分支援中文。\
+這個Add-on在Minecraft中加入了艦娘、二戰飛機和坦克。部分支援中文。\
 艦隊收藏為日本網頁遊戲，是關於艦船擬人化(艦娘)與深海棲艦戰鬥的故事。\
 有問題請到[Twitter](https://twitter.com/Ivon852)詢問。
