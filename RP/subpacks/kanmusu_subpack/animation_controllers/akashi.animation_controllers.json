@@ -1,0 +1,55 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.akashi.root": {
+      "states": {
+        "default": {
+          "animations": [
+            {
+              "move": "query.modified_move_speed"
+            },
+            {
+              "attack": "variable.attack_time > 0"
+            }
+          ],
+          "transitions": [
+            {
+              "is_repairing": "query.variant == 2"
+            }
+          ]
+        },
+        "is_repairing": {
+          "animations": [
+            "repairing"
+          ],
+          "transitions": [
+            {
+              "default": "query.variant != 2"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.akashi.root2": {
+      "states": {
+        "default": {
+          "transitions": [
+            {
+              "change_to_swimsuit": "query.is_sheared"
+            }
+          ]
+        },
+        "change_to_swimsuit": {
+          "animations": [
+            "swimsuit"
+          ],
+          "transitions": [
+            {
+              "default": "!query.is_sheared"
+            }
+          ]
+        }
+      }
+    }
+  }
+}

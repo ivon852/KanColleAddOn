@@ -2,6 +2,58 @@
   "format_version": "1.14.0",
   "sound_definitions": {
     //Kanmusu
+    "akashi.say": {
+      "max_distance": 25.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/akashi/say"
+      ]
+    },
+    "akashi.say2": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/akashi/say2"
+      ]
+    },
+    "akashi.say3": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/akashi/say3"
+      ]
+    },
+    "akashi.say4": {
+      "max_distance": 5.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/akashi/intro"
+      ]
+    },
+    "akashi.attack": {
+      "max_distance": 2.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/akashi/attack",
+        "sounds/mob/akashi/attack2",
+        "sounds/mob/akashi/attack3"
+      ]
+    },
+    "akashi.hurt": {
+      "max_distance": 3.0,
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/akashi/hurt",
+        "sounds/mob/akashi/hurt2",
+        "sounds/mob/akashi/hurt3"
+      ]
+    },
+    "akashi.death": {
+      "category": "neutral",
+      "sounds": [
+        "sounds/mob/akashi/death"
+      ]
+    },
     "souya.say": {
       "max_distance": 25.0,
       "category": "neutral",

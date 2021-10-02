@@ -2,6 +2,22 @@
   "entity_sounds": {
     "entities": {
       //Kanmusu
+      "kancolle:akashi": {
+        "volume": 4,
+        "pitch": [
+          1,
+          1
+        ],
+        "events": {
+          "voiceline1": "akashi.say",
+          "voiceline2": "akashi.say2",
+          "voiceline3": "akashi.say3",
+          "voiceline4": "akashi.say4",
+          "hurt": "akashi.hurt",
+          "attack": "akashi.attack",
+          "death": "akashi.death"
+        }
+      },
       "kancolle:souya": {
         "volume": 4,
         "pitch": [

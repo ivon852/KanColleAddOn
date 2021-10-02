@@ -55,6 +55,9 @@ item.kancolle:admiral_cap.name=Admiral Hat
 item.kancolle:mamiya_item.name=Food Supply Ship Mamiya
 item.kancolle:irako_item.name=Food Supply Ship Irako
 
+item.spawn_egg.entity.kancolle:akashi.name=Spawn Akashi
+entity.kancolle:akashi.name=Akashi
+
 item.spawn_egg.entity.kancolle:souya.name=Spawn Souya
 entity.kancolle:souya.name=Souya
 

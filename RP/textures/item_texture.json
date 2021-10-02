@@ -158,6 +158,9 @@
     "spawn_tsushima": {
       "textures": "textures/items/spawn_tsushima"
     },
+    "spawn_akashi": {
+      "textures": "textures/items/spawn_akashi"
+    },
     "spawn_spitfiremkix": {
       "textures": "textures/items/spawn_spitfiremkix"
     },
