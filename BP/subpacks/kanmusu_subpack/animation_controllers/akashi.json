@@ -12,7 +12,7 @@
         },
         "is_repairing": {
           "on_entry": [
-            "/execute @e[r=3, type=!kancolle:akashi] ~ ~ ~ effect @s regeneration 2 2 false"
+            "/execute @e[r=3, type=!kancolle:akashi, family=kanmusu] ~ ~ ~ effect @s regeneration 2 2 false"
           ],
           "transitions": [
             {

@@ -115,7 +115,7 @@
               "event": "shimakaze:start_talking"
             },
             "use_item": false,
-            "interact_text": "action.interact.talk"
+            "interact_text": "action.interact.kanmusu.talk"
           }
         ]
       },

@@ -2,7 +2,12 @@ pack.name=Kancolle RP
 pack.description=v1.1.0. §lCreator:§r§b§nTwitter@Ivon852. §r§lLicense & credits:§rVoices, music in this Add-on are owned by C2Praparat.
 
 ## Kanmusu Diolagues
-action.interact.talk=Talk
+action.interact.kanmusu.talk=Talk
+
+chat.type.announcement.akashi.say=§b[Akashi]§rLooks like it's Akashi's turn.
+chat.type.announcement.akashi.say2=§b[Akashi]§rAdmiral, you need repairs? Have you been damaged somewhere?
+chat.type.announcement.akashi.say3=§b[Akashi]§rIt's dangerous, so don't touch my cranes... hey! That's even more dangerous!
+chat.type.announcement.akashi.say4=§b[Akashi]§rI'm Repair ship Akashi. If you take a little damage, I can fix you up in the base. Just leave it to me!
 
 chat.type.announcement.souya.say=§b[Souya]§rDo you need a survey done? Or something transported? ...I'll do it!
 chat.type.announcement.souya.say2=§b[Souya]§r"The Miraculous Ship"? Oh no, I'm not... That's just...
@@ -50,13 +55,17 @@ chat.type.announcement.tsushima.say3=§b[Tsushima]§rBe careful of collisions.
 chat.type.announcement.tsushima.say4=§b[Tsushima]§rThe Etorofu-class costal defense ship, Tsushima, has arrived. I'll put this body made for defending the Southern Corridor to good use. Just wait and see.
 
 ## Kanmusu
+###Default = no modification state, but health using kai stats.
 
 item.kancolle:admiral_cap.name=Admiral Hat
 item.kancolle:mamiya_item.name=Food Supply Ship Mamiya
 item.kancolle:irako_item.name=Food Supply Ship Irako
 
+###Akashi Kai
 item.spawn_egg.entity.kancolle:akashi.name=Spawn Akashi
 entity.kancolle:akashi.name=Akashi
+action.interact.akashi.start_repairing=Start repairing
+action.interact.akashi.stop_repairing=Stop repairing
 
 item.spawn_egg.entity.kancolle:souya.name=Spawn Souya
 entity.kancolle:souya.name=Souya
@@ -83,12 +92,15 @@ entity.kancolle:u511_kanmusu.name=U-511
 item.spawn_egg.entity.kancolle:i168.name=Spawn I-168
 entity.kancolle:i168.name=I-168
 
+###Zara Due
 item.spawn_egg.entity.kancolle:zara.name=Spawn Zara
 entity.kancolle:zara.name=Zara
 
+###Hiryu Kai Ni
 item.spawn_egg.entity.kancolle:hiryu.name=Spawn Hiryu
 entity.kancolle:hiryu.name=Hiryu
 
+###Bismarck Drei
 item.spawn_egg.entity.kancolle:bismarck.name=Spawn Bismarck
 entity.kancolle:bismarck.name=Bismarck
 

@@ -1,4 +1,4 @@
-#建立的檔案會有多餘的逗號
+#elete comma
 from os import walk
 import os
 from os.path import join

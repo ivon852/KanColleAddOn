@@ -34,9 +34,7 @@
       "max_distance": 2.0,
       "category": "neutral",
       "sounds": [
-        "sounds/mob/akashi/attack",
-        "sounds/mob/akashi/attack2",
-        "sounds/mob/akashi/attack3"
+        "sounds/mob/akashi/attack"
       ]
     },
     "akashi.hurt": {

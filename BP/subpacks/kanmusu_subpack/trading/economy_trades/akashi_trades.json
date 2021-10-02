@@ -1,0 +1,295 @@
+{
+    "tiers": [
+        {
+            "total_exp_required": 10,
+            "groups": [
+                {
+                    "trades": [
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:bullet_belt",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 2,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:bomb_item",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 2,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:flamethrower",
+                                    "quantity": 1
+                                }
+                            ],
+                            "trader_exp": 2,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:hvar_item",
+                                    "quantity": 1
+                                }
+                            ],
+                            "trader_exp": 2,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:rocket32cm_item",
+                                    "quantity": 1
+                                }
+                            ],
+                            "trader_exp": 2,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:iron_block",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:wrench_item",
+                                    "quantity": 1
+                                }
+                            ],
+                            "trader_exp": 2,
+                            "reward_exp": true
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "total_exp_required": 50,
+            "groups": [
+                {
+                    "num_to_select": 5,
+                    "trades": [
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:ap75cm_item",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:m46he_item",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:m337mmhe_item",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:pzgrpatr40kwk40_item",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:qf47apcbc_item",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:type1ap_item",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:zis576mmaphe_item",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:ziss53ap_item",
+                                    "quantity": 16
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:mxy7_item",
+                                    "quantity": 1
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 1
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:bombload60kg",
+                                    "quantity": 1
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        },
+                        {
+                            "wants": [
+                                {
+                                    "item": "minecraft:emerald",
+                                    "quantity": 2
+                                }
+                            ],
+                            "gives": [
+                                {
+                                    "item": "kancolle:type91torpedo_item",
+                                    "quantity": 1
+                                }
+                            ],
+                            "trader_exp": 50,
+                            "reward_exp": true
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

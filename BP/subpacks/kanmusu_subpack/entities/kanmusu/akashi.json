@@ -37,6 +37,31 @@
         }
       },
       "akashi:is_not_repairing": {
+        "minecraft:behavior.trade_with_player": {
+          "priority": 1
+        },
+        "minecraft:behavior.trade_interest": {
+          "priority": 5,
+          "within_radius": 5.0,
+          "interest_time": 45.0,
+          "remove_item_time": 1.0,
+          "carried_item_switch_time": 2.0,
+          "cooldown": 2.0
+        },
+        "minecraft:economy_trade_table": {
+          "display_name": "entity.kancolle:akashi.name",
+          "table": "trading/economy_trades/akashi_trades.json",
+          "new_screen": true,
+          "persist_trades": true,
+          "cured_discount": [
+            -100,
+            -100
+          ],
+          "max_cured_discount": [
+            -500,
+            -500
+          ]
+        },
         //換泳裝
         "minecraft:environment_sensor": {
           "triggers": [
@@ -58,29 +83,7 @@
             }
           ]
         },
-        "minecraft:interact": {
-          "interactions": [
-            {
-              "on_interact": {
-                "filters": {
-                  "all_of": [
-                    {
-                      "test": "has_equipment",
-                      "subject": "other",
-                      "domain": "hand",
-                      "operator": "equals",
-                      "value": "kancolle:admiral_cap"
-                    }
-                  ]
-                },
-                "target": "self",
-                "event": "akashi:start_talking"
-              },
-              "use_item": false,
-              "interact_text": "action.interact.talk"
-            }
-          ]
-        },
+        
         "minecraft:behavior.tempt": {
           "priority": 2,
           "speed_multiplier": 1.25,
@@ -162,10 +165,80 @@
       }
     },
     "components": {
-      "minecraft:mark_variant": {
-        "value": 1
+      "minecraft:interact": {
+        "interactions": [
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "kancolle:admiral_cap"
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "akashi:start_talking"
+            },
+            "use_item": true,
+            "interact_text": "action.interact.kanmusu.talk"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "iron_block"
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "equals",
+                    "value":1
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "akashi:start_repairing"
+            },
+            "use_item": true,
+            "interact_text": "action.interact.akashi.start_repairing"
+          },
+          {
+            "on_interact": {
+              "filters": {
+                "all_of": [
+                  {
+                    "test": "has_equipment",
+                    "subject": "other",
+                    "domain": "hand",
+                    "operator": "equals",
+                    "value": "iron_block"
+                  },
+                  {
+                    "test": "is_variant",
+                    "subject": "self",
+                    "operator": "equals",
+                    "value":2
+                  }
+                ]
+              },
+              "target": "self",
+              "event": "akashi:stop_repairing"
+            },
+            "use_item": false,
+            "interact_text": "action.interact.akashi.stop_repairing"
+          }
+        ]
       },
-      "minecraft:variant": {
+      "minecraft:mark_variant": {
         "value": 1
       },
       "minecraft:healable": {
@@ -180,34 +253,15 @@
           }
         ]
       },
+      //Looks like this doesn't work...
       "minecraft:target_nearby_sensor": {
         "inside_range": 3,
         "outside_range": 4,
         "on_inside_range": {
-          "filters": {
-            "all_of": [
-              {
-                "test": "is_family",
-                "subject": "other",
-                "operator": "equals",
-                "value": "kanmusu"
-              }
-            ]
-          },
           "event": "akashi:start_repairing",
           "target": "self"
         },
         "on_outside_range": {
-          "filters": {
-            "all_of": [
-              {
-                "test": "is_family",
-                "subject": "other",
-                "operator": "equals",
-                "value": "kanmusu"
-              }
-            ]
-          },
           "event": "akashi:stop_repairing",
           "target": "self"
         }

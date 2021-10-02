@@ -1,4 +1,4 @@
-#建立的檔案會有多餘的逗號
+#Delete comma
 import glob
 import os
 
