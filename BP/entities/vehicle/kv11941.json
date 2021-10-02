@@ -211,7 +211,12 @@
         "height": 1.2
       },
       "minecraft:pushable": {
-        "is_pushable": true,
+        "filters": {
+          "test": "is_family",
+          "subject": "other",
+          "value": "tank"
+        },
+        "is_pushable":false,
         "is_pushable_by_piston": true
       },
       "minecraft:type_family": {

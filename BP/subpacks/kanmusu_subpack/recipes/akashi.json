@@ -1,0 +1,28 @@
+{
+    "format_version": "1.13",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "spawn_egg"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            "aaa",
+            "a#a",
+            "aaa"
+        ],
+        "key": {
+            "#": {
+                "item": "minecraft:armor_stand"
+            },
+            "a": {
+                "item": "minecraft:iron_block"
+            }
+        },
+        "result": {
+            "item": "spawn_egg",
+            "data": "query.get_actor_info_id('kancolle:akashi')"
+        }
+    }
+}

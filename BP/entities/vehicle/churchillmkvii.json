@@ -172,7 +172,7 @@
         "height": 5
       },
       "minecraft:pushable": {
-        "is_pushable": true,
+        "is_pushable": false,
         "is_pushable_by_piston": true
       },
       "minecraft:type_family": {
