@@ -2,7 +2,8 @@
 
 Add KanColle ship girls and World War 2 vehicles into Minecraft Bedrock Edition!\
 將《艦隊收藏》中的艦娘和二戰載具加入至Minecraft基岩版!\
-[Get it on MCPEDL](https://mcpedl.com/kantai-collection-add-on/)
+See [Wiki](https://github.com/ivon852/KanColleAddOn/wiki) for instructions.\
+[Get this Add-On on MCPEDL](https://mcpedl.com/kantai-collection-add-on/)
 
 ## What is this
 
