@@ -92,7 +92,7 @@ entity.kancolle:u511_kanmusu.name=U-511
 item.spawn_egg.entity.kancolle:i168.name=Spawn I-168
 entity.kancolle:i168.name=I-168
 
-###Zara Due
+###Zara due
 item.spawn_egg.entity.kancolle:zara.name=Spawn Zara
 entity.kancolle:zara.name=Zara
 
@@ -110,6 +110,7 @@ entity.kancolle:shell127cm.name=12.7cm Shell
 entity.kancolle:shell16inch.name=16 inch Shell
 entity.kancolle:shell16inch_player.name=16 inch Shell (Player)
 entity.kancolle:torpedo.name=Torpedo
+entity.kancolle:rensouhouchan.name=Rensouhou-chan
 
 item.spawn_egg.entity.kancolle:boku.name=Spawn Boku Kawauso
 entity.kancolle:boku.name=Boku
@@ -294,7 +295,7 @@ action.interact.sandbag.stack=Stack
 item.spawn_egg.entity.kancolle:ptimpgroup.name=Spawn PT Imp Group
 entity.kancolle:ptimpgroup=PT Imp Group
 
-item.spawn_egg.entity.kancolle:waclass.name=Spawn Abyssal Transport Ship Wa-Class
+item.spawn_egg.entity.kancolle:waclass.name=Spawn Transport Ship Wa-Class
 entity.kancolle:waclass=Transport Ship Wa-Class
 
 item.kancolle:pp_weapon.name= PP's Weapon
@@ -302,10 +303,11 @@ item.spawn_egg.entity.kancolle:pacific_princess.name=Spawn Pacific Princess
 entity.kancolle:pp_whale.name=PP's Whale
 entity.kancolle:pacific_princess.name=Pacific Princess
 item.spawn_egg.entity.kancolle:northern_princess.name=Spawn Northern Princess
-entity.kancolle:northern_princess_arament.name=Northern Princess's Arament
+entity.kancolle:northern_princess_armament.name=Northern Princess's Armament
 entity.kancolle:northern_princess.name=Northern Princess
 item.spawn_egg.entity.kancolle:aircraft_carrier_princess.name=Spawn Aircraft Carrier Demon
 entity.kancolle:aircraft_carrier_princess.name=Aircraft Carrier Demon
+entity.kancolle:abyssal_f6f.name=Abyssal Cat Fighter
 entity.kancolle:aircraft_carrier_princess_armament.name=Aircraft Carrier Demon Armament
 
 

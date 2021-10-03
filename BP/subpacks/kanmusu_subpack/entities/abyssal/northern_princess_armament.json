@@ -2,7 +2,7 @@
   "format_version": "1.16.0",
   "minecraft:entity": {
     "description": {
-      "identifier": "kancolle:northern_princess_arament",
+      "identifier": "kancolle:northern_princess_armament",
       "is_spawnable": false,
       "is_summonable": true,
       "is_experimental": false
