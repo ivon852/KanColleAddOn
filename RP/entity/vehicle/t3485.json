@@ -8,7 +8,7 @@
       },
       "textures": {
         "default": "textures/entity/t3485",
-        "normal": "textures/entity/t3485_normal"
+        "green": "textures/entity/t3485_green"
       },
       "geometry": {
         "default": "geometry.t3485"

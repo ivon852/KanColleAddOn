@@ -29,7 +29,7 @@
           "value": 0
         }
       },
-      "t3485:makenormal": {
+      "t3485:makegreen": {
         "minecraft:variant": {
           "value": 1
         }
@@ -247,7 +247,7 @@
                 "weight": 1,
                 "add": {
                   "component_groups": [
-                    "t3485:makenormal"
+                    "t3485:makegreen"
                   ]
                 }
               }

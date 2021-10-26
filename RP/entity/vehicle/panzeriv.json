@@ -7,13 +7,14 @@
         "default": "entity_alphatest"
       },
       "textures": {
-        "default": "textures/entity/panzeriv"
+        "default": "textures/entity/panzeriv",
+        "yellow": "textures/entity/panzeriv_yellow"
       },
       "geometry": {
         "default": "geometry.panzeriv"
       },
       "render_controllers": [
-        "controller.render.tank"
+        "controller.render.panzeriv"
       ],
       "animations": {
         "move": "animation.panzeriv.move",

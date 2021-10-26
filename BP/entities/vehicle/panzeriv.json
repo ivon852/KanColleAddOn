@@ -24,6 +24,16 @@
       }
     },
     "component_groups": {
+      "panzeriv:makebrown": {
+        "minecraft:variant": {
+          "value": 0
+        }
+      },
+      "panzeriv:makeyellow": {
+        "minecraft:variant": {
+          "value": 1
+        }
+      },
       "panzeriv:shoot": {
         "minecraft:spawn_entity": {
           "entities": {
@@ -196,6 +206,30 @@
       "minecraft:persistent": {}
     },
     "events": {
+      "minecraft:entity_spawned": {
+        "sequence": [
+          {
+            "randomize": [
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "panzeriv:makebrown"
+                  ]
+                }
+              },
+              {
+                "weight": 1,
+                "add": {
+                  "component_groups": [
+                    "panzeriv:makeyellow"
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      },
       "panzeriv:shoot": {
         "add": {
           "component_groups": [
