@@ -11,7 +11,7 @@
 		],
 		"version": [
 			1,
-			1,
+			2,
 			0
 		]
 	},
@@ -22,7 +22,7 @@
 			"uuid": "6da1b426-5f84-4172-8971-0592394cea19",
 			"version": [
 				1,
-				1,
+				2,
 				0
 			]
 		}
@@ -43,7 +43,7 @@
 		{
 			"version": [
 				1,
-				1,
+				2,
 				0
 			],
 			"uuid": "e3ce74be-9b4d-4cd3-a948-bea0af40ec81"
@@ -54,13 +54,6 @@
 			"Ivon852"
 		],
 		"license": "MIT",
-		"url": "https://mcpedl.com/kantai-collection-add-on/",
-		"generated_with": {
-			"bridge": [
-				"2.1.2",
-				"1.8.3",
-				"2.1.5"
-			]
-		}
+		"url": "https://mcpedl.com/kantai-collection-add-on/"
 	}
 }
