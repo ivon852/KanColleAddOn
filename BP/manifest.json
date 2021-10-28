@@ -54,6 +54,11 @@
 			"Ivon852"
 		],
 		"license": "MIT",
-		"url": "https://mcpedl.com/kantai-collection-add-on/"
+		"url": "https://mcpedl.com/kantai-collection-add-on/",
+		"generated_with": {
+			"bridge": [
+				"2.1.5"
+			]
+		}
 	}
 }
