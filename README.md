@@ -5,6 +5,12 @@ Add KanColle ship girls and World War 2 vehicles into Minecraft Bedrock Edition!
 See [Wiki](https://github.com/ivon852/KanColleAddOn/wiki) for instructions.\
 [Get this Add-On on MCPEDL](https://mcpedl.com/kantai-collection-add-on/)
 
+![](https://i.postimg.cc/J4Q9j72v/image.png)
+
+![](https://i.postimg.cc/fRLgXcXS/image.png)
+
+![](https://i.postimg.cc/tC547jtC/kancolle-addon-ww2-ship-girls-aircraft-tanks-3.jpg)
+
 ## What is this
 
 This Add-On adds Aircraft, Tanks, and Ship girls into Minecraft.\
